@@ -1,0 +1,526 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4874CBA24732B4E4",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../pid_controller.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz": "",
+      "term_calculation_0": "",
+      "initial_math_0": "",
+      "prev_value_flip_flop_0": "",
+      "time_calc_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "reset_rtl": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "k_i_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "k_p_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "k_d_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "output_velocity_0": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "angle_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "new_angle_available_0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "new_velocity_available_0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "target_angle_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "new_target_angle_available_0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "time_curr_0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      }
+    },
+    "components": {
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0",
+        "xci_path": "ip\\design_1_clk_wiz_0\\design_1_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "term_calculation_0": {
+        "vlnv": "xilinx.com:module_ref:term_calculation:1.0",
+        "xci_name": "design_1_term_calculation_0_0",
+        "xci_path": "ip\\design_1_term_calculation_0_0\\design_1_term_calculation_0_0.xci",
+        "inst_hier_path": "term_calculation_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "term_calculation",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "error": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "integral": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "derivative": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "k_p": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "k_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "k_d": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "output_velocity": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "new_velocity_available": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        }
+      },
+      "initial_math_0": {
+        "vlnv": "xilinx.com:module_ref:initial_math:1.0",
+        "xci_name": "design_1_initial_math_0_0",
+        "xci_path": "ip\\design_1_initial_math_0_0\\design_1_initial_math_0_0.xci",
+        "inst_hier_path": "initial_math_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "initial_math",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "angle": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "new_angle_available": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "target_angle": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "new_target_angle_available": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "dt": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "error_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "integral_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "error_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "integral_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "derivative_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "prev_value_flip_flop_0": {
+        "vlnv": "xilinx.com:module_ref:prev_value_flip_flop:1.0",
+        "xci_name": "design_1_prev_value_flip_flop_0_0",
+        "xci_path": "ip\\design_1_prev_value_flip_flop_0_0\\design_1_prev_value_flip_flop_0_0.xci",
+        "inst_hier_path": "prev_value_flip_flop_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "prev_value_flip_flop",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "error_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "integral_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "time_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "error_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "integral_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "time_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      },
+      "time_calc_0": {
+        "vlnv": "xilinx.com:module_ref:time_calc:1.0",
+        "xci_name": "design_1_time_calc_0_0",
+        "xci_path": "ip\\design_1_time_calc_0_0\\design_1_time_calc_0_0.xci",
+        "inst_hier_path": "time_calc_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "time_calc",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "new_angle_available": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "time_curr": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "time_prev": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "new_angle_pass_on": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "dt_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "new_time_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "angle_0_1": {
+        "ports": [
+          "angle_0",
+          "initial_math_0/angle"
+        ]
+      },
+      "clk_wiz_clk_out1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "term_calculation_0/clock",
+          "prev_value_flip_flop_0/clock",
+          "time_calc_0/clock"
+        ]
+      },
+      "initial_math_0_derivative": {
+        "ports": [
+          "initial_math_0/derivative_out",
+          "term_calculation_0/derivative"
+        ]
+      },
+      "initial_math_0_error": {
+        "ports": [
+          "initial_math_0/error_out",
+          "term_calculation_0/error",
+          "prev_value_flip_flop_0/error_in"
+        ]
+      },
+      "initial_math_0_integral": {
+        "ports": [
+          "initial_math_0/integral_out",
+          "term_calculation_0/integral",
+          "prev_value_flip_flop_0/integral_in"
+        ]
+      },
+      "k_d_0_1": {
+        "ports": [
+          "k_d_0",
+          "term_calculation_0/k_d"
+        ]
+      },
+      "k_i_0_1": {
+        "ports": [
+          "k_i_0",
+          "term_calculation_0/k_i"
+        ]
+      },
+      "k_p_0_1": {
+        "ports": [
+          "k_p_0",
+          "term_calculation_0/k_p"
+        ]
+      },
+      "new_angle_available_0_1": {
+        "ports": [
+          "new_angle_available_0",
+          "time_calc_0/new_angle_available"
+        ]
+      },
+      "new_target_angle_available_0_1": {
+        "ports": [
+          "new_target_angle_available_0",
+          "initial_math_0/new_target_angle_available"
+        ]
+      },
+      "prev_value_flip_flop_0_error_out": {
+        "ports": [
+          "prev_value_flip_flop_0/error_out",
+          "initial_math_0/error_in"
+        ]
+      },
+      "prev_value_flip_flop_0_integral_out": {
+        "ports": [
+          "prev_value_flip_flop_0/integral_out",
+          "initial_math_0/integral_in"
+        ]
+      },
+      "prev_value_flip_flop_0_time_out": {
+        "ports": [
+          "prev_value_flip_flop_0/time_out",
+          "time_calc_0/time_prev"
+        ]
+      },
+      "reset_rtl_1": {
+        "ports": [
+          "reset_rtl",
+          "clk_wiz/reset"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "target_angle_0_1": {
+        "ports": [
+          "target_angle_0",
+          "initial_math_0/target_angle"
+        ]
+      },
+      "term_calculation_0_new_velocity_available": {
+        "ports": [
+          "term_calculation_0/new_velocity_available",
+          "new_velocity_available_0"
+        ]
+      },
+      "term_calculation_0_output_velocity": {
+        "ports": [
+          "term_calculation_0/output_velocity",
+          "output_velocity_0"
+        ]
+      },
+      "time_calc_0_dt": {
+        "ports": [
+          "time_calc_0/dt_out",
+          "initial_math_0/dt"
+        ]
+      },
+      "time_calc_0_new_angle_pass_on": {
+        "ports": [
+          "time_calc_0/new_angle_pass_on",
+          "initial_math_0/new_angle_available"
+        ]
+      },
+      "time_calc_0_new_time": {
+        "ports": [
+          "time_calc_0/new_time_out",
+          "prev_value_flip_flop_0/time_in"
+        ]
+      },
+      "time_curr_0_1": {
+        "ports": [
+          "time_curr_0",
+          "time_calc_0/time_curr"
+        ]
+      }
+    }
+  }
+}
