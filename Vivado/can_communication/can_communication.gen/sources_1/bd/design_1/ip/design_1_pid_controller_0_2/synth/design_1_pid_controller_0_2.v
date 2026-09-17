@@ -48,7 +48,7 @@
 
 
 // IP VLNV: saman:user:pid_controller:1.0
-// IP Revision: 4
+// IP Revision: 5
 
 (* X_CORE_INFO = "design_1_wrapper,Vivado 2021.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_pid_controller_0_2,design_1_wrapper,{}" *)

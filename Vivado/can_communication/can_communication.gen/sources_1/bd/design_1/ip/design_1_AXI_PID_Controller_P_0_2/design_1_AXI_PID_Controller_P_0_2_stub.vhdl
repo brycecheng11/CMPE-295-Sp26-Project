@@ -1,7 +1,7 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
--- Date        : Mon Sep 14 15:39:11 2026
+-- Date        : Thu Sep 17 00:03:53 2026
 -- Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2_stub.vhdl
@@ -21,6 +21,7 @@ entity design_1_AXI_PID_Controller_P_0_2 is
     pid_new_target_angle : out STD_LOGIC_VECTOR ( 0 to 0 );
     pid_output_velocity : in STD_LOGIC_VECTOR ( 31 downto 0 );
     pid_new_velocity : in STD_LOGIC_VECTOR ( 0 to 0 );
+    debug_slv_reg1 : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -50,7 +51,7 @@ architecture stub of design_1_AXI_PID_Controller_P_0_2 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "pid_angle[31:0],pid_target_angle[31:0],pid_time[63:0],pid_new_angle[0:0],pid_new_target_angle[0:0],pid_output_velocity[31:0],pid_new_velocity[0:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[5:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[5:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready";
+attribute black_box_pad_pin of stub : architecture is "pid_angle[31:0],pid_target_angle[31:0],pid_time[63:0],pid_new_angle[0:0],pid_new_target_angle[0:0],pid_output_velocity[31:0],pid_new_velocity[0:0],debug_slv_reg1[31:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[5:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[5:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "AXI_PID_Controller_Peripheral_v1_0,Vivado 2021.1";
 begin

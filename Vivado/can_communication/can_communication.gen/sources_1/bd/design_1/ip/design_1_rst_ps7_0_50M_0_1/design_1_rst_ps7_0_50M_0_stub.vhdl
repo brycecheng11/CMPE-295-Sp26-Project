@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
--- Date        : Sun Jun 21 17:38:20 2026
+-- Date        : Sun Jun 21 17:38:19 2026
 -- Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
--- Command     : write_vhdl -force -mode synth_stub
---               /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0_1/design_1_rst_ps7_0_50M_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_rst_ps7_0_50M_0 -prefix
+--               design_1_rst_ps7_0_50M_0_ design_1_rst_ps7_0_50M_0_stub.vhdl
 -- Design      : design_1_rst_ps7_0_50M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

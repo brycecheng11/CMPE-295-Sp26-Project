@@ -66,7 +66,13 @@ module design_1_pot_to_const_0_0 (
   kd_vaux_n,
   k_p,
   k_i,
-  k_d
+  k_d,
+  debug_reset,
+  debug_xadc_data,
+  debug_eoc,
+  debug_drdy,
+  debug_daddr,
+  debug_read_index
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET reset, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
@@ -84,6 +90,14 @@ input wire kd_vaux_n;
 output wire [11 : 0] k_p;
 output wire [11 : 0] k_i;
 output wire [11 : 0] k_d;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME debug_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 debug_reset RST" *)
+output wire debug_reset;
+output wire [15 : 0] debug_xadc_data;
+output wire debug_eoc;
+output wire debug_drdy;
+output wire [6 : 0] debug_daddr;
+output wire [1 : 0] debug_read_index;
 
   pot_to_const inst (
     .clk(clk),
@@ -96,6 +110,12 @@ output wire [11 : 0] k_d;
     .kd_vaux_n(kd_vaux_n),
     .k_p(k_p),
     .k_i(k_i),
-    .k_d(k_d)
+    .k_d(k_d),
+    .debug_reset(debug_reset),
+    .debug_xadc_data(debug_xadc_data),
+    .debug_eoc(debug_eoc),
+    .debug_drdy(debug_drdy),
+    .debug_daddr(debug_daddr),
+    .debug_read_index(debug_read_index)
   );
 endmodule

@@ -24,14 +24,23 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Pm
 # IP: bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlconcat_0_0 || ORIG_REF_NAME==design_1_xlconcat_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pid_controller_0_2 || ORIG_REF_NAME==design_1_pid_controller_0_2} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_AXI_PID_Controller_P_0_2 || ORIG_REF_NAME==design_1_AXI_PID_Controller_P_0_2} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ila_0_0 || ORIG_REF_NAME==design_1_ila_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlconstant_0_0 || ORIG_REF_NAME==design_1_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlconstant_1_0 || ORIG_REF_NAME==design_1_xlconstant_1_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_pot_to_const_0_0/design_1_pot_to_const_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pot_to_const_0_0 || ORIG_REF_NAME==design_1_pot_to_const_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pid_controller_0_2 || ORIG_REF_NAME==design_1_pid_controller_0_2} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet

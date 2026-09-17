@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-//Date        : Mon Sep 14 23:15:39 2026
+//Date        : Thu Sep 17 00:54:21 2026
 //Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=9,numNonXlnxBlks=3,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=1,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=12,numNonXlnxBlks=3,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=1,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -126,6 +126,7 @@ module design_1
   input kp_vaux_n_0;
   input kp_vaux_p_0;
 
+  wire [31:0]AXI_PID_Controller_P_0_debug_slv_reg1;
   wire [31:0]AXI_PID_Controller_P_0_pid_angle;
   wire [0:0]AXI_PID_Controller_P_0_pid_new_angle;
   wire [0:0]AXI_PID_Controller_P_0_pid_new_target_angle;
@@ -164,6 +165,12 @@ module design_1
   wire kp_vaux_p_0_1;
   wire [0:0]pid_controller_0_new_velocity_available_0;
   wire [31:0]pid_controller_0_output_velocity_0;
+  wire [6:0]pot_to_const_0_debug_daddr;
+  wire pot_to_const_0_debug_drdy;
+  wire pot_to_const_0_debug_eoc;
+  wire [1:0]pot_to_const_0_debug_read_index;
+  wire pot_to_const_0_debug_reset;
+  wire [15:0]pot_to_const_0_debug_xadc_data;
   wire [11:0]pot_to_const_0_k_d;
   wire [11:0]pot_to_const_0_k_i;
   wire [11:0]pot_to_const_0_k_p;
@@ -290,6 +297,8 @@ module design_1
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
   wire [0:0]rst_ps7_0_50M_peripheral_reset;
   wire [0:0]xlconcat_0_dout;
+  wire [0:0]xlconstant_0_dout;
+  wire [0:0]xlconstant_1_dout;
 
   assign IIC_0_0_scl_o = processing_system7_0_IIC_0_SCL_O;
   assign IIC_0_0_scl_t = processing_system7_0_IIC_0_SCL_T;
@@ -328,7 +337,8 @@ module design_1
   assign processing_system7_0_IIC_0_SCL_I = IIC_0_0_scl_i;
   assign processing_system7_0_IIC_0_SDA_I = IIC_0_0_sda_i;
   design_1_AXI_PID_Controller_P_0_2 AXI_PID_Controller_P_0
-       (.pid_angle(AXI_PID_Controller_P_0_pid_angle),
+       (.debug_slv_reg1(AXI_PID_Controller_P_0_debug_slv_reg1),
+        .pid_angle(AXI_PID_Controller_P_0_pid_angle),
         .pid_new_angle(AXI_PID_Controller_P_0_pid_new_angle),
         .pid_new_target_angle(AXI_PID_Controller_P_0_pid_new_target_angle),
         .pid_new_velocity(pid_controller_0_new_velocity_available_0),
@@ -419,6 +429,27 @@ module design_1
         .ext_spi_clk(processing_system7_0_FCLK_CLK0),
         .s_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn));
+  design_1_ila_0_0 ila_0
+       (.clk(processing_system7_0_FCLK_CLK0),
+        .probe0(pot_to_const_0_k_i),
+        .probe1(pot_to_const_0_k_p),
+        .probe10(AXI_PID_Controller_P_0_pid_angle),
+        .probe11(AXI_PID_Controller_P_0_pid_target_angle),
+        .probe12(AXI_PID_Controller_P_0_pid_new_angle),
+        .probe13(AXI_PID_Controller_P_0_pid_new_target_angle),
+        .probe14({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,pid_controller_0_new_velocity_available_0}),
+        .probe15(pid_controller_0_output_velocity_0),
+        .probe16(AXI_PID_Controller_P_0_debug_slv_reg1),
+        .probe17(rst_ps7_0_50M_peripheral_aresetn),
+        .probe18(processing_system7_0_FCLK_RESET0_N),
+        .probe2(pot_to_const_0_k_d),
+        .probe3(pot_to_const_0_debug_xadc_data),
+        .probe4(pot_to_const_0_debug_drdy),
+        .probe5(pot_to_const_0_debug_eoc),
+        .probe6(pot_to_const_0_debug_daddr),
+        .probe7(pot_to_const_0_debug_read_index),
+        .probe8(pot_to_const_0_debug_reset),
+        .probe9(processing_system7_0_FCLK_RESET0_N));
   design_1_pid_controller_0_2 pid_controller_0
        (.angle_0(AXI_PID_Controller_P_0_pid_angle),
         .k_d_0(pot_to_const_0_k_d),
@@ -434,6 +465,12 @@ module design_1
         .time_curr_0(AXI_PID_Controller_P_0_pid_time));
   design_1_pot_to_const_0_0 pot_to_const_0
        (.clk(processing_system7_0_FCLK_CLK0),
+        .debug_daddr(pot_to_const_0_debug_daddr),
+        .debug_drdy(pot_to_const_0_debug_drdy),
+        .debug_eoc(pot_to_const_0_debug_eoc),
+        .debug_read_index(pot_to_const_0_debug_read_index),
+        .debug_reset(pot_to_const_0_debug_reset),
+        .debug_xadc_data(pot_to_const_0_debug_xadc_data),
         .k_d(pot_to_const_0_k_d),
         .k_i(pot_to_const_0_k_i),
         .k_p(pot_to_const_0_k_p),
@@ -628,16 +665,20 @@ module design_1
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
   design_1_rst_ps7_0_50M_0 rst_ps7_0_50M
-       (.aux_reset_in(1'b1),
-        .dcm_locked(1'b1),
+       (.aux_reset_in(xlconstant_1_dout),
+        .dcm_locked(xlconstant_0_dout),
         .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
-        .mb_debug_sys_rst(1'b0),
+        .mb_debug_sys_rst(xlconstant_1_dout),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .peripheral_reset(rst_ps7_0_50M_peripheral_reset),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
   design_1_xlconcat_0_0 xlconcat_0
        (.In0(PmodCAN_0_SPI_interrupt),
         .dout(xlconcat_0_dout));
+  design_1_xlconstant_0_0 xlconstant_0
+       (.dout(xlconstant_0_dout));
+  design_1_xlconstant_1_0 xlconstant_1
+       (.dout(xlconstant_1_dout));
 endmodule
 
 module design_1_ps7_0_axi_periph_0

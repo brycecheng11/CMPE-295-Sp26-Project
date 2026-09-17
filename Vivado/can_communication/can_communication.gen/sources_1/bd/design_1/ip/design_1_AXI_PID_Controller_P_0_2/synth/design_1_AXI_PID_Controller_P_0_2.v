@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:AXI_PID_Controller_Peripheral:1.0
-// IP Revision: 5
+// IP Revision: 11
 
 (* X_CORE_INFO = "AXI_PID_Controller_Peripheral_v1_0,Vivado 2021.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_AXI_PID_Controller_P_0_2,AXI_PID_Controller_Peripheral_v1_0,{}" *)
@@ -61,6 +61,7 @@ module design_1_AXI_PID_Controller_P_0_2 (
   pid_new_target_angle,
   pid_output_velocity,
   pid_new_velocity,
+  debug_slv_reg1,
   s00_axi_aclk,
   s00_axi_aresetn,
   s00_axi_awaddr,
@@ -91,6 +92,7 @@ output wire [0 : 0] pid_new_angle;
 output wire [0 : 0] pid_new_target_angle;
 input wire [31 : 0] pid_output_velocity;
 input wire [0 : 0] pid_new_velocity;
+output wire [31 : 0] debug_slv_reg1;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *)
 input wire s00_axi_aclk;
@@ -149,6 +151,7 @@ input wire s00_axi_rready;
     .pid_new_target_angle(pid_new_target_angle),
     .pid_output_velocity(pid_output_velocity),
     .pid_new_velocity(pid_new_velocity),
+    .debug_slv_reg1(debug_slv_reg1),
     .s00_axi_aclk(s00_axi_aclk),
     .s00_axi_aresetn(s00_axi_aresetn),
     .s00_axi_awaddr(s00_axi_awaddr),

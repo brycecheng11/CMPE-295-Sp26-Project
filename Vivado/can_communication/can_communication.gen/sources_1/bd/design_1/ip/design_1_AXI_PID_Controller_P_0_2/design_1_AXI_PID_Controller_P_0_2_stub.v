@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Mon Sep 14 15:39:11 2026
+// Date        : Thu Sep 17 00:03:53 2026
 // Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 // Command     : write_verilog -force -mode synth_stub
 //               /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2_stub.v
@@ -15,12 +15,13 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "AXI_PID_Controller_Peripheral_v1_0,Vivado 2021.1" *)
 module design_1_AXI_PID_Controller_P_0_2(pid_angle, pid_target_angle, pid_time, 
-  pid_new_angle, pid_new_target_angle, pid_output_velocity, pid_new_velocity, s00_axi_aclk, 
-  s00_axi_aresetn, s00_axi_awaddr, s00_axi_awprot, s00_axi_awvalid, s00_axi_awready, 
-  s00_axi_wdata, s00_axi_wstrb, s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, 
-  s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, 
-  s00_axi_arready, s00_axi_rdata, s00_axi_rresp, s00_axi_rvalid, s00_axi_rready)
-/* synthesis syn_black_box black_box_pad_pin="pid_angle[31:0],pid_target_angle[31:0],pid_time[63:0],pid_new_angle[0:0],pid_new_target_angle[0:0],pid_output_velocity[31:0],pid_new_velocity[0:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[5:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[5:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
+  pid_new_angle, pid_new_target_angle, pid_output_velocity, pid_new_velocity, 
+  debug_slv_reg1, s00_axi_aclk, s00_axi_aresetn, s00_axi_awaddr, s00_axi_awprot, 
+  s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, s00_axi_wstrb, s00_axi_wvalid, 
+  s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, 
+  s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, s00_axi_rdata, s00_axi_rresp, 
+  s00_axi_rvalid, s00_axi_rready)
+/* synthesis syn_black_box black_box_pad_pin="pid_angle[31:0],pid_target_angle[31:0],pid_time[63:0],pid_new_angle[0:0],pid_new_target_angle[0:0],pid_output_velocity[31:0],pid_new_velocity[0:0],debug_slv_reg1[31:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[5:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[5:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
   output [31:0]pid_angle;
   output [31:0]pid_target_angle;
   output [63:0]pid_time;
@@ -28,6 +29,7 @@ module design_1_AXI_PID_Controller_P_0_2(pid_angle, pid_target_angle, pid_time,
   output [0:0]pid_new_target_angle;
   input [31:0]pid_output_velocity;
   input [0:0]pid_new_velocity;
+  output [31:0]debug_slv_reg1;
   input s00_axi_aclk;
   input s00_axi_aresetn;
   input [5:0]s00_axi_awaddr;

@@ -62,6 +62,10 @@
       <data key="VT">AC</data>
     </node>
     <node id="n3">
+      <data key="VM">design_1</data>
+      <data key="VT">BC</data>
+    </node>
+    <node id="n4">
       <data key="BA">0x40010000</data>
       <data key="BP">AXI_LITE_SPI_BASEADDR</data>
       <data key="HA">0x4001FFFF</data>
@@ -79,26 +83,22 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n4">
+    <node id="n5">
       <data key="TU">active</data>
       <data key="VH">2</data>
       <data key="VT">PM</data>
     </node>
-    <node id="n5">
-      <data key="VM">design_1</data>
-      <data key="VT">BC</data>
-    </node>
-    <edge id="e0" source="n5" target="n0">
+    <edge id="e0" source="n3" target="n0">
     </edge>
-    <edge id="e1" source="n0" target="n4">
+    <edge id="e1" source="n0" target="n5">
     </edge>
-    <edge id="e2" source="n1" target="n4">
+    <edge id="e2" source="n1" target="n5">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n3" target="n4">
+    <edge id="e3" source="n4" target="n5">
       <data key="EH">2</data>
     </edge>
-    <edge id="e4" source="n2" target="n4">
+    <edge id="e4" source="n2" target="n5">
       <data key="EH">2</data>
     </edge>
   </graph>

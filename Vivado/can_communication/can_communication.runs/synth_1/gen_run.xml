@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1789452947">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1789631668">
   <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
@@ -47,6 +47,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../Zybo-Z7-Master.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -60,11 +61,11 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI_PID_Controller_P_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_pid_controller_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_pot_to_const_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_PmodCAN_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_pid_controller_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_AXI_PID_Controller_P_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
 </GenRun>
