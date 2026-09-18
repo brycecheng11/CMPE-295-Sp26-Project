@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Mon Sep 14 15:39:11 2026
+// Date        : Thu Sep 17 12:24:00 2026
 // Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 // Command     : write_verilog -force -mode funcsim
 //               /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2_sim_netlist.v
@@ -22,6 +22,7 @@ module design_1_AXI_PID_Controller_P_0_2
     pid_new_target_angle,
     pid_output_velocity,
     pid_new_velocity,
+    debug_slv_reg1,
     s00_axi_aclk,
     s00_axi_aresetn,
     s00_axi_awaddr,
@@ -50,6 +51,7 @@ module design_1_AXI_PID_Controller_P_0_2
   output [0:0]pid_new_target_angle;
   input [31:0]pid_output_velocity;
   input [0:0]pid_new_velocity;
+  output [31:0]debug_slv_reg1;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) input [5:0]s00_axi_awaddr;
@@ -73,7 +75,7 @@ module design_1_AXI_PID_Controller_P_0_2
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 10, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 6, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s00_axi_rready;
 
   wire \<const0> ;
-  wire [31:0]pid_angle;
+  wire [31:0]debug_slv_reg1;
   wire [0:0]pid_new_angle;
   wire [0:0]pid_new_target_angle;
   wire [0:0]pid_new_velocity;
@@ -98,6 +100,7 @@ module design_1_AXI_PID_Controller_P_0_2
   wire [3:0]s00_axi_wstrb;
   wire s00_axi_wvalid;
 
+  assign pid_angle[31:0] = debug_slv_reg1;
   assign s00_axi_bresp[1] = \<const0> ;
   assign s00_axi_bresp[0] = \<const0> ;
   assign s00_axi_rresp[1] = \<const0> ;
@@ -109,7 +112,7 @@ module design_1_AXI_PID_Controller_P_0_2
         .S_AXI_ARREADY(s00_axi_arready),
         .S_AXI_AWREADY(s00_axi_awready),
         .S_AXI_WREADY(s00_axi_wready),
-        .pid_angle(pid_angle),
+        .debug_slv_reg1(debug_slv_reg1),
         .pid_new_velocity(pid_new_velocity),
         .pid_output_velocity(pid_output_velocity),
         .pid_target_angle(pid_target_angle),
@@ -134,7 +137,7 @@ endmodule
 module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0
    (S_AXI_AWREADY,
     S_AXI_WREADY,
-    pid_angle,
+    debug_slv_reg1,
     pid_target_angle,
     pid_time,
     Q,
@@ -157,7 +160,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0
     s00_axi_rready);
   output S_AXI_AWREADY;
   output S_AXI_WREADY;
-  output [31:0]pid_angle;
+  output [31:0]debug_slv_reg1;
   output [31:0]pid_target_angle;
   output [63:0]pid_time;
   output [1:0]Q;
@@ -183,7 +186,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0
   wire S_AXI_ARREADY;
   wire S_AXI_AWREADY;
   wire S_AXI_WREADY;
-  wire [31:0]pid_angle;
+  wire [31:0]debug_slv_reg1;
   wire [0:0]pid_new_velocity;
   wire [31:0]pid_output_velocity;
   wire [31:0]pid_target_angle;
@@ -208,7 +211,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0
         .S_AXI_ARREADY(S_AXI_ARREADY),
         .S_AXI_AWREADY(S_AXI_AWREADY),
         .S_AXI_WREADY(S_AXI_WREADY),
-        .pid_angle(pid_angle),
+        .debug_slv_reg1(debug_slv_reg1),
         .pid_new_velocity(pid_new_velocity),
         .pid_output_velocity(pid_output_velocity),
         .pid_target_angle(pid_target_angle),
@@ -233,7 +236,7 @@ endmodule
 module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_AXI
    (S_AXI_AWREADY,
     S_AXI_WREADY,
-    pid_angle,
+    debug_slv_reg1,
     pid_target_angle,
     pid_time,
     Q,
@@ -256,7 +259,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
     s00_axi_rready);
   output S_AXI_AWREADY;
   output S_AXI_WREADY;
-  output [31:0]pid_angle;
+  output [31:0]debug_slv_reg1;
   output [31:0]pid_target_angle;
   output [63:0]pid_time;
   output [1:0]Q;
@@ -355,9 +358,9 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
   wire \axi_rdata[9]_i_3_n_0 ;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
+  wire [31:0]debug_slv_reg1;
   wire [3:0]p_0_in;
   wire [31:7]p_1_in;
-  wire [31:0]pid_angle;
   wire [0:0]pid_new_velocity;
   wire [31:0]pid_output_velocity;
   wire [31:0]pid_target_angle;
@@ -583,7 +586,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[0]),
         .I1(slv_reg2[0]),
         .I2(sel0[1]),
-        .I3(pid_angle[0]),
+        .I3(debug_slv_reg1[0]),
         .I4(sel0[0]),
         .I5(Q[0]),
         .O(\axi_rdata[0]_i_4_n_0 ));
@@ -613,7 +616,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[10]),
         .I1(slv_reg2[10]),
         .I2(sel0[1]),
-        .I3(pid_angle[10]),
+        .I3(debug_slv_reg1[10]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[10] ),
         .O(\axi_rdata[10]_i_3_n_0 ));
@@ -643,7 +646,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[11]),
         .I1(slv_reg2[11]),
         .I2(sel0[1]),
-        .I3(pid_angle[11]),
+        .I3(debug_slv_reg1[11]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[11] ),
         .O(\axi_rdata[11]_i_3_n_0 ));
@@ -673,7 +676,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[12]),
         .I1(slv_reg2[12]),
         .I2(sel0[1]),
-        .I3(pid_angle[12]),
+        .I3(debug_slv_reg1[12]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[12] ),
         .O(\axi_rdata[12]_i_3_n_0 ));
@@ -703,7 +706,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[13]),
         .I1(slv_reg2[13]),
         .I2(sel0[1]),
-        .I3(pid_angle[13]),
+        .I3(debug_slv_reg1[13]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[13] ),
         .O(\axi_rdata[13]_i_3_n_0 ));
@@ -733,7 +736,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[14]),
         .I1(slv_reg2[14]),
         .I2(sel0[1]),
-        .I3(pid_angle[14]),
+        .I3(debug_slv_reg1[14]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[14] ),
         .O(\axi_rdata[14]_i_3_n_0 ));
@@ -763,7 +766,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[15]),
         .I1(slv_reg2[15]),
         .I2(sel0[1]),
-        .I3(pid_angle[15]),
+        .I3(debug_slv_reg1[15]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[15] ),
         .O(\axi_rdata[15]_i_3_n_0 ));
@@ -793,7 +796,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[16]),
         .I1(slv_reg2[16]),
         .I2(sel0[1]),
-        .I3(pid_angle[16]),
+        .I3(debug_slv_reg1[16]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[16] ),
         .O(\axi_rdata[16]_i_3_n_0 ));
@@ -823,7 +826,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[17]),
         .I1(slv_reg2[17]),
         .I2(sel0[1]),
-        .I3(pid_angle[17]),
+        .I3(debug_slv_reg1[17]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[17] ),
         .O(\axi_rdata[17]_i_3_n_0 ));
@@ -853,7 +856,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[18]),
         .I1(slv_reg2[18]),
         .I2(sel0[1]),
-        .I3(pid_angle[18]),
+        .I3(debug_slv_reg1[18]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[18] ),
         .O(\axi_rdata[18]_i_3_n_0 ));
@@ -883,7 +886,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[19]),
         .I1(slv_reg2[19]),
         .I2(sel0[1]),
-        .I3(pid_angle[19]),
+        .I3(debug_slv_reg1[19]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[19] ),
         .O(\axi_rdata[19]_i_3_n_0 ));
@@ -913,7 +916,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[1]),
         .I1(slv_reg2[1]),
         .I2(sel0[1]),
-        .I3(pid_angle[1]),
+        .I3(debug_slv_reg1[1]),
         .I4(sel0[0]),
         .I5(Q[1]),
         .O(\axi_rdata[1]_i_3_n_0 ));
@@ -943,7 +946,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[20]),
         .I1(slv_reg2[20]),
         .I2(sel0[1]),
-        .I3(pid_angle[20]),
+        .I3(debug_slv_reg1[20]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[20] ),
         .O(\axi_rdata[20]_i_3_n_0 ));
@@ -973,7 +976,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[21]),
         .I1(slv_reg2[21]),
         .I2(sel0[1]),
-        .I3(pid_angle[21]),
+        .I3(debug_slv_reg1[21]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[21] ),
         .O(\axi_rdata[21]_i_3_n_0 ));
@@ -1003,7 +1006,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[22]),
         .I1(slv_reg2[22]),
         .I2(sel0[1]),
-        .I3(pid_angle[22]),
+        .I3(debug_slv_reg1[22]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[22] ),
         .O(\axi_rdata[22]_i_3_n_0 ));
@@ -1033,7 +1036,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[23]),
         .I1(slv_reg2[23]),
         .I2(sel0[1]),
-        .I3(pid_angle[23]),
+        .I3(debug_slv_reg1[23]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[23] ),
         .O(\axi_rdata[23]_i_3_n_0 ));
@@ -1063,7 +1066,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[24]),
         .I1(slv_reg2[24]),
         .I2(sel0[1]),
-        .I3(pid_angle[24]),
+        .I3(debug_slv_reg1[24]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[24] ),
         .O(\axi_rdata[24]_i_3_n_0 ));
@@ -1093,7 +1096,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[25]),
         .I1(slv_reg2[25]),
         .I2(sel0[1]),
-        .I3(pid_angle[25]),
+        .I3(debug_slv_reg1[25]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[25] ),
         .O(\axi_rdata[25]_i_3_n_0 ));
@@ -1123,7 +1126,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[26]),
         .I1(slv_reg2[26]),
         .I2(sel0[1]),
-        .I3(pid_angle[26]),
+        .I3(debug_slv_reg1[26]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[26] ),
         .O(\axi_rdata[26]_i_3_n_0 ));
@@ -1153,7 +1156,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[27]),
         .I1(slv_reg2[27]),
         .I2(sel0[1]),
-        .I3(pid_angle[27]),
+        .I3(debug_slv_reg1[27]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[27] ),
         .O(\axi_rdata[27]_i_3_n_0 ));
@@ -1183,7 +1186,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[28]),
         .I1(slv_reg2[28]),
         .I2(sel0[1]),
-        .I3(pid_angle[28]),
+        .I3(debug_slv_reg1[28]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[28] ),
         .O(\axi_rdata[28]_i_3_n_0 ));
@@ -1213,7 +1216,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[29]),
         .I1(slv_reg2[29]),
         .I2(sel0[1]),
-        .I3(pid_angle[29]),
+        .I3(debug_slv_reg1[29]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[29] ),
         .O(\axi_rdata[29]_i_3_n_0 ));
@@ -1243,7 +1246,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[2]),
         .I1(slv_reg2[2]),
         .I2(sel0[1]),
-        .I3(pid_angle[2]),
+        .I3(debug_slv_reg1[2]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[2] ),
         .O(\axi_rdata[2]_i_3_n_0 ));
@@ -1273,7 +1276,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[30]),
         .I1(slv_reg2[30]),
         .I2(sel0[1]),
-        .I3(pid_angle[30]),
+        .I3(debug_slv_reg1[30]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[30] ),
         .O(\axi_rdata[30]_i_3_n_0 ));
@@ -1310,7 +1313,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[31]),
         .I1(slv_reg2[31]),
         .I2(sel0[1]),
-        .I3(pid_angle[31]),
+        .I3(debug_slv_reg1[31]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[31] ),
         .O(\axi_rdata[31]_i_4_n_0 ));
@@ -1340,7 +1343,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[3]),
         .I1(slv_reg2[3]),
         .I2(sel0[1]),
-        .I3(pid_angle[3]),
+        .I3(debug_slv_reg1[3]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[3] ),
         .O(\axi_rdata[3]_i_3_n_0 ));
@@ -1370,7 +1373,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[4]),
         .I1(slv_reg2[4]),
         .I2(sel0[1]),
-        .I3(pid_angle[4]),
+        .I3(debug_slv_reg1[4]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[4] ),
         .O(\axi_rdata[4]_i_3_n_0 ));
@@ -1400,7 +1403,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[5]),
         .I1(slv_reg2[5]),
         .I2(sel0[1]),
-        .I3(pid_angle[5]),
+        .I3(debug_slv_reg1[5]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[5] ),
         .O(\axi_rdata[5]_i_3_n_0 ));
@@ -1430,7 +1433,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[6]),
         .I1(slv_reg2[6]),
         .I2(sel0[1]),
-        .I3(pid_angle[6]),
+        .I3(debug_slv_reg1[6]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[6] ),
         .O(\axi_rdata[6]_i_3_n_0 ));
@@ -1460,7 +1463,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[7]),
         .I1(slv_reg2[7]),
         .I2(sel0[1]),
-        .I3(pid_angle[7]),
+        .I3(debug_slv_reg1[7]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[7] ),
         .O(\axi_rdata[7]_i_3_n_0 ));
@@ -1490,7 +1493,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[8]),
         .I1(slv_reg2[8]),
         .I2(sel0[1]),
-        .I3(pid_angle[8]),
+        .I3(debug_slv_reg1[8]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[8] ),
         .O(\axi_rdata[8]_i_3_n_0 ));
@@ -1520,7 +1523,7 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.I0(slv_reg3[9]),
         .I1(slv_reg2[9]),
         .I2(sel0[1]),
-        .I3(pid_angle[9]),
+        .I3(debug_slv_reg1[9]),
         .I4(sel0[0]),
         .I5(\slv_reg0_reg_n_0_[9] ),
         .O(\axi_rdata[9]_i_3_n_0 ));
@@ -2033,193 +2036,193 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[0]),
-        .Q(pid_angle[0]),
+        .Q(debug_slv_reg1[0]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[10] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[10]),
-        .Q(pid_angle[10]),
+        .Q(debug_slv_reg1[10]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[11] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[11]),
-        .Q(pid_angle[11]),
+        .Q(debug_slv_reg1[11]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[12] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[12]),
-        .Q(pid_angle[12]),
+        .Q(debug_slv_reg1[12]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[13] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[13]),
-        .Q(pid_angle[13]),
+        .Q(debug_slv_reg1[13]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[14] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[14]),
-        .Q(pid_angle[14]),
+        .Q(debug_slv_reg1[14]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[15] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[15]),
-        .Q(pid_angle[15]),
+        .Q(debug_slv_reg1[15]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[16] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[16]),
-        .Q(pid_angle[16]),
+        .Q(debug_slv_reg1[16]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[17] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[17]),
-        .Q(pid_angle[17]),
+        .Q(debug_slv_reg1[17]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[18] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[18]),
-        .Q(pid_angle[18]),
+        .Q(debug_slv_reg1[18]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[19] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[19]),
-        .Q(pid_angle[19]),
+        .Q(debug_slv_reg1[19]),
         .R(\slv_reg1[31]_i_1_n_0 ));
-  FDRE \slv_reg1_reg[1] 
+  FDSE \slv_reg1_reg[1] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[1]),
-        .Q(pid_angle[1]),
-        .R(\slv_reg1[31]_i_1_n_0 ));
+        .Q(debug_slv_reg1[1]),
+        .S(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[20] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[20]),
-        .Q(pid_angle[20]),
+        .Q(debug_slv_reg1[20]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[21] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[21]),
-        .Q(pid_angle[21]),
+        .Q(debug_slv_reg1[21]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[22] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[22]),
-        .Q(pid_angle[22]),
+        .Q(debug_slv_reg1[22]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[23] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[23]),
-        .Q(pid_angle[23]),
+        .Q(debug_slv_reg1[23]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[24] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[24]),
-        .Q(pid_angle[24]),
+        .Q(debug_slv_reg1[24]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[25] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[25]),
-        .Q(pid_angle[25]),
+        .Q(debug_slv_reg1[25]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[26] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[26]),
-        .Q(pid_angle[26]),
+        .Q(debug_slv_reg1[26]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[27] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[27]),
-        .Q(pid_angle[27]),
+        .Q(debug_slv_reg1[27]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[28] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[28]),
-        .Q(pid_angle[28]),
+        .Q(debug_slv_reg1[28]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[29] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[29]),
-        .Q(pid_angle[29]),
+        .Q(debug_slv_reg1[29]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[2] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[2]),
-        .Q(pid_angle[2]),
+        .Q(debug_slv_reg1[2]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[30] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[30]),
-        .Q(pid_angle[30]),
+        .Q(debug_slv_reg1[30]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[31] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[31]),
-        .Q(pid_angle[31]),
+        .Q(debug_slv_reg1[31]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[3] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[3]),
-        .Q(pid_angle[3]),
+        .Q(debug_slv_reg1[3]),
         .R(\slv_reg1[31]_i_1_n_0 ));
-  FDRE \slv_reg1_reg[4] 
+  FDSE \slv_reg1_reg[4] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[4]),
-        .Q(pid_angle[4]),
-        .R(\slv_reg1[31]_i_1_n_0 ));
-  FDRE \slv_reg1_reg[5] 
+        .Q(debug_slv_reg1[4]),
+        .S(\slv_reg1[31]_i_1_n_0 ));
+  FDSE \slv_reg1_reg[5] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[5]),
-        .Q(pid_angle[5]),
-        .R(\slv_reg1[31]_i_1_n_0 ));
+        .Q(debug_slv_reg1[5]),
+        .S(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[6] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[6]),
-        .Q(pid_angle[6]),
+        .Q(debug_slv_reg1[6]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[7] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[7]),
-        .Q(pid_angle[7]),
+        .Q(debug_slv_reg1[7]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[8] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[8]),
-        .Q(pid_angle[8]),
+        .Q(debug_slv_reg1[8]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[9] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[9]),
-        .Q(pid_angle[9]),
+        .Q(debug_slv_reg1[9]),
         .R(\slv_reg1[31]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h0000000800000000)) 

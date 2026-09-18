@@ -48,7 +48,7 @@
 
 
 // IP VLNV: saman:user:pid_controller:1.0
-// IP Revision: 5
+// IP Revision: 7
 
 `timescale 1ns/1ps
 
@@ -59,11 +59,9 @@ module design_1_pid_controller_0_2 (
   k_d_0,
   k_i_0,
   k_p_0,
-  new_angle_available_0,
   new_target_angle_available_0,
   new_velocity_available_0,
   output_velocity_0,
-  reset_rtl,
   sys_clock,
   target_angle_0,
   time_curr_0
@@ -73,13 +71,9 @@ input wire [31 : 0] angle_0;
 input wire [11 : 0] k_d_0;
 input wire [11 : 0] k_i_0;
 input wire [11 : 0] k_p_0;
-input wire [0 : 0] new_angle_available_0;
 input wire [0 : 0] new_target_angle_available_0;
 output wire [0 : 0] new_velocity_available_0;
 output wire [31 : 0] output_velocity_0;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset_rtl, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset_rtl RST" *)
-input wire reset_rtl;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME sys_clock, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 sys_clock CLK" *)
 input wire sys_clock;
@@ -91,11 +85,9 @@ input wire [63 : 0] time_curr_0;
     .k_d_0(k_d_0),
     .k_i_0(k_i_0),
     .k_p_0(k_p_0),
-    .new_angle_available_0(new_angle_available_0),
     .new_target_angle_available_0(new_target_angle_available_0),
     .new_velocity_available_0(new_velocity_available_0),
     .output_velocity_0(output_velocity_0),
-    .reset_rtl(reset_rtl),
     .sys_clock(sys_clock),
     .target_angle_0(target_angle_0),
     .time_curr_0(time_curr_0)

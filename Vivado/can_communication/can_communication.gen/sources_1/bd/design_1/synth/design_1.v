@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-//Date        : Thu Sep 17 00:54:21 2026
+//Date        : Thu Sep 17 15:38:42 2026
 //Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=18,numReposBlks=12,numNonXlnxBlks=3,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=1,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=16,numReposBlks=10,numNonXlnxBlks=3,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=1,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -297,8 +297,6 @@ module design_1
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
   wire [0:0]rst_ps7_0_50M_peripheral_reset;
   wire [0:0]xlconcat_0_dout;
-  wire [0:0]xlconstant_0_dout;
-  wire [0:0]xlconstant_1_dout;
 
   assign IIC_0_0_scl_o = processing_system7_0_IIC_0_SCL_O;
   assign IIC_0_0_scl_t = processing_system7_0_IIC_0_SCL_T;
@@ -455,11 +453,9 @@ module design_1
         .k_d_0(pot_to_const_0_k_d),
         .k_i_0(pot_to_const_0_k_i),
         .k_p_0(pot_to_const_0_k_p),
-        .new_angle_available_0(AXI_PID_Controller_P_0_pid_new_angle),
         .new_target_angle_available_0(AXI_PID_Controller_P_0_pid_new_target_angle),
         .new_velocity_available_0(pid_controller_0_new_velocity_available_0),
         .output_velocity_0(pid_controller_0_output_velocity_0),
-        .reset_rtl(rst_ps7_0_50M_peripheral_reset),
         .sys_clock(processing_system7_0_FCLK_CLK0),
         .target_angle_0(AXI_PID_Controller_P_0_pid_target_angle),
         .time_curr_0(AXI_PID_Controller_P_0_pid_time));
@@ -480,7 +476,7 @@ module design_1
         .ki_vaux_p(ki_vaux_p_0_1),
         .kp_vaux_n(kp_vaux_n_0_1),
         .kp_vaux_p(kp_vaux_p_0_1),
-        .reset(rst_ps7_0_50M_peripheral_aresetn));
+        .reset(rst_ps7_0_50M_peripheral_reset));
   design_1_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),
@@ -665,20 +661,16 @@ module design_1
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
   design_1_rst_ps7_0_50M_0 rst_ps7_0_50M
-       (.aux_reset_in(xlconstant_1_dout),
-        .dcm_locked(xlconstant_0_dout),
+       (.aux_reset_in(1'b1),
+        .dcm_locked(1'b1),
         .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
-        .mb_debug_sys_rst(xlconstant_1_dout),
+        .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .peripheral_reset(rst_ps7_0_50M_peripheral_reset),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
   design_1_xlconcat_0_0 xlconcat_0
        (.In0(PmodCAN_0_SPI_interrupt),
         .dout(xlconcat_0_dout));
-  design_1_xlconstant_0_0 xlconstant_0
-       (.dout(xlconstant_0_dout));
-  design_1_xlconstant_1_0 xlconstant_1
-       (.dout(xlconstant_1_dout));
 endmodule
 
 module design_1_ps7_0_axi_periph_0

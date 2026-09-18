@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:AXI_PID_Controller_Peripheral:1.0
-// IP Revision: 11
+// IP Revision: 12
 
 (* X_CORE_INFO = "AXI_PID_Controller_Peripheral_v1_0,Vivado 2021.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_AXI_PID_Controller_P_0_2,AXI_PID_Controller_Peripheral_v1_0,{}" *)

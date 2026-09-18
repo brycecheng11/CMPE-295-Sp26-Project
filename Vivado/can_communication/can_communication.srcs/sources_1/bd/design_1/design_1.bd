@@ -26,11 +26,9 @@
       "PmodCAN_0": "",
       "xlconcat_0": "",
       "ila_0": "",
-      "xlconstant_0": "",
-      "xlconstant_1": "",
       "pot_to_const_0": "",
-      "pid_controller_0": "",
-      "AXI_PID_Controller_P_0": ""
+      "AXI_PID_Controller_P_0": "",
+      "pid_controller_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1979,23 +1977,6 @@
           }
         }
       },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "design_1_xlconstant_0_0",
-        "xci_path": "ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0"
-      },
-      "xlconstant_1": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "design_1_xlconstant_1_0",
-        "xci_path": "ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0.xci",
-        "inst_hier_path": "xlconstant_1",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "0"
-          }
-        }
-      },
       "pot_to_const_0": {
         "vlnv": "xilinx.com:module_ref:pot_to_const:1.0",
         "xci_name": "design_1_pot_to_const_0_0",
@@ -2030,8 +2011,7 @@
             "direction": "I",
             "parameters": {
               "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "const_prop"
+                "value": "ACTIVE_HIGH"
               }
             }
           },
@@ -2095,17 +2075,17 @@
           }
         }
       },
-      "pid_controller_0": {
-        "vlnv": "saman:user:pid_controller:1.0",
-        "xci_name": "design_1_pid_controller_0_2",
-        "xci_path": "ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2.xci",
-        "inst_hier_path": "pid_controller_0"
-      },
       "AXI_PID_Controller_P_0": {
         "vlnv": "user.org:user:AXI_PID_Controller_Peripheral:1.0",
         "xci_name": "design_1_AXI_PID_Controller_P_0_2",
         "xci_path": "ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2.xci",
         "inst_hier_path": "AXI_PID_Controller_P_0"
+      },
+      "pid_controller_0": {
+        "vlnv": "saman:user:pid_controller:1.0",
+        "xci_name": "design_1_pid_controller_0_2",
+        "xci_path": "ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2.xci",
+        "inst_hier_path": "pid_controller_0"
       }
     },
     "interface_nets": {
@@ -2168,29 +2148,28 @@
       "AXI_PID_Controller_P_0_pid_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_angle",
-          "pid_controller_0/angle_0",
-          "ila_0/probe10"
+          "ila_0/probe10",
+          "pid_controller_0/angle_0"
         ]
       },
       "AXI_PID_Controller_P_0_pid_new_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_new_angle",
-          "pid_controller_0/new_angle_available_0",
           "ila_0/probe12"
         ]
       },
       "AXI_PID_Controller_P_0_pid_new_target_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_new_target_angle",
-          "pid_controller_0/new_target_angle_available_0",
-          "ila_0/probe13"
+          "ila_0/probe13",
+          "pid_controller_0/new_target_angle_available_0"
         ]
       },
       "AXI_PID_Controller_P_0_pid_target_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_target_angle",
-          "pid_controller_0/target_angle_0",
-          "ila_0/probe11"
+          "ila_0/probe11",
+          "pid_controller_0/target_angle_0"
         ]
       },
       "AXI_PID_Controller_P_0_pid_time": {
@@ -2327,8 +2306,8 @@
           "ps7_0_axi_periph/M03_ACLK",
           "ila_0/clk",
           "pot_to_const_0/clk",
-          "pid_controller_0/sys_clock",
-          "AXI_PID_Controller_P_0/s00_axi_aclk"
+          "AXI_PID_Controller_P_0/s00_axi_aclk",
+          "pid_controller_0/sys_clock"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2349,34 +2328,20 @@
           "ps7_0_axi_periph/M01_ARESETN",
           "ps7_0_axi_periph/M02_ARESETN",
           "ps7_0_axi_periph/M03_ARESETN",
-          "pot_to_const_0/reset",
-          "AXI_PID_Controller_P_0/s00_axi_aresetn",
-          "ila_0/probe17"
+          "ila_0/probe17",
+          "AXI_PID_Controller_P_0/s00_axi_aresetn"
         ]
       },
       "rst_ps7_0_50M_peripheral_reset": {
         "ports": [
           "rst_ps7_0_50M/peripheral_reset",
-          "pid_controller_0/reset_rtl"
+          "pot_to_const_0/reset"
         ]
       },
       "xlconcat_0_dout": {
         "ports": [
           "xlconcat_0/dout",
           "processing_system7_0/IRQ_F2P"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "rst_ps7_0_50M/dcm_locked"
-        ]
-      },
-      "xlconstant_1_dout": {
-        "ports": [
-          "xlconstant_1/dout",
-          "rst_ps7_0_50M/aux_reset_in",
-          "rst_ps7_0_50M/mb_debug_sys_rst"
         ]
       }
     },

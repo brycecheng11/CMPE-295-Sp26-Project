@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep 17 00:54:22 2026" VIVADOVERSION="2021.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep 17 15:38:43 2026" VIVADOVERSION="2021.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.2" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -377,7 +377,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="11" FULLNAME="/AXI_PID_Controller_P_0" HWVERSION="1.0" INSTANCE="AXI_PID_Controller_P_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PID_Controller_Peripheral" VLNV="user.org:user:AXI_PID_Controller_Peripheral:1.0">
+    <MODULE COREREVISION="12" FULLNAME="/AXI_PID_Controller_P_0" HWVERSION="1.0" INSTANCE="AXI_PID_Controller_P_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PID_Controller_Peripheral" VLNV="user.org:user:AXI_PID_Controller_Peripheral:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -393,14 +393,14 @@
       <PORTS>
         <PORT DIR="O" LEFT="31" NAME="pid_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="angle_0"/>
             <CONNECTION INSTANCE="ila_0" PORT="probe10"/>
+            <CONNECTION INSTANCE="pid_controller_0" PORT="angle_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="pid_target_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_target_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="target_angle_0"/>
             <CONNECTION INSTANCE="ila_0" PORT="probe11"/>
+            <CONNECTION INSTANCE="pid_controller_0" PORT="target_angle_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="63" NAME="pid_time" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_time">
@@ -410,14 +410,13 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="pid_new_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="new_angle_available_0"/>
             <CONNECTION INSTANCE="ila_0" PORT="probe12"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="pid_new_target_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_target_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="new_target_angle_available_0"/>
             <CONNECTION INSTANCE="ila_0" PORT="probe13"/>
+            <CONNECTION INSTANCE="pid_controller_0" PORT="new_target_angle_available_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="pid_output_velocity" RIGHT="0" SIGIS="undef" SIGNAME="pid_controller_0_output_velocity_0">
@@ -4309,7 +4308,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="5" FULLNAME="/pid_controller_0" HWVERSION="1.0" INSTANCE="pid_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pid_controller" VLNV="saman:user:pid_controller:1.0">
+    <MODULE COREREVISION="7" FULLNAME="/pid_controller_0" HWVERSION="1.0" INSTANCE="pid_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pid_controller" VLNV="saman:user:pid_controller:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="design_1_pid_controller_0_2"/>
@@ -4336,11 +4335,6 @@
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_p"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="new_angle_available_0" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_angle">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_new_angle"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="0" NAME="new_target_angle_available_0" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_target_angle">
           <CONNECTIONS>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_new_target_angle"/>
@@ -4356,11 +4350,6 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe15"/>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_output_velocity"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="reset_rtl" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_reset"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="50000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -4393,9 +4382,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_reset">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
+            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_reset"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="kp_vaux_p" SIGIS="undef" SIGNAME="External_Ports_kp_vaux_p_0">
@@ -5668,8 +5657,8 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ACLK"/>
             <CONNECTION INSTANCE="ila_0" PORT="clk"/>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="clk"/>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="sys_clock"/>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="pid_controller_0" PORT="sys_clock"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -6960,26 +6949,14 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_RESET0_N"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="aux_reset_in" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="xlconstant_1_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="mb_debug_sys_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="xlconstant_1_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="dcm_locked" SIGIS="undef" SIGNAME="xlconstant_0_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="aux_reset_in" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="I" NAME="mb_debug_sys_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+        <PORT DIR="I" NAME="dcm_locked" SIGIS="undef"/>
         <PORT DIR="O" NAME="mb_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_reset">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="reset_rtl"/>
+            <CONNECTION INSTANCE="pot_to_const_0" PORT="reset"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst"/>
@@ -6992,9 +6969,8 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ARESETN"/>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="reset"/>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="ila_0" PORT="probe17"/>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -7145,41 +7121,6 @@
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="IRQ_F2P"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="dcm_locked"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="aux_reset_in"/>
-            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="mb_debug_sys_rst"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

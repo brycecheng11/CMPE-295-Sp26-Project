@@ -1,6 +1,70 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Thu Sep 17 15:37:22 2026
+| Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_pid_controller_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_pid_controller_0_2 (saman:user:pid_controller:1.0) from (Rev. 5) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_pid_controller_0_2'.
+
+
+-Upgrade has removed interface 'reset_rtl'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_pid_controller_0_2'. These changes may impact your design.
+
+
+-Upgrade has removed port 'new_angle_available_0'
+
+-Upgrade has removed port 'reset_rtl'
+
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Thu Sep 17 12:22:22 2026
+| Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_AXI_PID_Controller_P_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_AXI_PID_Controller_P_0_2 (user.org:user:AXI_PID_Controller_Peripheral:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
 | Date         : Thu Sep 17 00:01:09 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip

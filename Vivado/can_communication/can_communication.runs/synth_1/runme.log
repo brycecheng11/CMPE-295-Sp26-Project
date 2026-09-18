@@ -16,7 +16,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Downloads/ip_repo
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Downloads/vivado-library-master'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Documents/pid_controller'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2616.453 ; gain = 168.082 ; free physical = 1798 ; free virtual = 4280
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2610.441 ; gain = 144.070 ; free physical = 1342 ; free virtual = 6091
 Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -24,101 +24,93 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 457473
+INFO: [Synth 8-7075] Helper process launched with PID 658249
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 798 ; free virtual = 3281
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 311 ; free virtual = 5060
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:56188]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/tools/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:56188]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_AXI_PID_Controller_P_0_2' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_AXI_PID_Controller_P_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_AXI_PID_Controller_P_0_2' (2#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_AXI_PID_Controller_P_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_PmodCAN_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_PmodCAN_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_PmodCAN_0_0' (3#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_PmodCAN_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'GPIO_interrupt' of module 'design_1_PmodCAN_0_0' is unconnected for instance 'PmodCAN_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:369]
-WARNING: [Synth 8-7023] instance 'PmodCAN_0' of module 'design_1_PmodCAN_0_0' has 63 connections declared, but only 62 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:369]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:432]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (4#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_pid_controller_0_2' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_pid_controller_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_pid_controller_0_2' (5#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_pid_controller_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_pot_to_const_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_pot_to_const_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_pot_to_const_0_0' (6#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_pot_to_const_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (7#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:484]
-WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:484]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 72 connections declared, but only 70 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:484]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:684]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1517]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (8#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1517]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1649]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (9#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1649]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1781]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (10#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1781]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1927]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (11#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1927]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:2073]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (12#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (13#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:2073]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (14#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (15#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:684]
-WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 122 connections declared, but only 111 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_0' (16#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-457405-kenny-ThinkPad-T480s/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:667]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:667]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:667]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 7 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:667]
+INFO: [Synth 8-6157] synthesizing module 'design_1_AXI_PID_Controller_P_0_2' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_AXI_PID_Controller_P_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AXI_PID_Controller_P_0_2' (2#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_AXI_PID_Controller_P_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PmodCAN_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_PmodCAN_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PmodCAN_0_0' (3#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_PmodCAN_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'GPIO_interrupt' of module 'design_1_PmodCAN_0_0' is unconnected for instance 'PmodCAN_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-7023] instance 'PmodCAN_0' of module 'design_1_PmodCAN_0_0' has 63 connections declared, but only 62 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:367]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:430]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (4#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_pid_controller_0_2' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_pid_controller_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_pid_controller_0_2' (5#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_pid_controller_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_pot_to_const_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_pot_to_const_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_pot_to_const_0_0' (6#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_pot_to_const_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (7#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:480]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:480]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 72 connections declared, but only 70 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:480]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:676]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1509]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (8#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1509]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1641]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (9#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1641]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1773]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (10#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1773]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1919]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (11#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:1919]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:2065]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (12#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (13#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:2065]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (14#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (15#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:676]
+WARNING: [Synth 8-7071] port 'M03_AXI_araddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_arvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_awaddr' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_awvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_bready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_rready' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_wdata' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7071] port 'M03_AXI_wvalid' of module 'design_1_ps7_0_axi_periph_0' is unconnected for instance 'ps7_0_axi_periph' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'design_1_ps7_0_axi_periph_0' has 122 connections declared, but only 111 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_0' [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_0' (16#1) [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/.Xil/Vivado-658179-kenny-ThinkPad-T480s/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:663]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:663]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:663]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 7 given [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:663]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (17#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (18#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (19#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (20#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (20#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (21#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pot_to_const_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:466]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pid_controller_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:453]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:432]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'processing_system7_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:484]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_ps7_0_50M'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:667]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'AXI_PID_Controller_P_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:339]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ps7_0_axi_periph'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:555]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PmodCAN_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:369]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (22#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (23#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pot_to_const_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:462]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pid_controller_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:451]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:430]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'processing_system7_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:480]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_ps7_0_50M'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:663]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'AXI_PID_Controller_P_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:337]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ps7_0_axi_periph'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:551]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PmodCAN_0'. This will prevent further optimization [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:367]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (19#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (20#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 455 ; free virtual = 2920
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 235 ; free virtual = 4758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 456 ; free virtual = 2921
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 235 ; free virtual = 4759
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 456 ; free virtual = 2921
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 235 ; free virtual = 4759
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1118 ; free virtual = 3583
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 960 ; free virtual = 5483
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -139,10 +131,10 @@ Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/
 Finished Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
 Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pot_to_const_0_0/design_1_pot_to_const_0_0/design_1_pot_to_const_0_0_in_context.xdc] for cell 'design_1_i/pot_to_const_0'
 Finished Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pot_to_const_0_0/design_1_pot_to_const_0_0/design_1_pot_to_const_0_0_in_context.xdc] for cell 'design_1_i/pot_to_const_0'
-Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2/design_1_pid_controller_0_2_in_context.xdc] for cell 'design_1_i/pid_controller_0'
-Finished Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2/design_1_pid_controller_0_2_in_context.xdc] for cell 'design_1_i/pid_controller_0'
 Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2_in_context.xdc] for cell 'design_1_i/AXI_PID_Controller_P_0'
 Finished Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2_in_context.xdc] for cell 'design_1_i/AXI_PID_Controller_P_0'
+Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2/design_1_pid_controller_0_2_in_context.xdc] for cell 'design_1_i/pid_controller_0'
+Finished Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/design_1_pid_controller_0_2/design_1_pid_controller_0_2_in_context.xdc] for cell 'design_1_i/pid_controller_0'
 Parsing XDC File [/home/kenny/Downloads/Zybo-Z7-Master.xdc]
 WARNING: [Vivado 12-584] No ports matched 'kp_vaux_p'. [/home/kenny/Downloads/Zybo-Z7-Master.xdc:113]
 WARNING: [Vivado 12-584] No ports matched 'kp_vaux_n'. [/home/kenny/Downloads/Zybo-Z7-Master.xdc:114]
@@ -158,21 +150,21 @@ Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.runs
 Finished Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1106 ; free virtual = 3568
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 944 ; free virtual = 5469
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 10 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1105 ; free virtual = 3568
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 944 ; free virtual = 5469
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1185 ; free virtual = 3647
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1020 ; free virtual = 5546
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1185 ; free virtual = 3647
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1020 ; free virtual = 5546
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -446,16 +438,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M. (constr
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PmodCAN_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ila_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pot_to_const_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pid_controller_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI_PID_Controller_P_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pid_controller_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1185 ; free virtual = 3647
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1020 ; free virtual = 5546
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1193 ; free virtual = 3657
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1032 ; free virtual = 5558
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -477,25 +467,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1202 ; free virtual = 3670
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1021 ; free virtual = 5551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1149 ; free virtual = 3615
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 991 ; free virtual = 5521
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1149 ; free virtual = 3615
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 991 ; free virtual = 5521
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1130 ; free virtual = 3595
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 982 ; free virtual = 5511
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -513,37 +503,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3620
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 987 ; free virtual = 5517
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3620
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 987 ; free virtual = 5517
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3620
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 987 ; free virtual = 5517
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3620
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 987 ; free virtual = 5517
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3620
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 990 ; free virtual = 5519
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3620
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 990 ; free virtual = 5519
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -581,29 +571,29 @@ Report Cell Usage:
 |11    |IOBUF                           |    10|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1154 ; free virtual = 3620
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 990 ; free virtual = 5519
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1196 ; free virtual = 3662
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1196 ; free virtual = 3662
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1002 ; free virtual = 5531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1002 ; free virtual = 5531
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1253 ; free virtual = 3719
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1041 ; free virtual = 5570
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1237 ; free virtual = 3703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1086 ; free virtual = 5616
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 10 instances
 
-Synth Design complete, checksum: 6c02d052
+Synth Design complete, checksum: beb754c6
 INFO: [Common 17-83] Releasing license: Synthesis
-80 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+72 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 2616.453 ; gain = 0.000 ; free physical = 1307 ; free virtual = 3773
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 2610.441 ; gain = 0.000 ; free physical = 1185 ; free virtual = 5714
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint '/home/kenny/Downloads/can_communication/can_communication.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 00:55:19 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 15:40:46 2026...

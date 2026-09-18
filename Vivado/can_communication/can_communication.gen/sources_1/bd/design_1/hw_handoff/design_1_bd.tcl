@@ -222,6 +222,10 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  set_property -dict [ list \
+   CONFIG.POLARITY {ACTIVE_HIGH} \
+ ] [get_bd_pins /pot_to_const_0/reset]
+
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list \
@@ -727,15 +731,6 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
    CONFIG.NUM_PORTS {1} \
  ] $xlconcat_0
 
-  # Create instance: xlconstant_0, and set properties
-  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
-
-  # Create instance: xlconstant_1, and set properties
-  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
-  set_property -dict [ list \
-   CONFIG.CONST_VAL {0} \
- ] $xlconstant_1
-
   # Create interface connections
   connect_bd_intf_net -intf_net PmodCAN_0_Pmod_out [get_bd_intf_ports Pmod_out_0] [get_bd_intf_pins PmodCAN_0/Pmod_out]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
@@ -749,7 +744,7 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
   # Create port connections
   connect_bd_net -net AXI_PID_Controller_P_0_debug_slv_reg1 [get_bd_pins AXI_PID_Controller_P_0/debug_slv_reg1] [get_bd_pins ila_0/probe16]
   connect_bd_net -net AXI_PID_Controller_P_0_pid_angle [get_bd_pins AXI_PID_Controller_P_0/pid_angle] [get_bd_pins ila_0/probe10] [get_bd_pins pid_controller_0/angle_0]
-  connect_bd_net -net AXI_PID_Controller_P_0_pid_new_angle [get_bd_pins AXI_PID_Controller_P_0/pid_new_angle] [get_bd_pins ila_0/probe12] [get_bd_pins pid_controller_0/new_angle_available_0]
+  connect_bd_net -net AXI_PID_Controller_P_0_pid_new_angle [get_bd_pins AXI_PID_Controller_P_0/pid_new_angle] [get_bd_pins ila_0/probe12]
   connect_bd_net -net AXI_PID_Controller_P_0_pid_new_target_angle [get_bd_pins AXI_PID_Controller_P_0/pid_new_target_angle] [get_bd_pins ila_0/probe13] [get_bd_pins pid_controller_0/new_target_angle_available_0]
   connect_bd_net -net AXI_PID_Controller_P_0_pid_target_angle [get_bd_pins AXI_PID_Controller_P_0/pid_target_angle] [get_bd_pins ila_0/probe11] [get_bd_pins pid_controller_0/target_angle_0]
   connect_bd_net -net AXI_PID_Controller_P_0_pid_time [get_bd_pins AXI_PID_Controller_P_0/pid_time] [get_bd_pins pid_controller_0/time_curr_0]
@@ -773,11 +768,9 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
   connect_bd_net -net pot_to_const_0_k_p [get_bd_pins ila_0/probe1] [get_bd_pins pid_controller_0/k_p_0] [get_bd_pins pot_to_const_0/k_p]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins AXI_PID_Controller_P_0/s00_axi_aclk] [get_bd_pins PmodCAN_0/ext_spi_clk] [get_bd_pins PmodCAN_0/s_axi_aclk] [get_bd_pins ila_0/clk] [get_bd_pins pid_controller_0/sys_clock] [get_bd_pins pot_to_const_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins ila_0/probe9] [get_bd_pins ila_0/probe18] [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins AXI_PID_Controller_P_0/s00_axi_aresetn] [get_bd_pins PmodCAN_0/s_axi_aresetn] [get_bd_pins ila_0/probe17] [get_bd_pins pot_to_const_0/reset] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
-  connect_bd_net -net rst_ps7_0_50M_peripheral_reset [get_bd_pins pid_controller_0/reset_rtl] [get_bd_pins rst_ps7_0_50M/peripheral_reset]
+  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins AXI_PID_Controller_P_0/s00_axi_aresetn] [get_bd_pins PmodCAN_0/s_axi_aresetn] [get_bd_pins ila_0/probe17] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_50M_peripheral_reset [get_bd_pins pot_to_const_0/reset] [get_bd_pins rst_ps7_0_50M/peripheral_reset]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins xlconcat_0/dout]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins rst_ps7_0_50M/dcm_locked] [get_bd_pins xlconstant_0/dout]
-  connect_bd_net -net xlconstant_1_dout [get_bd_pins rst_ps7_0_50M/aux_reset_in] [get_bd_pins rst_ps7_0_50M/mb_debug_sys_rst] [get_bd_pins xlconstant_1/dout]
 
   # Create address segments
   assign_bd_address -offset 0x43C00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs AXI_PID_Controller_P_0/S00_AXI/S00_AXI_reg] -force

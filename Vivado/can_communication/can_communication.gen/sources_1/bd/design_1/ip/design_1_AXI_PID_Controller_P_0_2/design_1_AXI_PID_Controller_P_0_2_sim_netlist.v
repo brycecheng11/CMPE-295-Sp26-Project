@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Thu Sep 17 00:03:53 2026
+// Date        : Thu Sep 17 12:24:00 2026
 // Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 // Command     : write_verilog -force -mode funcsim
 //               /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2_sim_netlist.v
@@ -2098,12 +2098,12 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
         .D(s00_axi_wdata[19]),
         .Q(debug_slv_reg1[19]),
         .R(\slv_reg1[31]_i_1_n_0 ));
-  FDRE \slv_reg1_reg[1] 
+  FDSE \slv_reg1_reg[1] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[1]),
         .Q(debug_slv_reg1[1]),
-        .R(\slv_reg1[31]_i_1_n_0 ));
+        .S(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[20] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
@@ -2188,18 +2188,18 @@ module design_1_AXI_PID_Controller_P_0_2_AXI_PID_Controller_Peripheral_v1_0_S00_
         .D(s00_axi_wdata[3]),
         .Q(debug_slv_reg1[3]),
         .R(\slv_reg1[31]_i_1_n_0 ));
-  FDRE \slv_reg1_reg[4] 
+  FDSE \slv_reg1_reg[4] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[4]),
         .Q(debug_slv_reg1[4]),
-        .R(\slv_reg1[31]_i_1_n_0 ));
-  FDRE \slv_reg1_reg[5] 
+        .S(\slv_reg1[31]_i_1_n_0 ));
+  FDSE \slv_reg1_reg[5] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[5]),
         .Q(debug_slv_reg1[5]),
-        .R(\slv_reg1[31]_i_1_n_0 ));
+        .S(\slv_reg1[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[6] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
