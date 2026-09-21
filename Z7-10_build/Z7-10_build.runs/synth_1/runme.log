@@ -1,0 +1,621 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/TWSB_robot/github/CMPE-295-Sp26-Project/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/Downloads/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/TWSB_robot/github/CMPE-295-Sp26-Project/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/Downloads/vivado-library-master'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/TWSB_robot/github/CMPE-295-Sp26-Project/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/Downloads/vivado-library-master'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/TWSB_robot/github/CMPE-295-Sp26-Project/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/Downloads/vivado-library-master'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/TWSB_robot/github/CMPE-295-Sp26-Project/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/bryce/Downloads/vivado-library-master'.
+Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 57956
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1284.949 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_AXI_PID_Controller_P_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_0/synth/design_1_AXI_PID_Controller_P_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'AXI_PID_Controller_Peripheral_v1_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/1552/hdl/AXI_PID_Controller_Peripheral_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AXI_PID_Controller_Peripheral_v1_0_S00_AXI' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/1552/hdl/AXI_PID_Controller_Peripheral_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_PID_Controller_Peripheral_v1_0_S00_AXI' (1#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/1552/hdl/AXI_PID_Controller_Peripheral_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_PID_Controller_Peripheral_v1_0' (2#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/1552/hdl/AXI_PID_Controller_Peripheral_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AXI_PID_Controller_P_0_0' (3#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_AXI_PID_Controller_P_0_0/synth/design_1_AXI_PID_Controller_P_0_0.v:56]
+WARNING: [Synth 8-7071] port 'pid_target_angle' of module 'design_1_AXI_PID_Controller_P_0_0' is unconnected for instance 'AXI_PID_Controller_P_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:158]
+WARNING: [Synth 8-7071] port 'pid_new_target_angle' of module 'design_1_AXI_PID_Controller_P_0_0' is unconnected for instance 'AXI_PID_Controller_P_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:158]
+WARNING: [Synth 8-7071] port 'debug_slv_reg1' of module 'design_1_AXI_PID_Controller_P_0_0' is unconnected for instance 'AXI_PID_Controller_P_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:158]
+WARNING: [Synth 8-7023] instance 'AXI_PID_Controller_P_0' of module 'design_1_AXI_PID_Controller_P_0_0' has 29 connections declared, but only 26 given [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:158]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:370]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:685]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_axi_protocol_converter' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_aw_channel' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_cmd_translator' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_incr_cmd' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_incr_cmd' (4#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_wrap_cmd' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_wrap_cmd' (5#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_cmd_translator' (6#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_wr_cmd_fsm' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
+INFO: [Synth 8-226] default block is never used [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_wr_cmd_fsm' (7#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_aw_channel' (8#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_b_channel' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo' (9#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo__parameterized0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo__parameterized0' (9#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_b_channel' (10#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_ar_channel' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_rd_cmd_fsm' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
+INFO: [Synth 8-226] default block is never used [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_rd_cmd_fsm' (11#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_ar_channel' (12#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_r_channel' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo__parameterized1' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo__parameterized1' (12#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo__parameterized2' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_simple_fifo__parameterized2' (12#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s_r_channel' (13#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (14#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (15#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice' (16#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized0' (16#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized1' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized1' (16#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized2' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized2' (16#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_24_axi_register_slice' is unconnected for instance 'SI_REG' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_24_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice__parameterized0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized3' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized3' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized4' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized4' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized5' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized5' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized6' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axic_register_slice__parameterized6' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_24_axi_register_slice__parameterized0' (17#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8f68/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_24_axi_register_slice' is unconnected for instance 'MI_REG' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_24_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_b2s' (18#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_24_axi_protocol_converter' (19#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/6e0d/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (20#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (21#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:685]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (22#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:370]
+INFO: [Synth 8-6157] synthesizing module 'design_1_initial_math_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_initial_math_0_0/synth/design_1_initial_math_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'initial_math' [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/initial_math.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'initial_math' (23#1) [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/initial_math.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_initial_math_0_0' (24#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_initial_math_0_0/synth/design_1_initial_math_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_kp_constant_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_kp_constant_0/synth/design_1_kp_constant_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (25#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_kp_constant_0' (26#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_kp_constant_0/synth/design_1_kp_constant_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_kp_constant_1' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_kp_constant_1/synth/design_1_kp_constant_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_kp_constant_1' (27#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_kp_constant_1/synth/design_1_kp_constant_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (27#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (28#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_prev_value_flip_flop_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_prev_value_flip_flop_0_0/synth/design_1_prev_value_flip_flop_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'prev_value_flip_flop' [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/prev_value_flip_flop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'prev_value_flip_flop' (29#1) [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/prev_value_flip_flop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_prev_value_flip_flop_0_0' (30#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_prev_value_flip_flop_0_0/synth/design_1_prev_value_flip_flop_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (31#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:730]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (32#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:730]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:84961]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (33#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:84961]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (34#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (35#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:275]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:275]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 65 connections declared, but only 63 given [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:275]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (36#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:100945]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (37#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (38#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (39#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (40#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (41#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_0' (42#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/synth/design_1_rst_ps7_0_50M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:339]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:339]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:339]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:339]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:339]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (43#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_2' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (43#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_2' (44#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_term_calculation_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_term_calculation_0_0/synth/design_1_term_calculation_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'term_calculation' [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/term_calculation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'term_calculation' (45#1) [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/term_calculation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_term_calculation_0_0' (46#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_term_calculation_0_0/synth/design_1_term_calculation_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_time_calc_0_0' [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_time_calc_0_0/synth/design_1_time_calc_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'time_calc' [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/time_calc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'time_calc' (47#1) [C:/Users/bryce/Downloads/CMPE-295-Sp26-Project-pid_controller/CMPE-295-Sp26-Project-pid_controller/pid_controller.srcs/sources_1/new/time_calc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_time_calc_0_0' (48#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_time_calc_0_0/synth/design_1_time_calc_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (49#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (50#1) [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.984 ; gain = 78.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.984 ; gain = 78.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1362.984 ; gain = 78.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1362.984 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0.xdc] for cell 'design_1_i/rst_ps7_0_50M/U0'
+Parsing XDC File [C:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1404.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1404.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1404.668 ; gain = 119.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1404.668 ; gain = 119.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0/inst. (constraint file  C:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.runs/synth_1/dont_touch.xdc, line 50).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M/U0. (constraint file  C:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.runs/synth_1/dont_touch.xdc, line 53).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/kp_constant. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/kd_constant. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ki_constant. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AXI_PID_Controller_P_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/target_angle. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/target_valid. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/time_calc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/prev_value_flip_flop_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/term_calculation_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/initial_math_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1404.668 ; gain = 119.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_24_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_24_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_24_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_24_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1404.668 ; gain = 119.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   64 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               66 Bit    Registers := 4     
+	               64 Bit    Registers := 2     
+	               47 Bit    Registers := 2     
+	               32 Bit    Registers := 15    
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 9     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 44    
++---Multipliers : 
+	              32x32  Multipliers := 4     
++---Muxes : 
+	   2 Input   66 Bit        Muxes := 4     
+	   2 Input   47 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 16    
+	  11 Input   32 Bit        Muxes := 8     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 18    
+	   2 Input    2 Bit        Muxes := 17    
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP integral1, operation Mode is: A*B.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: Generating DSP integral1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: Generating DSP integral1, operation Mode is: A*B.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: Generating DSP integral1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: operator integral1 is absorbed into DSP integral1.
+DSP Report: Generating DSP inst/i_term, operation Mode is: A*B.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: Generating DSP inst/i_term, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: Generating DSP inst/i_term, operation Mode is: A*B.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: Generating DSP inst/i_term, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: operator inst/i_term is absorbed into DSP inst/i_term.
+DSP Report: Generating DSP inst/d_term, operation Mode is: A*B.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: Generating DSP inst/d_term, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: Generating DSP inst/d_term, operation Mode is: A*B.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: Generating DSP inst/d_term, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: operator inst/d_term is absorbed into DSP inst/d_term.
+DSP Report: Generating DSP inst/p_term, operation Mode is: A*B.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+DSP Report: Generating DSP inst/p_term, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+DSP Report: Generating DSP inst/p_term, operation Mode is: A*B.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+DSP Report: Generating DSP inst/p_term, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+DSP Report: operator inst/p_term is absorbed into DSP inst/p_term.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1404.668 ; gain = 119.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below)
++------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                   | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|initial_math                  | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|initial_math                  | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|initial_math                  | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|initial_math                  | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_term_calculation_0_0 | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1540.352 ; gain = 255.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1575.195 ; gain = 290.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1602.297 ; gain = 317.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.594 ; gain = 326.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.594 ; gain = 326.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.594 ; gain = 326.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.594 ; gain = 326.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1611.594 ; gain = 326.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1611.594 ; gain = 326.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 13     | 13         | 0      | 13      | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BIBUF   |   130|
+|2     |BUFG    |     1|
+|3     |CARRY4  |  1168|
+|4     |DSP48E1 |    12|
+|5     |LUT1    |   129|
+|6     |LUT2    |   285|
+|7     |LUT3    |  4233|
+|8     |LUT4    |    87|
+|9     |LUT5    |    61|
+|10    |LUT6    |   239|
+|11    |PS7     |     1|
+|12    |SRL16   |     1|
+|13    |SRL16E  |    16|
+|14    |SRLC32E |    45|
+|15    |FDR     |     4|
+|16    |FDRE    |  1028|
+|17    |FDSE    |    23|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1611.594 ; gain = 326.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1611.594 ; gain = 284.961
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1611.594 ; gain = 326.645
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1611.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1185 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1629.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDR => FDRE: 4 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: afefe921
+INFO: [Common 17-83] Releasing license: Synthesis
+187 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1629.309 ; gain = 344.359
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bryce/TWSB_robot/github/z710/Z7-10_build/Z7-10_build.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 03:50:13 2026...

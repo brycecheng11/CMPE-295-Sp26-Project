@@ -1,0 +1,57 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.873469",
+   "Default View_TopLeft":"-44,-840",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 2060 -y -270 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2060 -y -250 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1490 -y -220 -defaultsOSRD
+preplace inst kp_constant -pg 1 -lvl 1 -x 90 -y -420 -defaultsOSRD
+preplace inst kd_constant -pg 1 -lvl 1 -x 90 -y -220 -defaultsOSRD
+preplace inst ki_constant -pg 1 -lvl 1 -x 90 -y -320 -defaultsOSRD
+preplace inst AXI_PID_Controller_P_0 -pg 1 -lvl 2 -x 460 -y 30 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 460 -y -460 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 5 -x 1870 -y -150 -defaultsOSRD
+preplace inst target_angle -pg 1 -lvl 2 -x 460 -y -680 -defaultsOSRD
+preplace inst target_valid -pg 1 -lvl 2 -x 460 -y -780 -defaultsOSRD
+preplace inst time_calc_0 -pg 1 -lvl 3 -x 1000 -y -380 -defaultsOSRD
+preplace inst prev_value_flip_flop_0 -pg 1 -lvl 3 -x 1000 -y -50 -defaultsOSRD
+preplace inst term_calculation_0 -pg 1 -lvl 2 -x 460 -y -200 -defaultsOSRD
+preplace inst initial_math_0 -pg 1 -lvl 3 -x 1000 -y -580 -defaultsOSRD
+preplace netloc kp_constant_dout 1 1 1 190 -420n
+preplace netloc ki_constant_dout 1 1 1 180 -320n
+preplace netloc kd_constant_dout 1 1 1 170 -220n
+preplace netloc initial_math_0_error_out 1 1 3 250 -340 680J -290 1230
+preplace netloc initial_math_0_integral_out 1 1 3 260 -330 670J -280 1220
+preplace netloc initial_math_0_derivative_out 1 1 3 220 -620 660J -750 1250
+preplace netloc prev_value_flip_flop_0_error_out 1 2 2 750 -760 1270
+preplace netloc prev_value_flip_flop_0_integral_out 1 2 2 760 -740 1260
+preplace netloc prev_value_flip_flop_0_time_out 1 2 2 780 -160 1220
+preplace netloc time_calc_0_dt_out 1 2 2 770 -730 1240
+preplace netloc time_calc_0_new_time_out 1 2 2 780 -150 1210
+preplace netloc time_calc_0_new_angle_pass_on 1 2 2 780 -710 1210
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 210 -590 720 -140 1280J -110 1690
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 4 1 N -170
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 5 200 -610 650J -770 NJ -770 NJ -770 2040
+preplace netloc AXI_PID_Controller_P_0_pid_angle 1 2 1 690 -630n
+preplace netloc term_calculation_0_output_velocity 1 1 2 260 -80 650
+preplace netloc term_calculation_0_new_velocity_available 1 1 2 240 -320 660
+preplace netloc target_angle_dout 1 2 1 730 -680n
+preplace netloc xlconstant_0_dout 1 2 1 740 -780n
+preplace netloc AXI_PID_Controller_P_0_pid_time 1 2 1 710 -370n
+preplace netloc AXI_PID_Controller_P_0_pid_new_angle 1 2 1 700 -390n
+preplace netloc processing_system7_0_DDR 1 4 2 NJ -270 N
+preplace netloc processing_system7_0_FIXED_IO 1 4 2 NJ -250 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 260 -600 670J -720 NJ -720 1690
+preplace netloc axi_interconnect_0_M00_AXI 1 1 2 230 -580 650
+levelinfo -pg 1 0 90 460 1000 1490 1870 2060
+pagesize -pg 1 -db -bbox -sgen 0 -840 2180 800
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_clkrst_cnt":"5",
+   "da_ps7_cnt":"1"
+}
