@@ -23,21 +23,20 @@ XUartPs Uart;
 #define ALPHA			0.98f		// complementary filter
 
 
-#define DEG_PER_RAD 	57.2957795f	// convert
-#define DT				0.004f		// 250 Hz sample rate--check SMPLRT_DIV
-#define ALPHA			0.98f		// complementary filter
-
-
 //PID Memory Space
 #define PID_BASE        0x43C00000
 
-#define PID_CONTROL     (PID_BASE + 0x00)
+#define PID_CONTROL 	(PID_BASE + 0x00)
 #define PID_ANGLE       (PID_BASE + 0x04)
-#define PID_TARGET      (PID_BASE + 0x14)
-#define PID_TIME_LO     (PID_BASE + 0x18)
-#define PID_TIME_HI     (PID_BASE + 0x1C)
-#define PID_VELOCITY    (PID_BASE + 0x20)
-#define PID_NEW_VEL     (PID_BASE + 0x24)
+#define PID_TARGET		(PID_BASE + 0x14)
+#define PID_VELOCITY 	(PID_BASE + 0x20)
+//#define PID_CONTROL     (PID_BASE + 0x00)
+//#define PID_ANGLE       (PID_BASE + 0x04)
+//#define PID_TARGET      (PID_BASE + 0x14)
+//#define PID_TIME_LO     (PID_BASE + 0x18)
+//#define PID_TIME_HI     (PID_BASE + 0x1C)
+//#define PID_VELOCITY    (PID_BASE + 0x20)
+//#define PID_NEW_VEL     (PID_BASE + 0x24)
 
 
 #define ANGLE_SCALE     100
@@ -194,7 +193,7 @@ void CAN_SendVelocityFast(CAN_Message *message, int32_t speed_centidps)
 
 void PID_WriteAngle(float pitch_deg)
 {
-	int32_t angle_fixed = (int32_t)(pitch_deg * ANGLE_SCALE);
+	int32_t angle_fixed = (int32_t)(pitch_deg);
 
 	Xil_Out32(PID_ANGLE, (uint32_t)angle_fixed);
 }
@@ -203,7 +202,7 @@ void PID_ReadVelocity(float *velocity_dps)
 {
 	for (volatile int i = 0; i < PID_SETTLE_ITERS; i++);
 
-	int32_t raw = (int32_t)Xil_In32(PID_VELOCITY);
+	int32_t raw = (int32_t	)Xil_In32(PID_VELOCITY);
 	*velocity_dps = (float)raw / (float)VELOCITY_SCALE;
 }
 
@@ -328,7 +327,7 @@ int main(void)
 	xil_printf("Waiting after initialization...\r\n");
 	sleep(1);
 
-	xil_printf("Testing New angle and output velocity...\r\n");
+	//xil_printf("Testing New angle and output velocity...\r\n");
 
 	//Xil_Out32(PID_ANGLE, 100);
 
@@ -336,7 +335,18 @@ int main(void)
 			(unsigned long)Xil_In32(PID_ANGLE));
 
 	uint32_t loop_count = 0;
+
 	Xil_Out32(PID_TARGET, (int32_t)(PITCH_SETPOINT * ANGLE_SCALE));
+	Xil_Out32(PID_CONTROL, 0x01);
+	Xil_Out32(PID_CONTROL, 0x00);
+	const u8 testSpeedCommand[8] = {
+			0xA2, 0x00, 0x00, 0x00, 0x11, 0x22, 0x00, 0x0F
+	};
+	//memcpy(motor141.data, testSpeedCommand, sizeof(testSpeedCommand));
+	//SendMotorMessageInit(&motor141, "Test max speed");
+	//sleep(10);
+
+
 	while (1) {
 		ReadSensor(&Iic, accel, gyro);
 
@@ -344,19 +354,19 @@ int main(void)
 		int ay = accel[1] - ay_off;
 		int az = accel[2] - az_off;
 
-		int gx = gyro[0] - gx_off;
-		int gy = gyro[1] - gy_off;
-		int gz = gyro[2] - gz_off;
+		//int gx = gyro[0] - gx_off;
+		//int gy = gyro[1] - gy_off;
+		//int gz = gyro[2] - gz_off;
 
 		float accel_pitch = atan2f(
 				(float) ax,
 				sqrtf((float) ay * ay + (float) az * az)) * DEG_PER_RAD;
 
-		pitch_rate = gy / 131.0f;
+		//pitch_rate = gy / 131.0f;
 
-		pitch = ALPHA * (pitch + pitch_rate * DT) + (1.0f - ALPHA) * accel_pitch;
+		//pitch = ALPHA * (pitch + pitch_rate * DT) + (1.0f - ALPHA) * accel_pitch;
 
-		PID_WriteAngle(pitch);
+		PID_WriteAngle(accel_pitch);
 
 		float velocity_dps = 0.0f;
 		PID_ReadVelocity(&velocity_dps);
@@ -374,6 +384,11 @@ int main(void)
 
 			CAN_SendVelocityFast(&motor141, speed_centidps);
 			CAN_SendVelocityFast(&motor142, speed_centidps );
+			xil_printf(
+					"RAW ax=%d ay=%d az=%d accel_pitch=%d\r\n",
+					ax, ay, az, (int)accel_pitch
+			);
+
 			xil_printf(
 					"Pitch=%d PitchRate=%d Velocity=%d dps Sent=%d\r\n",
 					(int)pitch,
@@ -396,7 +411,7 @@ int main(void)
 		loop_count++;
 
 		usleep(4000); // 250 Hz loop
-		sleep(10);
+		//sleep(5);
 	}
 
 	cleanup_platform();
