@@ -30,6 +30,8 @@ XUartPs Uart;
 #define PID_ANGLE       (PID_BASE + 0x04)
 #define PID_TARGET		(PID_BASE + 0x14)
 #define PID_VELOCITY 	(PID_BASE + 0x20)
+#define PID_NEW_VELOCITY (PID_BASE + 0x24)
+#define PID_VELOCITY_READY_TIMEOUT  10000
 //#define PID_CONTROL     (PID_BASE + 0x00)
 //#define PID_ANGLE       (PID_BASE + 0x04)
 //#define PID_TARGET      (PID_BASE + 0x14)
@@ -42,8 +44,9 @@ XUartPs Uart;
 #define ANGLE_SCALE     100
 #define VELOCITY_SCALE  100
 
-#define MAX_DPS			100.0f		// hard safety ceiling on commanded speed (deg/s)
-#define PITCH_SETPOINT	90.0f		// upright target angle (deg)
+#define MAX_DPS 		648000.0f
+
+#define PITCH_SETPOINT	0.0f		// upright target angle (deg)
 #define PID_SETTLE_ITERS         10   // short busy-wait to let the PL pipeline catch up after a write
 
 
@@ -198,12 +201,23 @@ void PID_WriteAngle(float pitch_deg)
 	Xil_Out32(PID_ANGLE, (uint32_t)angle_fixed);
 }
 
-void PID_ReadVelocity(float *velocity_dps)
+int PID_ReadVelocity(float *velocity_dps)
 {
-	for (volatile int i = 0; i < PID_SETTLE_ITERS; i++);
+	uint32_t timeout = PID_VELOCITY_READY_TIMEOUT;
 
-	int32_t raw = (int32_t	)Xil_In32(PID_VELOCITY);
+	while (((Xil_In32(PID_NEW_VELOCITY) & 0x1) == 0) && (timeout > 0)) {
+		timeout--;
+	}
+
+	if (timeout == 0) {
+		xil_printf("WARNING: PID velocity not ready, timed out\r\n");
+		*velocity_dps = 0.0f;
+		return 0;   // caller can decide whether to treat this as unsafe/skip-send
+	}
+
+	int32_t raw = (int32_t)Xil_In32(PID_VELOCITY);
 	*velocity_dps = (float)raw / (float)VELOCITY_SCALE;
+	return 1;
 }
 
 
@@ -245,8 +259,8 @@ int main(void)
 	CalibrateAccel(&Iic, &ax_off, &ay_off, &az_off);
 	CalibrateGyro(&Iic, &gx_off, &gy_off, &gz_off);
 
-	float pitch = 0.0f;
-	float pitch_rate = 0.0f;
+	//float pitch = 0.0f;
+	//float pitch_rate = 0.0f;
 	CAN_begin(
 			&myCAN,
 			XPAR_PMODCAN_0_AXI_LITE_GPIO_BASEADDR,
@@ -334,14 +348,15 @@ int main(void)
 	xil_printf("Readback = %lu\r\n",
 			(unsigned long)Xil_In32(PID_ANGLE));
 
-	uint32_t loop_count = 0;
 
 	Xil_Out32(PID_TARGET, (int32_t)(PITCH_SETPOINT * ANGLE_SCALE));
-	Xil_Out32(PID_CONTROL, 0x01);
+	Xil_Out32(PID_CONTROL, 0x02);
 	Xil_Out32(PID_CONTROL, 0x00);
+	/*
 	const u8 testSpeedCommand[8] = {
 			0xA2, 0x00, 0x00, 0x00, 0x11, 0x22, 0x00, 0x0F
 	};
+	*/
 	//memcpy(motor141.data, testSpeedCommand, sizeof(testSpeedCommand));
 	//SendMotorMessageInit(&motor141, "Test max speed");
 	//sleep(10);
@@ -368,48 +383,33 @@ int main(void)
 
 		PID_WriteAngle(accel_pitch);
 
+
 		float velocity_dps = 0.0f;
-		PID_ReadVelocity(&velocity_dps);
+		int velocity_ready = PID_ReadVelocity(&velocity_dps);
 
-		int32_t speed_centidps = 0;
-		int safe = ClampAndCheckVelocity(velocity_dps, &speed_centidps);
-
-		if (!safe) {
-			xil_printf(
-					"WARNING: requested velocity %d dps exceeds MAX_DPS=%d, NOT sending\r\n",
-					(int)velocity_dps,
-					(int)MAX_DPS
-			);
+		if (!velocity_ready) {
+			// skip this cycle
 		} else {
+			int32_t speed_centidps = 0;
+			int safe = ClampAndCheckVelocity(velocity_dps, &speed_centidps);
 
-			CAN_SendVelocityFast(&motor141, speed_centidps);
-			CAN_SendVelocityFast(&motor142, speed_centidps );
-			xil_printf(
-					"RAW ax=%d ay=%d az=%d accel_pitch=%d\r\n",
-					ax, ay, az, (int)accel_pitch
-			);
 
-			xil_printf(
-					"Pitch=%d PitchRate=%d Velocity=%d dps Sent=%d\r\n",
-					(int)pitch,
-					(int)pitch_rate,
-					(int)velocity_dps,
-					safe
-			);
+			if (!safe) {
+				xil_printf(
+						"WARNING: requested velocity %d dps exceeds MAX_DPS=%d, NOT sending\r\n",
+						(int)velocity_dps,
+						(int)MAX_DPS
+				);
+			} else {
+
+				CAN_SendVelocityFast(&motor141, speed_centidps);
+				CAN_SendVelocityFast(&motor142, speed_centidps );
+				xil_printf(
+						"RAW ax=%d ay=%d az=%d accel_pitch=%d\r\n",
+						ax, ay, az, (int)accel_pitch
+				);
+			}
 		}
-
-		if ((loop_count % 25) == 0) {
-			xil_printf(
-					"Pitch=%d PitchRate=%d Velocity=%d dps Sent=%d\r\n",
-					(int)pitch,
-					(int)pitch_rate,
-					(int)velocity_dps,
-					safe
-			);
-		}
-
-		loop_count++;
-
 		usleep(4000); // 250 Hz loop
 		//sleep(5);
 	}
