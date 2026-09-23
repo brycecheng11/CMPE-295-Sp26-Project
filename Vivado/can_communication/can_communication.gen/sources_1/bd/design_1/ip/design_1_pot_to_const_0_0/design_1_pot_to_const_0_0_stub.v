@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-// Date        : Wed Sep 16 16:43:28 2026
+// Date        : Mon Sep 21 11:41:38 2026
 // Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 // Command     : write_verilog -force -mode synth_stub
 //               /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pot_to_const_0_0/design_1_pot_to_const_0_0_stub.v
@@ -15,9 +15,8 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "pot_to_const,Vivado 2021.1" *)
 module design_1_pot_to_const_0_0(clk, reset, kp_vaux_p, kp_vaux_n, ki_vaux_p, 
-  ki_vaux_n, kd_vaux_p, kd_vaux_n, k_p, k_i, k_d, debug_reset, debug_xadc_data, debug_eoc, 
-  debug_drdy, debug_daddr, debug_read_index)
-/* synthesis syn_black_box black_box_pad_pin="clk,reset,kp_vaux_p,kp_vaux_n,ki_vaux_p,ki_vaux_n,kd_vaux_p,kd_vaux_n,k_p[11:0],k_i[11:0],k_d[11:0],debug_reset,debug_xadc_data[15:0],debug_eoc,debug_drdy,debug_daddr[6:0],debug_read_index[1:0]" */;
+  ki_vaux_n, kd_vaux_p, kd_vaux_n, k_p, k_i, k_d, channel_out, check_rst)
+/* synthesis syn_black_box black_box_pad_pin="clk,reset,kp_vaux_p,kp_vaux_n,ki_vaux_p,ki_vaux_n,kd_vaux_p,kd_vaux_n,k_p[11:0],k_i[11:0],k_d[11:0],channel_out[4:0],check_rst[0:0]" */;
   input clk;
   input reset;
   input kp_vaux_p;
@@ -29,10 +28,6 @@ module design_1_pot_to_const_0_0(clk, reset, kp_vaux_p, kp_vaux_n, ki_vaux_p,
   output [11:0]k_p;
   output [11:0]k_i;
   output [11:0]k_d;
-  output debug_reset;
-  output [15:0]debug_xadc_data;
-  output debug_eoc;
-  output debug_drdy;
-  output [6:0]debug_daddr;
-  output [1:0]debug_read_index;
+  output [4:0]channel_out;
+  output [0:0]check_rst;
 endmodule

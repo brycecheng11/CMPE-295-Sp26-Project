@@ -1920,13 +1920,10 @@
       },
       "ila_0": {
         "vlnv": "xilinx.com:ip:ila:6.2",
-        "xci_name": "design_1_ila_0_0",
-        "xci_path": "ip/design_1_ila_0_0/design_1_ila_0_0.xci",
+        "xci_name": "design_1_ila_0_1",
+        "xci_path": "ip/design_1_ila_0_1/design_1_ila_0_1.xci",
         "inst_hier_path": "ila_0",
         "parameters": {
-          "C_ADV_TRIGGER": {
-            "value": "false"
-          },
           "C_ENABLE_ILA_AXI_MON": {
             "value": "false"
           },
@@ -1934,22 +1931,10 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "19"
+            "value": "8"
           },
           "C_PROBE0_WIDTH": {
             "value": "12"
-          },
-          "C_PROBE10_WIDTH": {
-            "value": "32"
-          },
-          "C_PROBE11_WIDTH": {
-            "value": "32"
-          },
-          "C_PROBE14_WIDTH": {
-            "value": "32"
-          },
-          "C_PROBE16_WIDTH": {
-            "value": "32"
           },
           "C_PROBE1_WIDTH": {
             "value": "12"
@@ -1957,23 +1942,17 @@
           "C_PROBE2_WIDTH": {
             "value": "12"
           },
-          "C_PROBE3_WIDTH": {
-            "value": "16"
+          "C_PROBE4_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "32"
           },
           "C_PROBE6_WIDTH": {
-            "value": "7"
+            "value": "32"
           },
           "C_PROBE7_WIDTH": {
-            "value": "2"
-          },
-          "C_PROBE9_WIDTH": {
-            "value": "1"
-          },
-          "C_TRIGIN_EN": {
-            "value": "false"
-          },
-          "C_TRIGOUT_EN": {
-            "value": "false"
+            "value": "32"
           }
         }
       },
@@ -2048,29 +2027,15 @@
             "left": "11",
             "right": "0"
           },
-          "debug_reset": {
+          "channel_out": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "check_rst": {
             "type": "rst",
-            "direction": "O"
-          },
-          "debug_xadc_data": {
             "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "debug_eoc": {
-            "direction": "O"
-          },
-          "debug_drdy": {
-            "direction": "O"
-          },
-          "debug_daddr": {
-            "direction": "O",
-            "left": "6",
-            "right": "0"
-          },
-          "debug_read_index": {
-            "direction": "O",
-            "left": "1",
+            "left": "0",
             "right": "0"
           }
         }
@@ -2139,36 +2104,23 @@
       }
     },
     "nets": {
-      "AXI_PID_Controller_P_0_debug_slv_reg1": {
-        "ports": [
-          "AXI_PID_Controller_P_0/debug_slv_reg1",
-          "ila_0/probe16"
-        ]
-      },
       "AXI_PID_Controller_P_0_pid_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_angle",
-          "ila_0/probe10",
+          "ila_0/probe5",
           "pid_controller_0/angle_0"
-        ]
-      },
-      "AXI_PID_Controller_P_0_pid_new_angle": {
-        "ports": [
-          "AXI_PID_Controller_P_0/pid_new_angle",
-          "ila_0/probe12"
         ]
       },
       "AXI_PID_Controller_P_0_pid_new_target_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_new_target_angle",
-          "ila_0/probe13",
           "pid_controller_0/new_target_angle_available_0"
         ]
       },
       "AXI_PID_Controller_P_0_pid_target_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_target_angle",
-          "ila_0/probe11",
+          "ila_0/probe7",
           "pid_controller_0/target_angle_0"
         ]
       },
@@ -2223,50 +2175,25 @@
       "pid_controller_0_new_velocity_available_0": {
         "ports": [
           "pid_controller_0/new_velocity_available_0",
-          "ila_0/probe14",
           "AXI_PID_Controller_P_0/pid_new_velocity"
         ]
       },
       "pid_controller_0_output_velocity_0": {
         "ports": [
           "pid_controller_0/output_velocity_0",
-          "ila_0/probe15",
-          "AXI_PID_Controller_P_0/pid_output_velocity"
-        ]
-      },
-      "pot_to_const_0_debug_daddr": {
-        "ports": [
-          "pot_to_const_0/debug_daddr",
+          "AXI_PID_Controller_P_0/pid_output_velocity",
           "ila_0/probe6"
         ]
       },
-      "pot_to_const_0_debug_drdy": {
+      "pot_to_const_0_channel_out": {
         "ports": [
-          "pot_to_const_0/debug_drdy",
+          "pot_to_const_0/channel_out",
           "ila_0/probe4"
         ]
       },
-      "pot_to_const_0_debug_eoc": {
+      "pot_to_const_0_check_rst": {
         "ports": [
-          "pot_to_const_0/debug_eoc",
-          "ila_0/probe5"
-        ]
-      },
-      "pot_to_const_0_debug_read_index": {
-        "ports": [
-          "pot_to_const_0/debug_read_index",
-          "ila_0/probe7"
-        ]
-      },
-      "pot_to_const_0_debug_reset": {
-        "ports": [
-          "pot_to_const_0/debug_reset",
-          "ila_0/probe8"
-        ]
-      },
-      "pot_to_const_0_debug_xadc_data": {
-        "ports": [
-          "pot_to_const_0/debug_xadc_data",
+          "pot_to_const_0/check_rst",
           "ila_0/probe3"
         ]
       },
@@ -2274,21 +2201,21 @@
         "ports": [
           "pot_to_const_0/k_d",
           "ila_0/probe2",
-          "pid_controller_0/k_d_0"
+          "pid_controller_0/kd_0"
         ]
       },
       "pot_to_const_0_k_i": {
         "ports": [
           "pot_to_const_0/k_i",
-          "ila_0/probe0",
-          "pid_controller_0/k_i_0"
+          "ila_0/probe1",
+          "pid_controller_0/ki_0"
         ]
       },
       "pot_to_const_0_k_p": {
         "ports": [
           "pot_to_const_0/k_p",
-          "ila_0/probe1",
-          "pid_controller_0/k_p_0"
+          "ila_0/probe0",
+          "pid_controller_0/kp_0"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -2313,9 +2240,7 @@
       "processing_system7_0_FCLK_RESET0_N": {
         "ports": [
           "processing_system7_0/FCLK_RESET0_N",
-          "rst_ps7_0_50M/ext_reset_in",
-          "ila_0/probe9",
-          "ila_0/probe18"
+          "rst_ps7_0_50M/ext_reset_in"
         ]
       },
       "rst_ps7_0_50M_peripheral_aresetn": {
@@ -2328,7 +2253,6 @@
           "ps7_0_axi_periph/M01_ARESETN",
           "ps7_0_axi_periph/M02_ARESETN",
           "ps7_0_axi_periph/M03_ARESETN",
-          "ila_0/probe17",
           "AXI_PID_Controller_P_0/s00_axi_aresetn"
         ]
       },

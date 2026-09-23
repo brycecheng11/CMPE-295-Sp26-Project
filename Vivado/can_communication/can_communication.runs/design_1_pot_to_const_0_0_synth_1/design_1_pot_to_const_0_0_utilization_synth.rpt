@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Wed Sep 16 16:43:28 2026
+| Date         : Mon Sep 21 11:41:38 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : report_utilization -file design_1_pot_to_const_0_0_utilization_synth.rpt -pb design_1_pot_to_const_0_0_utilization_synth.pb
 | Design       : design_1_pot_to_const_0_0
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |    6 |     0 |          0 |     53200 |  0.01 |
-|   LUT as Logic          |    6 |     0 |          0 |     53200 |  0.01 |
+| Slice LUTs*             |   27 |     0 |          0 |     53200 |  0.05 |
+|   LUT as Logic          |   27 |     0 |          0 |     53200 |  0.05 |
 |   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |
 | Slice Registers         |   40 |     0 |          0 |    106400 |  0.04 |
 |   Register as Flip Flop |   40 |     0 |          0 |    106400 |  0.04 |
@@ -146,12 +146,11 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| LUT2     |   40 |                 LUT |
 | FDRE     |   40 |        Flop & Latch |
-| LUT4     |    4 |                 LUT |
-| LUT5     |    2 |                 LUT |
-| LUT2     |    2 |                 LUT |
+| LUT3     |    4 |                 LUT |
+| LUT5     |    3 |                 LUT |
 | XADC     |    1 |              Others |
-| LUT3     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

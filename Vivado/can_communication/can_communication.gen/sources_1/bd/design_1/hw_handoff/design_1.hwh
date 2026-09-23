@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep 17 15:38:43 2026" VIVADOVERSION="2021.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Sep 22 13:49:42 2026" VIVADOVERSION="2021.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.2" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -377,7 +377,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="12" FULLNAME="/AXI_PID_Controller_P_0" HWVERSION="1.0" INSTANCE="AXI_PID_Controller_P_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PID_Controller_Peripheral" VLNV="user.org:user:AXI_PID_Controller_Peripheral:1.0">
+    <MODULE COREREVISION="19" FULLNAME="/AXI_PID_Controller_P_0" HWVERSION="1.0" INSTANCE="AXI_PID_Controller_P_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PID_Controller_Peripheral" VLNV="user.org:user:AXI_PID_Controller_Peripheral:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -393,13 +393,13 @@
       <PORTS>
         <PORT DIR="O" LEFT="31" NAME="pid_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe10"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe5"/>
             <CONNECTION INSTANCE="pid_controller_0" PORT="angle_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="pid_target_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_target_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe11"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe7"/>
             <CONNECTION INSTANCE="pid_controller_0" PORT="target_angle_0"/>
           </CONNECTIONS>
         </PORT>
@@ -408,14 +408,8 @@
             <CONNECTION INSTANCE="pid_controller_0" PORT="time_curr_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="pid_new_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_angle">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe12"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="0" NAME="pid_new_target_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_target_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe13"/>
             <CONNECTION INSTANCE="pid_controller_0" PORT="new_target_angle_available_0"/>
           </CONNECTIONS>
         </PORT>
@@ -427,11 +421,6 @@
         <PORT DIR="I" LEFT="0" NAME="pid_new_velocity" RIGHT="0" SIGIS="undef" SIGNAME="pid_controller_0_new_velocity_available_0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pid_controller_0" PORT="new_velocity_available_0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="debug_slv_reg1" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_debug_slv_reg1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe16"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="50000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -1085,7 +1074,7 @@
         <PARAMETER NAME="C_SLOT_0_AXI_PROTOCOL" VALUE="AXI4"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
         <PARAMETER NAME="C_ENABLE_ILA_AXI_MON" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="19"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="8"/>
         <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2021"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="1"/>
@@ -1100,8 +1089,8 @@
         <PARAMETER NAME="C_RAM_STYLE" VALUE="SUBCORE"/>
         <PARAMETER NAME="C_TRIGOUT_EN" VALUE="0"/>
         <PARAMETER NAME="C_TRIGIN_EN" VALUE="0"/>
-        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="C_SLOT_0_AXIS_TUSER_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_SLOT_0_AXIS_TDEST_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ARUSER_WIDTH" VALUE="1"/>
@@ -1112,20 +1101,20 @@
         <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="12"/>
         <PARAMETER NAME="C_PROBE1_WIDTH" VALUE="12"/>
         <PARAMETER NAME="C_PROBE2_WIDTH" VALUE="12"/>
-        <PARAMETER NAME="C_PROBE3_WIDTH" VALUE="16"/>
-        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE6_WIDTH" VALUE="7"/>
-        <PARAMETER NAME="C_PROBE7_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="C_PROBE3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE4_WIDTH" VALUE="5"/>
+        <PARAMETER NAME="C_PROBE5_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PROBE6_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PROBE7_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_PROBE8_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE10_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_PROBE11_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PROBE10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE11_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE12_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE13_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_PROBE14_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_PROBE15_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_PROBE16_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PROBE14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE16_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE17_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE18_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE19_WIDTH" VALUE="1"/>
@@ -4194,7 +4183,7 @@
         <PARAMETER NAME="C_CLKFBOUT_MULT_F" VALUE="10"/>
         <PARAMETER NAME="C_DIVCLK_DIVIDE" VALUE="3"/>
         <PARAMETER NAME="C_CLKOUT0_DIVIDE_F" VALUE="10"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_ila_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ila_0_1"/>
         <PARAMETER NAME="EN_BRAM_DRC" VALUE="TRUE"/>
         <PARAMETER NAME="ALL_PROBE_SAME_MU" VALUE="TRUE"/>
         <PARAMETER NAME="ALL_PROBE_SAME_MU_CNT" VALUE="1"/>
@@ -4210,14 +4199,14 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="k_i"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
+        <PORT DIR="I" LEFT="11" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pot_to_const_0" PORT="k_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="probe2" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
@@ -4225,90 +4214,35 @@
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_d"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="probe3" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_xadc_data">
+        <PORT DIR="I" LEFT="0" NAME="probe3" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_check_rst">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="debug_xadc_data"/>
+            <CONNECTION INSTANCE="pot_to_const_0" PORT="check_rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_drdy">
+        <PORT DIR="I" LEFT="4" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_channel_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="debug_drdy"/>
+            <CONNECTION INSTANCE="pot_to_const_0" PORT="channel_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_eoc">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="debug_eoc"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="6" NAME="probe6" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_daddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="debug_daddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="probe7" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_read_index">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="debug_read_index"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe8" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="pot_to_const_0" PORT="debug_reset"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe9" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_FCLK_RESET0_N">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_RESET0_N"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe10" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_angle">
+        <PORT DIR="I" LEFT="31" NAME="probe5" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_angle">
           <CONNECTIONS>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_angle"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe11" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_target_angle">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_target_angle"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe12" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_angle">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_new_angle"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe13" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_target_angle">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_new_target_angle"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe14" RIGHT="0" SIGIS="undef" SIGNAME="pid_controller_0_new_velocity_available_0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="new_velocity_available_0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe15" RIGHT="0" SIGIS="undef" SIGNAME="pid_controller_0_output_velocity_0">
+        <PORT DIR="I" LEFT="31" NAME="probe6" RIGHT="0" SIGIS="undef" SIGNAME="pid_controller_0_output_velocity_0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pid_controller_0" PORT="output_velocity_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="probe16" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_debug_slv_reg1">
+        <PORT DIR="I" LEFT="31" NAME="probe7" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_target_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="debug_slv_reg1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe17" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="undef" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe18" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_FCLK_RESET0_N">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_RESET0_N"/>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_target_angle"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/pid_controller_0" HWVERSION="1.0" INSTANCE="pid_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pid_controller" VLNV="saman:user:pid_controller:1.0">
+    <MODULE COREREVISION="10" FULLNAME="/pid_controller_0" HWVERSION="1.0" INSTANCE="pid_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pid_controller" VLNV="saman:user:pid_controller:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="design_1_pid_controller_0_2"/>
@@ -4320,17 +4254,17 @@
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_angle"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="k_d_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
+        <PORT DIR="I" LEFT="11" NAME="kd_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_d"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="k_i_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
+        <PORT DIR="I" LEFT="11" NAME="ki_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="k_p_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
+        <PORT DIR="I" LEFT="11" NAME="kp_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_p"/>
           </CONNECTIONS>
@@ -4342,14 +4276,13 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="new_velocity_available_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_controller_0_new_velocity_available_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe14"/>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_new_velocity"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="output_velocity_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_controller_0_output_velocity_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe15"/>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_output_velocity"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe6"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="50000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -4419,50 +4352,30 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="k_p" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe1"/>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="k_p_0"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe0"/>
+            <CONNECTION INSTANCE="pid_controller_0" PORT="kp_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="k_i" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe0"/>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="k_i_0"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe1"/>
+            <CONNECTION INSTANCE="pid_controller_0" PORT="ki_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="k_d" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe2"/>
-            <CONNECTION INSTANCE="pid_controller_0" PORT="k_d_0"/>
+            <CONNECTION INSTANCE="pid_controller_0" PORT="kd_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="debug_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="pot_to_const_0_debug_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe8"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="15" NAME="debug_xadc_data" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_xadc_data">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe3"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="debug_eoc" SIGIS="undef" SIGNAME="pot_to_const_0_debug_eoc">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe5"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="debug_drdy" SIGIS="undef" SIGNAME="pot_to_const_0_debug_drdy">
+        <PORT DIR="O" LEFT="4" NAME="channel_out" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_channel_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe4"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="6" NAME="debug_daddr" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_daddr">
+        <PORT DIR="O" LEFT="0" NAME="check_rst" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="pot_to_const_0_check_rst">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe6"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="debug_read_index" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_debug_read_index">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe7"/>
+            <CONNECTION INSTANCE="ila_0" PORT="probe3"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5664,8 +5577,6 @@
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="ext_reset_in"/>
-            <CONNECTION INSTANCE="ila_0" PORT="probe9"/>
-            <CONNECTION INSTANCE="ila_0" PORT="probe18"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="IO" LEFT="53" NAME="MIO" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_MIO">
@@ -6969,7 +6880,6 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ARESETN"/>
-            <CONNECTION INSTANCE="ila_0" PORT="probe17"/>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>

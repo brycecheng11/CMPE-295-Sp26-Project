@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Sep 17 15:38:55 2026
-# Process ID: 657750
+# Start of session at: Tue Sep 22 13:49:54 2026
+# Process ID: 77518
 # Current directory: /home/kenny/Downloads/can_communication/can_communication.runs/design_1_pid_controller_0_2_synth_1
 # Command line: vivado -log design_1_pid_controller_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_pid_controller_0_2.tcl
 # Log file: /home/kenny/Downloads/can_communication/can_communication.runs/design_1_pid_controller_0_2_synth_1/design_1_pid_controller_0_2.vds
@@ -24,45 +24,54 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 657780
+INFO: [Synth 8-7075] Helper process launched with PID 77554
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2446.445 ; gain = 0.000 ; free physical = 305 ; free virtual = 5130
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2455.477 ; gain = 0.000 ; free physical = 707 ; free virtual = 4419
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_pid_controller_0_2' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/synth/design_1_pid_controller_0_2.v:57]
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_initial_math_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_initial_math_0_0/synth/design_1_initial_math_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'initial_math' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/initial_math.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'initial_math' (1#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/initial_math.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_initial_math_0_0' (2#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_initial_math_0_0/synth/design_1_initial_math_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'design_1_prev_value_flip_flop_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_prev_value_flip_flop_0_0/synth/design_1_prev_value_flip_flop_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'prev_value_flip_flop' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/prev_value_flip_flop.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'prev_value_flip_flop' (3#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/prev_value_flip_flop.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_prev_value_flip_flop_0_0' (4#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_prev_value_flip_flop_0_0/synth/design_1_prev_value_flip_flop_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'design_1_term_calculation_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_term_calculation_0_0/synth/design_1_term_calculation_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'term_calculation' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/term_calculation.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'term_calculation' (5#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/term_calculation.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_term_calculation_0_0' (6#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_term_calculation_0_0/synth/design_1_term_calculation_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'design_1_time_calc_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_time_calc_0_0/synth/design_1_time_calc_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'time_calc' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/time_calc.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'time_calc' (7#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.srcs/sources_1/new/time_calc.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_time_calc_0_0' (8#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/ip/design_1_time_calc_0_0/synth/design_1_time_calc_0_0.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (9#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (10#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/16ff/pid_controller.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_pid_controller_0_2' (11#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/synth/design_1_pid_controller_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_initial_math_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_initial_math_0_0/synth/design_1_initial_math_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'initial_math' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/initial_math.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/initial_math.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'initial_math' (1#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/initial_math.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_initial_math_0_0' (2#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_initial_math_0_0/synth/design_1_initial_math_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_k_math_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_k_math_0_0/synth/design_1_k_math_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'k_math' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/k_math.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'k_math' (3#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/k_math.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_k_math_0_0' (4#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_k_math_0_0/synth/design_1_k_math_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_prev_value_flip_flop_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_prev_value_flip_flop_0_0/synth/design_1_prev_value_flip_flop_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'prev_value_flip_flop' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/prev_value_flip_flop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'prev_value_flip_flop' (5#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/prev_value_flip_flop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_prev_value_flip_flop_0_0' (6#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_prev_value_flip_flop_0_0/synth/design_1_prev_value_flip_flop_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_term_calculation_0_1' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_term_calculation_0_1/synth/design_1_term_calculation_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'term_calculation' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/term_calculation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'term_calculation' (7#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/term_calculation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_term_calculation_0_1' (8#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_term_calculation_0_1/synth/design_1_term_calculation_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_time_calc_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_time_calc_0_0/synth/design_1_time_calc_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'time_calc' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/time_calc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'time_calc' (9#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/time_calc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_time_calc_0_0' (10#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_time_calc_0_0/synth/design_1_time_calc_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_velocity_calculation_0_0' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_velocity_calculation_0_0/synth/design_1_velocity_calculation_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'velocity_calculation' [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/velocity_calculation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'velocity_calculation' (11#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.srcs/sources_1/new/velocity_calculation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_velocity_calculation_0_0' (12#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/ip/design_1_velocity_calculation_0_0/synth/design_1_velocity_calculation_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (13#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (14#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ipshared/90db/pid_controller.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_pid_controller_0_2' (15#1) [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/synth/design_1_pid_controller_0_2.v:57]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2446.445 ; gain = 0.000 ; free physical = 248 ; free virtual = 4771
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2455.477 ; gain = 0.000 ; free physical = 254 ; free virtual = 3947
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2446.445 ; gain = 0.000 ; free physical = 242 ; free virtual = 4767
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2455.477 ; gain = 0.000 ; free physical = 253 ; free virtual = 3943
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2446.445 ; gain = 0.000 ; free physical = 242 ; free virtual = 4767
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2455.477 ; gain = 0.000 ; free physical = 253 ; free virtual = 3943
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2446.445 ; gain = 0.000 ; free physical = 235 ; free virtual = 4760
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2455.477 ; gain = 0.000 ; free physical = 260 ; free virtual = 3951
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -71,49 +80,50 @@ Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/
 Finished Parsing XDC File [/home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_2/pid_controller.gen/sources_1/bd/design_1/design_1_ooc.xdc] for cell 'inst/design_1_i'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2510.402 ; gain = 0.000 ; free physical = 756 ; free virtual = 5291
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2519.434 ; gain = 0.000 ; free physical = 1049 ; free virtual = 4728
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2510.402 ; gain = 0.000 ; free physical = 756 ; free virtual = 5291
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2519.434 ; gain = 0.000 ; free physical = 1050 ; free virtual = 4728
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 806 ; free virtual = 5362
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1148 ; free virtual = 4826
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 806 ; free virtual = 5362
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1148 ; free virtual = 4826
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 806 ; free virtual = 5362
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1148 ; free virtual = 4826
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 806 ; free virtual = 5365
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1133 ; free virtual = 4812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input   64 Bit       Adders := 2     
 	   2 Input   64 Bit       Adders := 2     
+	   3 Input   64 Bit       Adders := 2     
 	   3 Input   32 Bit       Adders := 2     
 	   2 Input   32 Bit       Adders := 2     
 +---Registers : 
 	               64 Bit    Registers := 3     
-	               32 Bit    Registers := 6     
+	               32 Bit    Registers := 11    
+	                9 Bit    Registers := 3     
 	                1 Bit    Registers := 1     
 +---Multipliers : 
 	              32x32  Multipliers := 1     
-	              13x32  Multipliers := 3     
+	               9x32  Multipliers := 3     
 +---Muxes : 
 	   2 Input   64 Bit        Muxes := 2     
-	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -129,58 +139,68 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-DSP Report: Generating DSP integral1, operation Mode is: A*B.
+DSP Report: Generating DSP integral1, operation Mode is: A*B2.
+DSP Report: register error_reg is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
-DSP Report: Generating DSP integral1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP integral1, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register error_reg is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
-DSP Report: Generating DSP integral1, operation Mode is: A*B.
+DSP Report: Generating DSP integral1, operation Mode is: A2*B.
+DSP Report: register integral1 is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
-DSP Report: Generating DSP integral1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: Generating DSP integral1, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register integral1 is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
 DSP Report: operator integral1 is absorbed into DSP integral1.
-DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/velocity2, operation Mode is: A*B.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
-DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/velocity2, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
-DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/velocity1, operation Mode is: A*B.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity1.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity1.
-DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/velocity1, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity1.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity1.
-DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/velocity2, operation Mode is: A*B.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
-DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/velocity2, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
-DSP Report: operator inst/design_1_i/term_calculation_0/inst/velocity2 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/velocity2.
+DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/i_term1, operation Mode is: A*B2.
+DSP Report: register inst/design_1_i/k_math_0/inst/ki_signed_reg is absorbed into DSP inst/design_1_i/term_calculation_0/inst/i_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/i_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/i_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/i_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/i_term1.
+DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/i_term1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inst/design_1_i/k_math_0/inst/ki_signed_reg is absorbed into DSP inst/design_1_i/term_calculation_0/inst/i_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/i_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/i_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/i_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/i_term1.
+DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/d_term1, operation Mode is: A*B2.
+DSP Report: register inst/design_1_i/k_math_0/inst/kd_signed_reg is absorbed into DSP inst/design_1_i/term_calculation_0/inst/d_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/d_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/d_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/d_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/d_term1.
+DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/d_term1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inst/design_1_i/k_math_0/inst/kd_signed_reg is absorbed into DSP inst/design_1_i/term_calculation_0/inst/d_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/d_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/d_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/d_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/d_term1.
+DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/p_term1, operation Mode is: A*B2.
+DSP Report: register inst/design_1_i/k_math_0/inst/kp_signed_reg is absorbed into DSP inst/design_1_i/term_calculation_0/inst/p_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/p_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/p_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/p_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/p_term1.
+DSP Report: Generating DSP inst/design_1_i/term_calculation_0/inst/p_term1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register inst/design_1_i/k_math_0/inst/kp_signed_reg is absorbed into DSP inst/design_1_i/term_calculation_0/inst/p_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/p_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/p_term1.
+DSP Report: operator inst/design_1_i/term_calculation_0/inst/p_term1 is absorbed into DSP inst/design_1_i/term_calculation_0/inst/p_term1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 897 ; free virtual = 5449
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1144 ; free virtual = 4829
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping Report (see note below)
-+----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name                 | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|initial_math                | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|initial_math                | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|initial_math                | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|initial_math                | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_pid_controller_0_2 | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_pid_controller_0_2 | (PCIN>>17)+A*B | 15     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_pid_controller_0_2 | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_pid_controller_0_2 | (PCIN>>17)+A*B | 15     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_pid_controller_0_2 | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_pid_controller_0_2 | (PCIN>>17)+A*B | 15     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+----------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                 | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|initial_math                | A*B2            | 18     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|initial_math                | (PCIN>>17)+A2*B | 15     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|initial_math                | A2*B            | 18     | 18     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|initial_math                | (PCIN>>17)+A2*B | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_pid_controller_0_2 | A*B2            | 18     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_pid_controller_0_2 | (PCIN>>17)+A*B2 | 15     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_pid_controller_0_2 | A*B2            | 18     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_pid_controller_0_2 | (PCIN>>17)+A*B2 | 15     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_pid_controller_0_2 | A*B2            | 18     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_pid_controller_0_2 | (PCIN>>17)+A*B2 | 15     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++----------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -190,19 +210,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 852 ; free virtual = 5410
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1040 ; free virtual = 4725
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 865 ; free virtual = 5423
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1012 ; free virtual = 4697
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 866 ; free virtual = 5425
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 996 ; free virtual = 4680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -220,37 +240,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 868 ; free virtual = 5426
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1004 ; free virtual = 4688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 868 ; free virtual = 5426
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1004 ; free virtual = 4688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 865 ; free virtual = 5424
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1005 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 865 ; free virtual = 5424
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1005 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 865 ; free virtual = 5424
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1005 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 865 ; free virtual = 5424
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1005 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -268,41 +288,41 @@ Report Cell Usage:
 +------+--------+------+
 |1     |CARRY4  |  1184|
 |2     |DSP48E1 |     9|
-|5     |LUT1    |   128|
-|6     |LUT2    |   271|
-|7     |LUT3    |   126|
-|8     |LUT4    |   157|
+|5     |LUT1    |    97|
+|6     |LUT2    |   272|
+|7     |LUT3    |   149|
+|8     |LUT4    |   127|
 |9     |LUT5    |  3937|
-|10    |LUT6    |    23|
-|11    |FDRE    |   384|
+|10    |LUT6    |    22|
+|11    |FDRE    |   469|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 865 ; free virtual = 5424
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1005 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2510.402 ; gain = 0.000 ; free physical = 898 ; free virtual = 5458
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2510.402 ; gain = 63.957 ; free physical = 898 ; free virtual = 5458
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2519.434 ; gain = 0.000 ; free physical = 1041 ; free virtual = 4726
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2519.434 ; gain = 63.957 ; free physical = 1041 ; free virtual = 4726
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2510.402 ; gain = 0.000 ; free physical = 981 ; free virtual = 5545
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2519.434 ; gain = 0.000 ; free physical = 1136 ; free virtual = 4821
 INFO: [Netlist 29-17] Analyzing 1193 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'design_1_pid_controller_0_2' is not ideal for floorplanning, since the cellview 'initial_math' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2513.371 ; gain = 0.000 ; free physical = 944 ; free virtual = 5509
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2519.434 ; gain = 0.000 ; free physical = 1098 ; free virtual = 4783
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 898dd254
+Synth Design complete, checksum: a830cf15
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+51 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 2513.371 ; gain = 67.000 ; free physical = 1067 ; free virtual = 5632
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:39 . Memory (MB): peak = 2519.434 ; gain = 64.031 ; free physical = 1223 ; free virtual = 4908
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint '/home/kenny/Downloads/can_communication/can_communication.runs/design_1_pid_controller_0_2_synth_1/design_1_pid_controller_0_2.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_pid_controller_0_2, cache-ID = 3ff28c9f5e30b80c
-INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_pid_controller_0_2, cache-ID = a58ad10e16f1085a
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/kenny/Downloads/can_communication/can_communication.runs/design_1_pid_controller_0_2_synth_1/design_1_pid_controller_0_2.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_pid_controller_0_2_utilization_synth.rpt -pb design_1_pid_controller_0_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 15:39:52 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 22 13:50:49 2026...

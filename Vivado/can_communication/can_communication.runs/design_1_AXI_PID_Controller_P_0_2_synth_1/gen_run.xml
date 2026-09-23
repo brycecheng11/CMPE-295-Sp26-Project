@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="design_1_AXI_PID_Controller_P_0_2_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1789672996">
-  <File Type="VDS-TIMING-PB" Name="design_1_AXI_PID_Controller_P_0_2_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="design_1_AXI_PID_Controller_P_0_2_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="design_1_AXI_PID_Controller_P_0_2.dcp"/>
+<GenRun Id="design_1_AXI_PID_Controller_P_0_2_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1790019808">
   <File Type="REPORTS-TCL" Name="design_1_AXI_PID_Controller_P_0_2_reports.tcl"/>
   <File Type="PA-TCL" Name="design_1_AXI_PID_Controller_P_0_2.tcl"/>
+  <File Type="RDS-DCP" Name="design_1_AXI_PID_Controller_P_0_2.dcp"/>
   <File Type="RDS-RDS" Name="design_1_AXI_PID_Controller_P_0_2.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_1_AXI_PID_Controller_P_0_2_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="design_1_AXI_PID_Controller_P_0_2_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="design_1_AXI_PID_Controller_P_0_2_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_AXI_PID_Controller_P_0_2">
@@ -44,9 +41,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

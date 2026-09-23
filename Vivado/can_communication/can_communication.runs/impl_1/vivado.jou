@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Sep 17 15:40:58 2026
-# Process ID: 658487
+# Start of session at: Tue Sep 22 13:51:55 2026
+# Process ID: 78266
 # Current directory: /home/kenny/Downloads/can_communication/can_communication.runs/impl_1
 # Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: /home/kenny/Downloads/can_communication/can_communication.runs/impl_1/design_1_wrapper.vdi

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: saman:user:pid_controller:1.0
-// IP Revision: 7
+// IP Revision: 10
 
 (* X_CORE_INFO = "design_1_wrapper,Vivado 2021.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_pid_controller_0_2,design_1_wrapper,{}" *)
@@ -56,9 +56,9 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_pid_controller_0_2 (
   angle_0,
-  k_d_0,
-  k_i_0,
-  k_p_0,
+  kd_0,
+  ki_0,
+  kp_0,
   new_target_angle_available_0,
   new_velocity_available_0,
   output_velocity_0,
@@ -68,9 +68,9 @@ module design_1_pid_controller_0_2 (
 );
 
 input wire [31 : 0] angle_0;
-input wire [11 : 0] k_d_0;
-input wire [11 : 0] k_i_0;
-input wire [11 : 0] k_p_0;
+input wire [11 : 0] kd_0;
+input wire [11 : 0] ki_0;
+input wire [11 : 0] kp_0;
 input wire [0 : 0] new_target_angle_available_0;
 output wire [0 : 0] new_velocity_available_0;
 output wire [31 : 0] output_velocity_0;
@@ -82,9 +82,9 @@ input wire [63 : 0] time_curr_0;
 
   design_1_wrapper inst (
     .angle_0(angle_0),
-    .k_d_0(k_d_0),
-    .k_i_0(k_i_0),
-    .k_p_0(k_p_0),
+    .kd_0(kd_0),
+    .ki_0(ki_0),
+    .kp_0(kp_0),
     .new_target_angle_available_0(new_target_angle_available_0),
     .new_velocity_available_0(new_velocity_available_0),
     .output_velocity_0(output_velocity_0),
