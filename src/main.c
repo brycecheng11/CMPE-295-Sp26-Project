@@ -9,7 +9,8 @@
 #include <string.h>
 #include <stdint.h>
 #include <math.h>
-
+#include <time.h>
+#include "xtime_l.h"
 #include "mpu_6050.h"
 
 #define GPIO_BASE XPAR_PMODCAN_0_AXI_LITE_GPIO_BASEADDR
@@ -31,6 +32,8 @@ XUartPs Uart;
 #define PID_TARGET		(PID_BASE + 0x14)
 #define PID_VELOCITY 	(PID_BASE + 0x20)
 #define PID_NEW_VELOCITY (PID_BASE + 0x24)
+#define PID_TIME_LO   (PID_BASE + 0x18)   // slv_reg6 -> lower 32 bits of pid_time
+#define PID_TIME_HI   (PID_BASE + 0x1C)   // slv_reg7 -> upper 32 bits of pid_time
 #define PID_VELOCITY_READY_TIMEOUT  10000
 //#define PID_CONTROL     (PID_BASE + 0x00)
 //#define PID_ANGLE       (PID_BASE + 0x04)
@@ -203,6 +206,7 @@ void PID_WriteAngle(float pitch_deg)
 
 int PID_ReadVelocity(float *velocity_dps)
 {
+	/*
 	uint32_t timeout = PID_VELOCITY_READY_TIMEOUT;
 
 	while (((Xil_In32(PID_NEW_VELOCITY) & 0x1) == 0) && (timeout > 0)) {
@@ -214,7 +218,7 @@ int PID_ReadVelocity(float *velocity_dps)
 		*velocity_dps = 0.0f;
 		return 0;
 	}
-
+	*/
 	int32_t raw = (int32_t)Xil_In32(PID_VELOCITY);
 	*velocity_dps = (float)raw / (float)VELOCITY_SCALE;
 	return 1;
@@ -230,6 +234,13 @@ int ClampAndCheckVelocity(float velocity_dps, int32_t *speed_centidps)
 
 	*speed_centidps = (int32_t)(velocity_dps * 100.0f);
 	return 1;
+}
+
+uint64_t get_timestamp_ns(void)
+{
+    XTime tsf;
+    XTime_GetTime(&tsf);
+    return (tsf * 1000000000ULL) / COUNTS_PER_SECOND;
 }
 
 int main(void)
@@ -380,7 +391,12 @@ int main(void)
 		//pitch_rate = gy / 131.0f;
 
 		//pitch = ALPHA * (pitch + pitch_rate * DT) + (1.0f - ALPHA) * accel_pitch;
+		uint64_t ts = get_timestamp_ns();
+		uint32_t reg6_val = (uint32_t)(ts & 0xFFFFFFFF);         // lower word
+		uint32_t reg7_val = (uint32_t)((ts >> 32) & 0xFFFFFFFF); // upper word
 
+		Xil_Out32(PID_TIME_LO, reg6_val);   // -> slv_reg6
+		Xil_Out32(PID_TIME_HI, reg7_val);   // -> slv_reg7
 		PID_WriteAngle(accel_pitch);
 
 
@@ -403,10 +419,12 @@ int main(void)
 			} else {
 				CAN_SendVelocityFast(&motor141, speed_centidps);
 				CAN_SendVelocityFast(&motor142, speed_centidps );
+
 				xil_printf(
 						"RAW ax=%d ay=%d az=%d accel_pitch=%d velocity in dps = %d\n",
 						ax, ay, az, (int)accel_pitch, (int)velocity_dps
 				);
+
 			}
 		}
 		usleep(4000); // 250 Hz loop
