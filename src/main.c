@@ -212,7 +212,7 @@ int PID_ReadVelocity(float *velocity_dps)
 	if (timeout == 0) {
 		xil_printf("WARNING: PID velocity not ready, timed out\r\n");
 		*velocity_dps = 0.0f;
-		return 0;   // caller can decide whether to treat this as unsafe/skip-send
+		return 0;
 	}
 
 	int32_t raw = (int32_t)Xil_In32(PID_VELOCITY);
@@ -349,7 +349,7 @@ int main(void)
 			(unsigned long)Xil_In32(PID_ANGLE));
 
 
-	Xil_Out32(PID_TARGET, (int32_t)(PITCH_SETPOINT * ANGLE_SCALE));
+	Xil_Out32(PID_TARGET, (int32_t)(PITCH_SETPOINT));
 	Xil_Out32(PID_CONTROL, 0x02);
 	Xil_Out32(PID_CONTROL, 0x00);
 	/*
@@ -401,12 +401,11 @@ int main(void)
 						(int)MAX_DPS
 				);
 			} else {
-
 				CAN_SendVelocityFast(&motor141, speed_centidps);
 				CAN_SendVelocityFast(&motor142, speed_centidps );
 				xil_printf(
-						"RAW ax=%d ay=%d az=%d accel_pitch=%d\r\n",
-						ax, ay, az, (int)accel_pitch
+						"RAW ax=%d ay=%d az=%d accel_pitch=%d velocity in dps = %d\n",
+						ax, ay, az, (int)accel_pitch, (int)velocity_dps
 				);
 			}
 		}
