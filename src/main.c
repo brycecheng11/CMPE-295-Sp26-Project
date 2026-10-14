@@ -204,7 +204,7 @@ void PID_WriteAngle(float pitch_deg)
 	Xil_Out32(PID_ANGLE, (uint32_t)angle_fixed);
 }
 
-int PID_ReadVelocity(float *velocity_dps)
+int PID_ReadVelocity(int32_t *velocity)
 {
 	/*
 	uint32_t timeout = PID_VELOCITY_READY_TIMEOUT;
@@ -215,32 +215,38 @@ int PID_ReadVelocity(float *velocity_dps)
 
 	if (timeout == 0) {
 		xil_printf("WARNING: PID velocity not ready, timed out\r\n");
-		*velocity_dps = 0.0f;
+	 *velocity_dps = 0.0f;
 		return 0;
 	}
-	*/
-	int32_t raw = (int32_t)Xil_In32(PID_VELOCITY);
-	*velocity_dps = (float)raw / (float)VELOCITY_SCALE;
+	 */
+	uint32_t new_velocity = Xil_In32(PID_NEW_VELOCITY) & 0x1;
+
+	if (new_velocity != 1) {
+		//xil_printf("Velocity flag has not been raised\n");
+		return 0;   // No new velocity, don't send CAN
+	}
+	*velocity = (int32_t)Xil_In32(PID_VELOCITY);
 	return 1;
 }
 
 
-int ClampAndCheckVelocity(float velocity_dps, int32_t *speed_centidps)
+int ClampAndCheckVelocity(int32_t velocity_dps, int32_t *speed_centidps)
 {
+	/*
 	if (fabsf(velocity_dps) > MAX_DPS) {
 
 		return 0;
 	}
-
-	*speed_centidps = (int32_t)(velocity_dps * 100.0f);
+	*/
+	*speed_centidps = (int32_t)(velocity_dps);
 	return 1;
 }
 
 uint64_t get_timestamp_ns(void)
 {
-    XTime tsf;
-    XTime_GetTime(&tsf);
-    return (tsf * 1000000000ULL) / COUNTS_PER_SECOND;
+	XTime tsf;
+	XTime_GetTime(&tsf);
+	return (tsf * 1000000000ULL) / COUNTS_PER_SECOND;
 }
 
 int main(void)
@@ -365,12 +371,29 @@ int main(void)
 	Xil_Out32(PID_CONTROL, 0x00);
 	/*
 	const u8 testSpeedCommand[8] = {
-			0xA2, 0x00, 0x00, 0x00, 0x11, 0x22, 0x00, 0x0F
+			0xA2, 0x00, 0x00, 0x00, 0x30, 0x2A, 0x00, 0x7F
 	};
+	memcpy(motor142.data, testSpeedCommand, sizeof(testSpeedCommand));
+	SendMotorMessageInit(&motor142, "Test first max speed");
+
+
+	const u8 testSpeed2Command[8] = {
+			0xA2, 0x00, 0x00, 0x00, 0x30, 0x2A, 0x00, 0x01
+	};
+	memcpy(motor141.data, testSpeed2Command, sizeof(testSpeed2Command));
+	SendMotorMessageInit(&motor141, "Test  second max speed");
 	*/
-	//memcpy(motor141.data, testSpeedCommand, sizeof(testSpeedCommand));
-	//SendMotorMessageInit(&motor141, "Test max speed");
-	//sleep(10);
+	/*
+	sleep(10);
+	const u8 testSpeed3Command[8] = {
+			0xA2, 0x00, 0x00, 0x00, 0x30, 0x2A, 0x00, 0x7F
+	};
+	memcpy(motor141.data, testSpeed3Command, sizeof(testSpeed3Command));
+	SendMotorMessageInit(&motor141, "Test third max speed");
+	return 0;
+	*/
+
+	//return 0;
 
 
 	while (1) {
@@ -391,38 +414,40 @@ int main(void)
 		//pitch_rate = gy / 131.0f;
 
 		//pitch = ALPHA * (pitch + pitch_rate * DT) + (1.0f - ALPHA) * accel_pitch;
-		uint64_t ts = get_timestamp_ns();
-		uint32_t reg6_val = (uint32_t)(ts & 0xFFFFFFFF);         // lower word
-		uint32_t reg7_val = (uint32_t)((ts >> 32) & 0xFFFFFFFF); // upper word
+		//uint64_t ts = get_timestamp_ns();
+		//uint32_t reg6_val = (uint32_t)(ts & 0xFFFFFFFF);         // lower word
+		//uint32_t reg7_val = (uint32_t)((ts >> 32) & 0xFFFFFFFF); // upper word
 
-		Xil_Out32(PID_TIME_LO, reg6_val);   // -> slv_reg6
-		Xil_Out32(PID_TIME_HI, reg7_val);   // -> slv_reg7
+		//Xil_Out32(PID_TIME_LO, reg6_val);   // -> slv_reg6
+		//Xil_Out32(PID_TIME_HI, reg7_val);   // -> slv_reg7
 		PID_WriteAngle(accel_pitch);
 
 
-		float velocity_dps = 0.0f;
-		int velocity_ready = PID_ReadVelocity(&velocity_dps);
+		//float velocity_dps = 0.0f;
+		int32_t velocity = 0;
+		int velocity_ready = PID_ReadVelocity(&velocity);
 
 		if (!velocity_ready) {
 			// skip this cycle
 		} else {
 			int32_t speed_centidps = 0;
-			int safe = ClampAndCheckVelocity(velocity_dps, &speed_centidps);
+			int safe = ClampAndCheckVelocity(velocity, &speed_centidps);
 
 
 			if (!safe) {
 				xil_printf(
 						"WARNING: requested velocity %d dps exceeds MAX_DPS=%d, NOT sending\r\n",
-						(int)velocity_dps,
+						(int)velocity,
 						(int)MAX_DPS
 				);
 			} else {
+				int32_t speed_inverted = (int32_t)(~(uint32_t)speed_centidps + 1u);
 				CAN_SendVelocityFast(&motor141, speed_centidps);
-				CAN_SendVelocityFast(&motor142, speed_centidps );
+				CAN_SendVelocityFast(&motor142, speed_inverted);
 
 				xil_printf(
 						"RAW ax=%d ay=%d az=%d accel_pitch=%d velocity in dps = %d\n",
-						ax, ay, az, (int)accel_pitch, (int)velocity_dps
+						ax, ay, az, (int)accel_pitch, (int)velocity
 				);
 
 			}
