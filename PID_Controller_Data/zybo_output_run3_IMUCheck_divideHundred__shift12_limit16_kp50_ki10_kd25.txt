@@ -1,0 +1,1649 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: 3336 -822 1147
+Calibrating gyro...
+Gyro offsets: -665 945 1499
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: AB
+CAN_SendMessage: A9
+CAN_SendMessage: F9
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 56
+CAN_SendMessage: 06
+CAN_SendMessage: 00
+RAW ax=2176 ay=-8480 az=13985 accel_pitch=7 velocity in dps = -4153178
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 65
+CAN_SendMessage: 50
+CAN_SendMessage: 19
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9B
+CAN_SendMessage: AF
+CAN_SendMessage: E6
+CAN_SendMessage: FF
+RAW ax=5104 ay=-10946 az=10417 accel_pitch=18 velocity in dps = 16589815
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F5
+CAN_SendMessage: 9A
+CAN_SendMessage: F9
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 0B
+CAN_SendMessage: 65
+CAN_SendMessage: 06
+CAN_SendMessage: 00
+RAW ax=5536 ay=-10834 az=7557 accel_pitch=22 velocity in dps = -4190835
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9C
+CAN_SendMessage: BE
+CAN_SendMessage: FC
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 64
+CAN_SendMessage: 41
+CAN_SendMessage: 03
+CAN_SendMessage: 00
+RAW ax=6010 ay=-11728 az=6763 accel_pitch=23 velocity in dps = -2133483
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 49
+CAN_SendMessage: 63
+CAN_SendMessage: 09
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B7
+CAN_SendMessage: 9C
+CAN_SendMessage: F6
+CAN_SendMessage: FF
+RAW ax=6576 ay=-10624 az=5573 accel_pitch=28 velocity in dps = 6152411
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E2
+CAN_SendMessage: 2E
+CAN_SendMessage: F3
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1E
+CAN_SendMessage: D1
+CAN_SendMessage: 0C
+CAN_SendMessage: 00
+RAW ax=6610 ay=-10264 az=5551 accel_pitch=29 velocity in dps = -8399665
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E1
+CAN_SendMessage: 8B
+CAN_SendMessage: FA
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1F
+CAN_SendMessage: 74
+CAN_SendMessage: 05
+CAN_SendMessage: 00
+RAW ax=6386 ay=-8694 az=5451 accel_pitch=31 velocity in dps = -3574072
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9A
+CAN_SendMessage: 07
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 66
+CAN_SendMessage: F8
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=7028 ay=-9510 az=5097 accel_pitch=33 velocity in dps = 15092740
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DB
+CAN_SendMessage: 99
+CAN_SendMessage: FC
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 25
+CAN_SendMessage: 66
+CAN_SendMessage: 03
+CAN_SendMessage: 00
+RAW ax=8222 ay=-9892 az=4785 accel_pitch=36 velocity in dps = -2227576
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2A
+CAN_SendMessage: 59
+CAN_SendMessage: F8
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D6
+CAN_SendMessage: A6
+CAN_SendMessage: 07
+CAN_SendMessage: 00
+RAW ax=5386 ay=-7954 az=2549 accel_pitch=32 velocity in dps = -5014629
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D3
+CAN_SendMessage: 34
+CAN_SendMessage: F6
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2D
+CAN_SendMessage: CB
+CAN_SendMessage: 09
+CAN_SendMessage: 00
+RAW ax=10210 ay=-12726 az=4281 accel_pitch=37 velocity in dps = -6418377
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 36
+CAN_SendMessage: F8
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: CA
+CAN_SendMessage: 07
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=8142 ay=-12334 az=3263 accel_pitch=32 velocity in dps = 15708702
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2F
+CAN_SendMessage: D4
+CAN_SendMessage: 15
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D1
+CAN_SendMessage: 2B
+CAN_SendMessage: EA
+CAN_SendMessage: FF
+RAW ax=5796 ay=-12794 az=4039 accel_pitch=23 velocity in dps = 14305754
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 71
+CAN_SendMessage: 49
+CAN_SendMessage: F9
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 8F
+CAN_SendMessage: B6
+CAN_SendMessage: 06
+CAN_SendMessage: 00
+RAW ax=5878 ay=-12888 az=3763 accel_pitch=23 velocity in dps = -4399514
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 26
+CAN_SendMessage: 9A
+CAN_SendMessage: 12
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DA
+CAN_SendMessage: 65
+CAN_SendMessage: ED
+CAN_SendMessage: FF
+RAW ax=4688 ay=-11832 az=3603 accel_pitch=20 velocity in dps = 12191100
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1D
+CAN_SendMessage: 03
+CAN_SendMessage: 08
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E3
+CAN_SendMessage: FC
+CAN_SendMessage: F7
+CAN_SendMessage: FF
+RAW ax=4594 ay=-11744 az=3953 accel_pitch=20 velocity in dps = 5250855
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 22
+CAN_SendMessage: B6
+CAN_SendMessage: 15
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DE
+CAN_SendMessage: 49
+CAN_SendMessage: EA
+CAN_SendMessage: FF
+RAW ax=6232 ay=-11488 az=3461 accel_pitch=27 velocity in dps = 14228824
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: 00
+CAN_SendMessage: F6
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: FF
+CAN_SendMessage: 09
+CAN_SendMessage: 00
+RAW ax=5350 ay=-11972 az=2919 accel_pitch=23 velocity in dps = -6552624
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B5
+CAN_SendMessage: 40
+CAN_SendMessage: FB
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4B
+CAN_SendMessage: BF
+CAN_SendMessage: 04
+CAN_SendMessage: 00
+RAW ax=6754 ay=-12540 az=5253 accel_pitch=26 velocity in dps = -3111151
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: AE
+CAN_SendMessage: 1C
+CAN_SendMessage: F9
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 52
+CAN_SendMessage: E3
+CAN_SendMessage: 06
+CAN_SendMessage: 00
+RAW ax=11946 ay=-10974 az=6393 accel_pitch=43 velocity in dps = -4514101
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B2
+CAN_SendMessage: B2
+CAN_SendMessage: 04
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4E
+CAN_SendMessage: 4D
+CAN_SendMessage: FB
+CAN_SendMessage: FF
+RAW ax=9078 ay=-7348 az=10493 accel_pitch=35 velocity in dps = 3078901
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 5D
+CAN_SendMessage: B9
+CAN_SendMessage: 05
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A3
+CAN_SendMessage: 46
+CAN_SendMessage: FA
+CAN_SendMessage: FF
+RAW ax=7792 ay=-10514 az=3635 accel_pitch=35 velocity in dps = 3751334
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 64
+CAN_SendMessage: 97
+CAN_SendMessage: 16
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9C
+CAN_SendMessage: 68
+CAN_SendMessage: E9
+CAN_SendMessage: FF
+RAW ax=7416 ay=-10516 az=3093 accel_pitch=34 velocity in dps = 14805484
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: D5
+CAN_SendMessage: 08
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 2A
+CAN_SendMessage: F7
+CAN_SendMessage: FF
+RAW ax=7042 ay=-12064 az=3515 accel_pitch=29 velocity in dps = 5789059
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: AD
+CAN_SendMessage: A2
+CAN_SendMessage: 05
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 53
+CAN_SendMessage: 5D
+CAN_SendMessage: FA
+CAN_SendMessage: FF
+RAW ax=7586 ay=-10932 az=2363 accel_pitch=34 velocity in dps = 3693250
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B2
+CAN_SendMessage: 55
+CAN_SendMessage: 13
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4E
+CAN_SendMessage: AA
+CAN_SendMessage: EC
+CAN_SendMessage: FF
+RAW ax=6394 ay=-11804 az=5039 accel_pitch=26 velocity in dps = 12671221
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A9
+CAN_SendMessage: BE
+CAN_SendMessage: 08
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 57
+CAN_SendMessage: 41
+CAN_SendMessage: F7
+CAN_SendMessage: FF
+RAW ax=6422 ay=-12170 az=3001 accel_pitch=27 velocity in dps = 5730975
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: AE
+CAN_SendMessage: 71
+CAN_SendMessage: 16
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 52
+CAN_SendMessage: 8E
+CAN_SendMessage: E9
+CAN_SendMessage: FF
+RAW ax=6022 ay=-10562 az=3463 accel_pitch=28 velocity in dps = 14708946
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 4D
+CAN_SendMessage: 14
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: B2
+CAN_SendMessage: EB
+CAN_SendMessage: FF
+RAW ax=7152 ay=-13160 az=5693 accel_pitch=26 velocity in dps = 13305997
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3F
+CAN_SendMessage: D1
+CAN_SendMessage: F8
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C1
+CAN_SendMessage: 2E
+CAN_SendMessage: 07
+CAN_SendMessage: 00
+RAW ax=5028 ay=-11864 az=7975 accel_pitch=19 velocity in dps = -4707211
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 84
+CAN_SendMessage: E4
+CAN_SendMessage: E7
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7C
+CAN_SendMessage: 1B
+CAN_SendMessage: 18
+CAN_SendMessage: 00
+RAW ax=2888 ay=-10436 az=8829 accel_pitch=11 velocity in dps = -15799001
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 92
+CAN_SendMessage: 51
+CAN_SendMessage: 03
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6E
+CAN_SendMessage: AE
+CAN_SendMessage: FC
+CAN_SendMessage: FF
+RAW ax=4928 ay=-10794 az=10769 accel_pitch=17 velocity in dps = 2174903
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2C
+CAN_SendMessage: 48
+CAN_SendMessage: F0
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D4
+CAN_SendMessage: B7
+CAN_SendMessage: 0F
+CAN_SendMessage: 00
+RAW ax=784 ay=-8046 az=14653 accel_pitch=2 velocity in dps = -10301008
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 24
+CAN_SendMessage: F9
+CAN_SendMessage: EA
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DC
+CAN_SendMessage: 06
+CAN_SendMessage: 15
+CAN_SendMessage: 00
+RAW ax=-842 ay=-6498 az=13661 accel_pitch=-3 velocity in dps = -13780121
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 31
+CAN_SendMessage: FB
+CAN_SendMessage: FD
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: CF
+CAN_SendMessage: 04
+CAN_SendMessage: 02
+CAN_SendMessage: 00
+RAW ax=3484 ay=-7804 az=14875 accel_pitch=11 velocity in dps = -1323038
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: CC
+CAN_SendMessage: 1C
+CAN_SendMessage: EE
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 34
+CAN_SendMessage: E3
+CAN_SendMessage: 11
+CAN_SendMessage: 00
+RAW ax=6846 ay=-6140 az=8935 accel_pitch=32 velocity in dps = -11722769
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: CF
+CAN_SendMessage: CF
+CAN_SendMessage: FB
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 31
+CAN_SendMessage: 30
+CAN_SendMessage: 04
+CAN_SendMessage: 00
+RAW ax=3994 ay=-5844 az=9109 accel_pitch=20 velocity in dps = -2744815
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DD
+CAN_SendMessage: 59
+CAN_SendMessage: 19
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 23
+CAN_SendMessage: A6
+CAN_SendMessage: E6
+CAN_SendMessage: FF
+RAW ax=2050 ay=-8504 az=13615 accel_pitch=7 velocity in dps = 16614057
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 76
+CAN_SendMessage: 25
+CAN_SendMessage: 03
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 8A
+CAN_SendMessage: DA
+CAN_SendMessage: FC
+CAN_SendMessage: FF
+RAW ax=5368 ay=-3402 az=12749 accel_pitch=22 velocity in dps = 2061981
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 11
+CAN_SendMessage: 1C
+CAN_SendMessage: F0
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: EF
+CAN_SendMessage: E3
+CAN_SendMessage: 0F
+CAN_SendMessage: 00
+RAW ax=4276 ay=-3790 az=15807 accel_pitch=14 velocity in dps = -10413913
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B5
+CAN_SendMessage: 14
+CAN_SendMessage: F0
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4B
+CAN_SendMessage: EB
+CAN_SendMessage: 0F
+CAN_SendMessage: 00
+RAW ax=-724 ay=-1700 az=10173 accel_pitch=-4 velocity in dps = -10432757
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 14
+CAN_SendMessage: FA
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: EC
+CAN_SendMessage: 05
+CAN_SendMessage: FF
+CAN_SendMessage: FF
+RAW ax=3658 ay=30 az=16777 accel_pitch=12 velocity in dps = 640205
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 73
+CAN_SendMessage: 90
+CAN_SendMessage: 0C
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 8D
+CAN_SendMessage: 6F
+CAN_SendMessage: F3
+CAN_SendMessage: FF
+RAW ax=2428 ay=414 az=15039 accel_pitch=9 velocity in dps = 8234119
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6A
+CAN_SendMessage: 4D
+CAN_SendMessage: F5
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 96
+CAN_SendMessage: B2
+CAN_SendMessage: 0A
+CAN_SendMessage: 00
+RAW ax=2338 ay=22 az=15843 accel_pitch=8 velocity in dps = -7010784
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2E
+CAN_SendMessage: 02
+CAN_SendMessage: 16
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D2
+CAN_SendMessage: FD
+CAN_SendMessage: E9
+CAN_SendMessage: FF
+RAW ax=2286 ay=242 az=15639 accel_pitch=8 velocity in dps = 14423500
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 77
+CAN_SendMessage: 15
+CAN_SendMessage: 05
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 89
+CAN_SendMessage: EA
+CAN_SendMessage: FA
+CAN_SendMessage: FF
+RAW ax=2792 ay=240 az=15555 accel_pitch=10 velocity in dps = 3331757
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6C
+CAN_SendMessage: 1A
+CAN_SendMessage: F3
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 94
+CAN_SendMessage: E5
+CAN_SendMessage: 0C
+CAN_SendMessage: 00
+RAW ax=2870 ay=260 az=16181 accel_pitch=10 velocity in dps = -8452045
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 26
+CAN_SendMessage: 96
+CAN_SendMessage: 0F
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DA
+CAN_SendMessage: 69
+CAN_SendMessage: F0
+CAN_SendMessage: FF
+RAW ax=3648 ay=234 az=16237 accel_pitch=12 velocity in dps = 10214783
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 26
+CAN_SendMessage: C8
+CAN_SendMessage: 13
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DA
+CAN_SendMessage: 37
+CAN_SendMessage: EC
+CAN_SendMessage: FF
+RAW ax=3712 ay=-98 az=16173 accel_pitch=12 velocity in dps = 12964228
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D2
+CAN_SendMessage: 13
+CAN_SendMessage: 07
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2E
+CAN_SendMessage: EC
+CAN_SendMessage: F8
+CAN_SendMessage: FF
+RAW ax=4282 ay=1010 az=15745 accel_pitch=15 velocity in dps = 4638262
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D2
+CAN_SendMessage: 45
+CAN_SendMessage: 0B
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2E
+CAN_SendMessage: BA
+CAN_SendMessage: F4
+CAN_SendMessage: FF
+RAW ax=4116 ay=1260 az=14821 accel_pitch=15 velocity in dps = 7387706

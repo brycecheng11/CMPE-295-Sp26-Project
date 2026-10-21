@@ -1,0 +1,4 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed

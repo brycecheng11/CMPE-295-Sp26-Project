@@ -1,0 +1,2539 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: 1421 -1366 1381
+Calibrating gyro...
+Gyro offsets: -704 190 65
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,31,0) cm
+A2=(23,-3,0) cm
+A3=(-20,-3,0) cm
+A4=(0,20,30) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: 1987 -1361 1330
+Calibrating gyro...
+Gyro offsets: -707 193 67
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,31,0) cm
+A2=(23,-3,0) cm
+A3=(-20,-3,0) cm
+A4=(0,20,30) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: 2520 -1760 1232
+Calibrating gyro...
+Gyro offsets: -702 190 67
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,31,0) cm
+A2=(23,-3,0) cm
+A3=(-20,-3,0) cm
+A4=(0,20,30) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+I2C write PWR_MGMT_1 failed
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: 2274 -1731 1263
+Calibrating gyro...
+Gyro offsets: -708 190 67
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,31,0) cm
+A2=(23,-3,0) cm
+A3=(-20,-3,0) cm
+A4=(0,20,30) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=154
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=163
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=149
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=170
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=165
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=168
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=162
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=167
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=155
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=181
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=184
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=-1 A4=185
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: 2419 -1863 1229
+Calibrating gyro...
+Gyro offsets: -696 190 60
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,31,0) cm
+A2=(23,-3,0) cm
+A3=(-20,-3,0) cm
+A4=(0,20,30) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=-1 A2=-1 A3=204 A4=193
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=163 A2=197 A3=199 A4=189
+[CAL DIST] A1=163 A2=197 A3=199 A4=189 cm
+[TAG POSITION] X=10 cm, Y=193 cm, Z=-75 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=171 A2=184 A3=-1 A4=187
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=142 A2=178 A3=207 A4=162
+[CAL DIST] A1=142 A2=178 A3=207 A4=162 cm
+[TAG POSITION] X=131 cm, Y=264 cm, Z=1 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=183 A2=176 A3=232 A4=168
+[CAL DIST] A1=183 A2=176 A3=232 A4=168 cm
+[TAG POSITION] X=267 cm, Y=150 cm, Z=148 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=169 A2=193 A3=233 A4=-1
+[TAG POSITION] Not enough valid distance data
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=139 A2=197 A3=260 A4=182
+[CAL DIST] A1=139 A2=197 A3=260 A4=182 cm
+[TAG POSITION] X=336 cm, Y=520 cm, Z=-33 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=138 A2=194 A3=237 A4=183
+[CAL DIST] A1=138 A2=194 A3=237 A4=183 cm
+[TAG POSITION] X=217 cm, Y=426 cm, Z=-78 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=161 A2=236 A3=236 A4=211
+[CAL DIST] A1=161 A2=236 A3=236 A4=211 cm
+[TAG POSITION] X=1 cm, Y=445 cm, Z=-141 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=198 A3=228 A4=184
+[CAL DIST] A1=154 A2=198 A3=228 A4=184 cm
+[TAG POSITION] X=150 cm, Y=335 cm, Z=-40 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=208 A3=209 A4=180
+[CAL DIST] A1=149 A2=208 A3=209 A4=180 cm
+[TAG POSITION] X=6 cm, Y=320 cm, Z=-46 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=211 A3=217 A4=188
+[CAL DIST] A1=152 A2=211 A3=217 A4=188 cm
+[TAG POSITION] X=31 cm, Y=342 cm, Z=-72 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=142 A2=202 A3=246 A4=188
+[CAL DIST] A1=142 A2=202 A3=246 A4=188 cm
+[TAG POSITION] X=230 cm, Y=465 cm, Z=-76 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=207 A3=238 A4=193
+[CAL DIST] A1=152 A2=207 A3=238 A4=193 cm
+[TAG POSITION] X=161 cm, Y=406 cm, Z=-81 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=207 A3=219 A4=189
+[CAL DIST] A1=151 A2=207 A3=219 A4=189 cm
+[TAG POSITION] X=60 cm, Y=342 cm, Z=-84 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=143 A2=204 A3=230 A4=187
+[CAL DIST] A1=143 A2=204 A3=230 A4=187 cm
+[TAG POSITION] X=132 cm, Y=407 cm, Z=-87 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=190 A3=217 A4=187
+[CAL DIST] A1=152 A2=190 A3=217 A4=187 cm
+[TAG POSITION] X=129 cm, Y=284 cm, Z=-87 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=196 A3=209 A4=185
+[CAL DIST] A1=148 A2=196 A3=209 A4=185 cm
+[TAG POSITION] X=62 cm, Y=291 cm, Z=-92 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=140 A2=203 A3=218 A4=179
+[CAL DIST] A1=140 A2=203 A3=218 A4=179 cm
+[TAG POSITION] X=74 cm, Y=374 cm, Z=-64 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=150 A2=207 A3=219 A4=183
+[CAL DIST] A1=150 A2=207 A3=219 A4=183 cm
+[TAG POSITION] X=60 cm, Y=346 cm, Z=-50 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Accel offsets: 2255 -1637 1272
+Calibrating gyro...
+Gyro offsets: -714 195 59
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,31,0) cm
+A2=(23,-3,0) cm
+A3=(-20,-3,0) cm
+A4=(0,20,30) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=212 A3=206 A4=185
+[CAL DIST] A1=148 A2=212 A3=206 A4=185 cm
+[TAG POSITION] X=-27 cm, Y=326 cm, Z=-80 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=187 A2=212 A3=223 A4=197
+[CAL DIST] A1=187 A2=212 A3=223 A4=197 cm
+[TAG POSITION] X=57 cm, Y=191 cm, Z=11 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=211 A3=221 A4=184
+[CAL DIST] A1=158 A2=211 A3=221 A4=184 cm
+[TAG POSITION] X=51 cm, Y=328 cm, Z=-21 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=213 A3=204 A4=179
+[CAL DIST] A1=154 A2=213 A3=204 A4=179 cm
+[TAG POSITION] X=-42 cm, Y=296 cm, Z=-24 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=217 A3=216 A4=177
+[CAL DIST] A1=149 A2=217 A3=216 A4=177 cm
+[TAG POSITION] X=-3 cm, Y=369 cm, Z=-10 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=215 A3=223 A4=180
+[CAL DIST] A1=152 A2=215 A3=223 A4=180 cm
+[TAG POSITION] X=42 cm, Y=374 cm, Z=-11 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=208 A3=218 A4=182
+[CAL DIST] A1=151 A2=208 A3=218 A4=182 cm
+[TAG POSITION] X=51 cm, Y=341 cm, Z=-41 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=213 A3=201 A4=179
+[CAL DIST] A1=146 A2=213 A3=201 A4=179 cm
+[TAG POSITION] X=-56 cm, Y=321 cm, Z=-55 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=163 A2=210 A3=187 A4=176
+[CAL DIST] A1=163 A2=210 A3=187 A4=176 cm
+[TAG POSITION] X=-104 cm, Y=193 cm, Z=3 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=150 A2=206 A3=204 A4=176
+[CAL DIST] A1=150 A2=206 A3=204 A4=176 cm
+[TAG POSITION] X=-8 cm, Y=293 cm, Z=-27 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=140 A2=212 A3=200 A4=177
+[CAL DIST] A1=140 A2=212 A3=200 A4=177 cm
+[TAG POSITION] X=-55 cm, Y=341 cm, Z=-64 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=210 A3=220 A4=177
+[CAL DIST] A1=147 A2=210 A3=220 A4=177 cm
+[TAG POSITION] X=51 cm, Y=371 cm, Z=-20 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=129 A2=205 A3=207 A4=181
+[CAL DIST] A1=129 A2=205 A3=207 A4=181 cm
+[TAG POSITION] X=11 cm, Y=387 cm, Z=-121 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=132 A2=207 A3=231 A4=178
+[CAL DIST] A1=132 A2=207 A3=231 A4=178 cm
+[TAG POSITION] X=123 cm, Y=463 cm, Z=-61 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=133 A2=212 A3=222 A4=172
+[CAL DIST] A1=133 A2=212 A3=222 A4=172 cm
+[TAG POSITION] X=51 cm, Y=442 cm, Z=-30 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=127 A2=210 A3=248 A4=178
+[CAL DIST] A1=127 A2=210 A3=248 A4=178 cm
+[TAG POSITION] X=203 cm, Y=555 cm, Z=-49 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=127 A2=205 A3=248 A4=187
+[CAL DIST] A1=127 A2=205 A3=248 A4=187 cm
+[TAG POSITION] X=228 cm, Y=541 cm, Z=-109 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=129 A2=202 A3=242 A4=177
+[CAL DIST] A1=129 A2=202 A3=242 A4=177 cm
+[TAG POSITION] X=208 cm, Y=502 cm, Z=-54 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=123 A2=209 A3=200 A4=181
+[CAL DIST] A1=123 A2=209 A3=200 A4=181 cm
+[TAG POSITION] X=-41 cm, Y=398 cm, Z=-142 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=133 A2=219 A3=203 A4=179
+[CAL DIST] A1=133 A2=219 A3=203 A4=179 cm
+[TAG POSITION] X=-77 cm, Y=399 cm, Z=-87 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=123 A2=211 A3=211 A4=166
+[CAL DIST] A1=123 A2=211 A3=211 A4=166 cm
+[TAG POSITION] X=1 cm, Y=439 cm, Z=-40 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=194 A2=214 A3=215 A4=173
+[CAL DIST] A1=194 A2=214 A3=215 A4=173 cm
+[TAG POSITION] X=6 cm, Y=130 cm, Z=181 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=132 A2=207 A3=252 A4=180
+[CAL DIST] A1=132 A2=207 A3=252 A4=180 cm
+[TAG POSITION] X=241 cm, Y=543 cm, Z=-44 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=131 A2=206 A3=272 A4=183
+[CAL DIST] A1=131 A2=206 A3=272 A4=183 cm
+[TAG POSITION] X=368 cm, Y=627 cm, Z=-36 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=132 A2=204 A3=255 A4=181
+[CAL DIST] A1=132 A2=204 A3=255 A4=181 cm
+[TAG POSITION] X=273 cm, Y=547 cm, Z=-49 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=128 A2=204 A3=275 A4=169
+[CAL DIST] A1=128 A2=204 A3=275 A4=169 cm
+[TAG POSITION] X=396 cm, Y=645 cm, Z=39 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=127 A2=207 A3=267 A4=174
+[CAL DIST] A1=127 A2=207 A3=267 A4=174 cm
+[TAG POSITION] X=332 cm, Y=623 cm, Z=-1 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=129 A2=207 A3=267 A4=184
+[CAL DIST] A1=129 A2=207 A3=267 A4=184 cm
+[TAG POSITION] X=332 cm, Y=616 cm, Z=-55 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=126 A2=208 A3=276 A4=179
+[CAL DIST] A1=126 A2=208 A3=276 A4=179 cm
+[TAG POSITION] X=384 cm, Y=668 cm, Z=-18 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=128 A2=204 A3=260 A4=174
+[CAL DIST] A1=128 A2=204 A3=260 A4=174 cm
+[TAG POSITION] X=303 cm, Y=582 cm, Z=-12 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=164 A2=207 A3=226 A4=182
+[CAL DIST] A1=164 A2=207 A3=226 A4=182 cm
+[TAG POSITION] X=97 cm, Y=306 cm, Z=14 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=201 A3=236 A4=183
+[CAL DIST] A1=151 A2=201 A3=236 A4=183 cm
+[TAG POSITION] X=179 cm, Y=386 cm, Z=-30 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=202 A3=276 A4=178
+[CAL DIST] A1=149 A2=202 A3=276 A4=178 cm
+[TAG POSITION] X=412 cm, Y=559 cm, Z=52 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=198 A3=250 A4=188
+[CAL DIST] A1=154 A2=198 A3=250 A4=188 cm
+[TAG POSITION] X=272 cm, Y=418 cm, Z=-34 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=196 A3=211 A4=182
+[CAL DIST] A1=158 A2=196 A3=211 A4=182 cm
+[TAG POSITION] X=72 cm, Y=253 cm, Z=-37 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=198 A3=250 A4=177
+[CAL DIST] A1=158 A2=198 A3=250 A4=177 cm
+[TAG POSITION] X=272 cm, Y=399 cm, Z=46 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=204 A3=208 A4=174
+[CAL DIST] A1=151 A2=204 A3=208 A4=174 cm
+[TAG POSITION] X=20 cm, Y=296 cm, Z=-10 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=215 A3=241 A4=183
+[CAL DIST] A1=151 A2=215 A3=241 A4=183 cm
+[TAG POSITION] X=139 cm, Y=444 cm, Z=-9 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=136 A2=212 A3=212 A4=182
+[CAL DIST] A1=136 A2=212 A3=212 A4=182 cm
+[TAG POSITION] X=1 cm, Y=396 cm, Z=-92 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=199 A3=209 A4=182
+[CAL DIST] A1=152 A2=199 A3=209 A4=182 cm
+[TAG POSITION] X=48 cm, Y=281 cm, Z=-57 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=200 A3=208 A4=181
+[CAL DIST] A1=158 A2=200 A3=208 A4=181 cm
+[TAG POSITION] X=39 cm, Y=254 cm, Z=-31 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=207 A3=217 A4=177
+[CAL DIST] A1=152 A2=207 A3=217 A4=177 cm
+[TAG POSITION] X=50 cm, Y=330 cm, Z=-10 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=212 A3=203 A4=178
+[CAL DIST] A1=154 A2=212 A3=203 A4=178 cm
+[TAG POSITION] X=-41 cm, Y=290 cm, Z=-20 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=210 A3=213 A4=182
+[CAL DIST] A1=148 A2=210 A3=213 A4=182 cm
+[TAG POSITION] X=16 cm, Y=343 cm, Z=-55 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=202 A3=235 A4=178
+[CAL DIST] A1=148 A2=202 A3=235 A4=178 cm
+[TAG POSITION] X=169 cm, Y=398 cm, Z=-11 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=203 A3=210 A4=177
+[CAL DIST] A1=154 A2=203 A3=210 A4=177 cm
+[TAG POSITION] X=35 cm, Y=287 cm, Z=-15 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=161 A2=208 A3=272 A4=179
+[CAL DIST] A1=161 A2=208 A3=272 A4=179 cm
+[TAG POSITION] X=358 cm, Y=503 cm, Z=88 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=171 A2=224 A3=216 A4=183
+[CAL DIST] A1=171 A2=224 A3=216 A4=183 cm
+[TAG POSITION] X=-39 cm, Y=287 cm, Z=40 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=208 A3=214 A4=180
+[CAL DIST] A1=148 A2=208 A3=214 A4=180 cm
+[TAG POSITION] X=30 cm, Y=341 cm, Z=-44 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=217 A3=208 A4=182
+[CAL DIST] A1=152 A2=217 A3=208 A4=182 cm
+[TAG POSITION] X=-42 cm, Y=329 cm, Z=-40 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=227 A3=203 A4=181
+[CAL DIST] A1=153 A2=227 A3=203 A4=181 cm
+[TAG POSITION] X=-118 cm, Y=339 cm, Z=-25 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=187 A2=213 A3=204 A4=180
+[CAL DIST] A1=187 A2=213 A3=204 A4=180 cm
+[TAG POSITION] X=-42 cm, Y=130 cm, Z=96 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=228 A3=215 A4=186
+[CAL DIST] A1=149 A2=228 A3=215 A4=186 cm
+[TAG POSITION] X=-65 cm, Y=399 cm, Z=-54 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=159 A2=227 A3=217 A4=184
+[CAL DIST] A1=159 A2=227 A3=217 A4=184 cm
+[TAG POSITION] X=-50 cm, Y=358 cm, Z=-5 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=216 A3=218 A4=182
+[CAL DIST] A1=148 A2=216 A3=218 A4=182 cm
+[TAG POSITION] X=11 cm, Y=378 cm, Z=-42 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=172 A2=189 A3=226 A4=181
+[CAL DIST] A1=172 A2=189 A3=226 A4=181 cm
+[TAG POSITION] X=180 cm, Y=218 cm, Z=32 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=215 A3=219 A4=174
+[CAL DIST] A1=157 A2=215 A3=219 A4=174 cm
+[TAG POSITION] X=21 cm, Y=338 cm, Z=35 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=159 A2=228 A3=227 A4=182
+[CAL DIST] A1=159 A2=228 A3=227 A4=182 cm
+[TAG POSITION] X=-3 cm, Y=396 cm, Z=20 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=159 A2=212 A3=257 A4=183
+[CAL DIST] A1=159 A2=212 A3=257 A4=183 cm
+[TAG POSITION] X=246 cm, Y=462 cm, Z=38 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=163 A2=222 A3=224 A4=189
+[CAL DIST] A1=163 A2=222 A3=224 A4=189 cm
+[TAG POSITION] X=11 cm, Y=348 cm, Z=-19 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=161 A2=227 A3=260 A4=174
+[CAL DIST] A1=161 A2=227 A3=260 A4=174 cm
+[TAG POSITION] X=188 cm, Y=510 cm, Z=120 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=172 A2=227 A3=208 A4=186
+[CAL DIST] A1=172 A2=227 A3=208 A4=186 cm
+[TAG POSITION] X=-94 cm, Y=264 cm, Z=19 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=163 A2=227 A3=191 A4=184
+[CAL DIST] A1=163 A2=227 A3=191 A4=184 cm
+[TAG POSITION] X=-173 cm, Y=255 cm, Z=-21 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=223 A3=203 A4=182
+[CAL DIST] A1=157 A2=223 A3=203 A4=182 cm
+[TAG POSITION] X=-97 cm, Y=309 cm, Z=-22 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=162 A2=219 A3=236 A4=182
+[CAL DIST] A1=162 A2=219 A3=236 A4=182 cm
+[TAG POSITION] X=91 cm, Y=387 cm, Z=33 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=165 A2=213 A3=207 A4=181
+[CAL DIST] A1=165 A2=213 A3=207 A4=181 cm
+[TAG POSITION] X=-27 cm, Y=254 cm, Z=6 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=220 A3=210 A4=180
+[CAL DIST] A1=153 A2=220 A3=210 A4=180 cm
+[TAG POSITION] X=-48 cm, Y=340 cm, Z=-19 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=222 A3=230 A4=184
+[CAL DIST] A1=152 A2=222 A3=230 A4=184 cm
+[TAG POSITION] X=43 cm, Y=420 cm, Z=-19 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=223 A3=224 A4=183
+[CAL DIST] A1=153 A2=223 A3=224 A4=183 cm
+[TAG POSITION] X=6 cm, Y=397 cm, Z=-16 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=219 A3=219 A4=182
+[CAL DIST] A1=153 A2=219 A3=219 A4=182 cm
+[TAG POSITION] X=1 cm, Y=368 cm, Z=-21 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=228 A3=223 A4=182
+[CAL DIST] A1=154 A2=228 A3=223 A4=182 cm
+[TAG POSITION] X=-24 cm, Y=405 cm, Z=-2 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=213 A3=231 A4=184
+[CAL DIST] A1=158 A2=213 A3=231 A4=184 cm
+[TAG POSITION] X=94 cm, Y=370 cm, Z=-6 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=228 A3=204 A4=179
+[CAL DIST] A1=151 A2=228 A3=204 A4=179 cm
+[TAG POSITION] X=-119 cm, Y=354 cm, Z=-18 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=223 A3=248 A4=187
+[CAL DIST] A1=155 A2=223 A3=248 A4=187 cm
+[TAG POSITION] X=138 cm, Y=477 cm, Z=-1 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=214 A3=200 A4=178
+[CAL DIST] A1=153 A2=214 A3=200 A4=178 cm
+[TAG POSITION] X=-65 cm, Y=290 cm, Z=-25 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: 2239 -1795 1250
+Calibrating gyro...
+Gyro offsets: -702 186 66
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,31,0) cm
+A2=(23,-3,0) cm
+A3=(-20,-3,0) cm
+A4=(0,20,30) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x1A CANINTF=0xA0 EFLG=0x15 TEC=128 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=211 A3=201 A4=177
+[CAL DIST] A1=155 A2=211 A3=201 A4=177 cm
+[TAG POSITION] X=-46 cm, Y=276 cm, Z=-14 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=216 A3=201 A4=179
+[CAL DIST] A1=157 A2=216 A3=201 A4=179 cm
+[TAG POSITION] X=-71 cm, Y=281 cm, Z=-14 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=207 A3=196 A4=186
+[CAL DIST] A1=155 A2=207 A3=196 A4=186 cm
+[TAG POSITION] X=-50 cm, Y=249 cm, Z=-79 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=162 A2=212 A3=193 A4=182
+[CAL DIST] A1=162 A2=212 A3=193 A4=182 cm
+[TAG POSITION] X=-87 cm, Y=221 cm, Z=-27 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=212 A3=203 A4=181
+[CAL DIST] A1=158 A2=212 A3=203 A4=181 cm
+[TAG POSITION] X=-41 cm, Y=271 cm, Z=-24 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=212 A3=199 A4=179
+[CAL DIST] A1=157 A2=212 A3=199 A4=179 cm
+[TAG POSITION] X=-60 cm, Y=263 cm, Z=-20 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=213 A3=203 A4=182
+[CAL DIST] A1=157 A2=213 A3=203 A4=182 cm
+[TAG POSITION] X=-46 cm, Y=279 cm, Z=-33 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=159 A2=209 A3=203 A4=185
+[CAL DIST] A1=159 A2=209 A3=203 A4=185 cm
+[TAG POSITION] X=-27 cm, Y=258 cm, Z=-48 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=168 A3=197 A4=183
+[CAL DIST] A1=157 A2=168 A3=197 A4=183 cm
+[TAG POSITION] X=124 cm, Y=143 cm, Z=-89 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=208 A3=253 A4=181
+[CAL DIST] A1=155 A2=208 A3=253 A4=181 cm
+[TAG POSITION] X=242 cm, Y=453 cm, Z=26 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=204 A3=201 A4=182
+[CAL DIST] A1=154 A2=204 A3=201 A4=182 cm
+[TAG POSITION] X=-12 cm, Y=260 cm, Z=-55 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=212 A3=199 A4=186
+[CAL DIST] A1=155 A2=212 A3=199 A4=186 cm
+[TAG POSITION] X=-60 cm, Y=272 cm, Z=-70 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=210 A3=206 A4=179
+[CAL DIST] A1=155 A2=210 A3=206 A4=179 cm
+[TAG POSITION] X=-17 cm, Y=289 cm, Z=-21 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=162 A2=211 A3=203 A4=185
+[CAL DIST] A1=162 A2=211 A3=203 A4=185 cm
+[TAG POSITION] X=-37 cm, Y=249 cm, Z=-35 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=163 A2=212 A3=207 A4=184
+[CAL DIST] A1=163 A2=212 A3=207 A4=184 cm
+[TAG POSITION] X=-22 cm, Y=260 cm, Z=-20 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=212 A3=208 A4=182
+[CAL DIST] A1=157 A2=212 A3=208 A4=182 cm
+[TAG POSITION] X=-18 cm, Y=292 cm, Z=-28 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=161 A2=208 A3=223 A4=177
+[CAL DIST] A1=161 A2=208 A3=223 A4=177 cm
+[TAG POSITION] X=76 cm, Y=313 cm, Z=30 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=164 A2=208 A3=198 A4=184
+[CAL DIST] A1=164 A2=208 A3=198 A4=184 cm
+[TAG POSITION] X=-45 cm, Y=216 cm, Z=-31 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=162 A2=202 A3=231 A4=178
+[CAL DIST] A1=162 A2=202 A3=231 A4=178 cm
+[TAG POSITION] X=147 cm, Y=320 cm, Z=32 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=162 A2=204 A3=221 A4=178
+[CAL DIST] A1=162 A2=204 A3=221 A4=178 cm
+[TAG POSITION] X=85 cm, Y=290 cm, Z=21 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=159 A2=212 A3=222 A4=176
+[CAL DIST] A1=159 A2=212 A3=222 A4=176 cm
+[TAG POSITION] X=51 cm, Y=330 cm, Z=31 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=208 A3=208 A4=175
+[CAL DIST] A1=157 A2=208 A3=208 A4=175 cm
+[TAG POSITION] X=1 cm, Y=280 cm, Z=9 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=193 A3=202 A4=185
+[CAL DIST] A1=155 A2=193 A3=202 A4=185 cm
+[TAG POSITION] X=42 cm, Y=229 cm, Z=-80 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=211 A3=213 A4=186
+[CAL DIST] A1=152 A2=211 A3=213 A4=186 cm
+[TAG POSITION] X=11 cm, Y=328 cm, Z=-65 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=218 A3=244 A4=187
+[CAL DIST] A1=149 A2=218 A3=244 A4=187 cm
+[TAG POSITION] X=141 cm, Y=474 cm, Z=-33 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=156 A2=197 A3=177 A4=149
+[CAL DIST] A1=156 A2=197 A3=177 A4=149 cm
+[TAG POSITION] X=-85 cm, Y=161 cm, Z=100 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=108 A2=101 A3=109 A4=48
+[CAL DIST] A1=108 A2=101 A3=109 A4=48 cm
+[TAG POSITION] X=21 cm, Y=-1 cm, Z=161 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is BEHIND
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=61 A2=110 A3=83 A4=64
+[CAL DIST] A1=61 A2=110 A3=83 A4=64 cm
+[TAG POSITION] X=-59 cm, Y=89 cm, Z=32 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=121 A2=169 A3=139 A4=87
+[CAL DIST] A1=121 A2=169 A3=139 A4=87 cm
+[TAG POSITION] X=-105 cm, Y=139 cm, Z=174 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=83 A2=164 A3=125 A4=79
+[CAL DIST] A1=83 A2=164 A3=125 A4=79 cm
+[TAG POSITION] X=-129 cm, Y=212 cm, Z=94 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=71 A2=103 A3=99 A4=31
+[CAL DIST] A1=71 A2=103 A3=99 A4=31 cm
+[TAG POSITION] X=-7 cm, Y=82 cm, Z=103 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=31 A2=64 A3=77 A4=33
+[CAL DIST] A1=31 A2=64 A3=77 A4=33 cm
+[TAG POSITION] X=22 cm, Y=67 cm, Z=28 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=38 A2=71 A3=78 A4=19
+[CAL DIST] A1=38 A2=71 A3=78 A4=19 cm
+[TAG POSITION] X=13 cm, Y=68 cm, Z=48 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=38 A2=69 A3=68 A4=33
+[CAL DIST] A1=38 A2=69 A3=68 A4=33 cm
+[TAG POSITION] X=0 cm, Y=54 cm, Z=31 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=57 A2=82 A3=68 A4=20
+[CAL DIST] A1=57 A2=82 A3=68 A4=20 cm
+[TAG POSITION] X=-22 cm, Y=41 cm, Z=68 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=42 A2=90 A3=74 A4=42
+[CAL DIST] A1=42 A2=90 A3=74 A4=42 cm
+[TAG POSITION] X=-29 cm, Y=79 cm, Z=34 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=68 A2=92 A3=82 A4=54
+[CAL DIST] A1=68 A2=92 A3=82 A4=54 cm
+[TAG POSITION] X=-18 cm, Y=50 cm, Z=52 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=62 A2=87 A3=91 A4=46
+[CAL DIST] A1=62 A2=87 A3=91 A4=46 cm
+[TAG POSITION] X=9 cm, Y=67 cm, Z=59 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=47 A2=76 A3=76 A4=56
+[CAL DIST] A1=47 A2=76 A3=76 A4=56 cm
+[TAG POSITION] X=1 cm, Y=59 cm, Z=12 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is within 2 feet
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=46 A2=73 A3=86 A4=54
+[CAL DIST] A1=46 A2=73 A3=86 A4=54 cm
+[TAG POSITION] X=25 cm, Y=70 cm, Z=18 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=43 A2=72 A3=70 A4=51
+[CAL DIST] A1=43 A2=72 A3=70 A4=51 cm
+[TAG POSITION] X=-1 cm, Y=54 cm, Z=12 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is within 2 feet
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=42 A2=64 A3=73 A4=49
+[CAL DIST] A1=42 A2=64 A3=73 A4=49 cm
+[TAG POSITION] X=15 cm, Y=51 cm, Z=13 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is within 2 feet
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=56 A2=77 A3=91 A4=43
+[CAL DIST] A1=56 A2=77 A3=91 A4=43 cm
+[TAG POSITION] X=28 cm, Y=66 cm, Z=51 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=44 A2=83 A3=125 A4=52
+[CAL DIST] A1=44 A2=83 A3=125 A4=52 cm
+[TAG POSITION] X=103 cm, Y=148 cm, Z=47 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=44 A2=103 A3=132 A4=42
+[CAL DIST] A1=44 A2=103 A3=132 A4=42 cm
+[TAG POSITION] X=80 cm, Y=188 cm, Z=77 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=53 A2=88 A3=87 A4=48
+[CAL DIST] A1=53 A2=88 A3=87 A4=48 cm
+[TAG POSITION] X=0 cm, Y=78 cm, Z=42 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=59 A2=87 A3=77 A4=65
+[CAL DIST] A1=59 A2=87 A3=77 A4=65 cm
+[TAG POSITION] X=-17 cm, Y=54 cm, Z=13 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is within 2 feet
+Within 2 feet: Sending zero speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=49 A2=77 A3=88 A4=54
+[CAL DIST] A1=49 A2=77 A3=88 A4=54 cm
+[TAG POSITION] X=22 cm, Y=73 cm, Z=23 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=50 A2=83 A3=87 A4=48
+[CAL DIST] A1=50 A2=83 A3=87 A4=48 cm
+[TAG POSITION] X=9 cm, Y=77 cm, Z=37 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=50 A2=88 A3=86 A4=49
+[CAL DIST] A1=50 A2=88 A3=86 A4=49 cm
+[TAG POSITION] X=-2 cm, Y=81 cm, Z=37 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=43 A2=119 A3=126 A4=52
+[CAL DIST] A1=43 A2=119 A3=126 A4=52 cm
+[TAG POSITION] X=21 cm, Y=201 cm, Z=65 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=43 A2=84 A3=108 A4=52
+[CAL DIST] A1=43 A2=84 A3=108 A4=52 cm
+[TAG POSITION] X=55 cm, Y=120 cm, Z=35 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=66 A2=108 A3=108 A4=64
+[CAL DIST] A1=66 A2=108 A3=108 A4=64 cm
+[TAG POSITION] X=1 cm, Y=114 cm, Z=52 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=68 A2=104 A3=115 A4=72
+[CAL DIST] A1=68 A2=104 A3=115 A4=72 cm
+[TAG POSITION] X=29 cm, Y=117 cm, Z=39 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=63 A2=114 A3=113 A4=63
+[CAL DIST] A1=63 A2=114 A3=113 A4=63 cm
+[TAG POSITION] X=-1 cm, Y=138 cm, Z=56 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=58 A2=109 A3=109 A4=60
+[CAL DIST] A1=58 A2=109 A3=109 A4=60 cm
+[TAG POSITION] X=1 cm, Y=132 cm, Z=50 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=64 A2=97 A3=93 A4=63
+[CAL DIST] A1=64 A2=97 A3=93 A4=63 cm
+[TAG POSITION] X=-7 cm, Y=79 cm, Z=36 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=59 A2=95 A3=111 A4=68
+[CAL DIST] A1=59 A2=95 A3=111 A4=68 cm
+[TAG POSITION] X=39 cm, Y=114 cm, Z=28 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=61 A2=107 A3=96 A4=67
+[CAL DIST] A1=61 A2=107 A3=96 A4=67 cm
+[TAG POSITION] X=-24 cm, Y=103 cm, Z=30 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=82 A2=169 A3=113 A4=73
+[CAL DIST] A1=82 A2=169 A3=113 A4=73 cm
+[TAG POSITION] X=-182 cm, Y=204 cm, Z=103 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=107 A2=187 A3=161 A4=66
+[CAL DIST] A1=107 A2=187 A3=161 A4=66 cm
+[TAG POSITION] X=-103 cm, Y=281 cm, Z=227 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=72 A2=150 A3=78 A4=61
+[CAL DIST] A1=72 A2=150 A3=78 A4=61 cm
+[TAG POSITION] X=-189 cm, Y=132 cm, Z=78 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=83 A2=106 A3=94 A4=61
+[CAL DIST] A1=83 A2=106 A3=94 A4=61 cm
+[TAG POSITION] X=-26 cm, Y=52 cm, Z=77 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=122 A2=130 A3=140 A4=82
+[CAL DIST] A1=122 A2=130 A3=140 A4=82 cm
+[TAG POSITION] X=32 cm, Y=58 cm, Z=162 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=87 A2=131 A3=148 A4=92
+[CAL DIST] A1=87 A2=131 A3=148 A4=92 cm
+[TAG POSITION] X=56 cm, Y=185 cm, Z=58 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=113 A2=132 A3=171 A4=106
+[CAL DIST] A1=113 A2=132 A3=171 A4=106 cm
+[TAG POSITION] X=138 cm, Y=168 cm, Z=93 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=123 A2=142 A3=162 A4=122
+[CAL DIST] A1=123 A2=142 A3=162 A4=122 cm
+[TAG POSITION] X=72 cm, Y=129 cm, Z=57 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=138 A2=147 A3=173 A4=99
+[CAL DIST] A1=138 A2=147 A3=173 A4=99 cm
+[TAG POSITION] X=98 cm, Y=110 cm, Z=200 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=87 A2=110 A3=114 A4=78
+[CAL DIST] A1=87 A2=110 A3=114 A4=78 cm
+[TAG POSITION] X=11 cm, Y=80 cm, Z=60 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=93 A2=103 A3=121 A4=73
+[CAL DIST] A1=93 A2=103 A3=121 A4=73 cm
+[TAG POSITION] X=48 cm, Y=67 cm, Z=85 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=87 A2=128 A3=138 A4=79
+[CAL DIST] A1=87 A2=128 A3=138 A4=79 cm
+[TAG POSITION] X=32 cm, Y=157 cm, Z=85 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=97 A2=105 A3=134 A4=56
+[CAL DIST] A1=97 A2=105 A3=134 A4=56 cm
+[TAG POSITION] X=82 cm, Y=85 cm, Z=141 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=51 A2=103 A3=110 A4=48
+[CAL DIST] A1=51 A2=103 A3=110 A4=48 cm
+[TAG POSITION] X=18 cm, Y=136 cm, Z=60 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=83 A2=143 A3=152 A4=94
+[CAL DIST] A1=83 A2=143 A3=152 A4=94 cm
+[TAG POSITION] X=32 cm, Y=227 cm, Z=56 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=69 A2=122 A3=104 A4=79
+[CAL DIST] A1=69 A2=122 A3=104 A4=79 cm
+[TAG POSITION] X=-45 cm, Y=124 cm, Z=26 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=83 A2=113 A3=85 A4=47
+[CAL DIST] A1=83 A2=113 A3=85 A4=47 cm
+[TAG POSITION] X=-62 cm, Y=50 cm, Z=102 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=63 A2=78 A3=77 A4=37
+[CAL DIST] A1=63 A2=78 A3=77 A4=37 cm
+[TAG POSITION] X=0 cm, Y=37 cm, Z=62 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=69 A2=92 A3=103 A4=52
+[CAL DIST] A1=69 A2=92 A3=103 A4=52 cm
+[TAG POSITION] X=26 cm, Y=78 cm, Z=68 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=109 A2=159 A3=200 A4=136
+[CAL DIST] A1=109 A2=159 A3=200 A4=136 cm
+[TAG POSITION] X=172 cm, Y=320 cm, Z=12 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=176 A3=217 A4=160
+[CAL DIST] A1=154 A2=176 A3=217 A4=160 cm
+[TAG POSITION] X=188 cm, Y=240 cm, Z=62 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=192 A2=183 A3=205 A4=186
+[CAL DIST] A1=192 A2=183 A3=205 A4=186 cm
+[TAG POSITION] X=100 cm, Y=24 cm, Z=52 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is near the center area
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=157 A2=187 A3=185 A4=176
+[CAL DIST] A1=157 A2=187 A3=185 A4=176 cm
+[TAG POSITION] X=-7 cm, Y=153 cm, Z=-43 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=114 A2=185 A3=155 A4=173
+[CAL DIST] A1=114 A2=185 A3=155 A4=173 cm
+[TAG POSITION] X=-117 cm, Y=239 cm, Z=-188 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=189 A3=163 A4=180
+[CAL DIST] A1=153 A2=189 A3=163 A4=180 cm
+[TAG POSITION] X=-104 cm, Y=116 cm, Z=-101 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=117 A2=180 A3=163 A4=172
+[CAL DIST] A1=117 A2=180 A3=163 A4=172 cm
+[TAG POSITION] X=-66 cm, Y=236 cm, Z=-172 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=117 A2=183 A3=178 A4=173
+[CAL DIST] A1=117 A2=183 A3=178 A4=173 cm
+[TAG POSITION] X=-19 cm, Y=284 cm, Z=-160 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=142 A2=183 A3=164 A4=175
+[CAL DIST] A1=142 A2=183 A3=164 A4=175 cm
+[TAG POSITION] X=-75 cm, Y=151 cm, Z=-113 cm
+[LEFT/RIGHT] Tag is to the LEFT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=182 A3=236 A4=170
+[CAL DIST] A1=144 A2=182 A3=236 A4=170 cm
+[TAG POSITION] X=263 cm, Y=366 cm, Z=4 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=187 A3=213 A4=167
+[CAL DIST] A1=153 A2=187 A3=213 A4=167 cm
+[TAG POSITION] X=122 cm, Y=259 cm, Z=25 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=159 A2=180 A3=221 A4=163
+[CAL DIST] A1=159 A2=180 A3=221 A4=163 cm
+[TAG POSITION] X=192 cm, Y=241 cm, Z=72 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=163 A2=174 A3=214 A4=167
+[CAL DIST] A1=163 A2=174 A3=214 A4=167 cm
+[TAG POSITION] X=181 cm, Y=183 cm, Z=51 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=159 A2=177 A3=218 A4=173
+[CAL DIST] A1=159 A2=177 A3=218 A4=173 cm
+[TAG POSITION] X=189 cm, Y=223 cm, Z=10 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=174 A2=187 A3=203 A4=175
+[CAL DIST] A1=174 A2=187 A3=203 A4=175 cm
+[TAG POSITION] X=74 cm, Y=125 cm, Z=45 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=177 A3=196 A4=176
+[CAL DIST] A1=158 A2=177 A3=196 A4=176 cm
+[TAG POSITION] X=83 cm, Y=156 cm, Z=-37 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=169 A2=182 A3=202 A4=172
+[CAL DIST] A1=169 A2=182 A3=202 A4=172 cm
+[TAG POSITION] X=90 cm, Y=134 cm, Z=38 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=162 A2=179 A3=189 A4=168
+[CAL DIST] A1=162 A2=179 A3=189 A4=168 cm
+[TAG POSITION] X=44 cm, Y=121 cm, Z=17 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=181 A3=197 A4=176
+[CAL DIST] A1=152 A2=181 A3=197 A4=176 cm
+[TAG POSITION] X=71 cm, Y=196 cm, Z=-53 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=171 A2=182 A3=203 A4=173
+[CAL DIST] A1=171 A2=182 A3=203 A4=173 cm
+[TAG POSITION] X=95 cm, Y=127 cm, Z=41 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=162 A2=182 A3=211 A4=174
+[CAL DIST] A1=162 A2=182 A3=211 A4=174 cm
+[TAG POSITION] X=134 cm, Y=198 cm, Z=11 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=183 A3=204 A4=163
+[CAL DIST] A1=146 A2=183 A3=204 A4=163 cm
+[TAG POSITION] X=96 cm, Y=250 cm, Z=9 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=124 A2=182 A3=204 A4=169
+[CAL DIST] A1=124 A2=182 A3=204 A4=169 cm
+[TAG POSITION] X=100 cm, Y=335 cm, Z=-91 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=158 A2=182 A3=198 A4=167
+[CAL DIST] A1=158 A2=182 A3=198 A4=167 cm
+[TAG POSITION] X=72 cm, Y=175 cm, Z=21 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+
+========== New Ranging Cycle ==========
