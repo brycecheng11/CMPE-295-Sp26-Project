@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER PID_AXI
+	OPTION supported_peripherals = (PID_AXI);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = PID_AXI;
+END DRIVER

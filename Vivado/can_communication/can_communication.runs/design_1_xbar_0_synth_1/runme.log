@@ -1,0 +1,20 @@
+
+*** Running vivado
+    with args -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Downloads/ip_repo/AXI_PID_Controller_Peripheral_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Downloads/ip_repo/PID_AXI_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Downloads/ip_repo/AXIPIDController_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Downloads/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kenny/Documents/pid_controller'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = a9836d8a2c30e61d.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 00:03:27 2026...
