@@ -1,0 +1,5616 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: -194 -294 1405
+Calibrating gyro...
+Gyro offsets: -722 189 67
+All UWB modules reset successfully
+
+========================================
+Zybo Four-Anchor RYUW122 3D Position
+Target tag: TAG00001
+A1=(0,57,5) cm
+A2=(26,0,5) cm
+A3=(-23,0,5) cm
+A4=(0,4,32) cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+Configuring ANCHOR4...
+
+[CALIBRATION] Hold tag at (0,200,0) cm for 60 seconds.
+[CALIBRATION] Measuring raw distances...
+[CALIBRATION] Cycle 1: A1=1 A2=1 A3=1 A4=1
+[CALIBRATION] Cycle 2: A1=2 A2=2 A3=2 A4=2
+[CALIBRATION] Cycle 3: A1=3 A2=3 A3=3 A4=3
+[CALIBRATION] Cycle 4: A1=4 A2=4 A3=4 A4=4
+[CALIBRATION] Cycle 5: A1=5 A2=5 A3=5 A4=5
+[CALIBRATION] Cycle 6: A1=6 A2=6 A3=6 A4=6
+[CALIBRATION] Cycle 7: A1=7 A2=7 A3=7 A4=7
+[CALIBRATION] Cycle 8: A1=8 A2=8 A3=8 A4=8
+[CALIBRATION] Cycle 9: A1=9 A2=9 A3=9 A4=9
+[CALIBRATION] Cycle 10: A1=10 A2=10 A3=10 A4=10
+[CALIBRATION] Cycle 11: A1=11 A2=11 A3=11 A4=11
+[CALIBRATION] Cycle 12: A1=12 A2=12 A3=12 A4=12
+[CALIBRATION] Cycle 13: A1=13 A2=13 A3=13 A4=13
+[CALIBRATION] Cycle 14: A1=14 A2=14 A3=14 A4=14
+[CALIBRATION] Cycle 15: A1=15 A2=15 A3=15 A4=15
+[CALIBRATION] Cycle 16: A1=16 A2=16 A3=16 A4=16
+[CALIBRATION] Cycle 17: A1=17 A2=17 A3=17 A4=17
+[CALIBRATION] Cycle 18: A1=18 A2=18 A3=18 A4=18
+[CALIBRATION] Cycle 19: A1=19 A2=19 A3=19 A4=19
+[CALIBRATION] Cycle 20: A1=20 A2=20 A3=20 A4=20
+[CALIBRATION] Cycle 21: A1=21 A2=21 A3=21 A4=21
+[CALIBRATION] Cycle 22: A1=22 A2=22 A3=22 A4=22
+[CALIBRATION] Cycle 23: A1=23 A2=23 A3=23 A4=23
+[CALIBRATION] Cycle 24: A1=24 A2=24 A3=24 A4=24
+[CALIBRATION] Cycle 25: A1=25 A2=25 A3=25 A4=25
+[CALIBRATION] Cycle 26: A1=26 A2=26 A3=26 A4=26
+[CALIBRATION] Cycle 27: A1=27 A2=27 A3=27 A4=27
+[CALIBRATION] Cycle 28: A1=28 A2=28 A3=28 A4=28
+[CALIBRATION] Cycle 29: A1=29 A2=29 A3=29 A4=29
+[CALIBRATION] Cycle 30: A1=30 A2=30 A3=30 A4=30
+[CALIBRATION] Cycle 31: A1=31 A2=31 A3=31 A4=31
+[CALIBRATION] Cycle 32: A1=32 A2=32 A3=32 A4=32
+[CALIBRATION] Cycle 33: A1=33 A2=33 A3=33 A4=33
+[CALIBRATION] Cycle 34: A1=34 A2=34 A3=34 A4=34
+[CALIBRATION] Cycle 35: A1=35 A2=35 A3=35 A4=35
+[CALIBRATION] Cycle 36: A1=36 A2=36 A3=36 A4=36
+[CALIBRATION] Cycle 37: A1=37 A2=37 A3=37 A4=37
+[CALIBRATION] Cycle 38: A1=38 A2=38 A3=38 A4=38
+[CALIBRATION] Cycle 39: A1=39 A2=39 A3=39 A4=39
+[CALIBRATION] Cycle 40: A1=40 A2=40 A3=40 A4=40
+[CALIBRATION] Cycle 41: A1=41 A2=41 A3=41 A4=41
+[CALIBRATION] Cycle 42: A1=42 A2=42 A3=42 A4=42
+[CALIBRATION] Cycle 43: A1=43 A2=43 A3=43 A4=43
+[CALIBRATION] Cycle 44: A1=44 A2=44 A3=44 A4=44
+[CALIBRATION] Cycle 45: A1=45 A2=45 A3=45 A4=45
+[CALIBRATION] Cycle 46: A1=46 A2=46 A3=46 A4=46
+[CALIBRATION] Cycle 47: A1=47 A2=47 A3=47 A4=47
+[CALIBRATION] Cycle 48: A1=48 A2=48 A3=48 A4=48
+[CALIBRATION] Cycle 49: A1=49 A2=49 A3=49 A4=49
+[CALIBRATION] Cycle 50: A1=50 A2=50 A3=50 A4=50
+[CALIBRATION] Cycle 51: A1=51 A2=51 A3=51 A4=51
+[CALIBRATION] Cycle 52: A1=52 A2=52 A3=52 A4=52
+[CALIBRATION] Cycle 53: A1=53 A2=53 A3=53 A4=53
+[CALIBRATION] Cycle 54: A1=54 A2=54 A3=54 A4=54
+[CALIBRATION] Cycle 55: A1=55 A2=55 A3=55 A4=55
+[CALIBRATION] Cycle 56: A1=56 A2=56 A3=56 A4=56
+[CALIBRATION] Cycle 57: A1=57 A2=57 A3=57 A4=57
+[CALIBRATION] Cycle 58: A1=58 A2=58 A3=58 A4=58
+[CALIBRATION] Cycle 59: A1=59 A2=59 A3=59 A4=59
+[CALIBRATION] Cycle 60: A1=60 A2=60 A3=60 A4=60
+[CALIBRATION] Cycle 61: A1=61 A2=61 A3=61 A4=61
+[CALIBRATION] Cycle 62: A1=62 A2=62 A3=62 A4=62
+[CALIBRATION] Cycle 63: A1=63 A2=63 A3=63 A4=63
+[CALIBRATION] Cycle 64: A1=64 A2=64 A3=64 A4=64
+[CALIBRATION] Cycle 65: A1=65 A2=65 A3=65 A4=65
+[CALIBRATION] Cycle 66: A1=66 A2=66 A3=66 A4=66
+[CALIBRATION] Cycle 67: A1=67 A2=67 A3=67 A4=67
+[CALIBRATION] Cycle 68: A1=68 A2=68 A3=68 A4=68
+[CALIBRATION] Cycle 69: A1=69 A2=69 A3=69 A4=69
+[CALIBRATION] Cycle 70: A1=70 A2=70 A3=70 A4=70
+[CALIBRATION] Cycle 71: A1=71 A2=71 A3=71 A4=71
+[CALIBRATION] Cycle 72: A1=72 A2=72 A3=72 A4=72
+[CALIBRATION] Cycle 73: A1=73 A2=73 A3=73 A4=73
+[CALIBRATION] Cycle 74: A1=74 A2=74 A3=74 A4=74
+[CALIBRATION] Cycle 75: A1=75 A2=75 A3=75 A4=75
+[CALIBRATION] Cycle 76: A1=76 A2=76 A3=76 A4=76
+[CALIBRATION] Cycle 77: A1=77 A2=77 A3=77 A4=77
+[CALIBRATION] Cycle 78: A1=78 A2=78 A3=78 A4=78
+[CALIBRATION] Cycle 79: A1=79 A2=79 A3=79 A4=79
+[CALIBRATION] Cycle 80: A1=80 A2=80 A3=80 A4=80
+[CALIBRATION] Cycle 81: A1=81 A2=81 A3=81 A4=81
+[CALIBRATION] Cycle 82: A1=82 A2=82 A3=82 A4=82
+[CALIBRATION] Cycle 83: A1=83 A2=83 A3=83 A4=83
+[CALIBRATION] Cycle 84: A1=84 A2=84 A3=84 A4=84
+[CALIBRATION] Cycle 85: A1=85 A2=85 A3=85 A4=85
+[CALIBRATION] Cycle 86: A1=86 A2=86 A3=86 A4=86
+[CALIBRATION] Cycle 87: A1=87 A2=87 A3=87 A4=87
+[CALIBRATION] Cycle 88: A1=88 A2=88 A3=88 A4=88
+[CALIBRATION] Cycle 89: A1=89 A2=89 A3=89 A4=89
+[CALIBRATION] Cycle 90: A1=90 A2=90 A3=90 A4=90
+[CALIBRATION] Cycle 91: A1=91 A2=91 A3=91 A4=91
+[CALIBRATION] Cycle 92: A1=92 A2=92 A3=92 A4=92
+[CALIBRATION] Cycle 93: A1=93 A2=93 A3=93 A4=93
+[CALIBRATION] Cycle 94: A1=94 A2=94 A3=94 A4=94
+[CALIBRATION] Cycle 95: A1=95 A2=95 A3=95 A4=95
+[CALIBRATION] Cycle 96: A1=96 A2=96 A3=96 A4=96
+[CALIBRATION] Cycle 97: A1=97 A2=97 A3=97 A4=97
+[CALIBRATION] Cycle 98: A1=98 A2=98 A3=98 A4=98
+[CALIBRATION] Cycle 99: A1=99 A2=99 A3=99 A4=99
+[CALIBRATION] Cycle 100: A1=100 A2=100 A3=100 A4=100
+[CALIBRATION] Cycle 101: A1=101 A2=101 A3=101 A4=101
+[CALIBRATION] Cycle 102: A1=102 A2=102 A3=102 A4=102
+[CALIBRATION] Cycle 103: A1=103 A2=103 A3=103 A4=103
+[CALIBRATION] Cycle 104: A1=104 A2=104 A3=104 A4=104
+[CALIBRATION] Cycle 105: A1=105 A2=105 A3=105 A4=105
+[CALIBRATION] Cycle 106: A1=106 A2=106 A3=106 A4=106
+[CALIBRATION] Cycle 107: A1=107 A2=107 A3=107 A4=107
+[CALIBRATION] Cycle 108: A1=108 A2=108 A3=108 A4=108
+[CALIBRATION] Cycle 109: A1=109 A2=109 A3=109 A4=109
+[CALIBRATION] Cycle 110: A1=110 A2=110 A3=110 A4=110
+[CALIBRATION] Cycle 111: A1=111 A2=111 A3=111 A4=111
+[CALIBRATION] Cycle 112: A1=112 A2=112 A3=112 A4=112
+[CALIBRATION] Cycle 113: A1=113 A2=113 A3=113 A4=113
+[CALIBRATION] Cycle 114: A1=114 A2=114 A3=114 A4=114
+[CALIBRATION] Cycle 115: A1=115 A2=115 A3=115 A4=115
+[CALIBRATION] Cycle 116: A1=116 A2=116 A3=116 A4=116
+[CALIBRATION] Cycle 117: A1=117 A2=117 A3=117 A4=117
+[CALIBRATION] Cycle 118: A1=118 A2=118 A3=118 A4=118
+[CALIBRATION] Cycle 119: A1=119 A2=119 A3=119 A4=119
+[CALIBRATION] Cycle 120: A1=120 A2=120 A3=120 A4=120
+[CALIBRATION] Cycle 121: A1=121 A2=121 A3=121 A4=121
+[CALIBRATION] Cycle 122: A1=122 A2=122 A3=122 A4=122
+[CALIBRATION] Cycle 123: A1=123 A2=123 A3=123 A4=123
+[CALIBRATION] Cycle 124: A1=124 A2=124 A3=124 A4=124
+[CALIBRATION] Cycle 125: A1=125 A2=125 A3=125 A4=125
+[CALIBRATION] Cycle 126: A1=126 A2=126 A3=126 A4=126
+[CALIBRATION] Cycle 127: A1=127 A2=127 A3=127 A4=127
+[CALIBRATION] Cycle 128: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 129: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 130: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 131: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 132: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 133: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 134: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 135: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 136: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 137: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 138: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 139: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 140: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 141: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 142: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 143: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 144: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 145: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 146: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 147: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 148: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 149: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 150: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 151: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 152: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 153: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 154: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 155: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 156: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 157: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 158: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 159: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 160: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 161: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 162: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 163: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 164: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 165: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 166: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 167: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 168: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 169: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 170: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 171: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 172: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 173: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 174: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 175: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 176: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 177: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 178: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 179: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 180: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 181: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 182: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 183: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 184: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 185: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 186: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 187: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 188: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 189: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 190: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 191: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 192: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 193: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 194: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 195: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 196: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 197: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 198: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 199: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 200: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 201: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 202: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 203: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 204: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 205: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 206: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 207: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 208: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 209: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 210: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 211: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 212: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 213: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 214: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 215: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 216: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 217: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 218: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 219: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 220: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 221: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 222: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 223: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 224: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 225: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 226: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 227: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 228: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 229: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 230: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 231: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 232: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 233: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 234: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 235: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 236: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 237: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 238: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 239: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 240: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 241: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 242: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 243: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 244: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 245: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 246: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 247: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 248: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 249: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 250: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 251: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 252: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 253: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 254: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 255: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 256: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 257: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 258: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 259: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 260: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 261: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 262: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 263: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 264: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 265: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 266: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 267: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 268: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 269: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 270: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 271: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 272: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 273: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 274: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 275: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 276: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 277: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 278: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 279: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 280: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 281: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 282: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 283: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 284: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 285: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 286: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 287: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 288: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 289: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 290: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 291: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 292: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 293: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 294: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 295: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 296: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 297: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 298: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 299: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] Cycle 300: A1=128 A2=128 A3=128 A4=128
+[CALIBRATION] A1 n=128 expected=143.1 cm median=148.0 cm offset=-4.9 cm
+[CALIBRATION] A2 n=128 expected=201.7 cm median=198.0 cm offset=3.7 cm
+[CALIBRATION] A3 n=128 expected=201.4 cm median=197.0 cm offset=4.4 cm
+[CALIBRATION] A4 n=128 expected=198.6 cm median=188.0 cm offset=10.6 cm
+[CALIBRATION] Complete. Move tag for normal ranging.
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x02 CANINTF=0x05 EFLG=0x00 TEC=0 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x02 CANINTF=0x25 EFLG=0x40 TEC=0 REC=0
+Waiting after initialization...
+Readback = 0
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=194 A3=197 A4=198
+[CAL DIST] A1=146.1 A2=197.7 A3=201.4 A4=208.6 cm
+[TAG POSITION] X=16 cm, Y=185 cm, Z=-87 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=193 A3=196 A4=189
+[CAL DIST] A1=143.1 A2=196.7 A3=200.4 A4=199.6 cm
+[TAG POSITION] X=16 cm, Y=189 cm, Z=-27 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=193 A3=197 A4=214
+[CAL DIST] A1=147.1 A2=196.7 A3=201.4 A4=224.6 cm
+[TAG POSITION] X=20 cm, Y=181 cm, Z=-218 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=196 A3=192 A4=199
+[CAL DIST] A1=141.1 A2=199.7 A3=196.4 A4=209.6 cm
+[TAG POSITION] X=-12 cm, Y=192 cm, Z=-108 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=150 A2=200 A3=195 A4=222
+[CAL DIST] A1=145.1 A2=203.7 A3=199.4 A4=232.6 cm
+[TAG POSITION] X=-16 cm, Y=194 cm, Z=-271 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=196 A3=198 A4=183
+[CAL DIST] A1=143.1 A2=199.7 A3=202.4 A4=193.6 cm
+[TAG POSITION] X=12 cm, Y=198 cm, Z=33 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=197 A3=192 A4=196
+[CAL DIST] A1=142.1 A2=200.7 A3=196.4 A4=206.6 cm
+[TAG POSITION] X=-16 cm, Y=191 cm, Z=-81 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=145 A2=193 A3=197 A4=187
+[CAL DIST] A1=140.1 A2=196.7 A3=201.4 A4=197.6 cm
+[TAG POSITION] X=20 cm, Y=199 cm, Z=-9 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=200 A3=195 A4=197
+[CAL DIST] A1=141.1 A2=203.7 A3=199.4 A4=207.6 cm
+[TAG POSITION] X=-16 cm, Y=204 cm, Z=-69 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=150 A2=196 A3=197 A4=188
+[CAL DIST] A1=145.1 A2=199.7 A3=201.4 A4=198.6 cm
+[TAG POSITION] X=8 cm, Y=191 cm, Z=-5 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=197 A3=197 A4=187
+[CAL DIST] A1=141.1 A2=200.7 A3=201.4 A4=197.6 cm
+[TAG POSITION] X=4 cm, Y=203 cm, Z=3 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=193 A3=197 A4=188
+[CAL DIST] A1=143.1 A2=196.7 A3=201.4 A4=198.6 cm
+[TAG POSITION] X=20 cm, Y=191 cm, Z=-16 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=197 A3=199 A4=187
+[CAL DIST] A1=144.1 A2=200.7 A3=203.4 A4=197.6 cm
+[TAG POSITION] X=12 cm, Y=199 cm, Z=11 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=202 A3=193 A4=188
+[CAL DIST] A1=144.1 A2=205.7 A3=197.4 A4=198.6 cm
+[TAG POSITION] X=-32 cm, Y=196 cm, Z=-1 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=194 A3=194 A4=186
+[CAL DIST] A1=141.1 A2=197.7 A3=198.4 A4=196.6 cm
+[TAG POSITION] X=4 cm, Y=192 cm, Z=-9 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=143 A2=199 A3=192 A4=187
+[CAL DIST] A1=138.1 A2=202.7 A3=196.4 A4=197.6 cm
+[TAG POSITION] X=-24 cm, Y=204 cm, Z=-9 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=196 A3=194 A4=183
+[CAL DIST] A1=144.1 A2=199.7 A3=198.4 A4=193.6 cm
+[TAG POSITION] X=-4 cm, Y=188 cm, Z=19 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=197 A3=194 A4=185
+[CAL DIST] A1=144.1 A2=200.7 A3=198.4 A4=195.6 cm
+[TAG POSITION] X=-8 cm, Y=190 cm, Z=8 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=191 A3=199 A4=188
+[CAL DIST] A1=147.1 A2=194.7 A3=203.4 A4=198.6 cm
+[TAG POSITION] X=36 cm, Y=182 cm, Z=-13 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=199 A3=202 A4=177
+[CAL DIST] A1=143.1 A2=202.7 A3=206.4 A4=187.6 cm
+[TAG POSITION] X=16 cm, Y=211 cm, Z=100 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=195 A3=199 A4=188
+[CAL DIST] A1=148.1 A2=198.7 A3=203.4 A4=198.6 cm
+[TAG POSITION] X=20 cm, Y=186 cm, Z=0 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=150 A2=199 A3=196 A4=191
+[CAL DIST] A1=145.1 A2=202.7 A3=200.4 A4=201.6 cm
+[TAG POSITION] X=-8 cm, Y=194 cm, Z=-21 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=139 A2=204 A3=193 A4=180
+[CAL DIST] A1=134.1 A2=207.7 A3=197.4 A4=190.6 cm
+[TAG POSITION] X=-41 cm, Y=224 cm, Z=59 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=199 A3=193 A4=191
+[CAL DIST] A1=147.1 A2=202.7 A3=197.4 A4=201.6 cm
+[TAG POSITION] X=-20 cm, Y=184 cm, Z=-32 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=192 A3=198 A4=185
+[CAL DIST] A1=146.1 A2=195.7 A3=202.4 A4=195.6 cm
+[TAG POSITION] X=28 cm, Y=184 cm, Z=7 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=193 A3=195 A4=188
+[CAL DIST] A1=139.1 A2=196.7 A3=199.4 A4=198.6 cm
+[TAG POSITION] X=12 cm, Y=197 cm, Z=-24 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=194 A3=203 A4=187
+[CAL DIST] A1=143.1 A2=197.7 A3=207.4 A4=197.6 cm
+[TAG POSITION] X=41 cm, Y=204 cm, Z=16 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=197 A3=197 A4=186
+[CAL DIST] A1=142.1 A2=200.7 A3=201.4 A4=196.6 cm
+[TAG POSITION] X=4 cm, Y=200 cm, Z=11 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=193 A3=199 A4=199
+[CAL DIST] A1=141.1 A2=196.7 A3=203.4 A4=209.6 cm
+[TAG POSITION] X=28 cm, Y=200 cm, Z=-92 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=198 A3=197 A4=189
+[CAL DIST] A1=148.1 A2=201.7 A3=201.4 A4=199.6 cm
+[TAG POSITION] X=0 cm, Y=187 cm, Z=-5 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=156 A2=197 A3=198 A4=217
+[CAL DIST] A1=151.1 A2=200.7 A3=202.4 A4=227.6 cm
+[TAG POSITION] X=8 cm, Y=179 cm, Z=-225 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=145 A2=194 A3=194 A4=192
+[CAL DIST] A1=140.1 A2=197.7 A3=198.4 A4=202.6 cm
+[TAG POSITION] X=4 cm, Y=195 cm, Z=-54 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=200 A3=198 A4=189
+[CAL DIST] A1=144.1 A2=203.7 A3=202.4 A4=199.6 cm
+[TAG POSITION] X=-4 cm, Y=202 cm, Z=3 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=197 A3=196 A4=191
+[CAL DIST] A1=144.1 A2=200.7 A3=200.4 A4=201.6 cm
+[TAG POSITION] X=0 cm, Y=193 cm, Z=-28 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=198 A3=198 A4=183
+[CAL DIST] A1=143.1 A2=201.7 A3=202.4 A4=193.6 cm
+[TAG POSITION] X=4 cm, Y=201 cm, Z=40 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=192 A3=198 A4=188
+[CAL DIST] A1=144.1 A2=195.7 A3=202.4 A4=198.6 cm
+[TAG POSITION] X=28 cm, Y=189 cm, Z=-15 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=197 A3=196 A4=212
+[CAL DIST] A1=147.1 A2=200.7 A3=200.4 A4=222.6 cm
+[TAG POSITION] X=0 cm, Y=186 cm, Z=-192 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=199 A3=206 A4=177
+[CAL DIST] A1=139.1 A2=202.7 A3=210.4 A4=187.6 cm
+[TAG POSITION] X=33 cm, Y=228 cm, Z=114 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=202 A3=196 A4=187
+[CAL DIST] A1=148.1 A2=205.7 A3=200.4 A4=197.6 cm
+[TAG POSITION] X=-20 cm, Y=192 cm, Z=18 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=191 A3=199 A4=185
+[CAL DIST] A1=143.1 A2=194.7 A3=203.4 A4=195.6 cm
+[TAG POSITION] X=36 cm, Y=192 cm, Z=6 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=197 A3=197 A4=186
+[CAL DIST] A1=142.1 A2=200.7 A3=201.4 A4=196.6 cm
+[TAG POSITION] X=4 cm, Y=200 cm, Z=11 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=194 A3=202 A4=192
+[CAL DIST] A1=143.1 A2=197.7 A3=206.4 A4=202.6 cm
+[TAG POSITION] X=37 cm, Y=202 cm, Z=-24 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=201 A3=204 A4=190
+[CAL DIST] A1=147.1 A2=204.7 A3=208.4 A4=200.6 cm
+[TAG POSITION] X=16 cm, Y=208 cm, Z=22 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=195 A3=199 A4=179
+[CAL DIST] A1=143.1 A2=198.7 A3=203.4 A4=189.6 cm
+[TAG POSITION] X=20 cm, Y=198 cm, Z=62 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=196 A3=202 A4=175
+[CAL DIST] A1=150.1 A2=199.7 A3=206.4 A4=185.6 cm
+[TAG POSITION] X=28 cm, Y=188 cm, Z=107 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=200 A3=200 A4=183
+[CAL DIST] A1=143.1 A2=203.7 A3=204.4 A4=193.6 cm
+[TAG POSITION] X=4 cm, Y=209 cm, Z=53 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=193 A3=198 A4=180
+[CAL DIST] A1=143.1 A2=196.7 A3=202.4 A4=190.6 cm
+[TAG POSITION] X=24 cm, Y=193 cm, Z=45 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=192 A3=198 A4=183
+[CAL DIST] A1=146.1 A2=195.7 A3=202.4 A4=193.6 cm
+[TAG POSITION] X=28 cm, Y=184 cm, Z=21 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=145 A2=194 A3=199 A4=182
+[CAL DIST] A1=140.1 A2=197.7 A3=203.4 A4=192.6 cm
+[TAG POSITION] X=24 cm, Y=204 cm, Z=36 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=193 A3=202 A4=183
+[CAL DIST] A1=141.1 A2=196.7 A3=206.4 A4=193.6 cm
+[TAG POSITION] X=41 cm, Y=206 cm, Z=38 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=194 A3=199 A4=178
+[CAL DIST] A1=144.1 A2=197.7 A3=203.4 A4=188.6 cm
+[TAG POSITION] X=24 cm, Y=194 cm, Z=66 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=195 A3=202 A4=187
+[CAL DIST] A1=147.1 A2=198.7 A3=206.4 A4=197.6 cm
+[TAG POSITION] X=33 cm, Y=194 cm, Z=17 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=201 A3=204 A4=182
+[CAL DIST] A1=143.1 A2=204.7 A3=208.4 A4=192.6 cm
+[TAG POSITION] X=16 cm, Y=218 cm, Z=79 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=198 A3=197 A4=179
+[CAL DIST] A1=139.1 A2=201.7 A3=201.4 A4=189.6 cm
+[TAG POSITION] X=0 cm, Y=209 cm, Z=63 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=199 A3=196 A4=185
+[CAL DIST] A1=147.1 A2=202.7 A3=200.4 A4=195.6 cm
+[TAG POSITION] X=-8 cm, Y=189 cm, Z=23 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=202 A3=207 A4=188
+[CAL DIST] A1=144.1 A2=205.7 A3=211.4 A4=198.6 cm
+[TAG POSITION] X=25 cm, Y=223 cm, Z=51 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=204 A3=201 A4=188
+[CAL DIST] A1=144.1 A2=207.7 A3=205.4 A4=198.6 cm
+[TAG POSITION] X=-8 cm, Y=215 cm, Z=35 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=201 A3=197 A4=188
+[CAL DIST] A1=142.1 A2=204.7 A3=201.4 A4=198.6 cm
+[TAG POSITION] X=-12 cm, Y=207 cm, Z=9 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=202 A3=195 A4=184
+[CAL DIST] A1=141.1 A2=205.7 A3=199.4 A4=194.6 cm
+[TAG POSITION] X=-24 cm, Y=207 cm, Z=34 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=198 A3=204 A4=191
+[CAL DIST] A1=144.1 A2=201.7 A3=208.4 A4=201.6 cm
+[TAG POSITION] X=29 cm, Y=210 cm, Z=4 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=199 A3=200 A4=181
+[CAL DIST] A1=144.1 A2=202.7 A3=204.4 A4=191.6 cm
+[TAG POSITION] X=8 cm, Y=204 cm, Z=65 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=196 A3=203 A4=179
+[CAL DIST] A1=139.1 A2=199.7 A3=207.4 A4=189.6 cm
+[TAG POSITION] X=33 cm, Y=218 cm, Z=79 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=196 A3=199 A4=194
+[CAL DIST] A1=144.1 A2=199.7 A3=203.4 A4=204.6 cm
+[TAG POSITION] X=16 cm, Y=197 cm, Z=-43 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=195 A3=194 A4=183
+[CAL DIST] A1=144.1 A2=198.7 A3=198.4 A4=193.6 cm
+[TAG POSITION] X=0 cm, Y=186 cm, Z=16 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=198 A3=199 A4=183
+[CAL DIST] A1=146.1 A2=201.7 A3=203.4 A4=193.6 cm
+[TAG POSITION] X=8 cm, Y=196 cm, Z=44 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=194 A3=202 A4=182
+[CAL DIST] A1=141.1 A2=197.7 A3=206.4 A4=192.6 cm
+[TAG POSITION] X=37 cm, Y=207 cm, Z=48 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=143 A2=196 A3=202 A4=183
+[CAL DIST] A1=138.1 A2=199.7 A3=206.4 A4=193.6 cm
+[TAG POSITION] X=28 cm, Y=218 cm, Z=46 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=196 A3=204 A4=176
+[CAL DIST] A1=148.1 A2=199.7 A3=208.4 A4=186.6 cm
+[TAG POSITION] X=37 cm, Y=197 cm, Z=107 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=194 A3=201 A4=188
+[CAL DIST] A1=142.1 A2=197.7 A3=205.4 A4=198.6 cm
+[TAG POSITION] X=32 cm, Y=203 cm, Z=1 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=196 A3=198 A4=192
+[CAL DIST] A1=147.1 A2=199.7 A3=202.4 A4=202.6 cm
+[TAG POSITION] X=12 cm, Y=188 cm, Z=-31 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=198 A3=197 A4=182
+[CAL DIST] A1=147.1 A2=201.7 A3=201.4 A4=192.6 cm
+[TAG POSITION] X=0 cm, Y=189 cm, Z=44 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=196 A3=199 A4=178
+[CAL DIST] A1=143.1 A2=199.7 A3=203.4 A4=188.6 cm
+[TAG POSITION] X=16 cm, Y=200 cm, Z=72 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=199 A3=203 A4=186
+[CAL DIST] A1=147.1 A2=202.7 A3=207.4 A4=196.6 cm
+[TAG POSITION] X=20 cm, Y=202 cm, Z=41 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=198 A3=201 A4=183
+[CAL DIST] A1=142.1 A2=201.7 A3=205.4 A4=193.6 cm
+[TAG POSITION] X=16 cm, Y=210 cm, Z=50 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=198 A3=200 A4=192
+[CAL DIST] A1=144.1 A2=201.7 A3=204.4 A4=202.6 cm
+[TAG POSITION] X=12 cm, Y=203 cm, Z=-18 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=196 A3=199 A4=182
+[CAL DIST] A1=147.1 A2=199.7 A3=203.4 A4=192.6 cm
+[TAG POSITION] X=16 cm, Y=190 cm, Z=45 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=195 A3=204 A4=173
+[CAL DIST] A1=141.1 A2=198.7 A3=208.4 A4=183.6 cm
+[TAG POSITION] X=41 cm, Y=213 cm, Z=121 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=202 A3=194 A4=183
+[CAL DIST] A1=146.1 A2=205.7 A3=198.4 A4=193.6 cm
+[TAG POSITION] X=-28 cm, Y=193 cm, Z=39 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=198 A3=200 A4=177
+[CAL DIST] A1=147.1 A2=201.7 A3=204.4 A4=187.6 cm
+[TAG POSITION] X=12 cm, Y=195 cm, Z=91 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=198 A3=202 A4=187
+[CAL DIST] A1=143.1 A2=201.7 A3=206.4 A4=197.6 cm
+[TAG POSITION] X=20 cm, Y=209 cm, Z=25 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=197 A3=198 A4=182
+[CAL DIST] A1=142.1 A2=200.7 A3=202.4 A4=192.6 cm
+[TAG POSITION] X=8 cm, Y=202 cm, Z=43 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=199 A3=200 A4=184
+[CAL DIST] A1=149.1 A2=202.7 A3=204.4 A4=194.6 cm
+[TAG POSITION] X=8 cm, Y=191 cm, Z=45 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=194 A3=192 A4=182
+[CAL DIST] A1=146.1 A2=197.7 A3=196.4 A4=192.6 cm
+[TAG POSITION] X=-3 cm, Y=176 cm, Z=13 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=143 A2=193 A3=202 A4=178
+[CAL DIST] A1=138.1 A2=196.7 A3=206.4 A4=188.6 cm
+[TAG POSITION] X=41 cm, Y=213 cm, Z=72 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=200 A3=197 A4=181
+[CAL DIST] A1=146.1 A2=203.7 A3=201.4 A4=191.6 cm
+[TAG POSITION] X=-8 cm, Y=195 cm, Z=58 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=196 A3=194 A4=179
+[CAL DIST] A1=139.1 A2=199.7 A3=198.4 A4=189.6 cm
+[TAG POSITION] X=-4 cm, Y=201 cm, Z=45 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=193 A3=200 A4=185
+[CAL DIST] A1=149.1 A2=196.7 A3=204.4 A4=195.6 cm
+[TAG POSITION] X=32 cm, Y=182 cm, Z=19 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=196 A3=197 A4=181
+[CAL DIST] A1=142.1 A2=199.7 A3=201.4 A4=191.6 cm
+[TAG POSITION] X=8 cm, Y=199 cm, Z=43 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=199 A3=198 A4=187
+[CAL DIST] A1=144.1 A2=202.7 A3=202.4 A4=197.6 cm
+[TAG POSITION] X=0 cm, Y=201 cm, Z=14 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=199 A3=197 A4=177
+[CAL DIST] A1=139.1 A2=202.7 A3=201.4 A4=187.6 cm
+[TAG POSITION] X=-4 cm, Y=211 cm, Z=80 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=199 A3=201 A4=183
+[CAL DIST] A1=142.1 A2=202.7 A3=205.4 A4=193.6 cm
+[TAG POSITION] X=12 cm, Y=211 cm, Z=54 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=154 A2=191 A3=204 A4=191
+[CAL DIST] A1=149.1 A2=194.7 A3=208.4 A4=201.6 cm
+[TAG POSITION] X=57 cm, Y=186 cm, Z=-16 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=193 A3=198 A4=186
+[CAL DIST] A1=147.1 A2=196.7 A3=202.4 A4=196.6 cm
+[TAG POSITION] X=24 cm, Y=183 cm, Z=3 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=197 A3=203 A4=184
+[CAL DIST] A1=141.1 A2=200.7 A3=207.4 A4=194.6 cm
+[TAG POSITION] X=29 cm, Y=214 cm, Z=47 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=197 A3=199 A4=183
+[CAL DIST] A1=144.1 A2=200.7 A3=203.4 A4=193.6 cm
+[TAG POSITION] X=12 cm, Y=199 cm, Z=40 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=195 A3=194 A4=185
+[CAL DIST] A1=147.1 A2=198.7 A3=198.4 A4=195.6 cm
+[TAG POSITION] X=0 cm, Y=179 cm, Z=2 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=202 A3=204 A4=185
+[CAL DIST] A1=143.1 A2=205.7 A3=208.4 A4=195.6 cm
+[TAG POSITION] X=12 cm, Y=220 cm, Z=61 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=199 A3=197 A4=179
+[CAL DIST] A1=142.1 A2=202.7 A3=201.4 A4=189.6 cm
+[TAG POSITION] X=-4 cm, Y=204 cm, Z=67 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=194 A3=202 A4=187
+[CAL DIST] A1=143.1 A2=197.7 A3=206.4 A4=197.6 cm
+[TAG POSITION] X=37 cm, Y=202 cm, Z=13 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=199 A3=192 A4=182
+[CAL DIST] A1=141.1 A2=202.7 A3=196.4 A4=192.6 cm
+[TAG POSITION] X=-24 cm, Y=197 cm, Z=27 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=194 A3=201 A4=184
+[CAL DIST] A1=147.1 A2=197.7 A3=205.4 A4=194.6 cm
+[TAG POSITION] X=32 cm, Y=190 cm, Z=32 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=197 A3=199 A4=181
+[CAL DIST] A1=146.1 A2=200.7 A3=203.4 A4=191.6 cm
+[TAG POSITION] X=12 cm, Y=194 cm, Z=55 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=140 A2=194 A3=196 A4=188
+[CAL DIST] A1=135.1 A2=197.7 A3=200.4 A4=198.6 cm
+[TAG POSITION] X=12 cm, Y=211 cm, Z=-19 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=202 A3=200 A4=180
+[CAL DIST] A1=144.1 A2=205.7 A3=204.4 A4=190.6 cm
+[TAG POSITION] X=-4 cm, Y=209 cm, Z=82 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=199 A3=199 A4=181
+[CAL DIST] A1=141.1 A2=202.7 A3=203.4 A4=191.6 cm
+[TAG POSITION] X=4 cm, Y=210 cm, Z=60 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=194 A3=203 A4=187
+[CAL DIST] A1=147.1 A2=197.7 A3=207.4 A4=197.6 cm
+[TAG POSITION] X=41 cm, Y=194 cm, Z=18 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=199 A3=198 A4=178
+[CAL DIST] A1=143.1 A2=202.7 A3=202.4 A4=188.6 cm
+[TAG POSITION] X=0 cm, Y=203 cm, Z=78 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=194 A3=201 A4=183
+[CAL DIST] A1=141.1 A2=197.7 A3=205.4 A4=193.6 cm
+[TAG POSITION] X=32 cm, Y=205 cm, Z=37 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=150 A2=198 A3=199 A4=188
+[CAL DIST] A1=145.1 A2=201.7 A3=203.4 A4=198.6 cm
+[TAG POSITION] X=8 cm, Y=198 cm, Z=8 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=197 A3=212 A4=183
+[CAL DIST] A1=148.1 A2=200.7 A3=216.4 A4=193.6 cm
+[TAG POSITION] X=68 cm, Y=214 cm, Z=92 cm
+[LEFT/RIGHT] Tag is to the RIGHT
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=156 A2=201 A3=192 A4=185
+[CAL DIST] A1=151.1 A2=204.7 A3=196.4 A4=195.6 cm
+[TAG POSITION] X=-32 cm, Y=175 cm, Z=16 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=199 A3=198 A4=180
+[CAL DIST] A1=143.1 A2=202.7 A3=202.4 A4=190.6 cm
+[TAG POSITION] X=0 cm, Y=203 cm, Z=64 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=196 A3=193 A4=182
+[CAL DIST] A1=143.1 A2=199.7 A3=197.4 A4=192.6 cm
+[TAG POSITION] X=-8 cm, Y=189 cm, Z=22 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is between Z=0 and Z=30 cm
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=199 A3=197 A4=182
+[CAL DIST] A1=141.1 A2=202.7 A3=201.4 A4=192.6 cm
+[TAG POSITION] X=-4 cm, Y=206 cm, Z=45 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=202 A3=191 A4=181
+[CAL DIST] A1=148.1 A2=205.7 A3=195.4 A4=191.6 cm
+[TAG POSITION] X=-40 cm, Y=182 cm, Z=43 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=142 A2=194 A3=193 A4=184
+[CAL DIST] A1=137.1 A2=197.7 A3=197.4 A4=194.6 cm
+[TAG POSITION] X=0 cm, Y=200 cm, Z=0 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=193 A3=194 A4=189
+[CAL DIST] A1=144.1 A2=196.7 A3=198.4 A4=199.6 cm
+[TAG POSITION] X=8 cm, Y=183 cm, Z=-34 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=199 A3=195 A4=204
+[CAL DIST] A1=141.1 A2=202.7 A3=199.4 A4=214.6 cm
+[TAG POSITION] X=-12 cm, Y=202 cm, Z=-127 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=200 A3=187 A4=192
+[CAL DIST] A1=143.1 A2=203.7 A3=191.4 A4=202.6 cm
+[TAG POSITION] X=-48 cm, Y=185 cm, Z=-59 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=196 A3=188 A4=208
+[CAL DIST] A1=143.1 A2=199.7 A3=192.4 A4=218.6 cm
+[TAG POSITION] X=-27 cm, Y=180 cm, Z=-193 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=147 A2=197 A3=191 A4=201
+[CAL DIST] A1=142.1 A2=200.7 A3=195.4 A4=211.6 cm
+[TAG POSITION] X=-20 cm, Y=189 cm, Z=-124 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=149 A2=197 A3=199 A4=178
+[CAL DIST] A1=144.1 A2=200.7 A3=203.4 A4=188.6 cm
+[TAG POSITION] X=12 cm, Y=199 cm, Z=76 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=151 A2=197 A3=197 A4=192
+[CAL DIST] A1=146.1 A2=200.7 A3=201.4 A4=202.6 cm
+[TAG POSITION] X=4 cm, Y=190 cm, Z=-31 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=203 A3=196 A4=204
+[CAL DIST] A1=139.1 A2=206.7 A3=200.4 A4=214.6 cm
+[TAG POSITION] X=-24 cm, Y=216 cm, Z=-111 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=153 A2=193 A3=189 A4=194
+[CAL DIST] A1=148.1 A2=196.7 A3=193.4 A4=204.6 cm
+[TAG POSITION] X=-11 cm, Y=164 cm, Z=-87 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=197 A3=201 A4=232
+[CAL DIST] A1=143.1 A2=200.7 A3=205.4 A4=242.6 cm
+[TAG POSITION] X=20 cm, Y=205 cm, Z=-347 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=194 A3=196 A4=197
+[CAL DIST] A1=143.1 A2=197.7 A3=200.4 A4=207.6 cm
+[TAG POSITION] X=12 cm, Y=191 cm, Z=-84 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=192 A3=198 A4=190
+[CAL DIST] A1=141.1 A2=195.7 A3=202.4 A4=200.6 cm
+[TAG POSITION] X=28 cm, Y=197 cm, Z=-31 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=193 A3=198 A4=192
+[CAL DIST] A1=141.1 A2=196.7 A3=202.4 A4=202.6 cm
+[TAG POSITION] X=24 cm, Y=198 cm, Z=-42 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=194 A3=193 A4=193
+[CAL DIST] A1=141.1 A2=197.7 A3=197.4 A4=203.6 cm
+[TAG POSITION] X=0 cm, Y=190 cm, Z=-65 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=142 A2=194 A3=197 A4=208
+[CAL DIST] A1=137.1 A2=197.7 A3=201.4 A4=218.6 cm
+[TAG POSITION] X=16 cm, Y=208 cm, Z=-169 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=144 A2=202 A3=189 A4=215
+[CAL DIST] A1=139.1 A2=205.7 A3=193.4 A4=225.6 cm
+[TAG POSITION] X=-48 cm, Y=201 cm, Z=-229 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=142 A2=198 A3=193 A4=194
+[CAL DIST] A1=137.1 A2=201.7 A3=197.4 A4=204.6 cm
+[TAG POSITION] X=-16 cm, Y=207 cm, Z=-61 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=148 A2=197 A3=192 A4=236
+[CAL DIST] A1=143.1 A2=200.7 A3=196.4 A4=246.6 cm
+[TAG POSITION] X=-16 cm, Y=189 cm, Z=-417 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=194 A3=202 A4=239
+[CAL DIST] A1=141.1 A2=197.7 A3=206.4 A4=249.6 cm
+[TAG POSITION] X=37 cm, Y=207 cm, Z=-418 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=146 A2=199 A3=196 A4=174
+[CAL DIST] A1=141.1 A2=202.7 A3=200.4 A4=184.6 cm
+[TAG POSITION] X=-8 cm, Y=204 cm, Z=98 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=155 A2=198 A3=188 A4=245
+[CAL DIST] A1=150.1 A2=201.7 A3=192.4 A4=255.6 cm
+[TAG POSITION] X=-36 cm, Y=165 cm, Z=-509 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] WARNING: Calculated Z is below the reference plane
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
+Summary RAW: A1=152 A2=193 A3=202 A4=182
+[CAL DIST] A1=147.1 A2=196.7 A3=206.4 A4=192.6 cm
+[TAG POSITION] X=41 cm, Y=191 cm, Z=47 cm
+[LEFT/RIGHT] Tag is CENTERED
+[FRONT/BACK] Tag is in FRONT
+[HEIGHT] Tag is above Anchor 4 height
+[UWB] Tag is more than 2 feet away
+Outside 2 feet: Sending  speed
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+
+========== New Ranging Cycle ==========
