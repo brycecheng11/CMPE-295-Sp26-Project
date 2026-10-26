@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Sep 22 13:56:28 2026
+| Date         : Mon Oct 26 12:15:52 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,259 +23,19 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 55
+             Violations found: 18
 +-----------+----------+-------------------------------------------------+------------+
 | Rule      | Severity | Description                                     | Violations |
 +-----------+----------+-------------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert                    | 4          |
-| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 11         |
-| TIMING-16 | Warning  | Large setup violation                           | 32         |
-| TIMING-18 | Warning  | Missing input or output delay                   | 8          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                   | 17         |
 +-----------+----------+-------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-LUTAR-1#1 Warning
-LUT drives async reset alert  
-LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#2 Warning
-LUT drives async reset alert  
-LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#3 Warning
-LUT drives async reset alert  
-LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#4 Warning
-LUT drives async reset alert  
-LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
-dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X65Y99 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#2 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X67Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#3 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X64Y96 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#4 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X65Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#5 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X62Y97 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#6 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X63Y98 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#7 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X64Y98 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#8 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X67Y100 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#9 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X66Y102 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#10 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X67Y102 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
-Related violations: <none>
-
-PDRC-190#11 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell design_1_i/PmodCAN_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to in site SLICE_X27Y63 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/PmodCAN_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
-Related violations: <none>
-
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -246.842 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_16/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#2 Warning
-Large setup violation  
-There is a large setup violation of -247.017 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_15/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#3 Warning
-Large setup violation  
-There is a large setup violation of -247.134 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_14/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#4 Warning
-Large setup violation  
-There is a large setup violation of -247.198 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_13/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#5 Warning
-Large setup violation  
-There is a large setup violation of -247.323 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_12/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#6 Warning
-Large setup violation  
-There is a large setup violation of -247.343 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_10/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#7 Warning
-Large setup violation  
-There is a large setup violation of -247.419 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_9/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#8 Warning
-Large setup violation  
-There is a large setup violation of -247.440 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_8/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#9 Warning
-Large setup violation  
-There is a large setup violation of -247.460 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_6/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#10 Warning
-Large setup violation  
-There is a large setup violation of -247.536 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_5/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#11 Warning
-Large setup violation  
-There is a large setup violation of -247.544 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_7/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#12 Warning
-Large setup violation  
-There is a large setup violation of -247.558 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_4/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#13 Warning
-Large setup violation  
-There is a large setup violation of -247.578 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_2/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#14 Warning
-Large setup violation  
-There is a large setup violation of -247.654 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_1/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#15 Warning
-Large setup violation  
-There is a large setup violation of -247.662 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_3/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#16 Warning
-Large setup violation  
-There is a large setup violation of -247.677 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#17 Warning
-Large setup violation  
-There is a large setup violation of -247.697 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_13/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#18 Warning
-Large setup violation  
-There is a large setup violation of -247.773 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_12/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#19 Warning
-Large setup violation  
-There is a large setup violation of -247.781 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_14/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#20 Warning
-Large setup violation  
-There is a large setup violation of -247.795 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_11/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#21 Warning
-Large setup violation  
-There is a large setup violation of -247.815 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_9/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#22 Warning
-Large setup violation  
-There is a large setup violation of -247.891 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_8/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#23 Warning
-Large setup violation  
-There is a large setup violation of -247.899 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_10/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#24 Warning
-Large setup violation  
-There is a large setup violation of -247.914 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_7/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#25 Warning
-Large setup violation  
-There is a large setup violation of -247.934 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_5/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#26 Warning
-Large setup violation  
-There is a large setup violation of -248.010 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_4/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#27 Warning
-Large setup violation  
-There is a large setup violation of -248.018 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_6/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#28 Warning
-Large setup violation  
-There is a large setup violation of -248.040 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_3/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#29 Warning
-Large setup violation  
-There is a large setup violation of -248.060 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_1/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#30 Warning
-Large setup violation  
-There is a large setup violation of -248.066 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/term_calculation_0/inst/d_term_interim_reg[6]_psdsp_11/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#31 Warning
-Large setup violation  
-There is a large setup violation of -248.136 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#32 Warning
-Large setup violation  
-There is a large setup violation of -248.144 ns between design_1_i/pid_controller_0/inst/design_1_i/initial_math_0/inst/error_reg[3]/C (clocked by clk_fpga_0) and design_1_i/pid_controller_0/inst/design_1_i/velocity_calculation_0/inst/interim[23]_i_4_psdsp_2/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+The FDRE cell design_1_i/PmodCAN_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to in site SLICE_X43Y70 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/PmodCAN_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-18#1 Warning
@@ -316,6 +76,51 @@ Related violations: <none>
 TIMING-18#8 Warning
 Missing input or output delay  
 An input delay is missing on Pmod_out_0_pin9_io relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on rx_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on rx_1 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on rx_2 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on rx_3 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on UWB_Reset[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on tx_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on tx_1 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on tx_2 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on tx_3 relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 

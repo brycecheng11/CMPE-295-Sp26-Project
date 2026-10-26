@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Sep 22 13:51:43 2026
+| Date         : Mon Oct 26 12:14:20 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   16 |     0 |          0 |       125 | 12.80 |
+| Bonded IOB                  |   25 |     0 |          0 |       125 | 20.00 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
@@ -146,8 +146,9 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |   16 |                  IO |
+| IBUF     |   20 |                  IO |
 | OBUFT    |   10 |                  IO |
+| OBUF     |    5 |                  IO |
 +----------+------+---------------------+
 
 
@@ -161,8 +162,12 @@ Table of Contents
 | design_1_rst_ps7_0_50M_0          |    1 |
 | design_1_processing_system7_0_0   |    1 |
 | design_1_pot_to_const_0_0         |    1 |
-| design_1_pid_controller_0_2       |    1 |
-| design_1_ila_0_1                  |    1 |
+| design_1_pid_compressed_t_wra_0_0 |    1 |
+| design_1_axi_uartlite_3_0         |    1 |
+| design_1_axi_uartlite_2_0         |    1 |
+| design_1_axi_uartlite_1_0         |    1 |
+| design_1_axi_uartlite_0_0         |    1 |
+| design_1_axi_gpio_0_0             |    1 |
 | design_1_auto_pc_0                |    1 |
 | design_1_PmodCAN_0_0              |    1 |
 | design_1_AXI_PID_Controller_P_0_2 |    1 |
