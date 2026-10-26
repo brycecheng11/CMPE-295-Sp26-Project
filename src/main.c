@@ -16,6 +16,7 @@
 #include "xuartlite_l.h"
 #include <stdlib.h>
 #include <stdbool.h>
+#include "xgpio.h"
 
 #define GPIO_BASE XPAR_PMODCAN_0_AXI_LITE_GPIO_BASEADDR
 
@@ -73,20 +74,20 @@ XUartPs Uart;
  * from the same origin and must match the physical installation.
  */
 #define A1_X   0.0f
-#define A1_Y   31.0f
-#define A1_Z   0.0f
+#define A1_Y   57.0f
+#define A1_Z   5.0f
 
-#define A2_X   23.0f
-#define A2_Y   -3.0f
-#define A2_Z   0.0f
+#define A2_X   26.0f
+#define A2_Y   0.0f
+#define A2_Z   5.0f
 
-#define A3_X  -20.0f
-#define A3_Y  -3.0f
-#define A3_Z   0.0f
+#define A3_X  -23.0f
+#define A3_Y   0.0f
+#define A3_Z   5.0f
 
 #define A4_X  0.0f
-#define A4_Y  20.0f
-#define A4_Z  30.0f
+#define A4_Y  4.0f
+#define A4_Z  32.0f
 
 /* Corrected distance = raw distance + startup-calculated offset. */
 
@@ -104,6 +105,59 @@ XUartPs Uart;
 /* Offsets are calculated from raw distances at startup, not hardcoded. */
 static float anchor_offset_cm[4] = {0.0f, 0.0f, 0.0f, 0.0f};
 static int calibration_samples[4][CAL_MAX_SAMPLES];
+
+#define UWB_GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define UWB_GPIO_CHANNEL   1
+
+XGpio UwbResetGpio;
+
+int reset_all_uwb_modules(void)
+{
+	int status;
+
+	// Initialize AXI GPIO
+	status = XGpio_Initialize(&UwbResetGpio, UWB_GPIO_DEVICE_ID);
+	if (status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	// Direction mask: 0 = output, 1 = input
+	XGpio_SetDataDirection(
+			&UwbResetGpio,
+			UWB_GPIO_CHANNEL,
+			0x0
+	);
+
+	// Keep reset released initially
+	XGpio_DiscreteWrite(
+			&UwbResetGpio,
+			UWB_GPIO_CHANNEL,
+			0x1
+	);
+
+	usleep(10000);       // 10 ms
+
+	// Assert active-low reset
+	XGpio_DiscreteWrite(
+			&UwbResetGpio,
+			UWB_GPIO_CHANNEL,
+			0x0
+	);
+
+	usleep(100000);      // Hold reset low for 100 ms
+
+	// Release reset
+	XGpio_DiscreteWrite(
+			&UwbResetGpio,
+			UWB_GPIO_CHANNEL,
+			0x1
+	);
+
+	// Allow all four RYUW122 modules to boot
+	usleep(1500000);     // 1.5 seconds
+
+	return XST_SUCCESS;
+}
 
 
 typedef struct {
@@ -277,93 +331,93 @@ static int get_distance_from_anchor(u32 uart_base, const char *label)
 /* Sort calibration samples in place and return their median. */
 static float median_cm(int *values, int count)
 {
-    int i;
-    for (i = 1; i < count; ++i) {
-        int value = values[i];
-        int j = i;
-        while (j > 0 && values[j - 1] > value) {
-            values[j] = values[j - 1];
-            --j;
-        }
-        values[j] = value;
-    }
-    if (count & 1) return (float)values[count / 2];
-    return ((float)values[count / 2 - 1] + (float)values[count / 2]) * 0.5f;
+	int i;
+	for (i = 1; i < count; ++i) {
+		int value = values[i];
+		int j = i;
+		while (j > 0 && values[j - 1] > value) {
+			values[j] = values[j - 1];
+			--j;
+		}
+		values[j] = value;
+	}
+	if (count & 1) return (float)values[count / 2];
+	return ((float)values[count / 2 - 1] + (float)values[count / 2]) * 0.5f;
 }
 
 /* xil_printf does not support floating-point format specifiers. */
 static void print_cm_1dp(float value)
 {
-    int tenths = (int)(fabsf(value) * 10.0f + 0.5f);
-    xil_printf("%s%d.%d", value < 0.0f ? "-" : "",
-               tenths / 10, tenths % 10);
+	int tenths = (int)(fabsf(value) * 10.0f + 0.5f);
+	xil_printf("%s%d.%d", value < 0.0f ? "-" : "",
+			tenths / 10, tenths % 10);
 }
 
 /* Calibrate each anchor using a stationary tag at a known location. */
 static int calibrate_anchors(void)
 {
-    static const u32 bases[4] = {
-        UWB1_BASE, UWB2_BASE, UWB3_BASE, UWB4_BASE
-    };
-    static const char *labels[4] = {
-        "ANCHOR1", "ANCHOR2", "ANCHOR3", "ANCHOR4"
-    };
-    static const float xs[4] = {A1_X, A2_X, A3_X, A4_X};
-    static const float ys[4] = {A1_Y, A2_Y, A3_Y, A4_Y};
-    static const float zs[4] = {A1_Z, A2_Z, A3_Z, A4_Z};
-    int counts[4] = {0, 0, 0, 0};
-    float offsets[4];
-    XTime start, now;
-    int cycles = 0;
-    int i;
+	static const u32 bases[4] = {
+			UWB1_BASE, UWB2_BASE, UWB3_BASE, UWB4_BASE
+	};
+	static const char *labels[4] = {
+			"ANCHOR1", "ANCHOR2", "ANCHOR3", "ANCHOR4"
+	};
+	static const float xs[4] = {A1_X, A2_X, A3_X, A4_X};
+	static const float ys[4] = {A1_Y, A2_Y, A3_Y, A4_Y};
+	static const float zs[4] = {A1_Z, A2_Z, A3_Z, A4_Z};
+	int counts[4] = {0, 0, 0, 0};
+	float offsets[4];
+	XTime start, now;
+	int cycles = 0;
+	int i;
 
-    xil_printf("\r\n[CALIBRATION] Hold tag at (%d,%d,%d) cm for %d seconds.\r\n",
-               (int)CAL_TAG_X_CM, (int)CAL_TAG_Y_CM,
-               (int)CAL_TAG_Z_CM, (int)CAL_SECONDS);
-    xil_printf("[CALIBRATION] Measuring raw distances...\r\n");
+	xil_printf("\r\n[CALIBRATION] Hold tag at (%d,%d,%d) cm for %d seconds.\r\n",
+			(int)CAL_TAG_X_CM, (int)CAL_TAG_Y_CM,
+			(int)CAL_TAG_Z_CM, (int)CAL_SECONDS);
+	xil_printf("[CALIBRATION] Measuring raw distances...\r\n");
 
-    XTime_GetTime(&start);
-    do {
-        for (i = 0; i < 4; ++i) {
-            int distance;
-            if (counts[i] >= CAL_MAX_SAMPLES) continue;
-            distance = get_distance_from_anchor(bases[i], labels[i]);
-            if (distance > 0) {
-                calibration_samples[i][counts[i]++] = distance;
-            }
-        }
-        ++cycles;
-        xil_printf("[CALIBRATION] Cycle %d: A1=%d A2=%d A3=%d A4=%d\r\n",
-                   cycles, counts[0], counts[1], counts[2], counts[3]);
-        XTime_GetTime(&now);
-    } while ((now - start) < ((XTime)COUNTS_PER_SECOND * CAL_SECONDS));
+	XTime_GetTime(&start);
+	do {
+		for (i = 0; i < 4; ++i) {
+			int distance;
+			if (counts[i] >= CAL_MAX_SAMPLES) continue;
+			distance = get_distance_from_anchor(bases[i], labels[i]);
+			if (distance > 0) {
+				calibration_samples[i][counts[i]++] = distance;
+			}
+		}
+		++cycles;
+		xil_printf("[CALIBRATION] Cycle %d: A1=%d A2=%d A3=%d A4=%d\r\n",
+				cycles, counts[0], counts[1], counts[2], counts[3]);
+		XTime_GetTime(&now);
+	} while ((now - start) < ((XTime)COUNTS_PER_SECOND * CAL_SECONDS));
 
-    for (i = 0; i < 4; ++i) {
-        if (counts[i] < CAL_MIN_VALID) {
-            xil_printf("[CALIBRATION] FAILED: A%d has %d valid readings; need %d.\r\n",
-                       i + 1, counts[i], CAL_MIN_VALID);
-            return -1;
-        }
-    }
+	for (i = 0; i < 4; ++i) {
+		if (counts[i] < CAL_MIN_VALID) {
+			xil_printf("[CALIBRATION] FAILED: A%d has %d valid readings; need %d.\r\n",
+					i + 1, counts[i], CAL_MIN_VALID);
+			return -1;
+		}
+	}
 
-    for (i = 0; i < 4; ++i) {
-        float dx = CAL_TAG_X_CM - xs[i];
-        float dy = CAL_TAG_Y_CM - ys[i];
-        float dz = CAL_TAG_Z_CM - zs[i];
-        float expected = sqrtf(dx * dx + dy * dy + dz * dz);
-        float measured = median_cm(calibration_samples[i], counts[i]);
-        offsets[i] = expected - measured;
-        xil_printf("[CALIBRATION] A%d n=%d expected=", i + 1, counts[i]);
-        print_cm_1dp(expected);
-        xil_printf(" cm median=");
-        print_cm_1dp(measured);
-        xil_printf(" cm offset=");
-        print_cm_1dp(offsets[i]);
-        xil_printf(" cm\r\n");
-    }
-    for (i = 0; i < 4; ++i) anchor_offset_cm[i] = offsets[i];
-    xil_printf("[CALIBRATION] Complete. Move tag for normal ranging.\r\n");
-    return 0;
+	for (i = 0; i < 4; ++i) {
+		float dx = CAL_TAG_X_CM - xs[i];
+		float dy = CAL_TAG_Y_CM - ys[i];
+		float dz = CAL_TAG_Z_CM - zs[i];
+		float expected = sqrtf(dx * dx + dy * dy + dz * dz);
+		float measured = median_cm(calibration_samples[i], counts[i]);
+		offsets[i] = expected - measured;
+		xil_printf("[CALIBRATION] A%d n=%d expected=", i + 1, counts[i]);
+		print_cm_1dp(expected);
+		xil_printf(" cm median=");
+		print_cm_1dp(measured);
+		xil_printf(" cm offset=");
+		print_cm_1dp(offsets[i]);
+		xil_printf(" cm\r\n");
+	}
+	for (i = 0; i < 4; ++i) anchor_offset_cm[i] = offsets[i];
+	xil_printf("[CALIBRATION] Complete. Move tag for normal ranging.\r\n");
+	return 0;
 }
 
 static float determinant_3x3(float a11, float a12, float a13,
@@ -402,19 +456,19 @@ static int trilaterate_3d(
 	float a33 = 2.0f * (z4 - z1);
 
 	float b1 = (d1 * d1) - (d2 * d2)
-            												 - (x1 * x1) + (x2 * x2)
-															 - (y1 * y1) + (y2 * y2)
-															 - (z1 * z1) + (z2 * z2);
+            																 - (x1 * x1) + (x2 * x2)
+																			 - (y1 * y1) + (y2 * y2)
+																			 - (z1 * z1) + (z2 * z2);
 
 	float b2 = (d1 * d1) - (d3 * d3)
-            												 - (x1 * x1) + (x3 * x3)
-															 - (y1 * y1) + (y3 * y3)
-															 - (z1 * z1) + (z3 * z3);
+            																 - (x1 * x1) + (x3 * x3)
+																			 - (y1 * y1) + (y3 * y3)
+																			 - (z1 * z1) + (z3 * z3);
 
 	float b3 = (d1 * d1) - (d4 * d4)
-            												 - (x1 * x1) + (x4 * x4)
-															 - (y1 * y1) + (y4 * y4)
-															 - (z1 * z1) + (z4 * z4);
+            																 - (x1 * x1) + (x4 * x4)
+																			 - (y1 * y1) + (y4 * y4)
+																			 - (z1 * z1) + (z4 * z4);
 
 	float det_a = determinant_3x3(
 			a11, a12, a13,
@@ -454,20 +508,20 @@ static bool print_tag_position(int d1, int d2, int d3, int d4)
 		return false;
 	}
 
-    c1 = (float)d1 + anchor_offset_cm[0];
-    c2 = (float)d2 + anchor_offset_cm[1];
-    c3 = (float)d3 + anchor_offset_cm[2];
-    c4 = (float)d4 + anchor_offset_cm[3];
+	c1 = (float)d1 + anchor_offset_cm[0];
+	c2 = (float)d2 + anchor_offset_cm[1];
+	c3 = (float)d3 + anchor_offset_cm[2];
+	c4 = (float)d4 + anchor_offset_cm[3];
 
-    if (c1 <= 0.0f || c2 <= 0.0f || c3 <= 0.0f || c4 <= 0.0f) {
-        xil_printf("[TAG POSITION] Invalid corrected distance\r\n");
-        return false;
-    }
-    xil_printf("[CAL DIST] A1="); print_cm_1dp(c1);
-    xil_printf(" A2="); print_cm_1dp(c2);
-    xil_printf(" A3="); print_cm_1dp(c3);
-    xil_printf(" A4="); print_cm_1dp(c4);
-    xil_printf(" cm\r\n");
+	if (c1 <= 0.0f || c2 <= 0.0f || c3 <= 0.0f || c4 <= 0.0f) {
+		xil_printf("[TAG POSITION] Invalid corrected distance\r\n");
+		return false;
+	}
+	xil_printf("[CAL DIST] A1="); print_cm_1dp(c1);
+	xil_printf(" A2="); print_cm_1dp(c2);
+	xil_printf(" A3="); print_cm_1dp(c3);
+	xil_printf(" A4="); print_cm_1dp(c4);
+	xil_printf(" cm\r\n");
 
 	ok = trilaterate_3d(
 			A1_X, A1_Y, A1_Z, (float)c1,
@@ -760,7 +814,7 @@ void uwbCheck(CAN_Message *motor141, CAN_Message *motor142)
 
 	const u8 testSpeedCommand[8] = {
 			0xA2, 0x00, 0x00, 0x00,
-			0x30, 0x2A, 0x00, 0x7F
+			0x30, 0x2A, 0x00, 0x03
 	};
 
 	const u8 stopCommand[8] = {
@@ -788,13 +842,13 @@ void uwbCheck(CAN_Message *motor141, CAN_Message *motor142)
 	bool within2Feet = print_tag_position(d1, d2, d3, d4);
 
 	if (within2Feet) {
-		memcpy(motor141->data, testSpeedCommand, 8);
-		memcpy(motor142->data, testSpeedCommand, 8);
+		memcpy(motor141->data, stopCommand, 8);
+		memcpy(motor142->data, stopCommand, 8);
 
 		xil_printf("Within 2 feet: Sending zero speed\r\n");
 	} else {
-		memcpy(motor141->data, stopCommand, 8);
-		memcpy(motor142->data, stopCommand, 8);
+		memcpy(motor141->data, testSpeedCommand, 8);
+		memcpy(motor142->data, testSpeedCommand, 8);
 
 		xil_printf("Outside 2 feet: Sending  speed\r\n");
 	}
@@ -835,6 +889,16 @@ int main(void)
 	CalibrateAccel(&Iic, &ax_off, &ay_off, &az_off);
 	CalibrateGyro(&Iic, &gx_off, &gy_off, &gz_off);
 
+	int status;
+
+	status = reset_all_uwb_modules();
+
+	if (status != XST_SUCCESS) {
+		xil_printf("UWB reset GPIO initialization failed\r\n");
+		return XST_FAILURE;
+	}
+
+	xil_printf("All UWB modules reset successfully\r\n");
 
 	xil_printf("\r\n========================================\r\n");
 	xil_printf("Zybo Four-Anchor RYUW122 3D Position\r\n");
@@ -850,12 +914,12 @@ int main(void)
 	configure_anchor(UWB3_BASE, "ANCHOR3", 3);
 	configure_anchor(UWB4_BASE, "ANCHOR4", 4);
 
-    /* Startup UWB calibration happens before CAN motor initialization. */
-    if (calibrate_anchors() != 0) {
-        xil_printf("[CALIBRATION] Aborted. Check tag position and anchors.\r\n");
-        cleanup_platform();
-        return -1;
-    }
+	/* Startup UWB calibration happens before CAN motor initialization. */
+	if (calibrate_anchors() != 0) {
+		xil_printf("[CALIBRATION] Aborted. Check tag position and anchors.\r\n");
+		cleanup_platform();
+		return -1;
+	}
 
 
 	//float pitch = 0.0f;
@@ -970,12 +1034,13 @@ int main(void)
 	const u8 testSpeed3Command[8] = {
 			0xA2, 0x00, 0x00, 0x00, 0x30, 0x2A, 0x00, 0x7F
 	};
-	memcpy(motor141.data, testSpeed3Command, sizeof(testSpeed3Command));
+	memcpy(motor141.data, testSpeed 3Command, sizeof(testSpeed3Command));
 	SendMotorMessageInit(&motor141, "Test third max speed");
 	return 0;
 	 */
 
 	//return 0;
+
 
 
 	while (1) {

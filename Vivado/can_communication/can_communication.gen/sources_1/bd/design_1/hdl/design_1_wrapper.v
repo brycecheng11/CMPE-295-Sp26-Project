@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-//Date        : Tue Sep 22 13:49:41 2026
+//Date        : Mon Oct 26 12:12:35 2026
 //Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -41,12 +41,22 @@ module design_1_wrapper
     Pmod_out_0_pin7_io,
     Pmod_out_0_pin8_io,
     Pmod_out_0_pin9_io,
+    UWB_Reset,
+    gpio_io_i_0,
     kd_vaux_n_0,
     kd_vaux_p_0,
     ki_vaux_n_0,
     ki_vaux_p_0,
     kp_vaux_n_0,
-    kp_vaux_p_0);
+    kp_vaux_p_0,
+    rx_0,
+    rx_1,
+    rx_2,
+    rx_3,
+    tx_0,
+    tx_1,
+    tx_2,
+    tx_3);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -78,12 +88,22 @@ module design_1_wrapper
   inout Pmod_out_0_pin7_io;
   inout Pmod_out_0_pin8_io;
   inout Pmod_out_0_pin9_io;
+  output [0:0]UWB_Reset;
+  input [3:0]gpio_io_i_0;
   input kd_vaux_n_0;
   input kd_vaux_p_0;
   input ki_vaux_n_0;
   input ki_vaux_p_0;
   input kp_vaux_n_0;
   input kp_vaux_p_0;
+  input rx_0;
+  input rx_1;
+  input rx_2;
+  input rx_3;
+  output tx_0;
+  output tx_1;
+  output tx_2;
+  output tx_3;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -146,12 +166,22 @@ module design_1_wrapper
   wire Pmod_out_0_pin9_io;
   wire Pmod_out_0_pin9_o;
   wire Pmod_out_0_pin9_t;
+  wire [0:0]UWB_Reset;
+  wire [3:0]gpio_io_i_0;
   wire kd_vaux_n_0;
   wire kd_vaux_p_0;
   wire ki_vaux_n_0;
   wire ki_vaux_p_0;
   wire kp_vaux_n_0;
   wire kp_vaux_p_0;
+  wire rx_0;
+  wire rx_1;
+  wire rx_2;
+  wire rx_3;
+  wire tx_0;
+  wire tx_1;
+  wire tx_2;
+  wire tx_3;
 
   IOBUF IIC_0_0_scl_iobuf
        (.I(IIC_0_0_scl_o),
@@ -255,10 +285,20 @@ module design_1_wrapper
         .Pmod_out_0_pin9_i(Pmod_out_0_pin9_i),
         .Pmod_out_0_pin9_o(Pmod_out_0_pin9_o),
         .Pmod_out_0_pin9_t(Pmod_out_0_pin9_t),
+        .UWB_Reset(UWB_Reset),
+        .gpio_io_i_0(gpio_io_i_0),
         .kd_vaux_n_0(kd_vaux_n_0),
         .kd_vaux_p_0(kd_vaux_p_0),
         .ki_vaux_n_0(ki_vaux_n_0),
         .ki_vaux_p_0(ki_vaux_p_0),
         .kp_vaux_n_0(kp_vaux_n_0),
-        .kp_vaux_p_0(kp_vaux_p_0));
+        .kp_vaux_p_0(kp_vaux_p_0),
+        .rx_0(rx_0),
+        .rx_1(rx_1),
+        .rx_2(rx_2),
+        .rx_3(rx_3),
+        .tx_0(tx_0),
+        .tx_1(tx_1),
+        .tx_2(tx_2),
+        .tx_3(tx_3));
 endmodule
