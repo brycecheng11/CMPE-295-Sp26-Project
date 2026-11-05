@@ -1,0 +1,42 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: -515 375 1388
+Calibrating gyro...
+Gyro offsets: -725 189 63
+All UWB modules reset successfully
+
+========================================
+Zybo Three-Anchor RYUW122 2D Position
+Target tag: TAG00001
+A1=(0,49,5) cm
+A2=(26,0,5) cm
+A3=(-26,3,5) cm
+Position mode: fixed Z=0 cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+
+[CALIBRATION] Hold tag at (0,200,0) cm for 60 seconds.
+[CALIBRATION] Measuring raw distances...
+[CALIBRATION] Cycle 1: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 2: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 3: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 4: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 5: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 6: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 7: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 8: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 9: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 10: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 11: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 12: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 13: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 14: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 15: A1=0 A2=0 A3=0
+[CALIBRATION] Cycle 16: A1=0 A2=0 A3=0
+[CALIBRATION] FAILED: A1 has 0 valid readings; need 20.
+[CALIBRATION] Aborted. Check tag position and anchors.

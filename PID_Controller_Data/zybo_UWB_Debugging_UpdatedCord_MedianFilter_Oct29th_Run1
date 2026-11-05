@@ -1,0 +1,37 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: -486 490 1388
+Calibrating gyro...
+Gyro offsets: -725 190 62
+All UWB modules reset successfully
+
+========================================
+Zybo Three-Anchor RYUW122 2D Position
+Target tag: TAG00001
+A1=(0,57,5) cm
+A2=(26,0,5) cm
+A3=(-23,0,5) cm
+Position mode: fixed Z=0 cm
+========================================
+Configuring ANCHOR1...
+Configuring ANCHOR2...
+Configuring ANCHOR3...
+
+[CALIBRATION] Hold tag at (0,200,0) cm for 60 seconds.
+[CALIBRATION] Measuring raw distances...
+[CALIBRATION] Cycle 1: A1=1 A2=1 A3=1
+[CALIBRATION] Cycle 2: A1=2 A2=2 A3=2
+[CALIBRATION] Cycle 3: A1=3 A2=3 A3=3
+[CALIBRATION] Cycle 4: A1=4 A2=4 A3=4
+[CALIBRATION] Cycle 5: A1=5 A2=5 A3=5
+[CALIBRATION] Cycle 6: A1=6 A2=6 A3=6
+[CALIBRATION] Cycle 7: A1=7 A2=7 A3=7
+[CALIBRATION] Cycle 8: A1=8 A2=8 A3=8
+[CALIBRATION] Cycle 9: A1=9 A2=9 A3=9
+[CALIBRATION] Cycle 10: A1=10 A2=10 A3=10
+[CALIBRATION] Cycle 11: A1=11 A2=11 A3=11
+[CALIBRATION] Cycle 12: A1=12 A2=12 A3=12
+[CALIBRATION] Cycle 13: A1=13 A2=13 A3=13
