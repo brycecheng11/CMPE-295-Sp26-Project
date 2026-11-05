@@ -1,0 +1,4994 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: -1662 -840 1274
+Calibrating gyro...
+Gyro offsets: -730 192 68
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x02 CANINTF=0x05 EFLG=0x00 TEC=0 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: 31
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+CAN_SendMessage: 55
+CAN_SendMessage: 19
+TXB0CTRL=0x02 CANINTF=0x25 EFLG=0x40 TEC=0 REC=0
+Waiting after initialization...
+Readback = 0
+RAW ax=14 ay=-8 az=16334 accel_pitch=0
+RAW ax=-16 ay=-2 az=16352 accel_pitch=0
+RAW ax=0 ay=-34 az=16326 accel_pitch=0
+RAW ax=32 ay=32 az=16358 accel_pitch=0
+RAW ax=2 ay=6 az=16348 accel_pitch=0
+RAW ax=20 ay=-36 az=16378 accel_pitch=0
+RAW ax=40 ay=4 az=16370 accel_pitch=0
+RAW ax=6 ay=34 az=16392 accel_pitch=0
+RAW ax=16 ay=-32 az=16344 accel_pitch=0
+RAW ax=-18 ay=-2 az=16362 accel_pitch=0
+RAW ax=-18 ay=20 az=16422 accel_pitch=0
+RAW ax=-22 ay=-26 az=16416 accel_pitch=0
+RAW ax=4 ay=2 az=16386 accel_pitch=0
+RAW ax=-18 ay=20 az=16416 accel_pitch=0
+RAW ax=56 ay=24 az=16428 accel_pitch=0
+RAW ax=24 ay=28 az=16358 accel_pitch=0
+RAW ax=26 ay=-2 az=16332 accel_pitch=0
+RAW ax=18 ay=-10 az=16360 accel_pitch=0
+RAW ax=12 ay=-14 az=16388 accel_pitch=0
+RAW ax=16 ay=8 az=16360 accel_pitch=0
+RAW ax=14 ay=-4 az=16370 accel_pitch=0
+RAW ax=-2 ay=14 az=16364 accel_pitch=0
+RAW ax=-48 ay=-50 az=16352 accel_pitch=0
+RAW ax=-20 ay=-44 az=16400 accel_pitch=0
+RAW ax=-2 ay=-2 az=16366 accel_pitch=0
+RAW ax=-42 ay=-2 az=16364 accel_pitch=0
+RAW ax=-20 ay=-24 az=16352 accel_pitch=0
+RAW ax=-10 ay=-72 az=16354 accel_pitch=0
+RAW ax=-12 ay=-34 az=16388 accel_pitch=0
+RAW ax=16 ay=-40 az=16378 accel_pitch=0
+RAW ax=46 ay=2 az=16440 accel_pitch=0
+RAW ax=24 ay=-4 az=16384 accel_pitch=0
+RAW ax=-14 ay=-10 az=16388 accel_pitch=0
+RAW ax=-8 ay=-28 az=16322 accel_pitch=0
+RAW ax=-14 ay=-28 az=16376 accel_pitch=0
+RAW ax=10 ay=-8 az=16404 accel_pitch=0
+RAW ax=-8 ay=-14 az=16352 accel_pitch=0
+RAW ax=-26 ay=12 az=16366 accel_pitch=0
+RAW ax=-78 ay=10 az=16386 accel_pitch=0
+RAW ax=6 ay=-4 az=16370 accel_pitch=0
+RAW ax=50 ay=6 az=16362 accel_pitch=0
+RAW ax=26 ay=26 az=16368 accel_pitch=0
+RAW ax=0 ay=-4 az=16380 accel_pitch=0
+RAW ax=2 ay=2 az=16354 accel_pitch=0
+RAW ax=18 ay=20 az=16360 accel_pitch=0
+RAW ax=-2 ay=-6 az=16334 accel_pitch=0
+RAW ax=14 ay=0 az=16346 accel_pitch=0
+RAW ax=-20 ay=-22 az=16406 accel_pitch=0
+RAW ax=-2 ay=44 az=16336 accel_pitch=0
+RAW ax=14 ay=-10 az=16398 accel_pitch=0
+RAW ax=12 ay=-4 az=16424 accel_pitch=0
+RAW ax=32 ay=-46 az=16348 accel_pitch=0
+RAW ax=-12 ay=-48 az=16402 accel_pitch=0
+RAW ax=24 ay=8 az=16410 accel_pitch=0
+RAW ax=0 ay=6 az=16416 accel_pitch=0
+RAW ax=46 ay=0 az=16438 accel_pitch=0
+RAW ax=30 ay=26 az=16370 accel_pitch=0
+RAW ax=-16 ay=-18 az=16404 accel_pitch=0
+RAW ax=-26 ay=8 az=16384 accel_pitch=0
+RAW ax=14 ay=16 az=16388 accel_pitch=0
+RAW ax=16 ay=-4 az=16350 accel_pitch=0
+RAW ax=12 ay=-28 az=16356 accel_pitch=0
+RAW ax=-36 ay=-58 az=16392 accel_pitch=0
+RAW ax=-38 ay=-46 az=16390 accel_pitch=0
+RAW ax=26 ay=28 az=16346 accel_pitch=0
+RAW ax=36 ay=4 az=16352 accel_pitch=0
+RAW ax=66 ay=-12 az=16378 accel_pitch=0
+RAW ax=46 ay=-12 az=16382 accel_pitch=0
+RAW ax=0 ay=18 az=16364 accel_pitch=0
+RAW ax=18 ay=-26 az=16398 accel_pitch=0
+RAW ax=0 ay=-4 az=16408 accel_pitch=0
+RAW ax=-26 ay=-14 az=16364 accel_pitch=0
+RAW ax=-60 ay=0 az=16370 accel_pitch=0
+RAW ax=-2 ay=-16 az=16372 accel_pitch=0
+RAW ax=-44 ay=-28 az=16414 accel_pitch=0
+RAW ax=-4 ay=-52 az=16390 accel_pitch=0
+RAW ax=-30 ay=-32 az=16374 accel_pitch=0
+RAW ax=-10 ay=26 az=16420 accel_pitch=0
+RAW ax=40 ay=16 az=16394 accel_pitch=0
+RAW ax=20 ay=4 az=16370 accel_pitch=0
+RAW ax=-38 ay=-36 az=16414 accel_pitch=0
+RAW ax=8 ay=-10 az=16384 accel_pitch=0
+RAW ax=32 ay=-18 az=16404 accel_pitch=0
+RAW ax=26 ay=20 az=16418 accel_pitch=0
+RAW ax=6 ay=14 az=16330 accel_pitch=0
+RAW ax=14 ay=22 az=16338 accel_pitch=0
+RAW ax=-18 ay=4 az=16418 accel_pitch=0
+RAW ax=8 ay=24 az=16410 accel_pitch=0
+RAW ax=6 ay=20 az=16378 accel_pitch=0
+RAW ax=-12 ay=-8 az=16374 accel_pitch=0
+RAW ax=0 ay=2 az=16416 accel_pitch=0
+RAW ax=48 ay=-2 az=16394 accel_pitch=0
+RAW ax=28 ay=-46 az=16376 accel_pitch=0
+RAW ax=28 ay=18 az=16348 accel_pitch=0
+RAW ax=0 ay=30 az=16354 accel_pitch=0
+RAW ax=22 ay=16 az=16414 accel_pitch=0
+RAW ax=4 ay=-10 az=16364 accel_pitch=0
+RAW ax=2 ay=-14 az=16386 accel_pitch=0
+RAW ax=16 ay=-24 az=16348 accel_pitch=0
+RAW ax=-28 ay=4 az=16328 accel_pitch=0
+RAW ax=-42 ay=20 az=16372 accel_pitch=0
+RAW ax=-6 ay=-8 az=16400 accel_pitch=0
+RAW ax=8 ay=-18 az=16358 accel_pitch=0
+RAW ax=-2 ay=-20 az=16364 accel_pitch=0
+RAW ax=-26 ay=-18 az=16386 accel_pitch=0
+RAW ax=-34 ay=20 az=16350 accel_pitch=0
+RAW ax=-40 ay=-28 az=16344 accel_pitch=0
+RAW ax=32 ay=-18 az=16344 accel_pitch=0
+RAW ax=-62 ay=-6 az=16328 accel_pitch=0
+RAW ax=-10 ay=-36 az=16324 accel_pitch=0
+RAW ax=26 ay=-34 az=16354 accel_pitch=0
+RAW ax=16 ay=42 az=16386 accel_pitch=0
+RAW ax=-36 ay=4 az=16418 accel_pitch=0
+RAW ax=-14 ay=24 az=16444 accel_pitch=0
+RAW ax=-2 ay=14 az=16396 accel_pitch=0
+RAW ax=28 ay=0 az=16362 accel_pitch=0
+RAW ax=-6 ay=-10 az=16288 accel_pitch=0
+RAW ax=6 ay=-10 az=16394 accel_pitch=0
+RAW ax=20 ay=38 az=16418 accel_pitch=0
+RAW ax=-20 ay=36 az=16446 accel_pitch=0
+RAW ax=-8 ay=-8 az=16394 accel_pitch=0
+RAW ax=42 ay=-24 az=16394 accel_pitch=0
+RAW ax=6 ay=-10 az=16426 accel_pitch=0
+RAW ax=14 ay=10 az=16414 accel_pitch=0
+RAW ax=-14 ay=-16 az=16420 accel_pitch=0
+RAW ax=12 ay=-18 az=16382 accel_pitch=0
+RAW ax=-18 ay=-20 az=16386 accel_pitch=0
+RAW ax=-16 ay=-18 az=16398 accel_pitch=0
+RAW ax=-32 ay=-4 az=16404 accel_pitch=0
+RAW ax=16 ay=16 az=16400 accel_pitch=0
+RAW ax=-8 ay=-22 az=16366 accel_pitch=0
+RAW ax=14 ay=-2 az=16428 accel_pitch=0
+RAW ax=6 ay=24 az=16380 accel_pitch=0
+RAW ax=10 ay=24 az=16366 accel_pitch=0
+RAW ax=18 ay=36 az=16384 accel_pitch=0
+RAW ax=6 ay=50 az=16404 accel_pitch=0
+RAW ax=6 ay=6 az=16394 accel_pitch=0
+RAW ax=2 ay=-4 az=16376 accel_pitch=0
+RAW ax=26 ay=-2 az=16410 accel_pitch=0
+RAW ax=0 ay=8 az=16412 accel_pitch=0
+RAW ax=-2 ay=6 az=16374 accel_pitch=0
+RAW ax=-14 ay=2 az=16380 accel_pitch=0
+RAW ax=-4 ay=-10 az=16388 accel_pitch=0
+RAW ax=24 ay=-40 az=16384 accel_pitch=0
+RAW ax=8 ay=-2 az=16402 accel_pitch=0
+RAW ax=10 ay=6 az=16366 accel_pitch=0
+RAW ax=8 ay=16 az=16394 accel_pitch=0
+RAW ax=60 ay=16 az=16382 accel_pitch=0
+RAW ax=6 ay=-18 az=16404 accel_pitch=0
+RAW ax=0 ay=-20 az=16444 accel_pitch=0
+RAW ax=-14 ay=4 az=16368 accel_pitch=0
+RAW ax=0 ay=-4 az=16358 accel_pitch=0
+RAW ax=-10 ay=36 az=16356 accel_pitch=0
+RAW ax=0 ay=-10 az=16328 accel_pitch=0
+RAW ax=-18 ay=-34 az=16316 accel_pitch=0
+RAW ax=-22 ay=-30 az=16334 accel_pitch=0
+RAW ax=-18 ay=-34 az=16390 accel_pitch=0
+RAW ax=-36 ay=-14 az=16382 accel_pitch=0
+RAW ax=8 ay=-10 az=16364 accel_pitch=0
+RAW ax=12 ay=-46 az=16382 accel_pitch=0
+RAW ax=-14 ay=-22 az=16362 accel_pitch=0
+RAW ax=4 ay=-22 az=16344 accel_pitch=0
+RAW ax=4 ay=-20 az=16374 accel_pitch=0
+RAW ax=4 ay=-22 az=16328 accel_pitch=0
+RAW ax=30 ay=28 az=16374 accel_pitch=0
+RAW ax=-14 ay=-18 az=16404 accel_pitch=0
+RAW ax=-26 ay=6 az=16418 accel_pitch=0
+RAW ax=-14 ay=-4 az=16388 accel_pitch=0
+RAW ax=48 ay=-30 az=16346 accel_pitch=0
+RAW ax=28 ay=-60 az=16322 accel_pitch=0
+RAW ax=2 ay=-28 az=16354 accel_pitch=0
+RAW ax=-8 ay=-26 az=16390 accel_pitch=0
+RAW ax=-8 ay=-38 az=16426 accel_pitch=0
+RAW ax=38 ay=-18 az=16376 accel_pitch=0
+RAW ax=8 ay=-10 az=16430 accel_pitch=0
+RAW ax=-8 ay=-22 az=16376 accel_pitch=0
+RAW ax=-40 ay=-38 az=16428 accel_pitch=0
+RAW ax=0 ay=-18 az=16456 accel_pitch=0
+RAW ax=-52 ay=-24 az=16422 accel_pitch=0
+RAW ax=-38 ay=-28 az=16408 accel_pitch=0
+RAW ax=-24 ay=16 az=16388 accel_pitch=0
+RAW ax=-46 ay=6 az=16384 accel_pitch=0
+RAW ax=-34 ay=-22 az=16356 accel_pitch=0
+RAW ax=8 ay=0 az=16418 accel_pitch=0
+RAW ax=-2 ay=2 az=16356 accel_pitch=0
+RAW ax=-4 ay=0 az=16394 accel_pitch=0
+RAW ax=8 ay=16 az=16418 accel_pitch=0
+RAW ax=-26 ay=40 az=16354 accel_pitch=0
+RAW ax=-18 ay=4 az=16390 accel_pitch=0
+RAW ax=4 ay=10 az=16350 accel_pitch=0
+RAW ax=-12 ay=26 az=16362 accel_pitch=0
+RAW ax=40 ay=34 az=16334 accel_pitch=0
+RAW ax=32 ay=28 az=16352 accel_pitch=0
+RAW ax=8 ay=42 az=16396 accel_pitch=0
+RAW ax=0 ay=22 az=16348 accel_pitch=0
+RAW ax=-24 ay=0 az=16410 accel_pitch=0
+RAW ax=4 ay=8 az=16358 accel_pitch=0
+RAW ax=16 ay=8 az=16378 accel_pitch=0
+RAW ax=-18 ay=24 az=16446 accel_pitch=0
+RAW ax=-22 ay=52 az=16380 accel_pitch=0
+RAW ax=-12 ay=-10 az=16406 accel_pitch=0
+RAW ax=8 ay=2 az=16440 accel_pitch=0
+RAW ax=0 ay=-32 az=16440 accel_pitch=0
+RAW ax=22 ay=-12 az=16358 accel_pitch=0
+RAW ax=0 ay=6 az=16384 accel_pitch=0
+RAW ax=-18 ay=12 az=16418 accel_pitch=0
+RAW ax=-8 ay=8 az=16398 accel_pitch=0
+RAW ax=-28 ay=16 az=16370 accel_pitch=0
+RAW ax=-24 ay=38 az=16368 accel_pitch=0
+RAW ax=-18 ay=10 az=16380 accel_pitch=0
+RAW ax=34 ay=-38 az=16416 accel_pitch=0
+RAW ax=-16 ay=-28 az=16400 accel_pitch=0
+RAW ax=-22 ay=-26 az=16328 accel_pitch=0
+RAW ax=-28 ay=0 az=16340 accel_pitch=0
+RAW ax=-48 ay=2 az=16364 accel_pitch=0
+RAW ax=-52 ay=18 az=16342 accel_pitch=0
+RAW ax=-22 ay=-2 az=16384 accel_pitch=0
+RAW ax=-26 ay=-4 az=16352 accel_pitch=0
+RAW ax=-46 ay=-30 az=16400 accel_pitch=0
+RAW ax=-20 ay=-24 az=16400 accel_pitch=0
+RAW ax=-22 ay=-24 az=16380 accel_pitch=0
+RAW ax=-10 ay=-40 az=16404 accel_pitch=0
+RAW ax=-28 ay=-50 az=16396 accel_pitch=0
+RAW ax=-18 ay=-66 az=16422 accel_pitch=0
+RAW ax=-24 ay=-36 az=16378 accel_pitch=0
+RAW ax=-20 ay=-22 az=16374 accel_pitch=0
+RAW ax=-2 ay=-36 az=16368 accel_pitch=0
+RAW ax=-26 ay=-18 az=16362 accel_pitch=0
+RAW ax=-2 ay=16 az=16406 accel_pitch=0
+RAW ax=-38 ay=0 az=16362 accel_pitch=0
+RAW ax=-42 ay=-4 az=16382 accel_pitch=0
+RAW ax=-10 ay=-8 az=16340 accel_pitch=0
+RAW ax=-66 ay=6 az=16364 accel_pitch=0
+RAW ax=-44 ay=-12 az=16368 accel_pitch=0
+RAW ax=-28 ay=18 az=16350 accel_pitch=0
+RAW ax=-14 ay=-40 az=16294 accel_pitch=0
+RAW ax=-16 ay=-34 az=16386 accel_pitch=0
+RAW ax=-34 ay=8 az=16384 accel_pitch=0
+RAW ax=2 ay=-2 az=16430 accel_pitch=0
+RAW ax=26 ay=-18 az=16394 accel_pitch=0
+RAW ax=-6 ay=-44 az=16402 accel_pitch=0
+RAW ax=-20 ay=10 az=16430 accel_pitch=0
+RAW ax=32 ay=-16 az=16398 accel_pitch=0
+RAW ax=-14 ay=-2 az=16380 accel_pitch=0
+RAW ax=-12 ay=-44 az=16412 accel_pitch=0
+RAW ax=16 ay=-28 az=16370 accel_pitch=0
+RAW ax=-4 ay=-28 az=16322 accel_pitch=0
+RAW ax=16 ay=-22 az=16316 accel_pitch=0
+RAW ax=86 ay=34 az=16410 accel_pitch=0
+RAW ax=-2 ay=-26 az=16362 accel_pitch=0
+RAW ax=-16 ay=-10 az=16362 accel_pitch=0
+RAW ax=12 ay=-74 az=16412 accel_pitch=0
+RAW ax=12 ay=-46 az=16422 accel_pitch=0
+RAW ax=32 ay=0 az=16402 accel_pitch=0
+RAW ax=-34 ay=24 az=16386 accel_pitch=0
+RAW ax=-28 ay=30 az=16358 accel_pitch=0
+RAW ax=0 ay=8 az=16354 accel_pitch=0
+RAW ax=-8 ay=10 az=16360 accel_pitch=0
+RAW ax=-4 ay=28 az=16314 accel_pitch=0
+RAW ax=30 ay=26 az=16394 accel_pitch=0
+RAW ax=-78 ay=-42 az=16342 accel_pitch=0
+RAW ax=20 ay=40 az=16452 accel_pitch=0
+RAW ax=-14 ay=6 az=16470 accel_pitch=0
+RAW ax=-16 ay=-66 az=16276 accel_pitch=0
+RAW ax=-20 ay=-6 az=16420 accel_pitch=0
+RAW ax=8 ay=-36 az=16382 accel_pitch=0
+RAW ax=2 ay=24 az=16456 accel_pitch=0
+RAW ax=-22 ay=10 az=16412 accel_pitch=0
+RAW ax=-34 ay=30 az=16330 accel_pitch=0
+RAW ax=-2 ay=12 az=16356 accel_pitch=0
+RAW ax=26 ay=-20 az=16398 accel_pitch=0
+RAW ax=-36 ay=-14 az=16340 accel_pitch=0
+RAW ax=-48 ay=-6 az=16404 accel_pitch=0
+RAW ax=2 ay=8 az=16440 accel_pitch=0
+RAW ax=-10 ay=4 az=16352 accel_pitch=0
+RAW ax=8 ay=-4 az=16350 accel_pitch=0
+RAW ax=16 ay=34 az=16426 accel_pitch=0
+RAW ax=8 ay=6 az=16416 accel_pitch=0
+RAW ax=22 ay=8 az=16420 accel_pitch=0
+RAW ax=24 ay=2 az=16378 accel_pitch=0
+RAW ax=50 ay=22 az=16382 accel_pitch=0
+RAW ax=4 ay=18 az=16352 accel_pitch=0
+RAW ax=2 ay=-32 az=16370 accel_pitch=0
+RAW ax=14 ay=-34 az=16354 accel_pitch=0
+RAW ax=-44 ay=-52 az=16400 accel_pitch=0
+RAW ax=-20 ay=-68 az=16304 accel_pitch=0
+RAW ax=2 ay=-12 az=16288 accel_pitch=0
+RAW ax=12 ay=-32 az=16348 accel_pitch=0
+RAW ax=24 ay=-14 az=16332 accel_pitch=0
+RAW ax=18 ay=-32 az=16402 accel_pitch=0
+RAW ax=-30 ay=-116 az=16320 accel_pitch=0
+RAW ax=-12 ay=32 az=16240 accel_pitch=0
+RAW ax=-16 ay=158 az=16238 accel_pitch=0
+RAW ax=-92 ay=332 az=16384 accel_pitch=0
+RAW ax=-88 ay=518 az=16586 accel_pitch=0
+RAW ax=-64 ay=808 az=16778 accel_pitch=0
+RAW ax=4 ay=648 az=16942 accel_pitch=0
+RAW ax=96 ay=286 az=16338 accel_pitch=0
+RAW ax=140 ay=404 az=16312 accel_pitch=0
+RAW ax=118 ay=12 az=16710 accel_pitch=0
+RAW ax=70 ay=-164 az=16492 accel_pitch=0
+RAW ax=-52 ay=-520 az=16308 accel_pitch=0
+RAW ax=-8 ay=-730 az=16338 accel_pitch=0
+RAW ax=-48 ay=-902 az=16212 accel_pitch=0
+RAW ax=-172 ay=-1148 az=16234 accel_pitch=0
+RAW ax=-250 ay=-1208 az=15976 accel_pitch=0
+RAW ax=-334 ay=-1190 az=15830 accel_pitch=-1
+RAW ax=-366 ay=-960 az=16180 accel_pitch=-1
+RAW ax=-322 ay=-494 az=16526 accel_pitch=-1
+RAW ax=-306 ay=-314 az=16556 accel_pitch=-1
+RAW ax=-310 ay=-150 az=16492 accel_pitch=-1
+RAW ax=-196 ay=122 az=16608 accel_pitch=0
+RAW ax=-98 ay=266 az=16548 accel_pitch=0
+RAW ax=-26 ay=420 az=16602 accel_pitch=0
+RAW ax=20 ay=606 az=16600 accel_pitch=0
+RAW ax=38 ay=654 az=16558 accel_pitch=0
+RAW ax=48 ay=704 az=16554 accel_pitch=0
+RAW ax=10 ay=632 az=16372 accel_pitch=0
+RAW ax=-32 ay=514 az=16308 accel_pitch=0
+RAW ax=-80 ay=404 az=16262 accel_pitch=0
+RAW ax=-146 ay=354 az=16384 accel_pitch=0
+RAW ax=-238 ay=246 az=16496 accel_pitch=0
+RAW ax=-176 ay=118 az=16384 accel_pitch=0
+RAW ax=-88 ay=58 az=16470 accel_pitch=0
+RAW ax=34 ay=-114 az=16364 accel_pitch=0
+RAW ax=92 ay=-194 az=16348 accel_pitch=0
+RAW ax=138 ay=-238 az=16384 accel_pitch=0
+RAW ax=334 ay=-190 az=16420 accel_pitch=1
+Motor 141 speed is: 11408506
+Motor 142 speed is: -11408506
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7A
+CAN_SendMessage: 14
+CAN_SendMessage: AE
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 86
+CAN_SendMessage: EB
+CAN_SendMessage: 51
+CAN_SendMessage: FF
+RAW ax=226 ay=1020 az=17518 accel_pitch=0
+Motor 141 speed is: -682003
+Motor 142 speed is: 682003
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: ED
+CAN_SendMessage: 97
+CAN_SendMessage: F5
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 13
+CAN_SendMessage: 68
+CAN_SendMessage: 0A
+CAN_SendMessage: 00
+RAW ax=-2314 ay=-3680 az=11900 accel_pitch=-10
+Motor 141 speed is: -682003
+Motor 142 speed is: 682003
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: ED
+CAN_SendMessage: 97
+CAN_SendMessage: F5
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 13
+CAN_SendMessage: 68
+CAN_SendMessage: 0A
+CAN_SendMessage: 00
+RAW ax=1152 ay=-1002 az=8390 accel_pitch=7
+RAW ax=1512 ay=1372 az=9938 accel_pitch=8
+Motor 141 speed is: 3343735
+Motor 142 speed is: -3343735
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 77
+CAN_SendMessage: 05
+CAN_SendMessage: 33
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 89
+CAN_SendMessage: FA
+CAN_SendMessage: CC
+CAN_SendMessage: FF
+RAW ax=-870 ay=-1540 az=10806 accel_pitch=-4
+Motor 141 speed is: -2707029
+Motor 142 speed is: 2707029
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: AB
+CAN_SendMessage: B1
+CAN_SendMessage: D6
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 4E
+CAN_SendMessage: 29
+CAN_SendMessage: 00
+RAW ax=1522 ay=5748 az=17270 accel_pitch=4
+RAW ax=3078 ay=-3310 az=12784 accel_pitch=13
+Motor 141 speed is: -12481284
+Motor 142 speed is: 12481284
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FC
+CAN_SendMessage: 8C
+CAN_SendMessage: 41
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 04
+CAN_SendMessage: 73
+CAN_SendMessage: BE
+CAN_SendMessage: 00
+RAW ax=1050 ay=3546 az=18100 accel_pitch=3
+Motor 141 speed is: 2040590
+Motor 142 speed is: -2040590
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 0E
+CAN_SendMessage: 23
+CAN_SendMessage: 1F
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F2
+CAN_SendMessage: DC
+CAN_SendMessage: E0
+CAN_SendMessage: FF
+RAW ax=-2632 ay=4712 az=23540 accel_pitch=-6
+Motor 141 speed is: -6275584
+Motor 142 speed is: 6275584
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3E
+CAN_SendMessage: A0
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C2
+CAN_SendMessage: 5F
+CAN_SendMessage: 00
+RAW ax=6202 ay=8144 az=16878 accel_pitch=18
+Motor 141 speed is: 4797378
+Motor 142 speed is: -4797378
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C2
+CAN_SendMessage: 33
+CAN_SendMessage: 49
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3E
+CAN_SendMessage: CC
+CAN_SendMessage: B6
+CAN_SendMessage: FF
+I2C write register failed
+RAW ax=6202 ay=8144 az=16878 accel_pitch=18
+Motor 141 speed is: -4211182
+Motor 142 speed is: 4211182
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 12
+CAN_SendMessage: BE
+CAN_SendMessage: BF
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: EE
+CAN_SendMessage: 41
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+RAW ax=4668 ay=-2976 az=7446 accel_pitch=30
+Motor 141 speed is: 15154909
+Motor 142 speed is: -15154909
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DD
+CAN_SendMessage: 3E
+CAN_SendMessage: E7
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 23
+CAN_SendMessage: C1
+CAN_SendMessage: 18
+CAN_SendMessage: FF
+RAW ax=-1962 ay=5042 az=12822 accel_pitch=-8
+RAW ax=478 ay=5758 az=13950 accel_pitch=1
+Motor 141 speed is: 15835470
+Motor 142 speed is: -15835470
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4E
+CAN_SendMessage: A1
+CAN_SendMessage: F1
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B2
+CAN_SendMessage: 5E
+CAN_SendMessage: 0E
+CAN_SendMessage: FF
+RAW ax=4314 ay=392 az=7904 accel_pitch=28
+RAW ax=1262 ay=-178 az=10626 accel_pitch=6
+Motor 141 speed is: -16703550
+Motor 142 speed is: 16703550
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C2
+CAN_SendMessage: 1F
+CAN_SendMessage: 01
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3E
+CAN_SendMessage: E0
+CAN_SendMessage: FE
+CAN_SendMessage: 00
+RAW ax=-4484 ay=156 az=16946 accel_pitch=-14
+Motor 141 speed is: -4949869
+Motor 142 speed is: 4949869
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 93
+CAN_SendMessage: 78
+CAN_SendMessage: B4
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6D
+CAN_SendMessage: 87
+CAN_SendMessage: 4B
+CAN_SendMessage: 00
+RAW ax=992 ay=2698 az=11204 accel_pitch=4
+Motor 141 speed is: 6123093
+Motor 142 speed is: -6123093
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 55
+CAN_SendMessage: 6E
+CAN_SendMessage: 5D
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: AB
+CAN_SendMessage: 91
+CAN_SendMessage: A2
+CAN_SendMessage: FF
+RAW ax=-4248 ay=-3670 az=15982 accel_pitch=-14
+Motor 141 speed is: -2193065
+Motor 142 speed is: 2193065
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 57
+CAN_SendMessage: 89
+CAN_SendMessage: DE
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A9
+CAN_SendMessage: 76
+CAN_SendMessage: 21
+CAN_SendMessage: 00
+RAW ax=3558 ay=1932 az=1182 accel_pitch=57
+RAW ax=4680 ay=-5064 az=11946 accel_pitch=19
+RAW ax=-794 ay=-7060 az=18084 accel_pitch=-2
+Motor 141 speed is: -10500312
+Motor 142 speed is: 10500312
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 28
+CAN_SendMessage: C7
+CAN_SendMessage: 5F
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D8
+CAN_SendMessage: 38
+CAN_SendMessage: A0
+CAN_SendMessage: 00
+RAW ax=4496 ay=9864 az=8224 accel_pitch=19
+Motor 141 speed is: 1264710
+Motor 142 speed is: -1264710
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 46
+CAN_SendMessage: 4C
+CAN_SendMessage: 13
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BA
+CAN_SendMessage: B3
+CAN_SendMessage: EC
+CAN_SendMessage: FF
+RAW ax=2394 ay=1706 az=17204 accel_pitch=7
+Motor 141 speed is: -5667343
+Motor 142 speed is: 5667343
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F1
+CAN_SendMessage: 85
+CAN_SendMessage: A9
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 0F
+CAN_SendMessage: 7A
+CAN_SendMessage: 56
+CAN_SendMessage: 00
+RAW ax=-894 ay=8152 az=30802 accel_pitch=-1
+Motor 141 speed is: 6778288
+Motor 142 speed is: -6778288
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B0
+CAN_SendMessage: 6D
+CAN_SendMessage: 67
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 50
+CAN_SendMessage: 92
+CAN_SendMessage: 98
+CAN_SendMessage: FF
+RAW ax=-1296 ay=394 az=18672 accel_pitch=-3
+Motor 141 speed is: 6778288
+Motor 142 speed is: -6778288
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B0
+CAN_SendMessage: 6D
+CAN_SendMessage: 67
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 50
+CAN_SendMessage: 92
+CAN_SendMessage: 98
+CAN_SendMessage: FF
+RAW ax=-46 ay=-4248 az=17182 accel_pitch=0
+Motor 141 speed is: 6778288
+Motor 142 speed is: -6778288
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B0
+CAN_SendMessage: 6D
+CAN_SendMessage: 67
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 50
+CAN_SendMessage: 92
+CAN_SendMessage: 98
+CAN_SendMessage: FF
+RAW ax=-120 ay=262 az=14132 accel_pitch=0
+Motor 141 speed is: 6086228
+Motor 142 speed is: -6086228
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 54
+CAN_SendMessage: DE
+CAN_SendMessage: 5C
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: AC
+CAN_SendMessage: 21
+CAN_SendMessage: A3
+CAN_SendMessage: FF
+RAW ax=810 ay=34 az=13582 accel_pitch=3
+Motor 141 speed is: 16639214
+Motor 142 speed is: -16639214
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: EE
+CAN_SendMessage: E4
+CAN_SendMessage: FD
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 12
+CAN_SendMessage: 1B
+CAN_SendMessage: 02
+CAN_SendMessage: FF
+RAW ax=448 ay=618 az=16304 accel_pitch=1
+Motor 141 speed is: 6766852
+Motor 142 speed is: -6766852
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 04
+CAN_SendMessage: 41
+CAN_SendMessage: 67
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FC
+CAN_SendMessage: BE
+CAN_SendMessage: 98
+CAN_SendMessage: FF
+RAW ax=822 ay=50 az=15630 accel_pitch=3
+Motor 141 speed is: 2603071
+Motor 142 speed is: -2603071
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3F
+CAN_SendMessage: B8
+CAN_SendMessage: 27
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C1
+CAN_SendMessage: 47
+CAN_SendMessage: D8
+CAN_SendMessage: FF
+RAW ax=326 ay=-522 az=16456 accel_pitch=1
+Motor 141 speed is: -7789235
+Motor 142 speed is: 7789235
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4D
+CAN_SendMessage: 25
+CAN_SendMessage: 89
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B3
+CAN_SendMessage: DA
+CAN_SendMessage: 76
+CAN_SendMessage: 00
+RAW ax=-1498 ay=-5612 az=19370 accel_pitch=-4
+Motor 141 speed is: 10192893
+Motor 142 speed is: -10192893
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FD
+CAN_SendMessage: 87
+CAN_SendMessage: 9B
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 03
+CAN_SendMessage: 78
+CAN_SendMessage: 64
+CAN_SendMessage: FF
+RAW ax=560 ay=-658 az=24924 accel_pitch=1
+Motor 141 speed is: -14721273
+Motor 142 speed is: 14721273
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 07
+CAN_SendMessage: 5F
+CAN_SendMessage: 1F
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F9
+CAN_SendMessage: A0
+CAN_SendMessage: E0
+CAN_SendMessage: 00
+RAW ax=108 ay=-4346 az=16308 accel_pitch=0
+Motor 141 speed is: 13641726
+Motor 142 speed is: -13641726
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FE
+CAN_SendMessage: 27
+CAN_SendMessage: D0
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 02
+CAN_SendMessage: D8
+CAN_SendMessage: 2F
+CAN_SendMessage: FF
+RAW ax=70 ay=4250 az=23224 accel_pitch=0
+Motor 141 speed is: 11565545
+Motor 142 speed is: -11565545
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E9
+CAN_SendMessage: 79
+CAN_SendMessage: B0
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 17
+CAN_SendMessage: 86
+CAN_SendMessage: 4F
+CAN_SendMessage: FF
+RAW ax=998 ay=200 az=14356 accel_pitch=3
+Motor 141 speed is: -9888320
+Motor 142 speed is: 9888320
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C0
+CAN_SendMessage: 1D
+CAN_SendMessage: 69
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 40
+CAN_SendMessage: E2
+CAN_SendMessage: 96
+CAN_SendMessage: 00
+RAW ax=-1154 ay=-1528 az=15616 accel_pitch=-4
+Motor 141 speed is: -7823560
+Motor 142 speed is: 7823560
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 38
+CAN_SendMessage: 9F
+CAN_SendMessage: 88
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C8
+CAN_SendMessage: 60
+CAN_SendMessage: 77
+CAN_SendMessage: 00
+RAW ax=310 ay=-1340 az=16488 accel_pitch=1
+Motor 141 speed is: 4633523
+Motor 142 speed is: -4633523
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B3
+CAN_SendMessage: B3
+CAN_SendMessage: 46
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4D
+CAN_SendMessage: 4C
+CAN_SendMessage: B9
+CAN_SendMessage: FF
+RAW ax=-1138 ay=-136 az=13062 accel_pitch=-4
+Motor 141 speed is: -7835012
+Motor 142 speed is: 7835012
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7C
+CAN_SendMessage: 72
+CAN_SendMessage: 88
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 84
+CAN_SendMessage: 8D
+CAN_SendMessage: 77
+CAN_SendMessage: 00
+RAW ax=830 ay=724 az=14328 accel_pitch=3
+Motor 141 speed is: 3930011
+Motor 142 speed is: -3930011
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9B
+CAN_SendMessage: F7
+CAN_SendMessage: 3B
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 65
+CAN_SendMessage: 08
+CAN_SendMessage: C4
+CAN_SendMessage: FF
+RAW ax=1562 ay=-1946 az=12294 accel_pitch=7
+Motor 141 speed is: 14299493
+Motor 142 speed is: -14299493
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 65
+CAN_SendMessage: 31
+CAN_SendMessage: DA
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9B
+CAN_SendMessage: CE
+CAN_SendMessage: 25
+CAN_SendMessage: FF
+RAW ax=444 ay=-3060 az=15696 accel_pitch=1
+Motor 141 speed is: -5781752
+Motor 142 speed is: 5781752
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: C7
+CAN_SendMessage: A7
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F8
+CAN_SendMessage: 38
+CAN_SendMessage: 58
+CAN_SendMessage: 00
+RAW ax=-812 ay=-1582 az=15120 accel_pitch=-3
+Motor 141 speed is: -11657450
+Motor 142 speed is: 11657450
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 16
+CAN_SendMessage: 1F
+CAN_SendMessage: 4E
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: EA
+CAN_SendMessage: E0
+CAN_SendMessage: B1
+CAN_SendMessage: 00
+RAW ax=-60 ay=-462 az=14538 accel_pitch=0
+Motor 141 speed is: -12021745
+Motor 142 speed is: 12021745
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 0F
+CAN_SendMessage: 90
+CAN_SendMessage: 48
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F1
+CAN_SendMessage: 6F
+CAN_SendMessage: B7
+CAN_SendMessage: 00
+RAW ax=238 ay=-462 az=16342 accel_pitch=0
+Motor 141 speed is: -12021745
+Motor 142 speed is: 12021745
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 0F
+CAN_SendMessage: 90
+CAN_SendMessage: 48
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F1
+CAN_SendMessage: 6F
+CAN_SendMessage: B7
+CAN_SendMessage: 00
+RAW ax=322 ay=828 az=16178 accel_pitch=1
+Motor 141 speed is: -948783
+Motor 142 speed is: 948783
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D1
+CAN_SendMessage: 85
+CAN_SendMessage: F1
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2F
+CAN_SendMessage: 7A
+CAN_SendMessage: 0E
+CAN_SendMessage: 00
+RAW ax=52 ay=-144 az=16404 accel_pitch=0
+Motor 141 speed is: -10649013
+Motor 142 speed is: 10649013
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4B
+CAN_SendMessage: 82
+CAN_SendMessage: 5D
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B5
+CAN_SendMessage: 7D
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+RAW ax=432 ay=-220 az=17782 accel_pitch=1
+Motor 141 speed is: 423950
+Motor 142 speed is: -423950
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 0E
+CAN_SendMessage: 78
+CAN_SendMessage: 06
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F2
+CAN_SendMessage: 87
+CAN_SendMessage: F9
+CAN_SendMessage: FF
+RAW ax=758 ay=3916 az=16550 accel_pitch=2
+Motor 141 speed is: 10793449
+Motor 142 speed is: -10793449
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E9
+CAN_SendMessage: B1
+CAN_SendMessage: A4
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 17
+CAN_SendMessage: 4E
+CAN_SendMessage: 5B
+CAN_SendMessage: FF
+RAW ax=258 ay=-420 az=17868 accel_pitch=0
+RAW ax=-252 ay=216 az=19340 accel_pitch=0
+RAW ax=-280 ay=318 az=17476 accel_pitch=0
+RAW ax=-770 ay=56 az=16602 accel_pitch=-2
+RAW ax=-1072 ay=510 az=15982 accel_pitch=-3
+RAW ax=-1396 ay=764 az=15726 accel_pitch=-5
+RAW ax=-500 ay=170 az=15692 accel_pitch=-1
+RAW ax=-600 ay=-324 az=17146 accel_pitch=-2
+RAW ax=-636 ay=-724 az=16856 accel_pitch=-2
+RAW ax=-2 ay=-722 az=15036 accel_pitch=0
+RAW ax=-264 ay=-436 az=15340 accel_pitch=0
+RAW ax=106 ay=-288 az=16162 accel_pitch=0
+RAW ax=-152 ay=-24 az=17136 accel_pitch=0
+RAW ax=78 ay=306 az=17836 accel_pitch=0
+RAW ax=212 ay=650 az=17816 accel_pitch=0
+RAW ax=520 ay=336 az=17180 accel_pitch=1
+Motor 141 speed is: -7211584
+Motor 142 speed is: 7211584
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C0
+CAN_SendMessage: F5
+CAN_SendMessage: 91
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 40
+CAN_SendMessage: 0A
+CAN_SendMessage: 6E
+CAN_SendMessage: 00
+RAW ax=164 ay=-1832 az=15032 accel_pitch=0
+RAW ax=-248 ay=-9282 az=22372 accel_pitch=0
+RAW ax=-2000 ay=-318 az=13122 accel_pitch=-8
+RAW ax=82 ay=11634 az=13666 accel_pitch=0
+RAW ax=1612 ay=15318 az=25162 accel_pitch=3
+Motor 141 speed is: -14143392
+Motor 142 speed is: 14143392
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 60
+CAN_SendMessage: 30
+CAN_SendMessage: 28
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A0
+CAN_SendMessage: CF
+CAN_SendMessage: D7
+CAN_SendMessage: 00
+RAW ax=1640 ay=2080 az=15566 accel_pitch=5
+Motor 141 speed is: -5849956
+Motor 142 speed is: 5849956
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9C
+CAN_SendMessage: BC
+CAN_SendMessage: A6
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 64
+CAN_SendMessage: 43
+CAN_SendMessage: 59
+CAN_SendMessage: 00
+RAW ax=-64 ay=302 az=16478 accel_pitch=0
+Motor 141 speed is: 12824217
+Motor 142 speed is: -12824217
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 99
+CAN_SendMessage: AE
+CAN_SendMessage: C3
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 67
+CAN_SendMessage: 51
+CAN_SendMessage: 3C
+CAN_SendMessage: FF
+RAW ax=2254 ay=414 az=17214 accel_pitch=7
+Motor 141 speed is: -10705829
+Motor 142 speed is: 10705829
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 5B
+CAN_SendMessage: A4
+CAN_SendMessage: 5C
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A5
+CAN_SendMessage: 5B
+CAN_SendMessage: A3
+CAN_SendMessage: 00
+RAW ax=-1074 ay=-3746 az=18386 accel_pitch=-3
+RAW ax=-1200 ay=-338 az=16872 accel_pitch=-4
+RAW ax=-2530 ay=-838 az=18032 accel_pitch=-7
+RAW ax=-2486 ay=-1672 az=19902 accel_pitch=-7
+RAW ax=-2310 ay=-4116 az=18134 accel_pitch=-7
+RAW ax=1432 ay=-3530 az=14110 accel_pitch=5
+Motor 141 speed is: 16273048
+Motor 142 speed is: -16273048
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 98
+CAN_SendMessage: 4E
+CAN_SendMessage: F8
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 68
+CAN_SendMessage: B1
+CAN_SendMessage: 07
+CAN_SendMessage: FF
+RAW ax=2750 ay=-1686 az=12936 accel_pitch=11
+Motor 141 speed is: 9341160
+Motor 142 speed is: -9341160
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E8
+CAN_SendMessage: 88
+CAN_SendMessage: 8E
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 18
+CAN_SendMessage: 77
+CAN_SendMessage: 71
+CAN_SendMessage: FF
+RAW ax=320 ay=-366 az=18550 accel_pitch=0
+RAW ax=-110 ay=-964 az=18978 accel_pitch=0
+RAW ax=-162 ay=-2430 az=14682 accel_pitch=0
+RAW ax=1074 ay=-2838 az=13540 accel_pitch=4
+Motor 141 speed is: -12124189
+Motor 142 speed is: 12124189
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E3
+CAN_SendMessage: FF
+CAN_SendMessage: 46
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1D
+CAN_SendMessage: 00
+CAN_SendMessage: B9
+CAN_SendMessage: 00
+RAW ax=-1850 ay=12 az=14090 accel_pitch=-7
+RAW ax=-980 ay=-5874 az=16742 accel_pitch=-3
+RAW ax=1756 ay=-8000 az=15996 accel_pitch=5
+RAW ax=1996 ay=-7914 az=16808 accel_pitch=6
+RAW ax=-1558 ay=552 az=23566 accel_pitch=-3
+Motor 141 speed is: -15597412
+Motor 142 speed is: 15597412
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9C
+CAN_SendMessage: 00
+CAN_SendMessage: 12
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 64
+CAN_SendMessage: FF
+CAN_SendMessage: ED
+CAN_SendMessage: 00
+RAW ax=-1348 ay=-642 az=16484 accel_pitch=-4
+Motor 141 speed is: -15597412
+Motor 142 speed is: 15597412
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9C
+CAN_SendMessage: 00
+CAN_SendMessage: 12
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 64
+CAN_SendMessage: FF
+CAN_SendMessage: ED
+CAN_SendMessage: 00
+RAW ax=-1070 ay=6126 az=22968 accel_pitch=-2
+Motor 141 speed is: -15597413
+Motor 142 speed is: 15597413
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9B
+CAN_SendMessage: 00
+CAN_SendMessage: 12
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 65
+CAN_SendMessage: FF
+CAN_SendMessage: ED
+CAN_SendMessage: 00
+RAW ax=2176 ay=-5052 az=11562 accel_pitch=9
+Motor 141 speed is: -4524450
+Motor 142 speed is: 4524450
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 5E
+CAN_SendMessage: F6
+CAN_SendMessage: BA
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A2
+CAN_SendMessage: 09
+CAN_SendMessage: 45
+CAN_SendMessage: 00
+RAW ax=758 ay=1340 az=17796 accel_pitch=2
+RAW ax=392 ay=1296 az=18738 accel_pitch=1
+Motor 141 speed is: 7228286
+Motor 142 speed is: -7228286
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7E
+CAN_SendMessage: 4B
+CAN_SendMessage: 6E
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 82
+CAN_SendMessage: B4
+CAN_SendMessage: 91
+CAN_SendMessage: FF
+RAW ax=-688 ay=2684 az=15730 accel_pitch=-2
+RAW ax=1172 ay=7442 az=20148 accel_pitch=3
+Motor 141 speed is: -15620992
+Motor 142 speed is: 15620992
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 80
+CAN_SendMessage: A4
+CAN_SendMessage: 11
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 80
+CAN_SendMessage: 5B
+CAN_SendMessage: EE
+CAN_SendMessage: 00
+RAW ax=-1130 ay=1202 az=17096 accel_pitch=-3
+Motor 141 speed is: -15632366
+Motor 142 speed is: 15632366
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 12
+CAN_SendMessage: 78
+CAN_SendMessage: 11
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: EE
+CAN_SendMessage: 87
+CAN_SendMessage: EE
+CAN_SendMessage: 00
+RAW ax=3074 ay=-2526 az=19384 accel_pitch=8
+Motor 141 speed is: -4559404
+Motor 142 speed is: 4559404
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D4
+CAN_SendMessage: 6D
+CAN_SendMessage: BA
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2C
+CAN_SendMessage: 92
+CAN_SendMessage: 45
+CAN_SendMessage: 00
+RAW ax=1112 ay=4196 az=18242 accel_pitch=3
+Motor 141 speed is: -1802631
+Motor 142 speed is: 1802631
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 79
+CAN_SendMessage: 7E
+CAN_SendMessage: E4
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 87
+CAN_SendMessage: 81
+CAN_SendMessage: 1B
+CAN_SendMessage: 00
+RAW ax=988 ay=-3682 az=15254 accel_pitch=3
+RAW ax=630 ay=-3518 az=14610 accel_pitch=2
+Motor 141 speed is: -14271984
+Motor 142 speed is: 14271984
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 10
+CAN_SendMessage: 3A
+CAN_SendMessage: 26
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F0
+CAN_SendMessage: C5
+CAN_SendMessage: D9
+CAN_SendMessage: 00
+RAW ax=748 ay=-438 az=17074 accel_pitch=2
+Motor 141 speed is: 5786403
+Motor 142 speed is: -5786403
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 23
+CAN_SendMessage: 4B
+CAN_SendMessage: 58
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DD
+CAN_SendMessage: B4
+CAN_SendMessage: A7
+CAN_SendMessage: FF
+RAW ax=1556 ay=5074 az=16520 accel_pitch=5
+Motor 141 speed is: -4605935
+Motor 142 speed is: 4605935
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 11
+CAN_SendMessage: B8
+CAN_SendMessage: B9
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: EF
+CAN_SendMessage: 47
+CAN_SendMessage: 46
+CAN_SendMessage: 00
+RAW ax=2106 ay=-3798 az=15022 accel_pitch=7
+Motor 141 speed is: -5309447
+Motor 142 speed is: 5309447
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F9
+CAN_SendMessage: FB
+CAN_SendMessage: AE
+CAN_SendMessage: FF
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 07
+CAN_SendMessage: 04
+CAN_SendMessage: 51
+CAN_SendMessage: 00
+RAW ax=-554 ay=1414 az=17372 accel_pitch=-1
+RAW ax=-848 ay=1728 az=17516 accel_pitch=-2
+RAW ax=-480 ay=1486 az=16934 accel_pitch=-1
+RAW ax=-358 ay=1180 az=16156 accel_pitch=-1
+RAW ax=310 ay=1346 az=16388 accel_pitch=1
+RAW ax=376 ay=1162 az=16304 accel_pitch=1
+Motor 141 speed is: 14748012
+Motor 142 speed is: -14748012
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6C
+CAN_SendMessage: 09
+CAN_SendMessage: E1
+CAN_SendMessage: 00
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 94
+CAN_SendMessage: F6
+CAN_SendMessage: 1E
+CAN_SendMessage: FF
+RAW ax=196 ay=-546 az=16070 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=228 ay=332 az=16242 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=102 ay=-50 az=16366 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=148 ay=-12 az=16396 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=252 ay=58 az=16368 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=70 ay=-32 az=16346 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=178 ay=46 az=16392 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=76 ay=-88 az=16360 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=212 ay=-52 az=16388 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=178 ay=-150 az=16464 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=-26 ay=76 az=16398 accel_pitch=0
+Motor 141 speed is: -15713890
+Motor 142 speed is: 15713890
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 9E
+CAN_SendMessage: 39
+CAN_SendMessage: 10
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 62
+CAN_SendMessage: C6
+CAN_SendMessage: EF
+CAN_SendMessage: 00
+RAW ax=470 ay=0 az=16436 accel_pitch=1
+Motor 141 speed is: -4640928
+Motor 142 speed is: 4640928
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 60
+CAN_SendMessage: 2F
+CAN_SendMessage: B9
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A0
+CAN_SendMessage: D0
+CAN_SendMessage: 46
+CAN_SendMessage: 00
+RAW ax=114 ay=32 az=16346 accel_pitch=0
+Motor 141 speed is: 2261275
+Motor 142 speed is: -2261275
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1B
+CAN_SendMessage: 81
+CAN_SendMessage: 22
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E5
+CAN_SendMessage: 7E
+CAN_SendMessage: DD
+CAN_SendMessage: FF
+RAW ax=134 ay=190 az=16546 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=-56 ay=128 az=16418 accel_pitch=0
+Motor 141 speed is: 2261275
+Motor 142 speed is: -2261275
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1B
+CAN_SendMessage: 81
+CAN_SendMessage: 22
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E5
+CAN_SendMessage: 7E
+CAN_SendMessage: DD
+CAN_SendMessage: FF
+RAW ax=166 ay=146 az=16456 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=148 ay=32 az=16326 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=134 ay=-216 az=16452 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=202 ay=32 az=16192 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=118 ay=118 az=16496 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=134 ay=54 az=16368 accel_pitch=0
+Motor 141 speed is: 2261275
+Motor 142 speed is: -2261275
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1B
+CAN_SendMessage: 81
+CAN_SendMessage: 22
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E5
+CAN_SendMessage: 7E
+CAN_SendMessage: DD
+CAN_SendMessage: FF
+RAW ax=226 ay=10 az=16452 accel_pitch=0
+Motor 141 speed is: 2261275
+Motor 142 speed is: -2261275
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1B
+CAN_SendMessage: 81
+CAN_SendMessage: 22
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E5
+CAN_SendMessage: 7E
+CAN_SendMessage: DD
+CAN_SendMessage: FF
+RAW ax=16 ay=-550 az=16508 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=224 ay=-236 az=16168 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=36 ay=-54 az=16464 accel_pitch=0
+Motor 141 speed is: 2261275
+Motor 142 speed is: -2261275
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1B
+CAN_SendMessage: 81
+CAN_SendMessage: 22
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E5
+CAN_SendMessage: 7E
+CAN_SendMessage: DD
+CAN_SendMessage: FF
+RAW ax=112 ay=-82 az=16426 accel_pitch=0
+Motor 141 speed is: 2261275
+Motor 142 speed is: -2261275
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1B
+CAN_SendMessage: 81
+CAN_SendMessage: 22
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E5
+CAN_SendMessage: 7E
+CAN_SendMessage: DD
+CAN_SendMessage: FF
+RAW ax=156 ay=120 az=16370 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=-58 ay=-306 az=16690 accel_pitch=0
+Motor 141 speed is: 1569215
+Motor 142 speed is: -1569215
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: F1
+CAN_SendMessage: 17
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: 0E
+CAN_SendMessage: E8
+CAN_SendMessage: FF
+RAW ax=370 ay=188 az=16476 accel_pitch=1
+Motor 141 speed is: 13334237
+Motor 142 speed is: -13334237
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: DD
+CAN_SendMessage: 76
+CAN_SendMessage: CB
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 23
+CAN_SendMessage: 89
+CAN_SendMessage: 34
+CAN_SendMessage: FF
+RAW ax=0 ay=-172 az=16342 accel_pitch=0
+Motor 141 speed is: -15058692
+Motor 142 speed is: 15058692
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FC
+CAN_SendMessage: 38
+CAN_SendMessage: 1A
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 04
+CAN_SendMessage: C7
+CAN_SendMessage: E5
+CAN_SendMessage: 00
+RAW ax=116 ay=112 az=16712 accel_pitch=0
+Motor 141 speed is: -15750752
+Motor 142 speed is: 15750752
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A0
+CAN_SendMessage: A9
+CAN_SendMessage: 0F
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 60
+CAN_SendMessage: 56
+CAN_SendMessage: F0
+CAN_SendMessage: 00
+RAW ax=12 ay=116 az=16516 accel_pitch=0
+Motor 141 speed is: -15058692
+Motor 142 speed is: 15058692
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FC
+CAN_SendMessage: 38
+CAN_SendMessage: 1A
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 04
+CAN_SendMessage: C7
+CAN_SendMessage: E5
+CAN_SendMessage: 00
+RAW ax=-60 ay=-184 az=16062 accel_pitch=0
+Motor 141 speed is: -15058692
+Motor 142 speed is: 15058692
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FC
+CAN_SendMessage: 38
+CAN_SendMessage: 1A
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 04
+CAN_SendMessage: C7
+CAN_SendMessage: E5
+CAN_SendMessage: 00
+RAW ax=-130 ay=-190 az=16506 accel_pitch=0
+Motor 141 speed is: -15058692
+Motor 142 speed is: 15058692
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FC
+CAN_SendMessage: 38
+CAN_SendMessage: 1A
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 04
+CAN_SendMessage: C7
+CAN_SendMessage: E5
+CAN_SendMessage: 00
+RAW ax=-54 ay=46 az=16492 accel_pitch=0
+Motor 141 speed is: -15750752
+Motor 142 speed is: 15750752
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A0
+CAN_SendMessage: A9
+CAN_SendMessage: 0F
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 60
+CAN_SendMessage: 56
+CAN_SendMessage: F0
+CAN_SendMessage: 00
+RAW ax=268 ay=474 az=16468 accel_pitch=0
+Motor 141 speed is: -15750752
+Motor 142 speed is: 15750752
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A0
+CAN_SendMessage: A9
+CAN_SendMessage: 0F
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 60
+CAN_SendMessage: 56
+CAN_SendMessage: F0
+CAN_SendMessage: 00
+RAW ax=-8 ay=-448 az=16386 accel_pitch=0
+Motor 141 speed is: -15750752
+Motor 142 speed is: 15750752
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A0
+CAN_SendMessage: A9
+CAN_SendMessage: 0F
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 60
+CAN_SendMessage: 56
+CAN_SendMessage: F0
+CAN_SendMessage: 00
+RAW ax=98 ay=-136 az=16418 accel_pitch=0
+Motor 141 speed is: -15058692
+Motor 142 speed is: 15058692
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FC
+CAN_SendMessage: 38
+CAN_SendMessage: 1A
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 04
+CAN_SendMessage: C7
+CAN_SendMessage: E5
+CAN_SendMessage: 00
+RAW ax=292 ay=372 az=16354 accel_pitch=1
+Motor 141 speed is: -3985729
+Motor 142 speed is: 3985729
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: BF
+CAN_SendMessage: 2E
+CAN_SendMessage: C3
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 41
+CAN_SendMessage: D1
+CAN_SendMessage: 3C
+CAN_SendMessage: 00
+RAW ax=-8 ay=-454 az=16202 accel_pitch=0
+Motor 141 speed is: -8156521
+Motor 142 speed is: 8156521
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 97
+CAN_SendMessage: 8A
+CAN_SendMessage: 83
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 69
+CAN_SendMessage: 75
+CAN_SendMessage: 7C
+CAN_SendMessage: 00
+RAW ax=216 ay=380 az=16338 accel_pitch=0
+Motor 141 speed is: -8848581
+Motor 142 speed is: 8848581
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3B
+CAN_SendMessage: FB
+CAN_SendMessage: 78
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C5
+CAN_SendMessage: 04
+CAN_SendMessage: 87
+CAN_SendMessage: 00
+RAW ax=26 ay=68 az=16320 accel_pitch=0
+Motor 141 speed is: -8156521
+Motor 142 speed is: 8156521
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 97
+CAN_SendMessage: 8A
+CAN_SendMessage: 83
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 69
+CAN_SendMessage: 75
+CAN_SendMessage: 7C
+CAN_SendMessage: 00
+RAW ax=40 ay=-324 az=16176 accel_pitch=0
+Motor 141 speed is: -8848581
+Motor 142 speed is: 8848581
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3B
+CAN_SendMessage: FB
+CAN_SendMessage: 78
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C5
+CAN_SendMessage: 04
+CAN_SendMessage: 87
+CAN_SendMessage: 00
+RAW ax=340 ay=352 az=16354 accel_pitch=1
+Motor 141 speed is: 2916441
+Motor 142 speed is: -2916441
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: 80
+CAN_SendMessage: 2C
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 7F
+CAN_SendMessage: D3
+CAN_SendMessage: FF
+RAW ax=196 ay=0 az=16460 accel_pitch=0
+Motor 141 speed is: -12327313
+Motor 142 speed is: 12327313
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6F
+CAN_SendMessage: E6
+CAN_SendMessage: 43
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 91
+CAN_SendMessage: 19
+CAN_SendMessage: BC
+CAN_SendMessage: 00
+RAW ax=142 ay=114 az=16522 accel_pitch=0
+Motor 141 speed is: -12327313
+Motor 142 speed is: 12327313
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6F
+CAN_SendMessage: E6
+CAN_SendMessage: 43
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 91
+CAN_SendMessage: 19
+CAN_SendMessage: BC
+CAN_SendMessage: 00
+RAW ax=164 ay=-218 az=16356 accel_pitch=0
+Motor 141 speed is: -12327313
+Motor 142 speed is: 12327313
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6F
+CAN_SendMessage: E6
+CAN_SendMessage: 43
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 91
+CAN_SendMessage: 19
+CAN_SendMessage: BC
+CAN_SendMessage: 00
+RAW ax=86 ay=-94 az=16408 accel_pitch=0
+Motor 141 speed is: -12327313
+Motor 142 speed is: 12327313
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 6F
+CAN_SendMessage: E6
+CAN_SendMessage: 43
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 91
+CAN_SendMessage: 19
+CAN_SendMessage: BC
+CAN_SendMessage: 00
+RAW ax=412 ay=-10 az=16128 accel_pitch=1
+Motor 141 speed is: -1254350
+Motor 142 speed is: 1254350
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 32
+CAN_SendMessage: DC
+CAN_SendMessage: EC
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: CE
+CAN_SendMessage: 23
+CAN_SendMessage: 13
+CAN_SendMessage: 00
+RAW ax=-172 ay=-180 az=16374 accel_pitch=0
+Motor 141 speed is: -5425143
+Motor 142 speed is: 5425143
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 09
+CAN_SendMessage: 38
+CAN_SendMessage: AD
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F7
+CAN_SendMessage: C7
+CAN_SendMessage: 52
+CAN_SendMessage: 00
+RAW ax=782 ay=106 az=16648 accel_pitch=2
+Motor 141 speed is: 4955760
+Motor 142 speed is: -4955760
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 70
+CAN_SendMessage: 9E
+CAN_SendMessage: 4B
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 90
+CAN_SendMessage: 61
+CAN_SendMessage: B4
+CAN_SendMessage: FF
+RAW ax=8 ay=-8 az=15910 accel_pitch=0
+Motor 141 speed is: -2675333
+Motor 142 speed is: 2675333
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7B
+CAN_SendMessage: 2D
+CAN_SendMessage: D7
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 85
+CAN_SendMessage: D2
+CAN_SendMessage: 28
+CAN_SendMessage: 00
+RAW ax=32 ay=746 az=16638 accel_pitch=0
+Motor 141 speed is: -2675333
+Motor 142 speed is: 2675333
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7B
+CAN_SendMessage: 2D
+CAN_SendMessage: D7
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 85
+CAN_SendMessage: D2
+CAN_SendMessage: 28
+CAN_SendMessage: 00
+RAW ax=174 ay=204 az=16846 accel_pitch=0
+Motor 141 speed is: -4059453
+Motor 142 speed is: 4059453
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C3
+CAN_SendMessage: 0E
+CAN_SendMessage: C2
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3D
+CAN_SendMessage: F1
+CAN_SendMessage: 3D
+CAN_SendMessage: 00
+RAW ax=-154 ay=226 az=16462 accel_pitch=0
+Motor 141 speed is: -2675333
+Motor 142 speed is: 2675333
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7B
+CAN_SendMessage: 2D
+CAN_SendMessage: D7
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 85
+CAN_SendMessage: D2
+CAN_SendMessage: 28
+CAN_SendMessage: 00
+RAW ax=-154 ay=-404 az=16126 accel_pitch=0
+Motor 141 speed is: -2675333
+Motor 142 speed is: 2675333
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 7B
+CAN_SendMessage: 2D
+CAN_SendMessage: D7
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 85
+CAN_SendMessage: D2
+CAN_SendMessage: 28
+CAN_SendMessage: 00
+RAW ax=316 ay=102 az=16514 accel_pitch=1
+Motor 141 speed is: 8397630
+Motor 142 speed is: -8397630
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3E
+CAN_SendMessage: 23
+CAN_SendMessage: 80
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C2
+CAN_SendMessage: DC
+CAN_SendMessage: 7F
+CAN_SendMessage: FF
+RAW ax=426 ay=190 az=16290 accel_pitch=1
+Motor 141 speed is: 2842717
+Motor 142 speed is: -2842717
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 5D
+CAN_SendMessage: 60
+CAN_SendMessage: 2B
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A3
+CAN_SendMessage: 9F
+CAN_SendMessage: D4
+CAN_SendMessage: FF
+RAW ax=-324 ay=4 az=16318 accel_pitch=-1
+Motor 141 speed is: -1328075
+Motor 142 speed is: 1328075
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 35
+CAN_SendMessage: BC
+CAN_SendMessage: EB
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: CB
+CAN_SendMessage: 43
+CAN_SendMessage: 14
+CAN_SendMessage: 00
+RAW ax=396 ay=36 az=16836 accel_pitch=1
+Motor 141 speed is: 11129008
+Motor 142 speed is: -11129008
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B0
+CAN_SendMessage: D0
+CAN_SendMessage: A9
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 50
+CAN_SendMessage: 2F
+CAN_SendMessage: 56
+CAN_SendMessage: FF
+RAW ax=-226 ay=-324 az=16190 accel_pitch=0
+Motor 141 speed is: -9651244
+Motor 142 speed is: 9651244
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D4
+CAN_SendMessage: BB
+CAN_SendMessage: 6C
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 2C
+CAN_SendMessage: 44
+CAN_SendMessage: 93
+CAN_SendMessage: 00
+RAW ax=422 ay=-180 az=16378 accel_pitch=1
+Motor 141 speed is: 1421719
+Motor 142 speed is: -1421719
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 97
+CAN_SendMessage: B1
+CAN_SendMessage: 15
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 69
+CAN_SendMessage: 4E
+CAN_SendMessage: EA
+CAN_SendMessage: FF
+RAW ax=-106 ay=-396 az=16438 accel_pitch=0
+Motor 141 speed is: -11053811
+Motor 142 speed is: 11053811
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 0D
+CAN_SendMessage: 55
+CAN_SendMessage: 57
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: F3
+CAN_SendMessage: AA
+CAN_SendMessage: A8
+CAN_SendMessage: 00
+RAW ax=346 ay=-80 az=16152 accel_pitch=1
+Motor 141 speed is: 19152
+Motor 142 speed is: -19152
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D0
+CAN_SendMessage: 4A
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 30
+CAN_SendMessage: B5
+CAN_SendMessage: FF
+CAN_SendMessage: FF
+RAW ax=-472 ay=242 az=17056 accel_pitch=-1
+Motor 141 speed is: 16610229
+Motor 142 speed is: -16610229
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B5
+CAN_SendMessage: 73
+CAN_SendMessage: FD
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4B
+CAN_SendMessage: 8C
+CAN_SendMessage: 02
+CAN_SendMessage: FF
+RAW ax=156 ay=236 az=16578 accel_pitch=0
+Motor 141 speed is: 15918169
+Motor 142 speed is: -15918169
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: E4
+CAN_SendMessage: F2
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 1B
+CAN_SendMessage: 0D
+CAN_SendMessage: FF
+RAW ax=-386 ay=-1106 az=16844 accel_pitch=-1
+Motor 141 speed is: 15918169
+Motor 142 speed is: -15918169
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: E4
+CAN_SendMessage: F2
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 1B
+CAN_SendMessage: 0D
+CAN_SendMessage: FF
+RAW ax=-172 ay=-106 az=16734 accel_pitch=0
+Motor 141 speed is: 15918169
+Motor 142 speed is: -15918169
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: E4
+CAN_SendMessage: F2
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 1B
+CAN_SendMessage: 0D
+CAN_SendMessage: FF
+RAW ax=144 ay=-22 az=16462 accel_pitch=0
+Motor 141 speed is: 16610229
+Motor 142 speed is: -16610229
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B5
+CAN_SendMessage: 73
+CAN_SendMessage: FD
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4B
+CAN_SendMessage: 8C
+CAN_SendMessage: 02
+CAN_SendMessage: FF
+RAW ax=-118 ay=74 az=16358 accel_pitch=0
+Motor 141 speed is: 15918169
+Motor 142 speed is: -15918169
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: E4
+CAN_SendMessage: F2
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 1B
+CAN_SendMessage: 0D
+CAN_SendMessage: FF
+RAW ax=-94 ay=80 az=16322 accel_pitch=0
+Motor 141 speed is: 16610229
+Motor 142 speed is: -16610229
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: B5
+CAN_SendMessage: 73
+CAN_SendMessage: FD
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 4B
+CAN_SendMessage: 8C
+CAN_SendMessage: 02
+CAN_SendMessage: FF
+RAW ax=10 ay=2 az=16306 accel_pitch=0
+Motor 141 speed is: 15918169
+Motor 142 speed is: -15918169
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 59
+CAN_SendMessage: E4
+CAN_SendMessage: F2
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: A7
+CAN_SendMessage: 1B
+CAN_SendMessage: 0D
+CAN_SendMessage: FF
+RAW ax=288 ay=176 az=16298 accel_pitch=1
+Motor 141 speed is: -7611877
+Motor 142 speed is: 7611877
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 1B
+CAN_SendMessage: DA
+CAN_SendMessage: 8B
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: E5
+CAN_SendMessage: 25
+CAN_SendMessage: 74
+CAN_SendMessage: 00
+RAW ax=-316 ay=-34 az=16400 accel_pitch=-1
+Motor 141 speed is: -13166789
+Motor 142 speed is: 13166789
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 3B
+CAN_SendMessage: 17
+CAN_SendMessage: 37
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: C5
+CAN_SendMessage: E8
+CAN_SendMessage: C8
+CAN_SendMessage: 00
+RAW ax=296 ay=-76 az=16232 accel_pitch=1
+Motor 141 speed is: -2093827
+Motor 142 speed is: 2093827
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: FD
+CAN_SendMessage: 0C
+CAN_SendMessage: E0
+CAN_SendMessage: FF
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 40
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 03
+CAN_SendMessage: F3
+CAN_SendMessage: 1F
+CAN_SendMessage: 00
+RAW ax=172 ay=-2 az=16362 accel_pitch=0
+Motor 141 speed is: 11036885
+Motor 142 speed is: -11036885
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+CAN_SendMessage: 28
+CAN_SendMessage: 20
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 08
+CAN_SendMessage: A2
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: 00
+CAN_SendMessage: D5
+CAN_SendMessage: 68
+CAN_SendMessage: A8
+CAN_SendMessage: 00
+WARNING: CAN TX buffer busy, sending anyway
+CAN_SendMessage message.dlc: 08
+C
