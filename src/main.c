@@ -17,6 +17,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "xgpio.h"
+#include "xtime_l.h"
+
 
 #define GPIO_BASE XPAR_PMODCAN_0_AXI_LITE_GPIO_BASEADDR
 
@@ -47,8 +49,7 @@ XUartPs Uart;
 #define PID_TARGET		(PID_BASE + 0x14)
 #define PID_VELOCITY 	(PID_BASE + 0x20)
 #define PID_NEW_VELOCITY (PID_BASE + 0x24)
-#define PID_TIME_LO   (PID_BASE + 0x18)   // slv_reg6 -> lower 32 bits of pid_time
-#define PID_TIME_HI   (PID_BASE + 0x1C)   // slv_reg7 -> upper 32 bits of pid_time
+#define PID_TIME   (PID_BASE + 0x18)   // slv_reg6 -> lower 32 bits of pid_time
 #define PID_DEBUG_ANGLE (PID_BASE + 0x28)
 #define PID_DEBUG_KP    (PID_BASE + 0x2C)
 #define PID_DEBUG_KD    (PID_BASE + 0x30)
@@ -918,33 +919,26 @@ void PID_WriteAngle(float pitch_deg)
 
 int PID_ReadVelocity(int32_t *velocity)
 {
-	/*
-	uint32_t timeout = PID_VELOCITY_READY_TIMEOUT;
 
-	while (((Xil_In32(PID_NEW_VELOCITY) & 0x1) == 0) && (timeout > 0)) {
-		timeout--;
-	}
-
-	if (timeout == 0) {
-		xil_printf("WARNING: PID velocity not ready, timed out\r\n");
-	 *velocity_dps = 0.0f;
-		return 0;
-	}
-	 */
 	uint32_t new_velocity = Xil_In32(PID_NEW_VELOCITY) & 0x1;
-	u32 debug_angle = Xil_In32(PID_DEBUG_ANGLE);
-
+	//u32 debug_angle = Xil_In32(PID_DEBUG_ANGLE);
+	/*
 	xil_printf("PID Debug Angle: %d\n",
 			(unsigned long)debug_angle);
 	xil_printf("Kp: %u\r\n", Xil_In32(PID_DEBUG_KP) & 0xFFF);
 	xil_printf("Kd: %u\r\n", Xil_In32(PID_DEBUG_KD) & 0xFFF);
 	xil_printf("Ki: %u\r\n", Xil_In32(PID_DEBUG_KI) & 0xFFF);
+	*/
 	if (new_velocity != 1) {
 		xil_printf("Velocity flag has not been raised\n");
-		xil_printf("Velocity from PID controller: %d\n",new_velocity);
+		*velocity = (int32_t)Xil_In32(PID_VELOCITY);
+
+		xil_printf("Velocity from PID controller: %d\n",velocity);
+		Xil_Out32(PID_BASE  + 0x08, 0x0);   // readyToRead = 0
 		return 0;   // No new velocity, don't send CAN
 	}
 	*velocity = (int32_t)Xil_In32(PID_VELOCITY);
+	Xil_Out32(PID_BASE  + 0x08, 0x0);   // readyToRead = 0
 	return 1;
 }
 
@@ -992,11 +986,12 @@ void balanceCheck(
 			(float)ax,
 			sqrtf((float)ay * ay + (float)az * az)
 	) * DEG_PER_RAD;
-	xil_printf(
-			"RAW ax=%d ay=%d az=%d accel_pitch=%d\n",
-			ax, ay, az, (int)accel_pitch
-	);
+
 	PID_WriteAngle(accel_pitch);
+	XTime now;
+	XTime_GetTime(&now);
+	Xil_Out32(PID_TIME, (u32)now);
+	Xil_Out32(PID_BASE  + 0x08, 0x1);   // readyToRead = 1
 	int32_t velocity = 0;
 
 	if (PID_ReadVelocity(&velocity)) {
@@ -1010,9 +1005,13 @@ void balanceCheck(
 			//Testing motor 142 to not use inverted speed
 			CAN_SendVelocityFast(motor141, speed_centidps);
 			CAN_SendVelocityFast(motor142, speed_inverted);
+			xil_printf(
+					"RAW ax=%d ay=%d az=%d accel_pitch=%d\n",
+					ax, ay, az, (int)accel_pitch
+			);
 		}
 	}
-
+	//sleep(1);
 	usleep(4000);
 }
 
@@ -1232,34 +1231,12 @@ int main(void)
 
 	xil_printf("Readback = %lu\r\n",
 			(unsigned long)Xil_In32(PID_ANGLE));
-
+	xil_printf("BUILD Nov8 14:30\r\n");
 
 	Xil_Out32(PID_TARGET, (int32_t)(PITCH_SETPOINT));
 	Xil_Out32(PID_CONTROL, 0x02);
 	Xil_Out32(PID_CONTROL, 0x00);
-	/*
-	const u8 testSpeedCommand[8] = {
-			0xA2, 0x00, 0x00, 0x00, 0x30, 0x2A, 0x00, 0x7F
-	};
-	memcpy(motor142.data, testSpeedCommand, sizeof(testSpeedCommand));
-	SendMotorMessageInit(&motor142, "Test first max speed");
 
-
-	const u8 testSpeed2Command[8] = {
-			0xA2, 0x00, 0x00, 0x00, 0x30, 0x2A, 0x00, 0x01
-	};
-	memcpy(motor141.data, testSpeed2Command, sizeof(testSpeed2Command));
-	SendMotorMessageInit(&motor141, "Test  second max speed");
-	 */
-	/*
-	sleep(10);
-	const u8 testSpeed3Command[8] = {
-			0xA2, 0x00, 0x00, 0x00, 0x30, 0x2A, 0x00, 0x7F
-	};
-	memcpy(motor141.data, testSpeed 3Command, sizeof(testSpeed3Command));
-	SendMotorMessageInit(&motor141, "Test third max speed");
-	return 0;
-	 */
 
 	//return 0;
 
