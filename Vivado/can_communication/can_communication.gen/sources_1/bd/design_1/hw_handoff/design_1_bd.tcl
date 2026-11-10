@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# pot_to_const
+# full_to_four, pot_to_const
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -191,10 +191,12 @@ proc create_root_design { parentCell } {
   set ki_vaux_p_0 [ create_bd_port -dir I ki_vaux_p_0 ]
   set kp_vaux_n_0 [ create_bd_port -dir I kp_vaux_n_0 ]
   set kp_vaux_p_0 [ create_bd_port -dir I kp_vaux_p_0 ]
+  set led_0 [ create_bd_port -dir O -from 3 -to 0 led_0 ]
   set rx_0 [ create_bd_port -dir I rx_0 ]
   set rx_1 [ create_bd_port -dir I rx_1 ]
   set rx_2 [ create_bd_port -dir I rx_2 ]
   set rx_3 [ create_bd_port -dir I rx_3 ]
+  set sw_0 [ create_bd_port -dir I -from 3 -to 0 sw_0 ]
   set tx_0 [ create_bd_port -dir O tx_0 ]
   set tx_1 [ create_bd_port -dir O tx_1 ]
   set tx_2 [ create_bd_port -dir O tx_2 ]
@@ -241,8 +243,19 @@ proc create_root_design { parentCell } {
    CONFIG.C_BAUDRATE {115200} \
  ] $axi_uartlite_3
 
-  # Create instance: pid_compressed_t_wra_0, and set properties
-  set pid_compressed_t_wra_0 [ create_bd_cell -type ip -vlnv user.org:user:pid_compressed_t_wrapper:1.0 pid_compressed_t_wra_0 ]
+  # Create instance: full_to_four_0, and set properties
+  set block_name full_to_four
+  set block_cell_name full_to_four_0
+  if { [catch {set full_to_four_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $full_to_four_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: pid_expand_time_wrap_0, and set properties
+  set pid_expand_time_wrap_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:pid_expand_time_wrapper:1.0 pid_expand_time_wrap_0 ]
 
   # Create instance: pot_to_const_0, and set properties
   set block_name pot_to_const
@@ -785,27 +798,33 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M07_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins ps7_0_axi_periph/M07_AXI]
 
   # Create port connections
-  connect_bd_net -net AXI_PID_Controller_P_0_pid_angle [get_bd_pins AXI_PID_Controller_P_0/pid_angle] [get_bd_pins pid_compressed_t_wra_0/angle_0]
-  connect_bd_net -net AXI_PID_Controller_P_0_pid_new_target_angle [get_bd_pins AXI_PID_Controller_P_0/pid_new_target_angle] [get_bd_pins pid_compressed_t_wra_0/new_target_angle_available_0]
-  connect_bd_net -net AXI_PID_Controller_P_0_pid_target_angle [get_bd_pins AXI_PID_Controller_P_0/pid_target_angle] [get_bd_pins pid_compressed_t_wra_0/target_angle_0]
+  connect_bd_net -net AXI_PID_Controller_P_0_pid_angle [get_bd_pins AXI_PID_Controller_P_0/pid_angle] [get_bd_pins pid_expand_time_wrap_0/angle_0]
+  connect_bd_net -net AXI_PID_Controller_P_0_pid_new_target_angle [get_bd_pins AXI_PID_Controller_P_0/pid_new_target_angle] [get_bd_pins pid_expand_time_wrap_0/new_target_angle_available_0]
+  connect_bd_net -net AXI_PID_Controller_P_0_pid_target_angle [get_bd_pins AXI_PID_Controller_P_0/pid_target_angle] [get_bd_pins pid_expand_time_wrap_0/target_angle_0]
+  connect_bd_net -net AXI_PID_Controller_P_0_pid_time [get_bd_pins AXI_PID_Controller_P_0/pid_time] [get_bd_pins pid_expand_time_wrap_0/timestamp_new_0]
+  connect_bd_net -net AXI_PID_Controller_P_0_readyToRead [get_bd_pins AXI_PID_Controller_P_0/readyToRead] [get_bd_pins full_to_four_0/ps_ready] [get_bd_pins pid_expand_time_wrap_0/ps_ready_0]
   connect_bd_net -net PmodCAN_0_SPI_interrupt [get_bd_pins PmodCAN_0/SPI_interrupt] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_ports UWB_Reset] [get_bd_pins axi_gpio_0/gpio_io_o]
   connect_bd_net -net axi_uartlite_0_tx [get_bd_ports tx_3] [get_bd_pins axi_uartlite_0/tx]
   connect_bd_net -net axi_uartlite_1_tx [get_bd_ports tx_2] [get_bd_pins axi_uartlite_1/tx]
   connect_bd_net -net axi_uartlite_2_tx [get_bd_ports tx_1] [get_bd_pins axi_uartlite_2/tx]
   connect_bd_net -net axi_uartlite_3_tx [get_bd_ports tx_0] [get_bd_pins axi_uartlite_3/tx]
+  connect_bd_net -net full_to_four_0_led [get_bd_ports led_0] [get_bd_pins full_to_four_0/led]
   connect_bd_net -net kd_vaux_n_0_1 [get_bd_ports kd_vaux_n_0] [get_bd_pins pot_to_const_0/kd_vaux_n]
   connect_bd_net -net kd_vaux_p_0_1 [get_bd_ports kd_vaux_p_0] [get_bd_pins pot_to_const_0/kd_vaux_p]
   connect_bd_net -net ki_vaux_n_0_1 [get_bd_ports ki_vaux_n_0] [get_bd_pins pot_to_const_0/ki_vaux_n]
   connect_bd_net -net ki_vaux_p_0_1 [get_bd_ports ki_vaux_p_0] [get_bd_pins pot_to_const_0/ki_vaux_p]
   connect_bd_net -net kp_vaux_n_0_1 [get_bd_ports kp_vaux_n_0] [get_bd_pins pot_to_const_0/kp_vaux_n]
   connect_bd_net -net kp_vaux_p_0_1 [get_bd_ports kp_vaux_p_0] [get_bd_pins pot_to_const_0/kp_vaux_p]
-  connect_bd_net -net pid_compressed_t_wra_0_new_velocity_available_0 [get_bd_pins AXI_PID_Controller_P_0/pid_new_velocity] [get_bd_pins pid_compressed_t_wra_0/new_velocity_available_0]
-  connect_bd_net -net pid_compressed_t_wra_0_output_velocity_0 [get_bd_pins AXI_PID_Controller_P_0/pid_output_velocity] [get_bd_pins pid_compressed_t_wra_0/output_velocity_0]
-  connect_bd_net -net pot_to_const_0_k_d [get_bd_pins pid_compressed_t_wra_0/kd_0] [get_bd_pins pot_to_const_0/k_d]
-  connect_bd_net -net pot_to_const_0_k_i [get_bd_pins pid_compressed_t_wra_0/ki_0] [get_bd_pins pot_to_const_0/k_i]
-  connect_bd_net -net pot_to_const_0_k_p [get_bd_pins pid_compressed_t_wra_0/kp_0] [get_bd_pins pot_to_const_0/k_p]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins AXI_PID_Controller_P_0/s00_axi_aclk] [get_bd_pins PmodCAN_0/ext_spi_clk] [get_bd_pins PmodCAN_0/s_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins axi_uartlite_1/s_axi_aclk] [get_bd_pins axi_uartlite_2/s_axi_aclk] [get_bd_pins axi_uartlite_3/s_axi_aclk] [get_bd_pins pid_compressed_t_wra_0/sys_clk] [get_bd_pins pot_to_const_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/M07_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+  connect_bd_net -net pid_expand_time_wrap_0_d_term_0 [get_bd_pins full_to_four_0/dterm] [get_bd_pins pid_expand_time_wrap_0/d_term_0]
+  connect_bd_net -net pid_expand_time_wrap_0_i_term_0 [get_bd_pins full_to_four_0/iterm] [get_bd_pins pid_expand_time_wrap_0/i_term_0]
+  connect_bd_net -net pid_expand_time_wrap_0_p_term_0 [get_bd_pins full_to_four_0/pterm] [get_bd_pins pid_expand_time_wrap_0/p_term_0]
+  connect_bd_net -net pid_reexpanded_wrapp_0_new_velocity_available_0 [get_bd_pins AXI_PID_Controller_P_0/pid_new_velocity] [get_bd_pins full_to_four_0/pl_ready] [get_bd_pins pid_expand_time_wrap_0/new_velocity_available_0]
+  connect_bd_net -net pid_reexpanded_wrapp_0_output_velocity_0 [get_bd_pins AXI_PID_Controller_P_0/pid_output_velocity] [get_bd_pins full_to_four_0/velocity] [get_bd_pins pid_expand_time_wrap_0/output_velocity_0]
+  connect_bd_net -net pot_to_const_0_k_d [get_bd_pins AXI_PID_Controller_P_0/Kd_Debug] [get_bd_pins pid_expand_time_wrap_0/kd_in_0] [get_bd_pins pot_to_const_0/k_d]
+  connect_bd_net -net pot_to_const_0_k_i [get_bd_pins pid_expand_time_wrap_0/ki_in_0] [get_bd_pins pot_to_const_0/k_i]
+  connect_bd_net -net pot_to_const_0_k_p [get_bd_pins AXI_PID_Controller_P_0/Kp_Debug] [get_bd_pins pid_expand_time_wrap_0/kp_in_0] [get_bd_pins pot_to_const_0/k_p]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins AXI_PID_Controller_P_0/s00_axi_aclk] [get_bd_pins PmodCAN_0/ext_spi_clk] [get_bd_pins PmodCAN_0/s_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins axi_uartlite_1/s_axi_aclk] [get_bd_pins axi_uartlite_2/s_axi_aclk] [get_bd_pins axi_uartlite_3/s_axi_aclk] [get_bd_pins full_to_four_0/clock] [get_bd_pins pid_expand_time_wrap_0/sys_clk] [get_bd_pins pot_to_const_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/M07_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins AXI_PID_Controller_P_0/s00_axi_aresetn] [get_bd_pins PmodCAN_0/s_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins axi_uartlite_1/s_axi_aresetn] [get_bd_pins axi_uartlite_2/s_axi_aresetn] [get_bd_pins axi_uartlite_3/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/M07_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
   connect_bd_net -net rst_ps7_0_50M_peripheral_reset [get_bd_pins pot_to_const_0/reset] [get_bd_pins rst_ps7_0_50M/peripheral_reset]
@@ -813,6 +832,7 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
   connect_bd_net -net rx_1_1 [get_bd_ports rx_1] [get_bd_pins axi_uartlite_2/rx]
   connect_bd_net -net rx_2_1 [get_bd_ports rx_2] [get_bd_pins axi_uartlite_1/rx]
   connect_bd_net -net rx_3_1 [get_bd_ports rx_3] [get_bd_pins axi_uartlite_0/rx]
+  connect_bd_net -net sw_0_1 [get_bd_ports sw_0] [get_bd_pins full_to_four_0/sw]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins xlconcat_0/dout]
 
   # Create address segments

@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-//Date        : Mon Oct 26 12:12:35 2026
+//Date        : Tue Nov 10 11:38:16 2026
 //Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=14,numNonXlnxBlks=3,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_board_cnt=6,da_clkrst_cnt=9,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=25,numReposBlks=15,numNonXlnxBlks=2,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_board_cnt=6,da_clkrst_cnt=13,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -70,10 +70,12 @@ module design_1
     ki_vaux_p_0,
     kp_vaux_n_0,
     kp_vaux_p_0,
+    led_0,
     rx_0,
     rx_1,
     rx_2,
     rx_3,
+    sw_0,
     tx_0,
     tx_1,
     tx_2,
@@ -137,10 +139,12 @@ module design_1
   input ki_vaux_p_0;
   input kp_vaux_n_0;
   input kp_vaux_p_0;
+  output [3:0]led_0;
   input rx_0;
   input rx_1;
   input rx_2;
   input rx_3;
+  input [3:0]sw_0;
   output tx_0;
   output tx_1;
   output tx_2;
@@ -149,6 +153,8 @@ module design_1
   wire [31:0]AXI_PID_Controller_P_0_pid_angle;
   wire [0:0]AXI_PID_Controller_P_0_pid_new_target_angle;
   wire [31:0]AXI_PID_Controller_P_0_pid_target_angle;
+  wire [31:0]AXI_PID_Controller_P_0_pid_time;
+  wire [0:0]AXI_PID_Controller_P_0_readyToRead;
   wire PmodCAN_0_Pmod_out_PIN10_I;
   wire PmodCAN_0_Pmod_out_PIN10_O;
   wire PmodCAN_0_Pmod_out_PIN10_T;
@@ -179,14 +185,18 @@ module design_1
   wire axi_uartlite_1_tx;
   wire axi_uartlite_2_tx;
   wire axi_uartlite_3_tx;
+  wire [3:0]full_to_four_0_led;
   wire kd_vaux_n_0_1;
   wire kd_vaux_p_0_1;
   wire ki_vaux_n_0_1;
   wire ki_vaux_p_0_1;
   wire kp_vaux_n_0_1;
   wire kp_vaux_p_0_1;
-  wire [0:0]pid_compressed_t_wra_0_new_velocity_available_0;
-  wire [31:0]pid_compressed_t_wra_0_output_velocity_0;
+  wire [31:0]pid_expand_time_wrap_0_d_term_0;
+  wire [31:0]pid_expand_time_wrap_0_i_term_0;
+  wire [31:0]pid_expand_time_wrap_0_p_term_0;
+  wire pid_reexpanded_wrapp_0_new_velocity_available_0;
+  wire [31:0]pid_reexpanded_wrapp_0_output_velocity_0;
   wire [11:0]pot_to_const_0_k_d;
   wire [11:0]pot_to_const_0_k_i;
   wire [11:0]pot_to_const_0_k_p;
@@ -401,6 +411,7 @@ module design_1
   wire rx_1_1;
   wire rx_2_1;
   wire rx_3_1;
+  wire [3:0]sw_0_1;
   wire [0:0]xlconcat_0_dout;
 
   assign IIC_0_0_scl_o = processing_system7_0_IIC_0_SCL_O;
@@ -438,22 +449,30 @@ module design_1
   assign ki_vaux_p_0_1 = ki_vaux_p_0;
   assign kp_vaux_n_0_1 = kp_vaux_n_0;
   assign kp_vaux_p_0_1 = kp_vaux_p_0;
+  assign led_0[3:0] = full_to_four_0_led;
   assign processing_system7_0_IIC_0_SCL_I = IIC_0_0_scl_i;
   assign processing_system7_0_IIC_0_SDA_I = IIC_0_0_sda_i;
   assign rx_0_1 = rx_0;
   assign rx_1_1 = rx_1;
   assign rx_2_1 = rx_2;
   assign rx_3_1 = rx_3;
+  assign sw_0_1 = sw_0[3:0];
   assign tx_0 = axi_uartlite_3_tx;
   assign tx_1 = axi_uartlite_2_tx;
   assign tx_2 = axi_uartlite_1_tx;
   assign tx_3 = axi_uartlite_0_tx;
   design_1_AXI_PID_Controller_P_0_2 AXI_PID_Controller_P_0
-       (.pid_angle(AXI_PID_Controller_P_0_pid_angle),
+       (.Kd_Debug(pot_to_const_0_k_d),
+        .Ki_Debug({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .Kp_Debug(pot_to_const_0_k_p),
+        .pid_angle(AXI_PID_Controller_P_0_pid_angle),
+        .pid_debug_angle({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .pid_new_target_angle(AXI_PID_Controller_P_0_pid_new_target_angle),
-        .pid_new_velocity(pid_compressed_t_wra_0_new_velocity_available_0),
-        .pid_output_velocity(pid_compressed_t_wra_0_output_velocity_0),
+        .pid_new_velocity(pid_reexpanded_wrapp_0_new_velocity_available_0),
+        .pid_output_velocity(pid_reexpanded_wrapp_0_output_velocity_0),
         .pid_target_angle(AXI_PID_Controller_P_0_pid_target_angle),
+        .pid_time(AXI_PID_Controller_P_0_pid_time),
+        .readyToRead(AXI_PID_Controller_P_0_readyToRead),
         .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(ps7_0_axi_periph_M02_AXI_ARADDR[5:0]),
         .s00_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
@@ -647,16 +666,31 @@ module design_1
         .s_axi_wstrb(ps7_0_axi_periph_M06_AXI_WSTRB),
         .s_axi_wvalid(ps7_0_axi_periph_M06_AXI_WVALID),
         .tx(axi_uartlite_3_tx));
-  design_1_pid_compressed_t_wra_0_0 pid_compressed_t_wra_0
+  design_1_full_to_four_0_0 full_to_four_0
+       (.clock(processing_system7_0_FCLK_CLK0),
+        .dterm(pid_expand_time_wrap_0_d_term_0),
+        .iterm(pid_expand_time_wrap_0_i_term_0),
+        .led(full_to_four_0_led),
+        .pl_ready(pid_reexpanded_wrapp_0_new_velocity_available_0),
+        .ps_ready(AXI_PID_Controller_P_0_readyToRead),
+        .pterm(pid_expand_time_wrap_0_p_term_0),
+        .sw(sw_0_1),
+        .velocity(pid_reexpanded_wrapp_0_output_velocity_0));
+  design_1_pid_expand_time_wrap_0_0 pid_expand_time_wrap_0
        (.angle_0(AXI_PID_Controller_P_0_pid_angle),
-        .kd_0(pot_to_const_0_k_d),
-        .ki_0(pot_to_const_0_k_i),
-        .kp_0(pot_to_const_0_k_p),
+        .d_term_0(pid_expand_time_wrap_0_d_term_0),
+        .i_term_0(pid_expand_time_wrap_0_i_term_0),
+        .kd_in_0(pot_to_const_0_k_d),
+        .ki_in_0(pot_to_const_0_k_i),
+        .kp_in_0(pot_to_const_0_k_p),
         .new_target_angle_available_0(AXI_PID_Controller_P_0_pid_new_target_angle),
-        .new_velocity_available_0(pid_compressed_t_wra_0_new_velocity_available_0),
-        .output_velocity_0(pid_compressed_t_wra_0_output_velocity_0),
+        .new_velocity_available_0(pid_reexpanded_wrapp_0_new_velocity_available_0),
+        .output_velocity_0(pid_reexpanded_wrapp_0_output_velocity_0),
+        .p_term_0(pid_expand_time_wrap_0_p_term_0),
+        .ps_ready_0(AXI_PID_Controller_P_0_readyToRead),
         .sys_clk(processing_system7_0_FCLK_CLK0),
-        .target_angle_0(AXI_PID_Controller_P_0_pid_target_angle));
+        .target_angle_0(AXI_PID_Controller_P_0_pid_target_angle),
+        .timestamp_new_0(AXI_PID_Controller_P_0_pid_time));
   design_1_pot_to_const_0_0 pot_to_const_0
        (.clk(processing_system7_0_FCLK_CLK0),
         .k_d(pot_to_const_0_k_d),

@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-//Date        : Mon Oct 26 12:12:35 2026
+//Date        : Tue Nov 10 11:38:16 2026
 //Host        : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -49,10 +49,12 @@ module design_1_wrapper
     ki_vaux_p_0,
     kp_vaux_n_0,
     kp_vaux_p_0,
+    led_0,
     rx_0,
     rx_1,
     rx_2,
     rx_3,
+    sw_0,
     tx_0,
     tx_1,
     tx_2,
@@ -96,10 +98,12 @@ module design_1_wrapper
   input ki_vaux_p_0;
   input kp_vaux_n_0;
   input kp_vaux_p_0;
+  output [3:0]led_0;
   input rx_0;
   input rx_1;
   input rx_2;
   input rx_3;
+  input [3:0]sw_0;
   output tx_0;
   output tx_1;
   output tx_2;
@@ -174,10 +178,12 @@ module design_1_wrapper
   wire ki_vaux_p_0;
   wire kp_vaux_n_0;
   wire kp_vaux_p_0;
+  wire [3:0]led_0;
   wire rx_0;
   wire rx_1;
   wire rx_2;
   wire rx_3;
+  wire [3:0]sw_0;
   wire tx_0;
   wire tx_1;
   wire tx_2;
@@ -293,10 +299,12 @@ module design_1_wrapper
         .ki_vaux_p_0(ki_vaux_p_0),
         .kp_vaux_n_0(kp_vaux_n_0),
         .kp_vaux_p_0(kp_vaux_p_0),
+        .led_0(led_0),
         .rx_0(rx_0),
         .rx_1(rx_1),
         .rx_2(rx_2),
         .rx_3(rx_3),
+        .sw_0(sw_0),
         .tx_0(tx_0),
         .tx_1(tx_1),
         .tx_2(tx_2),

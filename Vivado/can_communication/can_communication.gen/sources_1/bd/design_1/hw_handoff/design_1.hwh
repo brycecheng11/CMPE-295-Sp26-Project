@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Oct 26 12:12:36 2026" VIVADOVERSION="2021.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 10 11:38:16 2026" VIVADOVERSION="2021.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.2" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -72,6 +72,22 @@
     <PORT DIR="O" NAME="tx_3" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="gpio_io_i_0" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="0" NAME="UWB_Reset" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="led_0" RIGHT="0" SIGIS="undef" SIGNAME="full_to_four_0_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_to_four_0" PORT="led"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="sw_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_to_four_0" PORT="sw"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="Pmod_out_0_pin1_o" SIGIS="undef" SIGNAME="PmodCAN_0_Pmod_out_pin1_o">
@@ -192,6 +208,11 @@
     <PORT DIR="O" NAME="Pmod_out_0_pin8_o" SIGIS="undef" SIGNAME="PmodCAN_0_Pmod_out_pin8_o">
       <CONNECTIONS>
         <CONNECTION INSTANCE="PmodCAN_0" PORT="Pmod_out_pin8_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="btns_4bits_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="uart_rtl_rxd" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
@@ -369,18 +390,6 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="I2C0_SCL_T"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="btns_4bits_tri_i" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="3" NAME="gpio_io_i_0" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" LEFT="0" NAME="UWB_Reset" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="0" NAME="btns_4bits_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_o"/>
-      </CONNECTIONS>
-    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -492,14 +501,13 @@
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="axi_gpio_0_GPIO" NAME="btns_4bits" TYPE="INITIATOR">
       <PORTMAPS>
-        <PORTMAP LOGICAL="TRI_I" PHYSICAL="btns_4bits_tri_i"/>
         <PORTMAP LOGICAL="TRI_O" PHYSICAL="btns_4bits_tri_o"/>
       </PORTMAPS>
     </BUSINTERFACE>
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="19" FULLNAME="/AXI_PID_Controller_P_0" HWVERSION="1.0" INSTANCE="AXI_PID_Controller_P_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PID_Controller_Peripheral" VLNV="user.org:user:AXI_PID_Controller_Peripheral:1.0">
+    <MODULE COREREVISION="26" FULLNAME="/AXI_PID_Controller_P_0" HWVERSION="1.0" INSTANCE="AXI_PID_Controller_P_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PID_Controller_Peripheral" VLNV="user.org:user:AXI_PID_Controller_Peripheral:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -515,30 +523,52 @@
       <PORTS>
         <PORT DIR="O" LEFT="31" NAME="pid_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="angle_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="angle_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="pid_target_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_target_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="target_angle_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="target_angle_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="63" NAME="pid_time" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="pid_time" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_time">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="timestamp_new_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="readyToRead" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_readyToRead">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_to_four_0" PORT="ps_ready"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="ps_ready_0"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="0" NAME="pid_new_target_angle" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_target_angle">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="new_target_angle_available_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="new_target_angle_available_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="pid_output_velocity" RIGHT="0" SIGIS="undef" SIGNAME="pid_compressed_t_wra_0_output_velocity_0">
+        <PORT DIR="I" LEFT="31" NAME="pid_output_velocity" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_output_velocity_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="output_velocity_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="output_velocity_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="pid_new_velocity" RIGHT="0" SIGIS="undef" SIGNAME="pid_compressed_t_wra_0_new_velocity_available_0">
+        <PORT DIR="I" LEFT="0" NAME="pid_new_velocity" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_new_velocity_available_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="new_velocity_available_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="new_velocity_available_0"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="31" NAME="pid_debug_angle" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="Kp_Debug" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pot_to_const_0" PORT="k_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="Kd_Debug" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pot_to_const_0" PORT="k_d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="Ki_Debug" RIGHT="0" SIGIS="undef"/>
         <PORT CLKFREQUENCY="50000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
@@ -3013,10 +3043,65 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="12" FULLNAME="/pid_compressed_t_wra_0" HWVERSION="1.0" INSTANCE="pid_compressed_t_wra_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pid_compressed_t_wrapper" VLNV="user.org:user:pid_compressed_t_wrapper:1.0">
+    <MODULE COREREVISION="1" FULLNAME="/full_to_four_0" HWVERSION="1.0" INSTANCE="full_to_four_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="full_to_four" VLNV="xilinx.com:module_ref:full_to_four:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_pid_compressed_t_wra_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_full_to_four_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="50000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ps_ready" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_readyToRead">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="readyToRead"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pl_ready" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_new_velocity_available_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="new_velocity_available_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="pterm" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_p_term_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="p_term_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iterm" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_i_term_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="i_term_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dterm" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_d_term_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="d_term_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="velocity" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_output_velocity_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="output_velocity_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="full_to_four_0_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/pid_expand_time_wrap_0" HWVERSION="1.0" INSTANCE="pid_expand_time_wrap_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pid_expand_time_wrapper" VLNV="xilinx.com:user:pid_expand_time_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_pid_expand_time_wrap_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -3025,37 +3110,59 @@
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_angle"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="kd_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
+        <PORT DIR="O" LEFT="31" NAME="d_term_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_d_term_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_to_four_0" PORT="dterm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="i_term_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_i_term_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_to_four_0" PORT="iterm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="kd_in_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_d"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="ki_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
+        <PORT DIR="I" LEFT="11" NAME="ki_in_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="kp_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
+        <PORT DIR="I" LEFT="11" NAME="kp_in_0" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
           <CONNECTIONS>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="k_p"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="new_target_angle_available_0" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_target_angle">
+        <PORT DIR="I" NAME="new_target_angle_available_0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_new_target_angle">
           <CONNECTIONS>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_new_target_angle"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="new_velocity_available_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_compressed_t_wra_0_new_velocity_available_0">
+        <PORT DIR="O" NAME="new_velocity_available_0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_new_velocity_available_0">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="full_to_four_0" PORT="pl_ready"/>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_new_velocity"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="output_velocity_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_compressed_t_wra_0_output_velocity_0">
+        <PORT DIR="O" LEFT="31" NAME="output_velocity_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_output_velocity_0">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="full_to_four_0" PORT="velocity"/>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_output_velocity"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="50000000" DIR="I" LEFT="0" NAME="sys_clk" RIGHT="0" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+        <PORT DIR="O" LEFT="31" NAME="p_term_0" RIGHT="0" SIGIS="undef" SIGNAME="pid_expand_time_wrap_0_p_term_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_to_four_0" PORT="pterm"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ps_ready_0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_readyToRead">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="readyToRead"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="50000000" DIR="I" NAME="sys_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -3063,6 +3170,11 @@
         <PORT DIR="I" LEFT="31" NAME="target_angle_0" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_target_angle">
           <CONNECTIONS>
             <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_target_angle"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="timestamp_new_0" RIGHT="0" SIGIS="undef" SIGNAME="AXI_PID_Controller_P_0_pid_time">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="pid_time"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3117,17 +3229,19 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="k_p" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_p">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="kp_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="kp_in_0"/>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="Kp_Debug"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="k_i" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_i">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="ki_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="ki_in_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="k_d" RIGHT="0" SIGIS="undef" SIGNAME="pot_to_const_0_k_d">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="kd_0"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="kd_in_0"/>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="Kd_Debug"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="4" NAME="channel_out" RIGHT="0" SIGIS="undef"/>
@@ -4323,8 +4437,6 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ACLK"/>
             <CONNECTION INSTANCE="pot_to_const_0" PORT="clk"/>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="pid_compressed_t_wra_0" PORT="sys_clk"/>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M04_ACLK"/>
@@ -4334,6 +4446,9 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_ACLK"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M07_ACLK"/>
+            <CONNECTION INSTANCE="full_to_four_0" PORT="clock"/>
+            <CONNECTION INSTANCE="pid_expand_time_wrap_0" PORT="sys_clk"/>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -5012,6 +5127,16 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M06_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M07_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M07_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
@@ -5823,16 +5948,6 @@
             <CONNECTION INSTANCE="axi_uartlite_3" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M07_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M07_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_50M_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_50M" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M07_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_s_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_awaddr"/>
@@ -6200,7 +6315,6 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M03_ARESETN"/>
-            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_uartlite_1" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M04_ARESETN"/>
@@ -6210,6 +6324,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_ARESETN"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M07_ARESETN"/>
+            <CONNECTION INSTANCE="AXI_PID_Controller_P_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

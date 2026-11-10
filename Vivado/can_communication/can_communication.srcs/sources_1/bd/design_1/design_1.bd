@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE45B422134462026",
+      "boundary_crc": "0x346DC89EFC9C4CB",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../can_communication.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -30,13 +30,14 @@
       "PmodCAN_0": "",
       "xlconcat_0": "",
       "pot_to_const_0": "",
-      "AXI_PID_Controller_P_0": "",
-      "pid_compressed_t_wra_0": "",
       "axi_uartlite_0": "",
       "axi_uartlite_1": "",
       "axi_uartlite_2": "",
       "axi_uartlite_3": "",
-      "axi_gpio_0": ""
+      "axi_gpio_0": "",
+      "full_to_four_0": "",
+      "pid_expand_time_wrap_0": "",
+      "AXI_PID_Controller_P_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -192,6 +193,16 @@
       "UWB_Reset": {
         "direction": "O",
         "left": "0",
+        "right": "0"
+      },
+      "led_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "sw_0": {
+        "direction": "I",
+        "left": "3",
         "right": "0"
       }
     },
@@ -2445,18 +2456,6 @@
           }
         }
       },
-      "AXI_PID_Controller_P_0": {
-        "vlnv": "user.org:user:AXI_PID_Controller_Peripheral:1.0",
-        "xci_name": "design_1_AXI_PID_Controller_P_0_2",
-        "xci_path": "ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2.xci",
-        "inst_hier_path": "AXI_PID_Controller_P_0"
-      },
-      "pid_compressed_t_wra_0": {
-        "vlnv": "user.org:user:pid_compressed_t_wrapper:1.0",
-        "xci_name": "design_1_pid_compressed_t_wra_0_0",
-        "xci_path": "ip/design_1_pid_compressed_t_wra_0_0/design_1_pid_compressed_t_wra_0_0.xci",
-        "inst_hier_path": "pid_compressed_t_wra_0"
-      },
       "axi_uartlite_0": {
         "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
         "xci_name": "design_1_axi_uartlite_0_0",
@@ -2526,6 +2525,81 @@
             "value": "true"
           }
         }
+      },
+      "full_to_four_0": {
+        "vlnv": "xilinx.com:module_ref:full_to_four:1.0",
+        "xci_name": "design_1_full_to_four_0_0",
+        "xci_path": "ip/design_1_full_to_four_0_0/design_1_full_to_four_0_0.xci",
+        "inst_hier_path": "full_to_four_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "full_to_four",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "sw": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ps_ready": {
+            "direction": "I"
+          },
+          "pl_ready": {
+            "direction": "I"
+          },
+          "pterm": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "iterm": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dterm": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "velocity": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "led": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "pid_expand_time_wrap_0": {
+        "vlnv": "xilinx.com:user:pid_expand_time_wrapper:1.0",
+        "xci_name": "design_1_pid_expand_time_wrap_0_0",
+        "xci_path": "ip/design_1_pid_expand_time_wrap_0_0/design_1_pid_expand_time_wrap_0_0.xci",
+        "inst_hier_path": "pid_expand_time_wrap_0"
+      },
+      "AXI_PID_Controller_P_0": {
+        "vlnv": "user.org:user:AXI_PID_Controller_Peripheral:1.0",
+        "xci_name": "design_1_AXI_PID_Controller_P_0_2",
+        "xci_path": "ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2.xci",
+        "inst_hier_path": "AXI_PID_Controller_P_0"
       }
     },
     "interface_nets": {
@@ -2642,19 +2716,32 @@
       "AXI_PID_Controller_P_0_pid_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_angle",
-          "pid_compressed_t_wra_0/angle_0"
+          "pid_expand_time_wrap_0/angle_0"
         ]
       },
       "AXI_PID_Controller_P_0_pid_new_target_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_new_target_angle",
-          "pid_compressed_t_wra_0/new_target_angle_available_0"
+          "pid_expand_time_wrap_0/new_target_angle_available_0"
         ]
       },
       "AXI_PID_Controller_P_0_pid_target_angle": {
         "ports": [
           "AXI_PID_Controller_P_0/pid_target_angle",
-          "pid_compressed_t_wra_0/target_angle_0"
+          "pid_expand_time_wrap_0/target_angle_0"
+        ]
+      },
+      "AXI_PID_Controller_P_0_pid_time": {
+        "ports": [
+          "AXI_PID_Controller_P_0/pid_time",
+          "pid_expand_time_wrap_0/timestamp_new_0"
+        ]
+      },
+      "AXI_PID_Controller_P_0_readyToRead": {
+        "ports": [
+          "AXI_PID_Controller_P_0/readyToRead",
+          "full_to_four_0/ps_ready",
+          "pid_expand_time_wrap_0/ps_ready_0"
         ]
       },
       "PmodCAN_0_SPI_interrupt": {
@@ -2693,6 +2780,12 @@
           "tx_0"
         ]
       },
+      "full_to_four_0_led": {
+        "ports": [
+          "full_to_four_0/led",
+          "led_0"
+        ]
+      },
       "kd_vaux_n_0_1": {
         "ports": [
           "kd_vaux_n_0",
@@ -2729,34 +2822,56 @@
           "pot_to_const_0/kp_vaux_p"
         ]
       },
-      "pid_compressed_t_wra_0_new_velocity_available_0": {
+      "pid_expand_time_wrap_0_d_term_0": {
         "ports": [
-          "pid_compressed_t_wra_0/new_velocity_available_0",
+          "pid_expand_time_wrap_0/d_term_0",
+          "full_to_four_0/dterm"
+        ]
+      },
+      "pid_expand_time_wrap_0_i_term_0": {
+        "ports": [
+          "pid_expand_time_wrap_0/i_term_0",
+          "full_to_four_0/iterm"
+        ]
+      },
+      "pid_expand_time_wrap_0_p_term_0": {
+        "ports": [
+          "pid_expand_time_wrap_0/p_term_0",
+          "full_to_four_0/pterm"
+        ]
+      },
+      "pid_reexpanded_wrapp_0_new_velocity_available_0": {
+        "ports": [
+          "pid_expand_time_wrap_0/new_velocity_available_0",
+          "full_to_four_0/pl_ready",
           "AXI_PID_Controller_P_0/pid_new_velocity"
         ]
       },
-      "pid_compressed_t_wra_0_output_velocity_0": {
+      "pid_reexpanded_wrapp_0_output_velocity_0": {
         "ports": [
-          "pid_compressed_t_wra_0/output_velocity_0",
+          "pid_expand_time_wrap_0/output_velocity_0",
+          "full_to_four_0/velocity",
           "AXI_PID_Controller_P_0/pid_output_velocity"
         ]
       },
       "pot_to_const_0_k_d": {
         "ports": [
           "pot_to_const_0/k_d",
-          "pid_compressed_t_wra_0/kd_0"
+          "pid_expand_time_wrap_0/kd_in_0",
+          "AXI_PID_Controller_P_0/Kd_Debug"
         ]
       },
       "pot_to_const_0_k_i": {
         "ports": [
           "pot_to_const_0/k_i",
-          "pid_compressed_t_wra_0/ki_0"
+          "pid_expand_time_wrap_0/ki_in_0"
         ]
       },
       "pot_to_const_0_k_p": {
         "ports": [
           "pot_to_const_0/k_p",
-          "pid_compressed_t_wra_0/kp_0"
+          "pid_expand_time_wrap_0/kp_in_0",
+          "AXI_PID_Controller_P_0/Kp_Debug"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -2773,8 +2888,6 @@
           "ps7_0_axi_periph/M02_ACLK",
           "ps7_0_axi_periph/M03_ACLK",
           "pot_to_const_0/clk",
-          "AXI_PID_Controller_P_0/s00_axi_aclk",
-          "pid_compressed_t_wra_0/sys_clk",
           "axi_uartlite_0/s_axi_aclk",
           "axi_uartlite_1/s_axi_aclk",
           "ps7_0_axi_periph/M04_ACLK",
@@ -2783,7 +2896,10 @@
           "axi_uartlite_3/s_axi_aclk",
           "ps7_0_axi_periph/M06_ACLK",
           "axi_gpio_0/s_axi_aclk",
-          "ps7_0_axi_periph/M07_ACLK"
+          "ps7_0_axi_periph/M07_ACLK",
+          "full_to_four_0/clock",
+          "pid_expand_time_wrap_0/sys_clk",
+          "AXI_PID_Controller_P_0/s00_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2802,7 +2918,6 @@
           "ps7_0_axi_periph/M01_ARESETN",
           "ps7_0_axi_periph/M02_ARESETN",
           "ps7_0_axi_periph/M03_ARESETN",
-          "AXI_PID_Controller_P_0/s00_axi_aresetn",
           "axi_uartlite_0/s_axi_aresetn",
           "axi_uartlite_1/s_axi_aresetn",
           "ps7_0_axi_periph/M04_ARESETN",
@@ -2811,7 +2926,8 @@
           "axi_uartlite_3/s_axi_aresetn",
           "ps7_0_axi_periph/M06_ARESETN",
           "axi_gpio_0/s_axi_aresetn",
-          "ps7_0_axi_periph/M07_ARESETN"
+          "ps7_0_axi_periph/M07_ARESETN",
+          "AXI_PID_Controller_P_0/s00_axi_aresetn"
         ]
       },
       "rst_ps7_0_50M_peripheral_reset": {
@@ -2842,6 +2958,12 @@
         "ports": [
           "rx_3",
           "axi_uartlite_0/rx"
+        ]
+      },
+      "sw_0_1": {
+        "ports": [
+          "sw_0",
+          "full_to_four_0/sw"
         ]
       },
       "xlconcat_0_dout": {

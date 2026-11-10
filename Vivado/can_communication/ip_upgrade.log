@@ -1,18 +1,18 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Oct 13 15:52:00 2026
+| Date         : Tue Nov 10 11:30:44 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
+Upgrade Log for IP 'design_1_AXI_PID_Controller_P_0_2'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 11) to (Rev. 12)
+SUCCESS in the upgrade of design_1_AXI_PID_Controller_P_0_2 (user.org:user:AXI_PID_Controller_Peripheral:1.0) from (Rev. 24) to (Rev. 25)
 
 
 
@@ -22,18 +22,18 @@ SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_c
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Oct 13 15:40:00 2026
+| Date         : Tue Nov 10 11:20:04 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
+Upgrade Log for IP 'design_1_AXI_PID_Controller_P_0_2'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 10) to (Rev. 11)
+SUCCESS in the upgrade of design_1_AXI_PID_Controller_P_0_2 (user.org:user:AXI_PID_Controller_Peripheral:1.0) from (Rev. 23) to (Rev. 24)
 
 
 
@@ -43,18 +43,18 @@ SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_c
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Oct 13 15:00:58 2026
+| Date         : Sun Nov  8 16:05:50 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
+Upgrade Log for IP 'design_1_pid_reexpanded_wrapp_0_2'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 9) to (Rev. 10)
+SUCCESS in the upgrade of design_1_pid_reexpanded_wrapp_0_2 (xilinx.com:user:pid_reexpanded_wrapper:1.4) from (Rev. 11) to (Rev. 12)
 
 
 
@@ -64,18 +64,33 @@ SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_c
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Oct 13 14:44:53 2026
+| Date         : Sun Nov  8 15:26:22 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
+Upgrade Log for IP 'design_1_pid_reexpanded_wrapp_0_2'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 8) to (Rev. 9)
+CAUTION (success, with warnings) in the upgrade of design_1_pid_reexpanded_wrapp_0_2 (xilinx.com:user:pid_reexpanded_wrapper:1.4) from (Rev. 8) to (Rev. 11)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_pid_reexpanded_wrapp_0_2'. These changes may impact your design.
+
+
+-Upgrade has added port 'd_term_0'
+
+-Upgrade has added port 'i_term_0'
+
+-Upgrade has added port 'p_term_0'
+
 
 
 
@@ -85,18 +100,18 @@ SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_c
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Oct 13 14:31:44 2026
+| Date         : Sun Nov  8 15:25:29 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
+Upgrade Log for IP 'design_1_pid_reexpanded_wrapp_0_2'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 7) to (Rev. 8)
+SUCCESS in the upgrade of design_1_pid_reexpanded_wrapp_0_2 (xilinx.com:user:pid_reexpanded_wrapper:1.4) from (Rev. 10) to (Rev. 8)
 
 
 
@@ -106,18 +121,18 @@ SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_c
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Tue Oct 13 14:19:37 2026
+| Date         : Sun Nov  8 14:26:43 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
+Upgrade Log for IP 'design_1_pid_reexpanded_wrapp_0_2'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 6) to (Rev. 7)
+SUCCESS in the upgrade of design_1_pid_reexpanded_wrapp_0_2 (xilinx.com:user:pid_reexpanded_wrapper:1.4) from (Rev. 9) to (Rev. 10)
 
 
 
@@ -127,100 +142,16 @@ SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_c
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Thu Oct  8 14:24:34 2026
+| Date         : Thu Nov  5 13:50:17 2026
 | Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
 | Command      : upgrade_ip
 | Device       : xc7z020clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
+Upgrade Log for IP 'design_1_pid_reexpanded_wrapp_0_2'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 5) to (Rev. 6)
-
-
-
-
-
-
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Thu Oct  8 14:01:54 2026
-| Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 4) to (Rev. 5)
-
-
-
-
-
-
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Thu Oct  8 13:44:27 2026
-| Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 3) to (Rev. 4)
-
-
-
-
-
-
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Thu Oct  8 13:28:49 2026
-| Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0) from (Rev. 2) to (Rev. 3)
-
-
-
-
-
-
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
-| Date         : Thu Oct  1 14:45:45 2026
-| Host         : kenny-ThinkPad-T480s running 64-bit Linux Mint 22.1
-| Command      : upgrade_ip
-| Device       : xc7z020clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'design_1_pid_compressed_t_wra_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the conversion of design_1_pid_compressed_t_wra_0_0 (user.org:user:pid_compressed_t_wrapper:1.0 (Rev. 2)) to Vivado generation flows.
+SUCCESS in the upgrade of design_1_pid_reexpanded_wrapp_0_2 (xilinx.com:user:pid_reexpanded_wrapper:1.4) from (Rev. 8) to (Rev. 9)
 

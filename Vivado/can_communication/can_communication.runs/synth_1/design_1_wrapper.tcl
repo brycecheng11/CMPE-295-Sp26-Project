@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -89,6 +90,7 @@ set_property ip_repo_paths {
   /home/kenny/Downloads/ip_repo/AXIPIDController_1.0
   /home/kenny/Documents/pid_controller_new
   /home/kenny/Downloads/vivado-library-master
+  /home/kenny/Documents/pid_controller_time
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/kenny/Downloads/can_communication/can_communication.cache/ip [current_project]
@@ -113,7 +115,6 @@ set_property used_in_implementation false [get_files -all /home/kenny/Downloads/
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_PmodCAN_0_0/src/PmodCAN_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_PmodCAN_0_0/design_1_PmodCAN_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_PmodCAN_0_0/src/PmodCAN_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_compressed_t_wra_0_0/pid_ctrl_tmp.gen/sources_1/bd/pid_compressed_t/pid_compressed_t_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0.xdc]
@@ -129,6 +130,7 @@ set_property used_in_implementation false [get_files -all /home/kenny/Downloads/
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_pid_expand_time_wrap_0_0/pid_controller_v4.gen/sources_1/bd/pid_expand_time/pid_expand_time_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/kenny/Downloads/can_communication/can_communication.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 

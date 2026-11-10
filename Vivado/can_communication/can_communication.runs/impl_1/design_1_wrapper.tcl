@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -138,6 +139,7 @@ OPTRACE "set parameters" START { }
   /home/kenny/Downloads/ip_repo/AXIPIDController_1.0
   /home/kenny/Documents/pid_controller_new
   /home/kenny/Downloads/vivado-library-master
+  /home/kenny/Documents/pid_controller_time
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo /home/kenny/Downloads/can_communication/can_communication.cache/ip [current_project]

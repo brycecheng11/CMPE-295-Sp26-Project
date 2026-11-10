@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_AXI_PID_Controller_P_0_2_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
-set_param tcl.collectionResultDisplayLimit 0
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -92,8 +89,9 @@ set_property ip_repo_paths {
   /home/kenny/Downloads/ip_repo/AXI_PID_Controller_Peripheral_1.0
   /home/kenny/Downloads/ip_repo/PID_AXI_1.0
   /home/kenny/Downloads/ip_repo/AXIPIDController_1.0
+  /home/kenny/Documents/pid_controller_new
   /home/kenny/Downloads/vivado-library-master
-  /home/kenny/Documents/pid_controller
+  /home/kenny/Documents/pid_controller_time
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/kenny/Downloads/can_communication/can_communication.cache/ip [current_project]

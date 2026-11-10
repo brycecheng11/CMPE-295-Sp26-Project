@@ -27,12 +27,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xl
 # IP: bd/design_1/ip/design_1_pot_to_const_0_0/design_1_pot_to_const_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pot_to_const_0_0 || ORIG_REF_NAME==design_1_pot_to_const_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_AXI_PID_Controller_P_0_2 || ORIG_REF_NAME==design_1_AXI_PID_Controller_P_0_2} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_pid_compressed_t_wra_0_0/design_1_pid_compressed_t_wra_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pid_compressed_t_wra_0_0 || ORIG_REF_NAME==design_1_pid_compressed_t_wra_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_axi_uartlite_0_0_1/design_1_axi_uartlite_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_uartlite_0_0 || ORIG_REF_NAME==design_1_axi_uartlite_0_0} -quiet] -quiet
 
@@ -47,6 +41,15 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 
 # IP: bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_AXI_PID_Controller_P_0_2/design_1_AXI_PID_Controller_P_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_AXI_PID_Controller_P_0_2 || ORIG_REF_NAME==design_1_AXI_PID_Controller_P_0_2} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_full_to_four_0_0/design_1_full_to_four_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_full_to_four_0_0 || ORIG_REF_NAME==design_1_full_to_four_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_pid_expand_time_wrap_0_0/design_1_pid_expand_time_wrap_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pid_expand_time_wrap_0_0 || ORIG_REF_NAME==design_1_pid_expand_time_wrap_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
