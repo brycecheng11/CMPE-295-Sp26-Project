@@ -1,0 +1,2050 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: -344 285 1310
+Calibrating gyro...
+Gyro offsets: -735 189 64
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+TXB0CTRL=0x02 CANINTF=0x05 EFLG=0x00 TEC=0 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+TXB0CTRL=0x02 CANINTF=0x25 EFLG=0x40 TEC=0 REC=0
+Waiting after initialization...
+Readback = 0
+BUILD Nov8 14:30
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=-47 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=35 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=44 ay=19 az=16422 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=-7 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=6 ay=29 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=-1 az=16352 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=29 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-47 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=-25 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-4 ay=-25 az=16436 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=28 ay=17 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=-1 az=16406 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=6 ay=-13 az=16372 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-23 az=16370 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=1 az=16312 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=67 az=16350 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-70 ay=-37 az=16364 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-46 ay=-29 az=16402 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-50 ay=-39 az=16366 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-19 az=16358 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=42 ay=-19 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=31 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=15 az=16354 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=11 az=16374 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=3 az=16368 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=50 ay=-25 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=36 ay=-41 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=64 ay=-31 az=16440 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=28 ay=-17 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=5 az=16350 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=48 ay=-29 az=16358 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=34 ay=-27 az=16446 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=-33 az=16404 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=10 ay=33 az=16342 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=1 az=16332 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=20 ay=-45 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=-3 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=30 ay=-5 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-3 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=-11 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=-21 az=16320 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=26 ay=-23 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=10 ay=11 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=-41 az=16422 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-5 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=-27 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=-3 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=30 ay=15 az=16368 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=38 ay=49 az=16352 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=-37 az=16366 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=36 ay=15 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=44 ay=-5 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=36 ay=17 az=16400 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=50 ay=33 az=16356 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=66 ay=-5 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=56 ay=-9 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=-41 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=36 ay=-51 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=30 ay=1 az=16388 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=28 ay=-7 az=16358 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=32 ay=17 az=16328 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=38 ay=-25 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=19 az=16380 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=29 az=16336 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=11 az=16480 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=44 ay=-17 az=16454 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=30 ay=-7 az=16400 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=21 az=16368 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=-5 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=42 ay=-45 az=16440 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=13 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=-1 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=27 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-4 ay=-15 az=16440 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=24 ay=-3 az=16438 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=38 ay=3 az=16440 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=92 ay=-27 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=90 ay=-49 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=46 ay=-5 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=44 ay=-49 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=62 ay=7 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=7 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=74 ay=-13 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=72 ay=17 az=16356 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=76 ay=19 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=34 ay=43 az=16342 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-19 az=16434 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=-29 az=16470 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=24 ay=-9 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=34 ay=21 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=26 ay=-15 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=13 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=14 ay=-33 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=56 ay=23 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=46 ay=-7 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=14 ay=1 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=-51 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=10 ay=-47 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=39 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=47 az=16388 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=-5 az=16406 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=52 ay=5 az=16464 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=25 az=16354 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=60 ay=11 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=72 ay=-23 az=16434 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=48 ay=-5 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=62 ay=-69 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=48 ay=-7 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=-13 az=16422 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-34 ay=-13 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=-15 az=16370 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=34 ay=15 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=5 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=13 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=50 ay=-7 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=-23 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=27 az=16322 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=-13 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-5 az=16358 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=9 az=16388 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=7 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=-9 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=36 ay=15 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-24 ay=17 az=16444 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=1 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=42 ay=-15 az=16420 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=-21 az=16402 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=-13 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=-23 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=15 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-36 ay=-29 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-23 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-7 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=5 az=16420 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=15 az=16432 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=-9 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=15 az=16400 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=37 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-48 ay=39 az=16388 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-9 az=16370 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=-3 az=16372 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=-39 az=16436 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=40 ay=-45 az=16446 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=32 ay=-35 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=28 ay=-11 az=16438 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=38 ay=-7 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=7 az=16380 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=34 ay=-37 az=16374 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=5 az=16364 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=44 ay=-5 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=42 ay=19 az=16436 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=23 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=7 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=15 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=48 ay=-21 az=16304 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=-29 az=16348 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=17 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=24 ay=-37 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=-19 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=-55 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=30 ay=-5 az=16356 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=32 ay=37 az=16344 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=24 ay=3 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=42 ay=-31 az=16436 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=-13 az=16422 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=9 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=-7 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-28 ay=35 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-30 ay=53 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-48 ay=51 az=16422 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-54 ay=11 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-38 ay=23 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-40 ay=-1 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=23 az=16364 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=5 az=16372 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-13 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-26 ay=11 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=51 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-46 ay=5 az=16320 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-40 ay=23 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-64 ay=3 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-4 ay=-31 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=26 ay=-15 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=59 az=16388 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=-35 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=27 az=16388 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-24 ay=1 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=-33 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=-5 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-16 ay=-3 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=-7 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=3 az=16434 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=34 ay=-23 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=-13 az=16400 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=27 az=16370 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-33 az=16404 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=19 az=16438 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=5 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-40 ay=7 az=16352 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-7 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-24 ay=3 az=16450 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=-29 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=-17 az=16424 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=13 az=16404 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-5 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-48 ay=-1 az=16458 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-50 ay=-33 az=16404 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=-21 az=16450 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-50 ay=1 az=16364 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-10 ay=-29 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=21 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=11 az=16346 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-24 ay=-13 az=16402 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=9 az=16368 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=-35 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=-39 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=28 ay=-23 az=16434 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=-17 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=-15 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=11 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=24 ay=-15 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=26 ay=-23 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=56 ay=-19 az=16364 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=-3 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-28 ay=-9 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=1 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-26 ay=-3 az=16404 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=-29 az=16350 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=23 az=16370 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=10 ay=-27 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=10 ay=9 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=5 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-13 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=7 az=16364 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-24 ay=-19 az=16332 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=-17 az=16438 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=-11 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-16 ay=-19 az=16366 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=27 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-30 ay=-5 az=16402 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-38 ay=3 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=7 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-38 ay=-27 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=-15 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=14 ay=23 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=19 az=16372 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-23 az=16438 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=-5 az=16428 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=11 az=16404 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-30 ay=33 az=16336 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-4 ay=-19 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=7 az=16420 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=-3 az=16370 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=25 az=16366 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=15 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=11 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=13 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-23 az=16456 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=14 ay=-9 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=28 ay=-13 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=-43 az=16372 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-38 ay=-25 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-27 az=16350 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=30 ay=-35 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=24 ay=-17 az=16364 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=12 ay=-15 az=16444 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=26 ay=-37 az=16420 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=22 ay=-17 az=16374 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=6 ay=-13 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=-23 az=16414 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-17 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=34 ay=-5 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-15 az=16400 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=31 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-30 ay=1 az=16358 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-46 ay=-39 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=14 ay=-45 az=16434 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-20 ay=-29 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=55 az=16374 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-8 ay=-19 az=16432 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=-7 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=20 ay=11 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=-3 az=16422 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-26 ay=-13 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=15 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=13 az=16462 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=27 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-16 ay=-7 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=6 ay=9 az=16344 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=5 az=16402 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=25 az=16402 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=-11 az=16402 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-16 ay=1 az=16406 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=-13 az=16344 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=3 az=16444 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=25 az=16404 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=27 az=16430 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=-21 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=-45 az=16420 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-24 ay=-31 az=16322 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-12 ay=-21 az=16444 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=7 az=16440 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=1 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=54 ay=35 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=-11 az=16356 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=4 ay=1 az=16352 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=10 ay=33 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=6 ay=-7 az=16400 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-14 ay=7 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-54 ay=-1 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-48 ay=27 az=16358 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-58 ay=-3 az=16350 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=-15 az=16368 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-48 ay=-23 az=16334 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=-5 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-4 ay=-11 az=16450 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-34 ay=-35 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=-7 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-48 ay=11 az=16356 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-18 ay=27 az=16440 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=26 ay=9 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-26 ay=27 az=16374 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=1 az=16368 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=6 ay=19 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=32 ay=31 az=16446 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=20 ay=-11 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-21 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-28 ay=-35 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=18 ay=-25 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=-9 az=16430 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-22 ay=-17 az=16438 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=38 ay=1 az=16426 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-38 ay=3 az=16440 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-42 ay=23 az=16394 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=38 ay=27 az=16352 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=14 ay=-9 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=8 ay=-15 az=16356 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-28 ay=-5 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-32 ay=3 az=16376 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-26 ay=41 az=16430 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=0 ay=23 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-6 ay=9 az=16420 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=10 ay=-21 az=16406 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=56 ay=-19 az=16434 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=2 ay=1 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-4 ay=-17 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-2 ay=9 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=60 ay=35 az=16382 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=56 ay=5 az=16336 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=64 ay=-11 az=16418 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=108 ay=-21 az=16332 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=96 ay=-1 az=16358 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=78 ay=-43 az=16348 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=74 ay=-19 az=16424 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=68 ay=23 az=16348 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=86 ay=11 az=16408 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=90 ay=-11 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=46 ay=-7 az=16372 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=66 ay=-3 az=16368 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=74 ay=-15 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=98 ay=-19 az=16398 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=80 ay=21 az=16390 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=116 ay=27 az=16338 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=64 ay=-41 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=50 ay=9 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=24 ay=-21 az=16432 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=76 ay=13 az=16366 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=16 ay=13 az=16372 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-34 ay=-15 az=16378 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-34 ay=-9 az=16366 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-56 ay=-9 az=16410 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-84 ay=-5 az=16362 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-72 ay=-31 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-106 ay=-77 az=16366 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-148 ay=-11 az=16416 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-130 ay=-39 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-120 ay=19 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-94 ay=23 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-146 ay=23 az=16438 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-112 ay=29 az=16386 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-108 ay=11 az=16374 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-162 ay=23 az=16392 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-170 ay=13 az=16348 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-198 ay=-21 az=16396 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-164 ay=19 az=16434 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-228 ay=17 az=16384 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-250 ay=21 az=16424 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-252 ay=3 az=16412 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-246 ay=-1 az=16360 accel_pitch=0
+Motor 141 speed is: 8
+Motor 142 speed is: -8
+RAW ax=-268 ay=-23 az=16320 accel_pitch=0
+Motor 141 speed is: -8440
+Motor 142 speed is: 8440
+RAW ax=-306 ay=67 az=16322 accel_pitch=1
+Motor 141 speed is: -21307480
+Motor 142 speed is: 21307480
+RAW ax=-296 ay=31 az=16412 accel_pitch=1
+Motor 141 speed is: -44525584
+Motor 142 speed is: 44525584
+RAW ax=-3120 ay=287 az=16642 accel_pitch=10
+Motor 141 speed is: -283023904
+Motor 142 speed is: 283023904
+RAW ax=-4720 ay=1123 az=17380 accel_pitch=15
+Motor 141 speed is: -1166355328
+Motor 142 speed is: 1166355328
+RAW ax=-10584 ay=-1093 az=14206 accel_pitch=36
+Motor 141 speed is: -2082968992
+Motor 142 speed is: 2082968992
+RAW ax=-7880 ay=1935 az=22690 accel_pitch=19
+Motor 141 speed is: 1737202680
+Motor 142 speed is: -1737202680
+RAW ax=476 ay=1279 az=16530 accel_pitch=-1
+Motor 141 speed is: 1761865240
+Motor 142 speed is: -1761865240
+RAW ax=2896 ay=-277 az=9632 accel_pitch=-16
+Motor 141 speed is: -2136608744
+Motor 142 speed is: 2136608744
+RAW ax=20398 ay=-439 az=15628 accel_pitch=-52
+Motor 141 speed is: -825105800
+Motor 142 speed is: 825105800
+RAW ax=-7692 ay=711 az=9556 accel_pitch=38
+Motor 141 speed is: 836766136
+Motor 142 speed is: -836766136
+RAW ax=18802 ay=-3923 az=5922 accel_pitch=-69
+Motor 141 speed is: -1749620832
+Motor 142 speed is: 1749620832
+RAW ax=27280 ay=-5227 az=6398 accel_pitch=-73
+Motor 141 speed is: 92511592
+Motor 142 speed is: -92511592
+RAW ax=18792 ay=-2437 az=8956 accel_pitch=-63
+Motor 141 speed is: 1622880208
+Motor 142 speed is: -1622880208
+RAW ax=5558 ay=-1337 az=20934 accel_pitch=-14
+Motor 141 speed is: 1976493760
+Motor 142 speed is: -1976493760
+RAW ax=16950 ay=25 az=13572 accel_pitch=-51
+Motor 141 speed is: -1104983480
+Motor 142 speed is: 1104983480
+RAW ax=18942 ay=-4311 az=15738 accel_pitch=-49
+Motor 141 speed is: 142292864
+Motor 142 speed is: -142292864
+RAW ax=2650 ay=2741 az=18178 accel_pitch=-8
+Motor 141 speed is: 336484032
+Motor 142 speed is: -336484032
+RAW ax=-7204 ay=929 az=25554 accel_pitch=15
+Motor 141 speed is: -27485496
+Motor 142 speed is: 27485496
+RAW ax=25022 ay=-721 az=11754 accel_pitch=-64
+Motor 141 speed is: 1527248072
+Motor 142 speed is: -1527248072
+RAW ax=-9378 ay=2747 az=13502 accel_pitch=34
+Motor 141 speed is: 677339000
+Motor 142 speed is: -677339000
+RAW ax=-14052 ay=-1623 az=24526 accel_pitch=29
+Motor 141 speed is: -46644728
+Motor 142 speed is: 46644728
+RAW ax=24158 ay=-3721 az=10704 accel_pitch=-64
+Motor 141 speed is: 1523266056
+Motor 142 speed is: -1523266056
+RAW ax=-90 ay=-551 az=20230 accel_pitch=0
+Motor 141 speed is: 1522894344
+Motor 142 speed is: -1522894344
+RAW ax=-14850 ay=3443 az=14562 accel_pitch=44
+Motor 141 speed is: 413737768
+Motor 142 speed is: -413737768
+RAW ax=16928 ay=837 az=15810 accel_pitch=-46
+Motor 141 speed is: 1542675704
+Motor 142 speed is: -1542675704
+RAW ax=19510 ay=1377 az=8314 accel_pitch=-66
+Motor 141 speed is: -1103316968
+Motor 142 speed is: 1103316968
+RAW ax=-2880 ay=-1221 az=8930 accel_pitch=17
+Motor 141 speed is: -1528346848
+Motor 142 speed is: 1528346848
+RAW ax=-5244 ay=1297 az=11826 accel_pitch=23
+Motor 141 speed is: -2103147344
+Motor 142 speed is: 2103147344
+RAW ax=-674 ay=2609 az=11700 accel_pitch=3
+Motor 141 speed is: 2118263960
+Motor 142 speed is: -2118263960
+RAW ax=1086 ay=751 az=17724 accel_pitch=-3
+Motor 141 speed is: -2103427016
+Motor 142 speed is: 2103427016
+RAW ax=-13858 ay=925 az=18972 accel_pitch=36
+Motor 141 speed is: 1291548824
+Motor 142 speed is: -1291548824
+RAW ax=-19458 ay=1773 az=22590 accel_pitch=40
+Motor 141 speed is: 282589720
+Motor 142 speed is: -282589720
+RAW ax=-2056 ay=217 az=31457 accel_pitch=3
+Motor 141 speed is: 210785248
+Motor 142 speed is: -210785248
+RAW ax=10910 ay=-4925 az=8816 accel_pitch=-47
+Motor 141 speed is: 1373857504
+Motor 142 speed is: -1373857504
+RAW ax=-18418 ay=1961 az=21508 accel_pitch=40
+Motor 141 speed is: 364774048
+Motor 142 speed is: -364774048
+RAW ax=-5984 ay=2519 az=19342 accel_pitch=17
+Motor 141 speed is: -51875528
+Motor 142 speed is: 51875528
+RAW ax=8072 ay=-917 az=8082 accel_pitch=-44
+Motor 141 speed is: 996353016
+Motor 142 speed is: -996353016
+RAW ax=-4062 ay=1357 az=12674 accel_pitch=17
+Motor 141 speed is: 579270560
+Motor 142 speed is: -579270560
+RAW ax=-4888 ay=475 az=17324 accel_pitch=15
+Motor 141 speed is: 214990856
+Motor 142 speed is: -214990856
+RAW ax=7722 ay=1771 az=14784 accel_pitch=-27
+Motor 141 speed is: 877956752
+Motor 142 speed is: -877956752
+RAW ax=12190 ay=-187 az=642 accel_pitch=-86
+Motor 141 speed is: -1328278336
+Motor 142 speed is: 1328278336
+RAW ax=-18574 ay=3273 az=9650 accel_pitch=61
+Motor 141 speed is: 1441895664
+Motor 142 speed is: -1441895664
+RAW ax=-23508 ay=-1235 az=7340 accel_pitch=72
+Motor 141 speed is: -374856912
+Motor 142 speed is: 374856912
+RAW ax=-9684 ay=35 az=7906 accel_pitch=50
+Motor 141 speed is: -1566624064
+Motor 142 speed is: 1566624064
+RAW ax=-17528 ay=2001 az=15020 accel_pitch=49
+Motor 141 speed is: 1491794304
+Motor 142 speed is: -1491794304
+RAW ax=-22102 ay=-517 az=18304 accel_pitch=50
+Motor 141 speed is: 230587696
+Motor 142 speed is: -230587696
+RAW ax=-13064 ay=-3871 az=11808 accel_pitch=46
+Motor 141 speed is: -918946432
+Motor 142 speed is: 918946432
+RAW ax=316 ay=-467 az=13740 accel_pitch=-1
+Motor 141 speed is: -895321544
+Motor 142 speed is: 895321544
+RAW ax=-16016 ay=1923 az=12094 accel_pitch=52
+Motor 141 speed is: 2111610904
+Motor 142 speed is: -2111610904
+RAW ax=-22224 ay=5783 az=24178 accel_pitch=41
+Motor 141 speed is: 1077567696
+Motor 142 speed is: -1077567696
+RAW ax=-198 ay=-2745 az=10080 accel_pitch=1
+Motor 141 speed is: 1053089808
+Motor 142 speed is: -1053089808
+RAW ax=7874 ay=23 az=11810 accel_pitch=-33
+Motor 141 speed is: 1862082432
+Motor 142 speed is: -1862082432
+RAW ax=-15312 ay=2463 az=13840 accel_pitch=47
+Motor 141 speed is: 676234160
+Motor 142 speed is: -676234160
+RAW ax=-12694 ay=1635 az=15758 accel_pitch=38
+Motor 141 speed is: -264969808
+Motor 142 speed is: 264969808
+RAW ax=-10026 ay=651 az=3962 accel_pitch=68
+Motor 141 speed is: -1917862512
+Motor 142 speed is: 1917862512
+RAW ax=-17048 ay=2405 az=10160 accel_pitch=58
+Motor 141 speed is: 914072800
+Motor 142 speed is: -914072800
+RAW ax=-19194 ay=279 az=13534 accel_pitch=54
+Motor 141 speed is: -410341040
+Motor 142 speed is: 410341040
+RAW ax=948 ay=917 az=12294 accel_pitch=-4
+Motor 141 speed is: -315422672
+Motor 142 speed is: 315422672
+RAW ax=-17222 ay=1067 az=13778 accel_pitch=51
+Motor 141 speed is: -1578322208
+Motor 142 speed is: 1578322208
+RAW ax=-15362 ay=-379 az=21962 accel_pitch=34
+Motor 141 speed is: 1858747264
+Motor 142 speed is: -1858747264
+RAW ax=-16730 ay=-2215 az=22310 accel_pitch=36
+Motor 141 speed is: 942128608
+Motor 142 speed is: -942128608
+RAW ax=-12524 ay=613 az=17450 accel_pitch=35
+Motor 141 speed is: 84064608
+Motor 142 speed is: -84064608
+RAW ax=11396 ay=-1131 az=11310 accel_pitch=-45
+Motor 141 speed is: 1187443320
+Motor 142 speed is: -1187443320
+RAW ax=-19158 ay=3831 az=21148 accel_pitch=41
+Motor 141 speed is: 153105576
+Motor 142 speed is: -153105576
+RAW ax=-14504 ay=-1437 az=18232 accel_pitch=38
+Motor 141 speed is: -795963544
+Motor 142 speed is: 795963544
+RAW ax=10656 ay=-3407 az=-3022 accel_pitch=-66
+Motor 141 speed is: 853080776
+Motor 142 speed is: -853080776
+RAW ax=-6438 ay=939 az=-7606 accel_pitch=40
+Motor 141 speed is: -119202552
+Motor 142 speed is: 119202552
+RAW ax=-27776 ay=3985 az=11336 accel_pitch=66
+Motor 141 speed is: -1753473432
+Motor 142 speed is: 1753473432
+RAW ax=-2128 ay=2395 az=9022 accel_pitch=12
+Motor 141 speed is: -2050640664
+Motor 142 speed is: 2050640664
+RAW ax=-2856 ay=-1581 az=15956 accel_pitch=10
+Motor 141 speed is: 1991739064
+Motor 142 speed is: -1991739064
+RAW ax=-15712 ay=3795 az=17516 accel_pitch=41
+Motor 141 speed is: 957647920
+Motor 142 speed is: -957647920
+RAW ax=-10836 ay=2017 az=22184 accel_pitch=25
+Motor 141 speed is: 338458392
+Motor 142 speed is: -338458392
+RAW ax=-3636 ay=1825 az=17940 accel_pitch=11
+Motor 141 speed is: 68276216
+Motor 142 speed is: -68276216
+RAW ax=-4314 ay=655 az=3980 accel_pitch=46
+Motor 141 speed is: -1017638600
+Motor 142 speed is: 1017638600
+RAW ax=-12754 ay=4259 az=17372 accel_pitch=35
+Motor 141 speed is: -1900801112
+Motor 142 speed is: 1900801112
+RAW ax=-14846 ay=1713 az=5370 accel_pitch=69
+Motor 141 speed is: 669392384
+Motor 142 speed is: -669392384
+RAW ax=-10996 ay=-65 az=9210 accel_pitch=50
+Motor 141 speed is: -545855712
+Motor 142 speed is: 545855712
+RAW ax=-10072 ay=2129 az=19530 accel_pitch=27
+Motor 141 speed is: -1214696376
+Motor 142 speed is: 1214696376
+RAW ax=-18354 ay=945 az=10786 accel_pitch=59
+Motor 141 speed is: 1605477976
+Motor 142 speed is: -1605477976
+RAW ax=-16666 ay=-923 az=15682 accel_pitch=46
+Motor 141 speed is: 444941224
+Motor 142 speed is: -444941224
+RAW ax=-3686 ay=-3033 az=15856 accel_pitch=12
+Motor 141 speed is: 147568072
+Motor 142 speed is: -147568072
+RAW ax=-7530 ay=-1603 az=10806 accel_pitch=34
+Motor 141 speed is: -694624200
+Motor 142 speed is: 694624200
+RAW ax=-14068 ay=809 az=10314 accel_pitch=53
+Motor 141 speed is: -1994960040
+Motor 142 speed is: 1994960040
+RAW ax=-9704 ay=2063 az=17174 accel_pitch=29
+Motor 141 speed is: 1575197848
+Motor 142 speed is: -1575197848
+RAW ax=-7516 ay=931 az=10652 accel_pitch=35
+Motor 141 speed is: 708347976
+Motor 142 speed is: -708347976
+RAW ax=-4586 ay=2295 az=17590 accel_pitch=14
+Motor 141 speed is: 364557256
+Motor 142 speed is: -364557256
+RAW ax=-10528 ay=73 az=9048 accel_pitch=49
+Motor 141 speed is: -814790984
+Motor 142 speed is: 814790984
+RAW ax=-9950 ay=349 az=18420 accel_pitch=28
+Motor 141 speed is: -1495343080
+Motor 142 speed is: 1495343080
+RAW ax=-4912 ay=-2119 az=8886 accel_pitch=28
+Motor 141 speed is: 2099421432
+Motor 142 speed is: -2099421432
+RAW ax=-16210 ay=-311 az=10950 accel_pitch=55
+Motor 141 speed is: 712201752
+Motor 142 speed is: -712201752
+RAW ax=-3762 ay=727 az=13166 accel_pitch=15
+Motor 141 speed is: 347425128
+Motor 142 speed is: -347425128
+RAW ax=-7650 ay=169 az=9766 accel_pitch=38
+Motor 141 speed is: -567213208
+Motor 142 speed is: 567213208
+RAW ax=-7776 ay=1101 az=16312 accel_pitch=25
+Motor 141 speed is: -1180184152
+Motor 142 speed is: 1180184152
+RAW ax=906 ay=-345 az=2166 accel_pitch=-22
+Motor 141 speed is: -641191896
+Motor 142 speed is: 641191896
+RAW ax=-25080 ay=3403 az=7268 accel_pitch=72
+Motor 141 speed is: 1887661288
+Motor 142 speed is: -1887661288
+RAW ax=-7802 ay=1417 az=21216 accel_pitch=20
+Motor 141 speed is: 1387608776
+Motor 142 speed is: -1387608776
+RAW ax=-5624 ay=31 az=10096 accel_pitch=29
+Motor 141 speed is: 676065048
+Motor 142 speed is: -676065048
+RAW ax=-8512 ay=485 az=13726 accel_pitch=31
+Motor 141 speed is: -77288464
+Motor 142 speed is: 77288464
+RAW ax=-9132 ay=823 az=9560 accel_pitch=43
+Motor 141 speed is: -1092759456
+Motor 142 speed is: 1092759456
+RAW ax=-14630 ay=1517 az=14806 accel_pitch=44
+Motor 141 speed is: 2092293056
+Motor 142 speed is: -2092293056
+RAW ax=-7008 ay=411 az=13700 accel_pitch=27
+Motor 141 speed is: 1423846856
+Motor 142 speed is: -1423846856
+RAW ax=-2732 ay=-299 az=12448 accel_pitch=12
+Motor 141 speed is: 1123643816
+Motor 142 speed is: -1123643816
+RAW ax=-11704 ay=873 az=14802 accel_pitch=38
+Motor 141 speed is: 173717736
+Motor 142 speed is: -173717736
+RAW ax=-10334 ay=353 az=14786 accel_pitch=34
+Motor 141 speed is: -660477992
+Motor 142 speed is: 660477992
+RAW ax=-10240 ay=107 az=14394 accel_pitch=35
+Motor 141 speed is: -1519169104
+Motor 142 speed is: 1519169104
+RAW ax=-8380 ay=-27 az=14936 accel_pitch=29
+Motor 141 speed is: 2057375568
+Motor 142 speed is: -2057375568
+RAW ax=-8810 ay=455 az=13790 accel_pitch=32
+Motor 141 speed is: 1264982352
+Motor 142 speed is: -1264982352
+RAW ax=-9294 ay=399 az=14076 accel_pitch=33
+Motor 141 speed is: 447512952
+Motor 142 speed is: -447512952
+RAW ax=-8834 ay=243 az=14130 accel_pitch=32
+Motor 141 speed is: -330028936
+Motor 142 speed is: 330028936
+RAW ax=-8200 ay=417 az=14030 accel_pitch=30
+Motor 141 speed is: -1059276568
+Motor 142 speed is: 1059276568
+RAW ax=-7728 ay=607 az=13474 accel_pitch=29
+Motor 141 speed is: -1777377448
+Motor 142 speed is: 1777377448
+RAW ax=-8070 ay=981 az=13606 accel_pitch=30
+Motor 141 speed is: 1774408728
+Motor 142 speed is: -1774408728
+RAW ax=-7868 ay=939 az=13286 accel_pitch=30
+Motor 141 speed is: 1031567448
+Motor 142 speed is: -1031567448
+RAW ax=-7970 ay=875 az=13508 accel_pitch=30
+Motor 141 speed is: 288406296
+Motor 142 speed is: -288406296
+RAW ax=-7942 ay=783 az=13840 accel_pitch=29
+Motor 141 speed is: -416255752
+Motor 142 speed is: 416255752
+RAW ax=-7892 ay=579 az=13624 accel_pitch=30
+Motor 141 speed is: -1145524264
+Motor 142 speed is: 1145524264
+RAW ax=-7688 ay=639 az=13500 accel_pitch=29
+Motor 141 speed is: -1863619712
+Motor 142 speed is: 1863619712
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-7630 ay=653 az=13604 accel_pitch=29
+Motor 141 speed is: -1343270800
+Motor 142 speed is: 1343270800
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8192 ay=503 az=13550 accel_pitch=31
+Motor 141 speed is: -1083005584
+Motor 142 speed is: 1083005584
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8264 ay=357 az=13514 accel_pitch=31
+Motor 141 speed is: -822849752
+Motor 142 speed is: 822849752
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8396 ay=433 az=13398 accel_pitch=32
+Motor 141 speed is: -678031576
+Motor 142 speed is: 678031576
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8384 ay=657 az=13124 accel_pitch=32
+Motor 141 speed is: -532988120
+Motor 142 speed is: 532988120
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8762 ay=547 az=13322 accel_pitch=33
+Motor 141 speed is: -517851280
+Motor 142 speed is: 517851280
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8722 ay=287 az=13224 accel_pitch=33
+Motor 141 speed is: -502827432
+Motor 142 speed is: 502827432
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8870 ay=507 az=13222 accel_pitch=33
+Motor 141 speed is: -487562816
+Motor 142 speed is: 487562816
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8624 ay=633 az=13324 accel_pitch=32
+Motor 141 speed is: -342644032
+Motor 142 speed is: 342644032
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8742 ay=435 az=13276 accel_pitch=33
+Motor 141 speed is: -327614640
+Motor 142 speed is: 327614640
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8828 ay=559 az=13160 accel_pitch=33
+Motor 141 speed is: -312488360
+Motor 142 speed is: 312488360
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8980 ay=501 az=13156 accel_pitch=34
+Motor 141 speed is: -426802632
+Motor 142 speed is: 426802632
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-9014 ay=517 az=13028 accel_pitch=34
+Motor 141 speed is: -541475400
+Motor 142 speed is: 541475400
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8960 ay=399 az=13016 accel_pitch=34
+Motor 141 speed is: -656039912
+Motor 142 speed is: 656039912
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8894 ay=623 az=13170 accel_pitch=34
+Motor 141 speed is: -770341656
+Motor 142 speed is: 770341656
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8836 ay=471 az=13156 accel_pitch=33
+Motor 141 speed is: -755319392
+Motor 142 speed is: 755319392
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8874 ay=505 az=13226 accel_pitch=33
+Motor 141 speed is: -740186776
+Motor 142 speed is: 740186776
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8802 ay=461 az=13164 accel_pitch=33
+Motor 141 speed is: -724817616
+Motor 142 speed is: 724817616
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8718 ay=529 az=13262 accel_pitch=33
+Motor 141 speed is: -709695032
+Motor 142 speed is: 709695032
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8804 ay=507 az=13158 accel_pitch=33
+Motor 141 speed is: -694656928
+Motor 142 speed is: 694656928
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8840 ay=485 az=13166 accel_pitch=33
+Motor 141 speed is: -679425576
+Motor 142 speed is: 679425576
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8840 ay=553 az=13140 accel_pitch=33
+Motor 141 speed is: -664160696
+Motor 142 speed is: 664160696
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8902 ay=473 az=13192 accel_pitch=33
+Motor 141 speed is: -649140016
+Motor 142 speed is: 649140016
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8846 ay=495 az=13162 accel_pitch=33
+Motor 141 speed is: -633887280
+Motor 142 speed is: 633887280
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8812 ay=503 az=13200 accel_pitch=33
+Motor 141 speed is: -618645104
+Motor 142 speed is: 618645104
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8818 ay=501 az=13176 accel_pitch=33
+Motor 141 speed is: -603622840
+Motor 142 speed is: 603622840
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8802 ay=507 az=13266 accel_pitch=33
+Motor 141 speed is: -588491808
+Motor 142 speed is: 588491808
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8780 ay=529 az=13202 accel_pitch=33
+Motor 141 speed is: -573129776
+Motor 142 speed is: 573129776
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8780 ay=485 az=13160 accel_pitch=33
+Motor 141 speed is: -558093520
+Motor 142 speed is: 558093520
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8830 ay=459 az=13208 accel_pitch=33
+Motor 141 speed is: -542965656
+Motor 142 speed is: 542965656
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8822 ay=505 az=13236 accel_pitch=33
+Motor 141 speed is: -527602040
+Motor 142 speed is: 527602040
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8854 ay=485 az=13162 accel_pitch=33
+Motor 141 speed is: -512578192
+Motor 142 speed is: 512578192
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8824 ay=493 az=13234 accel_pitch=33
+Motor 141 speed is: -497436336
+Motor 142 speed is: 497436336
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8736 ay=479 az=13196 accel_pitch=33
+Motor 141 speed is: -482076152
+Motor 142 speed is: 482076152
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8694 ay=515 az=13224 accel_pitch=33
+Motor 141 speed is: -466950136
+Motor 142 speed is: 466950136
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8744 ay=531 az=13222 accel_pitch=33
+Motor 141 speed is: -451927872
+Motor 142 speed is: 451927872
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8712 ay=501 az=13180 accel_pitch=33
+Motor 141 speed is: -436560824
+Motor 142 speed is: 436560824
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8712 ay=479 az=13258 accel_pitch=33
+Motor 141 speed is: -421413688
+Motor 142 speed is: 421413688
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8770 ay=551 az=13264 accel_pitch=33
+Motor 141 speed is: -406389840
+Motor 142 speed is: 406389840
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8788 ay=457 az=13292 accel_pitch=33
+Motor 141 speed is: -391152944
+Motor 142 speed is: 391152944
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8762 ay=519 az=13258 accel_pitch=33
+Motor 141 speed is: -375905488
+Motor 142 speed is: 375905488
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8726 ay=487 az=13320 accel_pitch=33
+Motor 141 speed is: -360872928
+Motor 142 speed is: 360872928
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8706 ay=505 az=13330 accel_pitch=33
+Motor 141 speed is: -345743216
+Motor 142 speed is: 345743216
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8742 ay=481 az=13230 accel_pitch=33
+Motor 141 speed is: -330383296
+Motor 142 speed is: 330383296
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8754 ay=469 az=13250 accel_pitch=33
+Motor 141 speed is: -315357336
+Motor 142 speed is: 315357336
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8798 ay=521 az=13202 accel_pitch=33
+Motor 141 speed is: -300210464
+Motor 142 speed is: 300210464
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8756 ay=565 az=13178 accel_pitch=33
+Motor 141 speed is: -284844736
+Motor 142 speed is: 284844736
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8724 ay=457 az=13190 accel_pitch=33
+Motor 141 speed is: -269824584
+Motor 142 speed is: 269824584
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8784 ay=527 az=13226 accel_pitch=33
+Motor 141 speed is: -254689856
+Motor 142 speed is: 254689856
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8772 ay=447 az=13182 accel_pitch=33
+Motor 141 speed is: -239334952
+Motor 142 speed is: 239334952
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8720 ay=541 az=13254 accel_pitch=33
+Motor 141 speed is: -224308992
+Motor 142 speed is: 224308992
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8720 ay=489 az=13232 accel_pitch=33
+Motor 141 speed is: -209176376
+Motor 142 speed is: 209176376
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8756 ay=473 az=13248 accel_pitch=33
+Motor 141 speed is: -193815928
+Motor 142 speed is: 193815928
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8704 ay=475 az=13272 accel_pitch=33
+Motor 141 speed is: -178672488
+Motor 142 speed is: 178672488
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8730 ay=531 az=13254 accel_pitch=33
+Motor 141 speed is: -163643096
+Motor 142 speed is: 163643096
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8720 ay=479 az=13284 accel_pitch=33
+Motor 141 speed is: -148406200
+Motor 142 speed is: 148406200
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8640 ay=509 az=13272 accel_pitch=33
+Motor 141 speed is: -133150296
+Motor 142 speed is: 133150296
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8666 ay=515 az=13216 accel_pitch=33
+Motor 141 speed is: -118125920
+Motor 142 speed is: 118125920
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8728 ay=449 az=13184 accel_pitch=33
+Motor 141 speed is: -102994888
+Motor 142 speed is: 102994888
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8720 ay=455 az=13260 accel_pitch=33
+Motor 141 speed is: -87634704
+Motor 142 speed is: 87634704
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8788 ay=531 az=13210 accel_pitch=33
+Motor 141 speed is: -57196688
+Motor 142 speed is: 57196688
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8746 ay=449 az=13230 accel_pitch=33
+Motor 141 speed is: -26880112
+Motor 142 speed is: 26880112
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8718 ay=501 az=13202 accel_pitch=33
+Motor 141 speed is: 3531504
+Motor 142 speed is: -3531504
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8702 ay=431 az=13224 accel_pitch=33
+Motor 141 speed is: 49372864
+Motor 142 speed is: -49372864
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8672 ay=489 az=13226 accel_pitch=33
+Motor 141 speed is: 79909616
+Motor 142 speed is: -79909616
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8668 ay=489 az=13224 accel_pitch=33
+Motor 141 speed is: 110326512
+Motor 142 speed is: -110326512
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8740 ay=449 az=13234 accel_pitch=33
+Motor 141 speed is: 125352208
+Motor 142 speed is: -125352208
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8708 ay=493 az=13248 accel_pitch=33
+Motor 141 speed is: 140606528
+Motor 142 speed is: -140606528
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8738 ay=503 az=13258 accel_pitch=33
+Motor 141 speed is: 155847120
+Motor 142 speed is: -155847120
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8756 ay=519 az=13208 accel_pitch=33
+Motor 141 speed is: 170874400
+Motor 142 speed is: -170874400
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8740 ay=479 az=13212 accel_pitch=33
+Motor 141 speed is: 186007544
+Motor 142 speed is: -186007544
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8712 ay=509 az=13280 accel_pitch=33
+Motor 141 speed is: 201366144
+Motor 142 speed is: -201366144
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8738 ay=463 az=13224 accel_pitch=33
+Motor 141 speed is: 216403720
+Motor 142 speed is: -216403720
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8674 ay=457 az=13232 accel_pitch=33
+Motor 141 speed is: 231540560
+Motor 142 speed is: -231540560
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8694 ay=499 az=13292 accel_pitch=33
+Motor 141 speed is: 246897048
+Motor 142 speed is: -246897048
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8728 ay=487 az=13214 accel_pitch=33
+Motor 141 speed is: 261917728
+Motor 142 speed is: -261917728
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8700 ay=437 az=13284 accel_pitch=33
+Motor 141 speed is: 277055888
+Motor 142 speed is: -277055888
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8724 ay=505 az=13180 accel_pitch=33
+Motor 141 speed is: 292413960
+Motor 142 speed is: -292413960
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8750 ay=447 az=13164 accel_pitch=33
+Motor 141 speed is: 307562944
+Motor 142 speed is: -307562944
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8834 ay=573 az=13214 accel_pitch=33
+Motor 141 speed is: 322573064
+Motor 142 speed is: -322573064
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8890 ay=481 az=13214 accel_pitch=33
+Motor 141 speed is: 337832928
+Motor 142 speed is: -337832928
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8762 ay=427 az=13218 accel_pitch=33
+Motor 141 speed is: 353092000
+Motor 142 speed is: -353092000
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8628 ay=613 az=13306 accel_pitch=32
+Motor 141 speed is: 497811104
+Motor 142 speed is: -497811104
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8406 ay=445 az=13472 accel_pitch=31
+Motor 141 speed is: 772442464
+Motor 142 speed is: -772442464
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8256 ay=477 az=13506 accel_pitch=31
+Motor 141 speed is: 1047070120
+Motor 142 speed is: -1047070120
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8082 ay=473 az=13580 accel_pitch=30
+Motor 141 speed is: 1437277256
+Motor 142 speed is: -1437277256
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8054 ay=531 az=13474 accel_pitch=30
+Motor 141 speed is: 1827791304
+Motor 142 speed is: -1827791304
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8262 ay=359 az=13278 accel_pitch=31
+Motor 141 speed is: 2087834776
+Motor 142 speed is: -2087834776
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8748 ay=545 az=13242 accel_pitch=33
+Motor 141 speed is: 2087782640
+Motor 142 speed is: -2087782640
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8920 ay=513 az=13286 accel_pitch=33
+Motor 141 speed is: 2087633616
+Motor 142 speed is: -2087633616
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8740 ay=523 az=13214 accel_pitch=33
+Motor 141 speed is: 2087496472
+Motor 142 speed is: -2087496472
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8522 ay=403 az=13442 accel_pitch=32
+Motor 141 speed is: -2077246184
+Motor 142 speed is: 2077246184
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8156 ay=533 az=13338 accel_pitch=31
+Motor 141 speed is: -1817201456
+Motor 142 speed is: 1817201456
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8442 ay=455 az=13496 accel_pitch=32
+Motor 141 speed is: -1686993712
+Motor 142 speed is: 1686993712
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8506 ay=485 az=13280 accel_pitch=32
+Motor 141 speed is: -1557100336
+Motor 142 speed is: 1557100336
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8658 ay=449 az=13370 accel_pitch=32
+Motor 141 speed is: -1426990128
+Motor 142 speed is: 1426990128
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8612 ay=593 az=13374 accel_pitch=32
+Motor 141 speed is: -1296866608
+Motor 142 speed is: 1296866608
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8558 ay=545 az=13570 accel_pitch=32
+Motor 141 speed is: -1166981680
+Motor 142 speed is: 1166981680
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8716 ay=329 az=13186 accel_pitch=33
+Motor 141 speed is: -1166909208
+Motor 142 speed is: 1166909208
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8482 ay=553 az=13430 accel_pitch=32
+Motor 141 speed is: -1037007384
+Motor 142 speed is: 1037007384
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-8646 ay=535 az=13396 accel_pitch=32
+Motor 141 speed is: -906806552
+Motor 142 speed is: 906806552
+WARNI

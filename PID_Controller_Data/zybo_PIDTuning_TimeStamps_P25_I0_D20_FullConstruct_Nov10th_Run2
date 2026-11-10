@@ -1,0 +1,81 @@
+
+MPU6050 + PID + CAN balance loop starting...
+I2C OK
+MPU configured
+Calibrating accelerometer...
+Accel offsets: -741 293 1293
+Calibrating gyro...
+Gyro offsets: -738 185 67
+Before CAN_Configure
+After CAN_Configure
+Before CAN_ModifyReg config mode
+After CAN_ModifyReg config mode
+CANSTAT=0x00, expected normal mode 0x00
+Waiting for motor startup...
+Initialize motor 0x141: ID=0x141 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+TXB0CTRL=0x02 CANINTF=0x05 EFLG=0x00 TEC=0 REC=0
+Initialize motor 0x142: ID=0x142 DLC=8 data=0x31 0x00 0x55 0x19 0x55 0x19 0x55 0x19 
+TXB0CTRL=0x02 CANINTF=0x25 EFLG=0x40 TEC=0 REC=0
+Waiting after initialization...
+Readback = 0
+BUILD Nov8 14:30
+Motor 141 speed is: 0
+Motor 142 speed is: 0
+RAW ax=89 ay=-13 az=16427 accel_pitch=0
+Motor 141 speed is: 0
+Motor 142 speed is: 0
+RAW ax=85 ay=1 az=16411 accel_pitch=0
+Motor 141 speed is: 0
+Motor 142 speed is: 0
+RAW ax=-101 ay=-35 az=16347 accel_pitch=0
+Motor 141 speed is: -17152
+Motor 142 speed is: 17152
+RAW ax=-703 ay=9 az=16349 accel_pitch=2
+Motor 141 speed is: 145792
+Motor 142 speed is: -145792
+RAW ax=4999 ay=-379 az=15885 accel_pitch=-17
+Motor 141 speed is: -600320
+Motor 142 speed is: 600320
+RAW ax=-13117 ay=2117 az=4233 accel_pitch=70
+Motor 141 speed is: -42880
+Motor 142 speed is: 42880
+RAW ax=-1751 ay=1925 az=17215 accel_pitch=5
+Motor 141 speed is: -17152
+Motor 142 speed is: 17152
+RAW ax=-693 ay=-65 az=16389 accel_pitch=2
+Motor 141 speed is: -51456
+Motor 142 speed is: 51456
+RAW ax=-1843 ay=45 az=16421 accel_pitch=6
+Motor 141 speed is: -17152
+Motor 142 speed is: 17152
+RAW ax=-823 ay=185 az=16799 accel_pitch=2
+Motor 141 speed is: 0
+Motor 142 speed is: 0
+RAW ax=-203 ay=69 az=16417 accel_pitch=0
+Motor 141 speed is: 0
+Motor 142 speed is: 0
+RAW ax=-161 ay=-7 az=16395 accel_pitch=0
+Motor 141 speed is: 0
+Motor 142 speed is: 0
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-229 ay=35 az=16363 accel_pitch=0
+Motor 141 speed is: 0
+Motor 142 speed is: 0
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-231 ay=-167 az=16421 accel_pitch=0
+Motor 141 speed is: 25728
+Motor 142 speed is: -25728
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=1057 ay=-9 az=16409 accel_pitch=-3
+Motor 141 speed is: -8576
+Motor 142 speed is: 8576
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=-323 ay=27 az=16423 accel_pitch=1
+Motor 141 speed is: 8576
+Motor 142 speed is: -8576
+WARNING: CAN TX buffer busy, sending anyway
+WARNING: CAN TX buffer busy, sending anyway
+RAW ax=415 ay=17 az=16373 accel_pitch=-1
